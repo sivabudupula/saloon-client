@@ -1,0 +1,124 @@
+.addproduct12{
+    border: 1px solid #ccc;
+    /* margin-top: 10%; */
+    margin-left: 5%;
+    margin-right: 5%;
+box-shadow: 6px 5px 9px #ccc;
+background: white;
+    }
+
+    .editproduct12{
+        border: 1px solid #ccc;
+        /* margin-top: 10%; */
+        /* margin-left: 5%; */
+        /* margin-right: 5%; */
+    box-shadow: 6px 5px 9px #ccc;
+    background: white;
+        }
+
+.product-heading12{
+     background-color: #f0ecec;
+     padding: 7px;
+     border: 1px solid #ccc;
+     font-size: 1rem;
+}
+.product-formgroup12{
+    display: flex;
+    padding: 5px ;
+    
+    
+}
+.plabel12{
+    text-align: right;
+    /* display: block;
+    margin-top: 10px; */
+     width: 160px;
+     margin-right: 15px;
+    font-size: 0.9rem;
+}
+.pinput12{
+    outline: none;
+    width: 300px;
+    padding: 3px;
+    margin-right: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    
+}
+.product-buttons12{
+/* margin-left: 230px;
+margin-bottom: 50px;
+  margin-top: 10px;  */
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ccc;
+  padding: 5px ;
+  margin: 7px;
+}
+
+.pbtn12a{
+    /* margin-right: 15px; */
+    margin: 3px;
+    padding: 6px ;
+    background-color: #19c013;
+    color: #fff;
+    border:none;
+    width: 60px;
+    font-size: small;
+    border-radius: 4px;
+
+}
+.pbtn12c{
+    /* margin-right: 15px; */
+    padding: 6px ;
+    margin: 3px;
+    font-size: small;
+    /* margin-right: 8px; */
+    background-color: rgb(245, 67, 55);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 60px;
+}
+.pbtn12m{
+    background-color: #19c013;
+    color: white;
+    border: none;
+    width: 75px;
+    padding: 3px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+.pbtn1234m{
+    background-color: #19c013;
+    color: white;
+    border: none;
+    width: 80px;
+    height: 32px;
+    /* padding: 3px; */
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: small;
+}
+@media screen and (max-width: 480px){
+    .addproduct12 {
+        border: 1px solid #ccc;
+        /* margin-top: 10%; */
+        margin-left: 0% !important;
+        width: 100% !important;
+        box-shadow: 6px 5px 9px #ccc;
+        background: white;
+    }
+    .product-heading12 {
+        background-color: #f0ecec;
+        padding: 7px;
+        border: 1px solid #ccc;
+        font-size: small;
+    }
+    .plabel12 {
+        text-align: left;
+        width: 120px;
+        margin-right: 10px;
+        font-size: small;
+    }
+}

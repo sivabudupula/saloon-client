@@ -1,0 +1,161 @@
+.A7Stockmaindiv{
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    border: 1px solid #ccc; 
+    box-shadow: 6px 5px 7px #ccc;
+}
+.A7Stockheader{
+    /* margin-top: 100px; */
+    background-color:#f0ecec;
+    border-radius: 3px 3px 0px 0px;
+    text-align: start;
+    height: 25px; 
+    padding: 10px;
+}
+
+.A7Stockform{
+    
+    border: 1px solid rgb(158, 155, 155); 
+}
+.A7Stock-sub-div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    
+    column-gap: 5px;
+}
+
+.A7Stock-sub-div11{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    
+    column-gap: 5px;
+}
+.A7Stock-sub-div1{
+    margin-left: 30px;
+}
+.A7Stock-sub-div1-select{
+ width: 22vw;
+height: 30px; 
+}
+.A7Stock-sub-div1-lab1{
+    margin-left: 65px;
+    
+}
+.A7Stock-sub-div22{
+width: 200px;
+
+}
+.A7Stock-btn{
+    
+    position: absolute;
+   margin-left: 465px;
+  
+}
+.A7Stock-inp{
+     width: 50%;
+    height: 30px;
+    margin-right: 8px; 
+    margin-left: 5px;
+}
+
+.A7Stock-input1{
+    width: 65%;
+   height: 30px;
+   margin-right: 8px; 
+   margin-left: 5px;
+}
+.A7Stock-sub-div2-button{
+    height: 30px;
+    width: 70px;
+    background-color: #ff5555;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+
+.A7Stock-sub-div2-button11{
+    height: 30px;
+    width: 70px;
+    background-color: #ff5555;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+    
+}
+.A7Stock-sub-div2-button1{
+    background-color: #19c013;
+    margin-left: 30px;
+    height: 29px;
+    width: 60px;
+    color: white;
+    border-radius: 2px;
+    border: none;
+}
+.A7Stock-sub-div2-button3{
+    background-color: #19c013;
+    border-radius: 2px;
+    border: none;
+    height: 29px;
+    width: 60px;
+    color: white;
+    
+    font-size: small;
+}
+.A7Stock-sub-div2-button4{
+    background-color: rgb(240, 74, 62);
+    border-radius: 2px;
+    border: none;
+    font-size: small;
+    height: 29px;
+    width: 65px;
+    color: white;
+}
+.A7Stock-sub-div3{
+    display: flex;
+    background-color: #ccc;
+ justify-content: flex-end;
+ padding: 6px;
+ margin-top: 30px;
+ margin: 7px;
+}
+
+.A7stock-heading{
+    background-color: #f0ecec;
+    padding: 7px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+.delete-btn260{
+    border: none;
+    color: white;
+    background-color: #ff5555;
+    font-size: small;
+    padding: 7px;
+    width: 60px;
+    border-radius: 3px;
+    margin-bottom: 6px;
+}
+.selfuse-tr{
+    
+    display: flex;
+    column-gap: 250px;
+    margin-left: 50px;
+}
+.selfuse-th{
+    margin-left: 10px;
+    
+}
+
+.pp-input31{
+ width: 200px;
+color: rgb(12, 12, 12);
+outline: none;
+padding: 5px 0px;
+height: 30px;
+}

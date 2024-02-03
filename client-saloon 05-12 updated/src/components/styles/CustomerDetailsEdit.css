@@ -1,0 +1,65 @@
+.A7-customer-details-popup {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 440px;
+  position: fixed;
+  z-index: 99;
+  top: 54%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.margin184{
+  margin: 7px;
+}
+
+.A7-cust-popup-h5 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.A7-cust-popup-input {
+  width: 60%;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+}
+.btn0011{
+  border: none;
+  background-color: transparent;
+  font-size: 27px;
+  margin-top: -15px;
+}
+.btn0011:hover{
+  color: red;
+}
+.A7-cust-popup-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px ;
+  cursor: pointer;
+  margin:  15px;
+ 
+}
+.btn123{
+  display: flex;
+  justify-content: center;
+}
+
+.A7-cust-popup-button:hover {
+  background-color: #0056b3;
+}
+.A7-cust-edit-content-popup{
+  display: flex;
+  flex-direction: row;
+}
+.A7-cust-edit-popup-close{
+ position: absolute;
+ right: 14px;
+}
+.label203{
+  width: 130px;
+  text-align: left;
+}

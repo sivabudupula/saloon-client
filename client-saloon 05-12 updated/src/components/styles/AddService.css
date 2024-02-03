@@ -1,0 +1,213 @@
+/* Container */
+.add-service-container-sk141s {
+  margin:  20px;
+  padding-top: 0%;
+  border: 1px solid #ccc;
+  background-color:white;
+  width: 90%;
+  margin: 0 auto;
+  /* margin-top: 10%; */
+}
+.heading143sk{
+  background-color: #f0ecec;
+  text-align: left;
+  font-size: 17px;
+  padding: 5px;
+  font-weight: 700;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 9px #ccc;
+  }
+.add-head-sk141s{
+  background-color:  #ccc;
+  padding: 1%;
+  width: 100%;
+}
+
+/* Heading */
+.add-service-heading-sk141s {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group-sk141s {
+ 
+  display: flex;
+  margin-top: 5px;
+}
+
+/* Label */
+.label-sk141s {
+  display: inline;
+  /* font-weight: bold; */
+}
+
+/* Input and select fields */
+
+.select-sk141s {
+  width: 30%;
+  
+  height: 33px;
+  margin-top: 8px;
+  font-size: smaller;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-sk141s{
+  width: 30%;
+  height: 33px;
+  margin-top: 8px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Submit button */
+.submit-button-sk141s {
+  background-color: #2688f9;
+  color: #fff;
+  padding: 5px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.cancel-button-sk141s{
+  background-color: #ff5555;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.buttons143sk{
+  display: flex;
+  background-color: #f0ecec;
+  justify-content: flex-end;
+  margin: 6px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.submit-button-sk141s:hover {
+  background-color:  #4b7ca5;
+}
+
+.cancel-button-sk141s:hover {
+  background-color: #cc0000;
+}
+
+/* Cancel button link */
+.cancel-button-link-sk141s {
+  text-decoration: none;
+}
+
+@media screen and (max-width:420px) {
+  
+.add-service-container-sk141s {
+ 
+  padding-top: 0%;
+  border: 1px solid #ccc;
+  background-color:white;
+  width: 100%;
+  margin: 0px;
+
+}
+.heading143sk{
+  background-color: #f0ecec;
+  text-align: left;
+  font-size: small;
+  padding: 3px;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  box-shadow: 0px 0px 9px #ccc;
+  }
+.add-head-sk141s{
+  background-color:  #ccc;
+  padding: 1%;
+  width: 100%;
+}
+
+/* Heading */
+.add-service-heading-sk141s {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form group */
+.form-group-sk141s {
+ 
+  display: flex;
+  margin:7px;
+}
+
+/* Label */
+.label-sk141s {
+  display: inline;
+  margin-left: 7px;
+  /* font-weight: bold; */
+}
+
+/* Input and select fields */
+
+.select-sk141s {
+  width: 65%;
+  
+  height: 28px;
+  margin-top: 0px !important;
+  font-size: smaller;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-sk141s{
+  width: 65%;
+  height: 30px;
+  margin-top: 0px !important;
+  
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Submit button */
+.submit-button-sk141s {
+  background-color: #2688f9;
+  color: #fff;
+  padding: 5px ;
+  border: none;
+  font-size: small;
+  width: 65px;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+.cancel-button-sk141s{
+  background-color: #ff5555;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.buttons143sk{
+  display: flex;
+  background-color: #f0ecec;
+  justify-content: flex-end;
+  margin: 6px;
+  /* margin-top: 20px; */
+  padding: 5px;
+}
+
+.submit-button-sk141s:hover {
+  background-color:  #4b7ca5;
+}
+
+.cancel-button-sk141s:hover {
+  background-color: #cc0000;
+}
+
+/* Cancel button link */
+.cancel-button-link-sk141s {
+  text-decoration: none;
+}
+}

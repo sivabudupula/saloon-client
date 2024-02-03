@@ -1,0 +1,107 @@
+.register-form-sk543 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0%; 
+    /* text-align: left; */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+  }
+  .padding0467{
+    padding: 10px;
+    margin-left: 6%;
+  }
+  .register-h3-sk543 {
+    text-align: left;
+    padding: 5px;
+    background-color: #f0ecec;
+    box-shadow: 0px 0px 0px 1px bisque;
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  .name56{
+    width: 140px;
+    text-align: end;
+  }
+.registerlable-name-saloon234{
+   display: flex;
+    margin: 6px;
+    
+   
+   
+}
+  .register-input-sk543 {
+    width: 30%;
+    padding: 4px;
+   margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* font-size: 16px; */
+  }
+  
+  .register-input-sk543::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  
+  .register-submit-sk543 {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .register-submit-sk543:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-error-message-sk543 {
+    position: absolute;
+    margin-left: 39%;
+  }
+
+  @media only screen and (max-width: 768px){
+    .register-form-sk543 {
+      width: 100% !important;
+      margin-left: 0% !important;
+      margin-top: 0%; 
+      /* text-align: left; */
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .padding0467{
+      padding: 0px;
+      margin-left: 0%;
+    }
+    .name56 {
+      width: 100px;
+      text-align: left;
+      font-size: small;
+  }
+  .register-input-sk543 {
+    width: 65%;
+    height: 30px;
+    padding: 4px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* font-size: 16px; */
+}
+.register-submit-sk543 {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: small;
+}
+  }

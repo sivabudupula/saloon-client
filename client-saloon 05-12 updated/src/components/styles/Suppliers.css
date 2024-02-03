@@ -1,0 +1,190 @@
+.sp-btn14{
+    background-color: #0ca807;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: small;
+    padding: 7px;
+    
+}
+.spbtn-div14{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ccc;
+    padding: 5px;
+    margin: 7px;
+    margin-top: 20px;
+}
+.btn136{
+    border: none;
+    font-size: small;
+    /* border-radius: 3px; */
+    margin: 3px;
+    padding: 3px 8px;
+    /* width: 60px; */
+}
+
+.pinput14{
+    outline: none;
+    width: 300px;
+    margin-right: 3px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 3px;
+}
+.pd-container14{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 6px 5px 7px #ccc;
+
+}
+.pd-table14{
+    width: 98%;
+    border: collapse;
+    margin:0px auto;
+    margin-bottom: 30px;
+  
+
+}
+
+.pd-heading14{
+    background-color: #f0ecec;
+    padding:7px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    /* margin-bottom: 15px; */
+}
+/* Add this to your CSS file */
+.ConfirmToast {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    align-items: center;
+  }
+  
+  .ConfirmToast p {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .ConfirmToast .button-container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons */
+  }
+  
+  .ConfirmToast button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .ConfirmToast button.yes {
+    background-color: #28a745; 
+    color: #fff; 
+  }
+  
+  .ConfirmToast button.no {
+    background-color: #dc3545;
+    color: #fff; 
+  }
+
+
+  @media screen and (max-width:420px) {
+    .sp-btn14{
+      background-color: #0ca807;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: small;
+      padding: 7px;
+      
+  }
+  .spbtn-div14{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #ccc;
+      padding: 5px;
+      margin: 7px;
+      margin-top: 20px;
+  }
+  .btn136{
+      border: none;
+      font-size: small;
+      /* border-radius: 3px; */
+      margin: 3px;
+      padding: 3px 8px;
+      /* width: 60px; */
+  }
+  
+  .pinput14{
+      outline: none;
+      width: 300px;
+      margin-right: 3px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 3px;
+  }
+  .pd-container14{
+      margin-top: 2%;
+      margin-left: 0% !important;
+      margin-right: 0% !important;
+      border: 1px solid #ccc;
+      background-color: white;
+      box-shadow: 6px 5px 7px #ccc;
+  
+  }
+  .pd-table14{
+      width: 98%;
+      border: collapse;
+      margin:0px auto;
+      margin-bottom: 30px;
+    
+  
+  }
+  
+  .pd-heading14{
+      background-color: #f0ecec;
+      padding:7px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      /* margin-bottom: 15px; */
+  }
+  
+  .ConfirmToast {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+    
+    .ConfirmToast p {
+      margin-bottom: 10px; 
+    }
+    
+    .ConfirmToast .button-container {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .ConfirmToast button {
+      padding: 8px 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+    }
+    
+    .ConfirmToast button.yes {
+      background-color: #28a745; 
+      color: #fff; 
+    }
+    
+    .ConfirmToast button.no {
+      background-color: #dc3545;
+      color: #fff; 
+    }
+  }

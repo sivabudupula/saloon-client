@@ -1,0 +1,738 @@
+.add-employee-container-saloon2345 {
+  width: 90%;
+  margin-left: 5%;
+ 
+  /* margin-top: 2%; */
+  text-align: left;
+  background-color: white;
+  border: 1px solid #efe9e9;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.empinput456{
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 4px;
+}
+.table-continer54545{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 1%;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #efe9e9;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.lable-name-saloon2345{
+  width: 120px;
+  border: 0px ;
+  border-width: 0px;
+  border-width: 2px;
+  text-align: right;
+  margin-right: 15px;
+  margin-left: 5%;
+  /* background-color: yellow; */
+}
+.toggle-icon{
+  text-align: right;
+}
+.form-input-saloon2345 {
+width: 35%;
+font-size: small;
+padding: 4px;
+border: 1px solid #ccc;
+border-radius: 3px;
+font-size: 16px;
+}
+.add-employee-header-saloon2345 {
+  text-align: left;
+  padding: 8px;
+  background-color: #f0ecec;
+  box-shadow: 0px 0px 0px 1px bisque;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+.lable-name-saloon2345{
+  width: 120px;
+  border: 0px ;
+  border-width: 0px;
+  border-width: 2px;
+  text-align: right;
+  margin-right: 15px;
+  margin-left: 5%;
+  /* background-color: yellow; */
+}
+
+.form-group-saloon2345 {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form-input-saloon2345 {
+  width: 35%;
+  font-size: small;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.form-input-saloon2345::placeholder {
+  color: #999;
+  font-style: italic; 
+  font-size: 0.8rem;
+}
+
+.add-employee-button-saloon2345 {
+  padding: 5px;
+  margin: 3px;
+  width: 70px;
+  background-color: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.add-employee-button-saloon234567 {
+  padding: 5px;
+  margin: 3px;
+  width: 70px;
+  background-color: #19c013;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.add-employee-button-saloon23456789 {
+  padding: 5px;
+  margin: 3px;
+ 
+  background-color: #19c013;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.add-employee-button-saloon23456789:hover{
+  font-size: 18px;
+}
+.emp-btn-flex2345{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #f0ecec;
+  padding: 4px;
+  margin: 7px;
+}
+
+.add-employee-button-saloon234567:hover {
+  background-color: #0bb005;
+}
+.add-employee-button-saloon2345:hover {
+  background-color: rgb(176, 62, 5);
+}
+
+
+
+/* AddEmployee.css */
+/* Add this style to your CSS file */
+/* Add this style to your CSS file */
+
+/* Search container style */
+.search-container-saloon2345 {
+display: flex;
+align-items: center;
+margin-top: 10%;
+}
+
+/* Search label style */
+.search-label-saloon2345 {
+font-weight: bold;
+margin-right: 10px;
+}
+.btn5566{
+  border: none;
+  border-radius: 3px;
+  font-size: small;
+  padding: 6px;
+}
+.searchlabelsallon2345{
+  padding-bottom: 15px;
+}
+/* Search input style */
+.search-input-saloon2345 {
+flex: 1;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 4px;
+/* margin: 5px; */
+margin-left: 7px;
+outline: none;
+width: 250px;
+}
+.search-input-saloon2345::placeholder{
+  font-size: small;
+}
+/* Search input placeholder style */
+.search-input-saloon2345::placeholder {
+color: #999;
+}
+
+/* Search input focus style */
+.search-input-saloon2345:focus {
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Table */
+.table-saloon2345 {
+width: 100%;
+
+border-collapse: collapse;
+/* margin-top: 20px; */
+border: 1px solid #ccc;
+}
+
+/* Table Header (th) */
+.th-saloon2345 {
+background-color: #f0ecec;
+font-weight: bold;
+border: 1px solid #ccc;
+padding: 8px;
+text-align: center;
+}
+.width30{
+  width: 20%;
+  align-items: center;
+cursor: pointer;
+}
+.align100px{
+  width: 150px;
+  font-weight: 500;
+}
+/* Table Data (td) */
+.td-saloon2345 {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  
+  }
+.td-saloon2345900 {
+border: 1px solid #ccc;
+padding: 8px;
+text-align: left;
+color: #007bff;
+cursor: pointer;
+}
+.td-saloon23456 {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  }
+
+/* Table Row (tr) */
+.tr-saloon2345 {
+border: 1px solid #ccc;
+}
+
+/* Add these styles to your CSS file */
+
+/* Pagination styles */
+.pagination {
+display: flex;
+justify-content: center;
+margin-top: 7px;
+}
+
+.page-button-saloon2345 {
+padding: 3px 8px;
+margin: 3px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+/* border-radius: 4px; */
+cursor: pointer;
+transition: background-color 0.2s, color 0.2s;
+}
+
+.page-button-saloon2345:hover {
+background-color: #007bff;
+color: #fff;
+}
+
+.active-saloon2345 {
+background-color: #007bff;
+color: #fff;
+}
+.toggle2389{
+width: 250px !important;
+border: none;
+}
+.em-edit-btn{
+cursor: pointer;
+border: none;
+margin-right: 10px;
+}
+.eye8976{
+ display: flex; 
+}
+.labels0077{
+
+}
+.em-delete-btn{
+  border: none;
+  cursor: pointer;
+}
+.label8930{
+  text-decoration: none;
+}
+.password-toggle{
+  display: flex;
+  width: 195px;
+}
+/* AddEmployee.css */
+
+
+/* Default styles for larger screens */
+.add-employee-container-saloon2345 {
+  width: 90%;
+  margin-left: 5%;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #efe9e9;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 425px) {
+  .add-employee-container-saloon2345 {
+    width: 90%;
+    margin-left: 5%;
+   
+    /* margin-top: 2%; */
+    text-align: left;
+    background-color: white;
+    border: 1px solid #efe9e9;
+    box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .popup-container-sk9879 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    /* max-width: 35%; */
+    width: 80% !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Change position to absolute */
+    top: 50%;            /* Center vertically */
+    left: 50%;            /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  }
+  .empinput456{
+    width: 65% !important;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: small;
+  }
+.toggle2389{
+  height: 20px;
+  width: 170px !important;
+}
+  .labels0077{
+  
+  }
+  .table-continer54545{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #efe9e9;
+    box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+  }
+  .lable-name-saloon2345{
+    width: 120px;
+    border: 0px ;
+    border-width: 0px;
+    border-width: 2px;
+    text-align: right;
+    margin-right: 15px;
+    margin-left: 5%;
+    /* background-color: yellow; */
+  }
+  .toggle-icon{
+    
+    margin-left: 0%;
+    /* text-align: right; */
+    font-size: small;
+  }
+  .form-input-saloon2345 {
+  width: 35%;
+  font-size: small;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  }
+  .add-employee-header-saloon2345 {
+    text-align: left;
+    padding: 8px;
+    background-color: #f0ecec;
+    box-shadow: 0px 0px 0px 1px bisque;
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  .lable-name-saloon2345{
+    width: 100px;
+    border: 0px ;
+    font-size: small !important;
+    border-width: 2px;
+    text-align: left !important;
+    margin-right: 10px;
+    margin-left: 1% !important;
+    /* background-color: yellow; */
+  }
+  .icon8907{
+
+  }
+  .form-group-saloon2345 {
+    margin: 6px !important;
+    display: flex;
+  }
+  
+  .form-input-saloon2345 {
+    width: 35%;
+    font-size: small;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .form-input-saloon2345::placeholder {
+    color: #999;
+    font-style: italic; 
+    font-size: 0.8rem;
+  }
+  
+  .add-employee-button-saloon2345 {
+    padding: 5px;
+    margin: 3px;
+    width: 70px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    font-size: small;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .add-employee-button-saloon234567 {
+    padding: 5px;
+    margin: 3px;
+    width: 70px;
+    font-size: small;
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .add-employee-button-saloon23456789 {
+    padding: 4px;
+    margin: 3px;
+   font-size: small;
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .emp-btn-flex2345{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #f0ecec;
+    padding: 4px;
+    margin: 7px;
+  }
+  
+  .add-employee-button-saloon234567:hover {
+    background-color: #0bb005;
+  }
+  .add-employee-button-saloon2345:hover {
+    background-color: rgb(176, 62, 5);
+  }
+  
+  
+  
+  /* AddEmployee.css */
+  /* Add this style to your CSS file */
+  /* Add this style to your CSS file */
+  
+  /* Search container style */
+  .search-container-saloon2345 {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  }
+  
+  /* Search label style */
+  .search-label-saloon2345 {
+  font-weight: bold;
+  margin-right: 10px;
+  }
+  .btn5566{
+    border: none;
+    border-radius: 3px;
+    font-size: small;
+    padding: 6px;
+  }
+  .searchlabelsallon2345{
+    padding-bottom: 0px !important;
+  }
+  /* Search input style */
+  .search-input-saloon2345 {
+  flex: 1;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* margin: 5px; */
+  height: 30px;
+  margin-left: 7px;
+  outline: none;
+  width: 250px;
+  }
+  .search-input-saloon2345::placeholder{
+    font-size: small;
+  }
+  /* Search input placeholder style */
+  .search-input-saloon2345::placeholder {
+  color: #999;
+  }
+  
+  /* Search input focus style */
+  .search-input-saloon2345:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  
+  /* Table */
+  .table-saloon2345 {
+  width: 100%;
+  
+  border-collapse: collapse;
+  /* margin-top: 20px; */
+  border: 1px solid #ccc;
+  }
+  
+  /* Table Header (th) */
+  .th-saloon2345 {
+  background-color: #f0ecec;
+  font-weight: 500;
+  font-size: small;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  }
+  .width30{
+    width: 20%;
+  }
+  
+  /* Table Data (td) */
+  .td-saloon2345 {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  }
+  .td-saloon23456 {
+    border: 1px solid #ccc;
+    padding: 3px;
+    font-size: small;
+    text-align: center;
+    }
+  
+  /* Table Row (tr) */
+  .tr-saloon2345 {
+  border: 1px solid #ccc;
+  }
+  
+  /* Add these styles to your CSS file */
+  
+  /* Pagination styles */
+  .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  }
+  
+  .page-button-saloon2345 {
+  padding: 3px 8px;
+  margin: 3px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .page-button-saloon2345:hover {
+  background-color: #007bff;
+  color: #fff;
+  }
+  
+  .active-saloon2345 {
+  background-color: #007bff;
+  color: #fff;
+  }
+  .em-edit-btn{
+  cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  }
+  .em-delete-btn{
+    border: none;
+    cursor: pointer;
+  }
+ 
+  .add-employee-container-saloon2345 {
+    width: 100%;
+    margin-left: 0%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #efe9e9;
+    box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+  }
+  .popup-overlay-sk9879 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  .label8930{
+    text-decoration: none;
+  }
+  .popup-container-sk9879 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90% !important;
+    /* width: 50%; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Change position to absolute */
+    top: 50%;            /* Center vertically */
+    left: 50%;            /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  }
+  .abc1234{
+    margin-top: 10% !important;
+    font-size: small !important;
+  }
+  .align100px {
+    width: 95px !important;
+    font-weight: normal;
+}
+  .close-btn-sk9879 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+  
+  .popup-content-sk9879 {
+    /* Add styles for the content inside the popup */
+  }
+  
+
+}
+
+
+/* Mobile responsiveness using media queries */
+@media only screen and (max-width: 768px) {
+
+  .empinput456 {
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+}
+}
+/* @media only screen and (max-width: 600px) {
+  .popup-container-sk9879 {
+    width: 90% !important;
+  }
+
+  .popup-container-sk9879 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+    width: 90% !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+} */
+
+/* AddEmployee.css */
+
+.popup-overlay-sk9879 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-container-sk9879 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  /* max-width: 35%; */
+  width: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;  /* Change position to absolute */
+  top: 50%;            /* Center vertically */
+  left: 50%;            /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+}
+.abc1234{
+  margin-top: 5%;
+}
+.close-btn-sk9879 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.popup-content-sk9879 {
+  /* Add styles for the content inside the popup */
+}

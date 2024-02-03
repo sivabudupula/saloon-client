@@ -1,0 +1,95 @@
+.edit-profile-saloon234 {
+  width: 90%;
+margin-left: 5%;
+margin-top: 0%;
+text-align: left;
+
+ background-color: white;
+ border: 1px solid #ccc;
+ box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-h2--saloon234 {
+  text-align: left;
+  padding: 5px;
+  background-color: #f0ecec;
+  box-shadow: 0px 0px 0px 1px bisque;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  
+ border: 1px solid #ccc;
+}
+
+.form-group-saloon234 {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+
+.lable-name-saloon234{
+   width: 143px;
+   border: 0px ;
+   border-width: 0px;
+   border-width: 2px;
+   text-align: right;
+   margin-right: 15px;
+   margin-left: 5%;
+}
+
+.form-group-saloon234-input {
+  /* width: 27%; */
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.form-group-saloon234-input::placeholder {
+  color: #999;
+  font-style: italic; 
+  font-size: 0.8rem;
+}
+
+.update-btn-saloon234 {
+  padding: 5px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.update-btn-saloon234:hover {
+  background-color: #0056b3;
+}
+.profile-password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the right offset as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-input-container {
+  position: relative;
+}
+@media only screen and (max-width: 430px){
+
+.profile-password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust the right offset as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.form-group-saloon234-input {
+  /* width: 27%; */
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.password-input-container {
+  position: relative;
+}
+}

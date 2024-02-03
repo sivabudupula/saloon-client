@@ -1,0 +1,611 @@
+.past-appointment {
+  background-color: rgb(173, 167, 167) !important;
+  color: white;
+  height: 20px;
+}
+
+
+.roaylcalendermain2p-cal {
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid #ccc;
+ 
+  box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.fc-h-event {
+  background-color: var(--fc-event-bg-color);
+  border: 1px solid var(--fc-event-border-color);
+  display: block;
+  height: 22px;
+}
+
+.roaylcalendermain2p-return {
+  background-color: #ffcc00;
+  padding: 10px;
+  
+}
+.change7890{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 17%;
+ 
+}
+
+
+
+.roaylcalendermain2p-strng {
+  font-weight: bold;
+  color: #333;
+}
+.p-456{
+  margin-bottom: 0px;
+}
+
+.modal-footer{
+  justify-content: center !important;
+}
+.modal-header{
+  justify-content: center !important;
+}
+
+
+.roaylcalendermain2p-p {
+  color: #666;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: -12px;
+  margin-left: 2%;
+}
+.roaylcalendermain2p-p1 {
+  color: #666;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: -5px;
+  margin-left: 2%;
+}
+.box-container{
+  width: 100px;
+  text-align: left;
+  
+}
+.pad576{
+  margin-left: 4px;
+  border: 1px solid;
+}
+.pad5767{
+  margin-right: 2px;
+  border: 1px solid;
+}
+.change0034{
+  display: flex;
+  flex-direction: column;
+}
+.box-container1{
+  width: 120px;
+  text-align: left;
+  padding-left: 2%;
+}
+.box-container12{
+  width: 100px;
+  text-align: left;
+}
+
+
+.fc-today {
+  background-color: #e0dd14;
+  border-radius: 50%;
+}
+
+
+.fc .fc-button-primary:disabled {
+  background-color: rgb(145, 192, 242) !important;
+  border: none;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.fc .fc-button-primary {
+  background-color: rgb(39, 143, 240);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #2686f0;
+}
+
+
+
+
+/* Customer table styling */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.fc .fc-col-header-cell-cushion{
+  text-decoration: none;
+  color: black;
+}
+.fc .fc-daygrid-day-number{
+text-decoration: none;
+color: black;
+}
+
+.customer-table-th {
+  background-color: gold;
+  color: black;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.customer-table-th12 {
+  
+  color: black;
+  padding: 7px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.customer-table-th1 {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.customer-table-rowdata {
+  background-color: #f2f2f2;
+  transition: background-color 0.2s;
+}
+
+.customer-table-rowdata:hover {
+  background-color: #e0e0e0;
+}
+.pop-up-change470{
+  width: 100px;
+  text-align: left;
+}
+
+
+.modal-content {
+  top: 275px;
+  max-height: 600px;
+  overflow: auto;
+  margin-left: 10%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fc .fc-daygrid-event-harness{
+  cursor: pointer;
+}
+
+.modal-title {
+  color: black;
+  font-size: 24px;
+}
+.btn-close342{
+  background-color: #e0dd14;
+  border: none;
+  border-radius: 3px;
+  color: black;
+}
+.birthday-top-filter{
+  font-size: larger;
+}
+
+/* Style the modal body */
+.modal-body {
+  padding: 20px;
+  
+}
+.fc-daygrid-dot-event {
+  align-items: center;
+  display: flex;
+  padding: 2px 0px;
+  height: 20px;
+}
+.fc-daygrid-dot-event .fc-event-title {
+  flex-grow: 1;
+  flex-shrink: 1;
+  font-weight: normal;
+  font-size: x-small;
+  min-width: 0px;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+
+.fc-h-event .fc-event-title {
+    display: inline-block;
+    left: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: x-small;
+    vertical-align: top;
+}
+
+
+
+.custom-event {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.modal-backdrop {
+  --bs-backdrop-zindex: 1050;
+  --bs-backdrop-bg: none;
+  --bs-backdrop-opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-backdrop-bg);
+}
+
+.book-button {
+  background-color: #1f9048;
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  
+}
+.fc .fc-daygrid-event-harness:hover{
+  transform: scale(1.1);
+  z-index: 99;
+}
+
+.fc-bookButton-button:hover {
+  background-color: #126a32 !important; 
+}
+
+.fc-bookButton-button{
+  background-color: #1f9048 !important;
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+/* ... (previous styles) ... */
+
+.birthday-container {
+  margin-top: 2%;
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Customer table styling */
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 420px) {
+  .birthday-container {
+    width: 100%;
+    margin-left: -20px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+  .birthday-top-filter{
+    font-size: 15px;
+    margin-left: 5px;
+
+  }
+  .modal-title {
+    color: black;
+    font-size: 14px;
+}
+.box-container {
+  width: 100px;
+  font-size: small;
+  text-align: left;
+}
+.roaylcalendermain2p-p {
+  color: #666;
+  font-size: small;
+  display: flex;
+  /* font-size: 1rem; */
+  font-weight: normal !important;
+  margin-top: 8px;
+  margin-bottom: -15px;
+ 
+  
+}
+.modal-content {
+  top: 200px;
+  width: 100%;
+  margin-left: 0%;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.modal-body {
+  /* padding: 20px; */
+}
+  .modal-content {
+    top: 200px;
+    margin-left: 0%;
+    border-radius: 3px;
+    max-width: 95% !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.box-container1 {
+  width: 76px;
+  text-align: left;
+  padding-left: 2%;
+}
+  .customer-table {
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .customer-table-th,
+  .customer-table-th12,
+  .customer-table-th1 {
+    font-size: 8px;
+  }
+
+  .customer-table-th12,
+  .pop-up-change470 {
+    display: none;
+  }
+
+  .customer-table-rowdata {
+  
+    align-items: center;
+  }
+
+  .roaylcalendermain2p-cal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Adjust space between buttons for smaller screens */
+    margin-top: 5px; /* Adjust the margin for smaller screens */
+  }
+  .roaylcalendermain2p-cal,
+  .fc-toolbar-chunk,
+  .fc-toolbar-title {
+ 
+    font-size: 6px; /* Adjust the font size for fc-toolbar-title on screens with a width of 320px */
+    padding: 3px;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
+  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
+    margin-right: 2px; /* Adjust the margin for smaller screens */
+    font-size: 10px; /* Adjust the font size for smaller screens */
+    padding: 3px; /* Adjust the padding for smaller screens */
+  }
+
+.fc-view-harness, 
+.fc-view-harness-active
+{
+ width: 100%;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 2px;
+  font-size: 8px; /* Adjust the font size for buttons on screens with a width of 320px */
+  padding: 3px 6px; /* Adjust the padding for buttons on screens with a width of 320px */
+}
+
+}
+
+/* Media query for screens with a width of 375px */
+@media only screen and (max-width: 375px) {
+  .birthday-container {
+    width: 100%;
+    margin-left: -20px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .birthday-top-filter {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .customer-table {
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .customer-table-th,
+  .customer-table-th12,
+  .customer-table-th1 {
+    font-size: 8px; /* Adjust the font size for headers on screens with a width of 375px */
+  }
+
+  .customer-table-th12,
+  .pop-up-change470 {
+    display: none;
+  }
+
+  .customer-table-rowdata {
+    align-items: center;
+  }
+
+  .roaylcalendermain2p-cal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Adjust space between buttons for smaller screens */
+    margin-top: 5px; /* Adjust the margin for smaller screens */
+  }
+
+  .roaylcalendermain2p-cal,
+  .fc-toolbar-chunk,
+  .fc-toolbar-title {
+    font-size: 6px; /* Adjust the font size for fc-toolbar-title on screens with a width of 375px */
+    padding: 3px;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
+  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
+    margin-right: 2px; /* Adjust the margin for smaller screens */
+    font-size: 10px; /* Adjust the font size for buttons on screens with a width of 375px */
+    padding: 3px; /* Adjust the padding for buttons on screens with a width of 375px */
+  }
+
+  .fc-view-harness,
+  .fc-view-harness-active {
+    width: 100%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination button {
+    margin: 2px;
+    font-size: 8px; 
+    padding: 3px 6px; 
+  }
+}
+
+
+/* Media query for screens with a width of 425px */
+@media only screen and (max-width: 425px) {
+  .birthday-container {
+    width: 100%;
+    margin-left: 0px;
+    padding: 0px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .birthday-top-filter {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .customer-table {
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .customer-table-th,
+  .customer-table-th12,
+  .customer-table-th1 {
+    font-size: 8px; /* Adjust the font size for headers on screens with a width of 425px */
+  }
+
+  .customer-table-th12,
+  .pop-up-change470 {
+    display: none;
+  }
+
+  .customer-table-rowdata {
+    align-items: center;
+  }
+
+  .roaylcalendermain2p-cal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Adjust space between buttons for smaller screens */
+    margin-top: 5px; /* Adjust the margin for smaller screens */
+  }
+
+  .roaylcalendermain2p-cal,
+  .fc-toolbar-chunk,
+  .fc-toolbar-title {
+    font-size: 6px; /* Adjust the font size for fc-toolbar-title on screens with a width of 425px */
+    padding: 3px;
+  }
+.roaylcalendermain2p-cal{
+  width: 100%;
+  margin-left: 0%;
+}
+  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
+  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
+    margin-right: 2px; /* Adjust the margin for smaller screens */
+    font-size: 10px; /* Adjust the font size for buttons on screens with a width of 425px */
+    padding: 3px; /* Adjust the padding for buttons on screens with a width of 425px */
+  }
+
+  .fc-view-harness,
+  .fc-view-harness-active {
+    width: 100%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination button {
+    margin: 2px;
+    font-size: 8px; 
+    padding: 3px 6px; 
+  }
+}
+
+/* Media query for screens with a width of 768px */
+@media only screen and (max-width: 768px) {
+  
+  .modal-content {
+    top: 245px;
+    max-width: 90%;
+    max-height: 500px;
+    position: fixed;
+    overflow: auto;
+    margin-left: 0%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+  
+  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
+  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
+    margin-right: 2px; /* Adjust the margin for smaller screens */
+    font-size: 10px; /* Adjust the font size for buttons on screens with a width of 768px */
+    padding: 3px; /* Adjust the padding for buttons on screens with a width of 768px */
+  }
+
+  .fc-view-harness,
+  .fc-view-harness-active {
+    width: 100%;
+  }
+
+
+}

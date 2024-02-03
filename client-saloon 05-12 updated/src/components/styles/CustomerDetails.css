@@ -1,0 +1,236 @@
+.center025{
+  display: flex;
+  justify-content: center;
+}
+.custdetailslabel {
+  text-align: start;
+width: 225px;
+  font-size: medium;
+}
+.padding908{
+  padding: 10px;
+}
+.cd-input{
+ width: 440px;
+ margin-top: -4px;
+ height: 34px;
+ background-color: transparent;
+ border: none!important;
+ padding-left: 10px;
+}
+.A7divlabip{
+  font-weight: bold;
+  margin-left: 15%;
+  display: flex;
+  justify-content: space-around;
+}
+ .sdiv1img{
+ height: 230px;
+ border-radius: 100%;
+ width: 235px;
+ margin-top: -10px;
+  
+} 
+.sdiv2{
+ 
+  width: 50%;
+ border: 2px solid #ccc;
+ padding: 10px;
+ padding-top: 2%;
+ border-bottom: none;
+  border-top: none;
+  border-right: none;
+  height: 93%;
+    margin-top: 1%;
+}
+.mdiv{
+  width:98.5% ;
+  
+  margin: 5px;
+  
+  display: flex;
+  flex-direction: row;
+}
+.mmm{
+  border: 1px solid #ccc;
+  box-shadow: 6px 5px 6px #ccc;
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  
+}
+.A7editbtn-cust-det{
+
+  background-color: rgb(29, 155, 234);
+  border: none;
+  color: white;
+  height: 30px;
+  border-radius: 3px;
+  height: 32px;
+  font-size: 12px;
+  width: 100px;
+  margin: 10px;
+ 
+  cursor: pointer;
+}
+.A7editbtn-cust-det:hover{
+  background-color: #58a2f1;
+}
+/* .A7custmaindiv{
+  width: 90%;
+  margin-left: 5%;
+  
+  background-color: white;
+  padding: 30px;
+  box-shadow: 6px 5px 6px #ccc;
+  border: 1px solid #ccc;
+
+} */
+.A7custheader{
+  margin-top: 30px;
+  background-color: rgb(200, 196, 196);
+  border-radius: 3px 3px 0px 0px;
+  text-align: start;
+  height: 35px; 
+}
+.customer-th{
+border: 1px solid #ccc;
+
+}
+.bill-details-btn{
+
+color:black;
+background-color: rgb(241, 223, 14);
+padding: 2px;
+    font-size: x-small;
+    
+    cursor: pointer;
+    margin: 2px;
+   
+   width: 50px !important;
+}
+.bill-details-btn:hover{
+  background-color: rgb(152, 140, 8);
+  color: white;
+}
+
+.pagination46 {
+display: flex;
+justify-content: flex-end;
+
+
+}
+
+.pagination46  {
+
+cursor: pointer;
+color: #333;
+}
+
+.pagination46 .active {
+background-color: #007bff;
+color: #fff;
+width: 30px;
+text-align: center;
+padding: 4px;
+background-size: cover; 
+
+}
+
+/* Your existing CSS code */
+
+@media only screen and (max-width: 768px) {
+  .mmm {
+    width: 100%;
+    margin-left: 0;
+  
+  }
+
+  .mdiv {
+    width:98.5% ;
+    display: flex;
+    /* flex-direction: column; */
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .sdiv1{
+    width: 50%;
+  
+    display: flex;
+    
+ 
+    }
+   
+    
+
+  .sdiv1img {
+    height: 120px;
+ border-radius: 100%;
+ width: 150px;
+ 
+  
+  }
+
+  .sdiv2 {
+    width: 100%;
+    margin-top: 35px;
+   
+    
+  }
+
+  .A7divlabip {
+    margin-left: 0;
+  }
+
+  .cd-input {
+    width: 100%;
+  }
+
+  /* .customer-container11{
+    width: 100%;
+    margin-top: 70%;
+    
+} */
+
+.A7editbtn-cust-det{
+
+  background-color: rgb(29, 155, 234);
+  border: none;
+  color: white;
+  
+  border-radius: 3px;
+  height: 32px;
+  font-size: 12px;
+  width: 100px;
+margin-bottom: 15px;
+ 
+  cursor: pointer;
+}
+
+.custdetailslabel {
+  text-align: start;
+width: 225px;
+  font-size: smaller;
+}
+
+.cd-input{
+ font-size: smaller;
+ }  
+
+ .flexchange4455{
+  display: flex;
+  font-size: smaller;
+  
+}
+
+
+  .popup-details{
+  width: 100px;
+  
+
+} 
+
+}

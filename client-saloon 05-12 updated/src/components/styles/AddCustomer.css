@@ -1,0 +1,447 @@
+.A7custmaindiv86{
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  border: 1px solid rgb(158, 155, 155);
+}
+.A7custheader{
+  margin-top: 30px;
+  background-color: rgb(200, 196, 196);
+  border-radius: 3px 3px 0px 0px;
+  text-align: start;
+  padding: 10px;
+  /* height: 35px;  */
+}
+.A7custform{
+  padding: 20px; 
+
+  border: 1px solid rgb(158, 155, 155); 
+}
+.add-custform{
+border: 1px solid rgb(158, 155, 155); 
+}
+
+/* Style for labels */
+.custlabel {
+  text-align: end;
+  display: block;
+  width: 180px;
+  padding-right: 15px;
+ 
+}
+/* Style for input elements */
+.customer-inputa7{
+  width: 50%;
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+.dis{
+      width: 20%;
+      padding: 3px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      outline: none;
+      cursor: pointer;
+}
+
+.customer-date-input{
+  width: 22%;
+  padding: 5px;
+  font-size: small;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor:pointer;
+}
+
+
+  .width890{
+    width: 100%;
+  }
+  .width8989{
+    margin-right: 10%;
+    margin-top: -3%;
+  }
+  .name1890{
+    height: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    border-radius: 4px;
+    background-color: gold;
+    border: none;
+    margin-top: -10px;
+  }
+  .flexchange190{
+    display: flex;
+  }
+  .form-group{
+    display: flex;
+   
+  }
+  /* .profile-image{
+    height: 250px;
+
+  } */
+  
+  .img-circle{
+    height: 240px;
+    width: 250px;
+    margin-top: 18%;
+  }
+  .image4567{
+    height: 200px;
+    width: 150px;
+     margin-top: 16px; 
+  }
+  .form-group78{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group789{
+    
+    text-align: center;
+  }
+  .disdiv{
+      background-color: #ccc;
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px;
+      margin: 7px;
+      margin-top: 20px;
+  }
+  
+.popup {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  width: 87%;
+  background-color: rgb(42, 189, 42);
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+
+.m1{
+  display: block;
+ border: 1px solid black;
+}
+.mdiv{
+  display:flex;
+  flex-direction: row;
+ 
+   height: 35vh; 
+}
+.sdiv1{
+width: 50%;
+display: flex;
+flex-direction: row;
+padding-top: 2%;
+justify-content: center;
+}
+.sdiv2{
+  text-align: start;
+  width: 60%;
+  border: 2px solid black;
+}
+.editbtndiv{
+  height: 50px;
+  
+}
+.editbtn{
+  margin-left: -1050px;
+  background-color: rgb(53, 114, 211);
+  color: white;
+  border: none;
+  height: 22px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+hr{
+  margin-top: 0px;
+}
+.add-cus-heading{
+  background-color: #f0ecec;
+  padding: 7px; 
+  font-size: 1rem;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 480px){
+  .A7custmaindiv86{
+    width: 100% !important;
+    margin-left: 0%;
+    background-color: white;
+  }
+  .A7custheader{
+    margin-top: 30px;
+    background-color: rgb(200, 196, 196);
+    border-radius: 3px 3px 0px 0px;
+    text-align: start;
+    padding: 10px;
+    /* height: 35px;  */
+  }
+  .A7custform{
+    padding: 20px; 
+  
+    border: 1px solid rgb(158, 155, 155); 
+  }
+  .add-custform{
+  border: 1px solid rgb(158, 155, 155); 
+  }
+  
+  /* Style for labels */
+  .custlabel {
+    text-align: left !important;
+    display: block;
+    width: 80px !important;
+    padding-right: 15px;
+   padding-left: 4px;
+   font-size: small;
+  }
+  /* Style for input elements */
+  .customer-inputa7{
+    width: 70% !important;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  .dis{
+        width: 20%;
+        padding: 3px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+  }
+  
+  .customer-date-input{
+    width: 22%;
+    padding: 5px;
+    font-size: small;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor:pointer;
+  }
+  
+  
+    .width890{
+      width: 100%;
+    }
+    .width8989{
+      margin-right: 10%;
+      margin-top: -3%;
+      display: none;
+    }
+    .name1890{
+      height: 35px;
+      font-weight: bold;
+      text-align: center;
+      padding: 5px;
+      font-size: small;
+      border-radius: 4px;
+      background-color: gold;
+      border: none;
+      margin-top: -10px;
+    }
+    .flexchange190{
+      display: flex;
+    }
+    .form-group{
+      display: flex;
+     
+    }
+    /* .profile-image{
+      height: 250px;
+  
+    } */
+    
+    .img-circle{
+      height: 240px;
+      width: 250px;
+      margin-top: 18%;
+    }
+    .image4567{
+      height: 200px;
+      width: 150px;
+       margin-top: 16px; 
+    }
+    .form-group78{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-group789{
+      
+      text-align: center;
+    }
+    .disdiv{
+        background-color: #ccc;
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+        margin: 7px;
+        margin-top: 20px;
+    }
+    
+  .popup {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    width: 87%;
+    background-color: rgb(42, 189, 42);
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  
+  
+  .m1{
+    display: block;
+   border: 1px solid black;
+  }
+  .mdiv{
+    display:flex !important;
+    flex-direction: column !important;
+   
+     height: 100% !important; 
+  }
+  .label203 {
+    width: 85px !important;
+    text-align: left;
+    font-size: small !important;
+}
+.A7-cust-popup-input {
+  width: 65%;
+  font-size: small !important;
+  border: 1px solid #ccc;
+  padding: 1px;
+  border-radius: 3px;
+}
+.A7-customer-details-popup {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px !important;
+  width: 94% !important; 
+  position: fixed;
+  z-index: 99;
+  top: 54%;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+  .sdiv1{
+  width: 45% !important;
+  display: flex;
+  flex-direction: row;
+  margin-top: -2%;
+  justify-content: center;
+  }
+  .center025 {
+    display: flex;
+    justify-content: center;
+    margin-top: -10%;
+}
+  .sdiv2{
+    text-align: start;
+    width: 60%;
+    margin-top: 0% !important;
+    border: 2px solid black;
+  }
+  .editbtndiv{
+    height: 50px;
+    
+  }
+  .editbtn{
+    margin-left: -1050px;
+    background-color: rgb(53, 114, 211);
+    color: white;
+    border: none;
+    height: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  hr{
+    margin-top: 0px;
+  }
+  .add-cus-heading{
+    background-color: #f0ecec;
+    padding: 4px; 
+    font-size: small;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+.A7custmaindiv86{
+  width: 90%;
+  overflow-x: auto;
+  background-color: white;
+}
+
+ .custlabel {
+  text-align: center;
+  display: block;
+  width: 100px;
+  padding-right: 15px;
+ 
+} 
+
+.flexchange190{
+  display: flex;
+  
+  
+}
+
+
+.customer-inputa7{
+  width: 60%;
+  padding: 0px 3px;
+}
+
+.customer-date-input{
+  width: 45%;
+ 
+}
+
+.image4567{
+  height: 150px;
+  width: 100px;
+   margin-top: 16px; 
+}
+
+.name1890{
+  height: 35px;
+  width: 100px;
+  font-size: x-small;
+  
+}
+.form-group789{
+    
+ margin-left: 40px; 
+}
+.add-custform{
+  overflow-x: auto;
+
+}
+
+
+}

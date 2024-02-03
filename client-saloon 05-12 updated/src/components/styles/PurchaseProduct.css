@@ -1,0 +1,240 @@
+.pp-form13{
+    /* margin-top: 10%; */
+    margin-left: 5%;
+    margin-right: 5%;
+    /* padding-bottom: 2%; */
+border: 1px solid #ccc;
+background-color: white;
+box-shadow: 0px 0px 9px #ccc;
+}
+.pp-heading13{
+
+    background-color: #f0ecec;
+    border: 1px solid #ccc;
+     padding: 7px;
+     font-size: 1rem;
+}
+.pp-formgroup13{
+    display: flex;
+    padding: 10px 0px;
+    
+}
+.pp-label13{
+    text-align: right;
+    
+    /* margin-top: 10px; */
+     width: 180px;
+     margin-right: 12px;
+    font-size: 0.9rem 
+}
+
+.pp-input13{
+    outline: none;
+    width: 260px;
+    /* margin-right: 3px; */
+    border: 1px solid #ccc;
+    font-size: small;
+    padding: 6px;
+    border-radius: 3px;
+    margin-right: 3px;
+    margin-bottom: 6px;
+}
+.pp-input1345{
+    outline: none;
+    width: 160px;
+    border: 1px solid #ccc;
+    font-size: small;
+    padding: 6px;
+    border-radius: 3px;
+    margin-right: 3px;
+}
+.pp-input131{
+    outline: none;
+    width: 200px;
+    
+    margin-right: 3px;
+    border: 1px solid #ccc;
+    font-size: small;
+    border-radius: 3px;
+    padding: 6px;
+   margin-bottom: 6px;
+}
+.space185{
+    margin-bottom: 10px;
+}
+
+.delete-btn156{
+    border: none;
+    margin-bottom: 6px;
+    background-color: rgb(235, 77, 77);
+    border-radius: 3px;
+    color: white;
+    width: 55px;
+    font-size: small;
+    padding: 7px;
+}
+.pp-btns13{
+    cursor: pointer;
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    
+}
+.pp-btn-div13{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ccc;
+    padding: 5px;
+    margin: 9px;
+    margin-top: 20px;
+}
+.pp-entering13{
+    
+    margin-left: 11%;
+
+}
+.ppe-th{
+    text-align: left;
+}
+.add-row-btn{
+/* margin-top: 10px; */
+width: 80px;
+    background-color: #19c013;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    padding: 6px;
+    font-size: small;
+}
+
+@media only screen and (max-width: 480px) {
+    .pp-form13 {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+    .pp-heading13 {
+        background-color: #f0ecec;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: small !important;
+    }
+    .pp-label13 {
+        width: 100px !important;
+        text-align: left;
+        font-size: small;
+        padding-left: 9px;
+    }
+    .pp-input1345 {
+        outline: none;
+        width: 50%;
+        border: 1px solid #ccc;
+        font-size: small;
+        padding: 4px;
+        border-radius: 3px;
+        margin-right: 3px;
+    }
+    .pp-input13 {
+        outline: none;
+        width: 260px;
+        /* margin-right: 3px; */
+        border: 1px solid #ccc;
+        font-size: small;
+        padding: 4px;
+        border-radius: 3px;
+        margin-right: 3px;
+        margin-bottom: 6px;
+    }
+    .pp-input131 {
+        outline: none;
+        width: 200px;
+        margin-right: 3px;
+        border: 1px solid #ccc;
+        font-size: small;
+        border-radius: 3px;
+        padding: 5px;
+        margin-bottom: 6px;
+    }
+    .delete-btn156 {
+        border: none;
+        margin-bottom: 6px;
+        background-color: rgb(235, 77, 77);
+        border-radius: 3px;
+        color: white;
+        width: 55px;
+        font-size: small;
+        padding: 5px;
+    }
+    .add-row-btn {
+        padding: 5px;
+        /* margin-top: 10px; */
+        width: 70px;
+        background-color: #19c013;
+        color: #fff;
+        border-radius: 3px;
+        padding: 5px;
+        padding: 6px;
+        margin: 4px;
+        border: none;
+        font-size: small;
+    }
+    .pp-btns13 {
+        cursor: pointer;
+        background-color: #19c013;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        width: 60px;
+        font-size: medium;
+    }
+    .pbtn1234m {
+        background-color: #19c013;
+        color: white;
+        border: none;
+        width: 62px;
+        height: 28px;
+        /* padding: 3px; */
+        margin-left: 5px;
+        border-radius: 3px;
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pp-entering13 {
+        margin-left: 2%;
+        overflow-x: auto;
+    }
+
+    .pp-input131,
+    .pp-input13 {
+        width: 40%;
+        margin-right: 0;
+    }
+    .pp-input1312{
+        width: 100% !important;
+    }
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+    .pp-entering13 {
+        margin-left: 5%;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .pp-entering13 {
+        margin-left: 8%;
+    }
+}
+
+/* Desktop and Laptop styles */
+@media only screen and (min-width: 769px) {
+    .pp-entering13 {
+        margin-left: 11%;
+    }
+}

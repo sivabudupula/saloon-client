@@ -1,0 +1,687 @@
+/* Container for the appointment form */
+.appnt-form11 {
+  
+  
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: #fdfcfc;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    
+    font-family: sans-serif;
+    
+
+  }
+  .appnt-heading11{
+    background-color: #f0ecec;
+    padding: 8px ;
+    border: 1px solid #ccc;
+    
+  }
+  /* Style for labels */
+  .appnt-label11 {
+    
+    text-align: end;
+    display: block;
+    margin-top: 3px;
+    /* font-weight: bold; */
+    width: 180px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+  }
+  .text-address78{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 30% !important;
+  }
+  
+  /* Style for input elements */
+  .text-input11{
+width: 30%;
+/* margin-top: 6px; */
+     padding: 4px ; 
+    /* margin-bottom: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  .small-input1122{
+    width: 15%;
+    font-size: small;
+         padding: 5px ; 
+        
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+  }
+  .selected-services{
+    margin-right: 10px;
+  }
+  .change-column90{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the Add Services button */
+  .servbtn11 {
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 10px;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    font-size: 0.9rem;
+
+  }
+
+  .bookbtn11{
+    padding: 3px ;
+    width: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #0eb808;
+    color: #fff;
+    border: none;
+   font-size: small;
+   margin: 2px;
+  }
+
+  .cancel-btn11{
+    padding: 3px ;
+    width: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    font-size: small;
+    margin: 2px;
+    /* margin-left: 8px; */
+   
+  }
+  .bookbtn11:hover{
+    background-color: #399e35;
+    /* color: black; */
+  }
+  .cancel-btn11:hover{
+    background-color: #e41010;
+  }
+
+
+  
+   .bookbtn-div11{
+    padding: 4px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ccc;
+    margin: 7px;
+    /* column-gap: 10px; */
+   }
+  
+  /* Style for the Notes textarea */
+  .textarea567 {
+    width: 30%;
+    resize: none;
+    margin-bottom: 0px ;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   
+    /* Add this line */
+    }
+  
+    .small-input11
+    {
+       padding: 3px 3px;
+      width: 30% !important;;
+ /* margin-bottom: 15px;
+ outline: none; */
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ 
+    }
+
+    .small-input1133{
+      padding: 5px 3px;
+      width: 10% !important;
+ font-size: small;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+    }
+
+    .appntform-group11{
+      display: flex;
+      margin: 10px;
+      
+    }
+    .selected-services12{
+      display: flex;
+      flex-direction: column;
+      margin-left: -15px;
+      
+    }
+  /* Apply some spacing between elements */
+  br {
+    margin-bottom: 10px;
+  }
+  .popupsk14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 999; /* Ensure the popup is on top of everything */
+  }
+
+.btnend234{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+}
+.size293{
+  font-size: 0.9rem;
+  width: 75px;
+}
+.size2935{
+  font-size: 0.9rem;
+  /* width: 75px; */
+}
+  .popup-contentsk14 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+ 
+.popup-services-heading{
+  margin: 5px 0px;
+  text-align: center;
+margin-bottom: 15px;
+}
+.lableup123{
+  width: 220px;
+ font-size: 0.9rem;
+}
+  
+.btn567{
+  background-color:transparent;
+  color: black;
+  cursor: pointer;
+  border: none;
+  margin-right: 1%;
+    font-size: medium;
+}
+  .men-women{
+    display: flex;
+    justify-content: space-between;
+    max-height: 430px;
+    overflow: auto;
+
+  }
+.appnt-main11{
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  /* margin-top: 15vw; */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* margin-bottom: 50px; */
+}
+
+.women-category{
+
+  display: flex;
+  flex-direction: column;
+} 
+.men-category{
+  display: flex;
+  flex-direction: column;
+}
+.flex-category390{
+  display: flex;
+  flex-direction: column;
+}
+.width371{
+  width: 170px;
+}
+.flex0033{
+  display: flex;
+  flex-direction: column;
+  /* width: 350px; */
+}
+.custom-checkbox {
+  width: 17px;
+  height: 17px; 
+  margin: 5px;
+}
+.service-item{
+  display: flex;
+}
+
+.custom-checkbox::-webkit-input-placeholder {
+  display: none;
+}
+
+
+.custom-checkbox:checked {
+  background-color: #007bff; 
+  border: 1px solid #007bff;
+}
+
+@media screen and (max-width: 425px) {
+  /* Container for the appointment form */
+.appnt-form11 {
+  
+  
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: #fdfcfc;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    
+    font-family: sans-serif;
+    
+
+  }
+  .popup-contentsk14 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  .men-women {
+    display: flex;
+    /* justify-content: space-around; */
+    max-height: 430px;
+    overflow: auto;
+}
+  .men-category {
+    display: flex;
+    flex-direction: column;
+    
+    /* padding-top: 120%; */
+}
+  .appnt-heading11{
+    background-color: #f0ecec;
+    padding: 4px ;
+    font-size: small;
+    border: 1px solid #ccc;
+  }
+  /* Style for labels */
+  .appnt-label11 {
+    width: 75px !important;
+    text-align: left !important;
+    /* display: block; */
+    margin-top: 3px;
+  
+    /* font-weight: bold; */
+    width: 180px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+  }
+  .text-address78{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 30% !important;
+  }
+  
+  /* Style for input elements */
+  .text-input11{
+width: 70% !important;
+/* margin-top: 6px; */
+height: 30px;
+     padding: 4px ; 
+     font-size: small;
+    /* margin-bottom: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    
+  }
+  .small-input1122{
+    width: 15%;
+    font-size: small;
+         padding: 5px ; 
+        /* margin-left: -25px; */
+        height: 30px;
+        font-size: small;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+  }
+  .selected-services{
+    margin-right: 10px;
+  }
+  .change-column90{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for the Add Services button */
+  .servbtn11 {
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 7px;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    font-size: small;
+
+  }
+
+  .bookbtn11{
+    padding: 3px ;
+    width: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #0eb808;
+    color: #fff;
+    border: none;
+   font-size: small;
+   margin: 2px;
+  }
+
+  .cancel-btn11{
+    padding: 3px ;
+    width: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    font-size: small;
+    margin: 2px;
+    /* margin-left: 8px; */
+   
+  }
+  .bookbtn11:hover{
+    background-color: #399e35;
+    /* color: black; */
+  }
+  .cancel-btn11:hover{
+    background-color: #e41010;
+  }
+
+
+  
+   .bookbtn-div11{
+    padding: 4px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #ccc;
+    margin: 7px;
+    /* column-gap: 10px; */
+   }
+  
+  /* Style for the Notes textarea */
+  .textarea567 {
+    width: 70% !important;
+    resize: none;
+    margin-bottom: 0px ;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+   /* margin-left: -25px; */
+    /* Add this line */
+    }
+  
+    .small-input11
+    {
+       padding: 3px 3px;
+      width: 30% !important;;
+ /* margin-bottom: 15px;
+ outline: none; */
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ 
+    }
+
+    .small-input1133{
+      padding: 5px 3px;
+      width: 10% !important;
+ font-size: small;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ /* margin-left: -25px; */
+ font-size: small;
+ height: 30px;
+    }
+
+    .appntform-group11{
+      display: flex;
+      margin: 10px;
+      
+    }
+    .selected-services12{
+      display: flex;
+      flex-direction: column;
+      margin-left: -15px;
+      
+    }
+  /* Apply some spacing between elements */
+  br {
+    margin-bottom: 10px;
+  }
+  .popupsk14 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 999; /* Ensure the popup is on top of everything */
+  }
+
+.btnend234{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+}
+.size293{
+  font-size: 0.9rem;
+  width: 75px;
+}
+.size2935{
+  font-size: 0.9rem;
+  /* width: 75px; */
+}
+  .popup-contentsk14 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 90% !important;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+ 
+.popup-services-heading{
+  margin: 5px 0px;
+  text-align: center;
+margin-bottom: 15px;
+font-size: small;
+}
+.lableup123{
+  width: 220px;
+ /* font-size: 0.9rem; */
+}
+  
+.btn567{
+  background-color:transparent;
+  color: black;
+  cursor: pointer;
+  border: none;
+  margin-right: 1%;
+    font-size: medium;
+}
+  .men-women{
+    display: flex !important;
+    flex-direction: column !important;
+/* justify-content: space-around; */
+
+  }
+.appnt-main11{
+  width: 90%;
+  margin-left: 5%;
+  background-color: white;
+  /* margin-top: 15vw; */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* margin-bottom: 50px; */
+}
+
+.women-category{
+
+  display: flex;
+  flex-direction: column;
+} 
+.men-category{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.flex-category390{
+  display: flex;
+  flex-direction: column;
+}
+.width371{
+  width: 170px;
+}
+.flex0033{
+  display: flex;
+  flex-direction: column;
+  font-size: small !important;
+}
+.custom-checkbox {
+  width: 17px;
+  height: 17px; 
+  margin: 5px;
+}
+.service-item{
+  display: flex;
+}
+
+.custom-checkbox::-webkit-input-placeholder {
+  display: none;
+}
+
+
+.custom-checkbox:checked {
+  background-color: #007bff; 
+  border: 1px solid #007bff;
+}
+
+}
+@media only screen and (max-width: 768px) {
+
+  .popup-contentsk14{
+    width: 60%;
+    max-height: 465px;
+    overflow: auto;
+
+  }
+
+  .men-women{
+    display: flex;
+    flex-direction: column;
+/* justify-content: space-around; */
+
+  }
+
+  .appnt-label11 {
+    
+    text-align: center;
+    display: block;
+    
+    /* font-weight: bold; */
+    width: 85px;
+    
+    font-size: smaller;
+  }
+  .small-input1122{
+    width: 40%;
+    font-size: smaller;
+         padding: 5px ; 
+        
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        outline: none;
+        cursor: pointer;
+  }
+
+  .small-input1133{
+    padding: 5px 3px;
+    width: 25% !important;
+font-size: smaller;
+border: 1px solid #ccc;
+border-radius: 3px;
+height: 20%;
+  }
+  .text-input11{
+    width: 55%;
+   
+      }
+
+      .textarea567{
+        width: 55%;
+       
+          }
+
+.appnt-form11 {
+  width: 100%;
+}      
+
+}
