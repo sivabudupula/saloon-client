@@ -10,7 +10,7 @@ const AddSupplier = () => {
     email: '', 
     address: '',
   });
-
+  
   const handleChange = (event) => {
     const { name, value } = event.target;
     setSupplierData({ ...supplierData, [name]: value });
