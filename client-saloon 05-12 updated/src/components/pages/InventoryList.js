@@ -289,6 +289,7 @@ const InventoryList = ({ onNewPurchaseClick }) => {
               <th className="pd-th12">S.NO</th>
               <th className="pd-th12">Bill Number</th>
               <th className="pd-th12">Purchase Date</th>
+              <th className="pd-th12">Company Name</th>
               <th className="pd-th12">Product Name</th>
               <th className="pd-th12">Expiry Date</th>
               <th className="pd-th12">Supplier</th>
@@ -315,6 +316,7 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                   </td>
                   <td className="pd-td12">{item.billNumber}</td>
                   <td className="pd-td12">{formatDate(item.purchaseDate)}</td>
+                  <td className="pd-td12">{item.companyName}</td>
                   <td className="pd-td12">
                     {item.tableData.map((product, index) => (
                       <React.Fragment key={index}>
@@ -423,7 +425,7 @@ const InventoryList = ({ onNewPurchaseClick }) => {
             {" "}
             Showing {indexOfFirstItem + 1} to{" "}
             {Math.min(indexOfLastItem, filteredPurchaseList.length)} of{" "}
-            {filteredPurchaseList.length} entries
+            {filteredPurchaseList.length} Entries
           </div>
           <div className="flex163">
             <button className="badges" onClick={handleFirstPageClick}>
