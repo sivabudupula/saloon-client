@@ -63,8 +63,7 @@ const handleSubmit = async (e) => {
 if(token){
   setTimeout(() => {
     navigate('/dashboard');
-  }, 3000);
-
+  }, 100);
 
  }
  
