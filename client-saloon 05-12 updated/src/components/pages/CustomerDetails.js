@@ -546,7 +546,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                   />
                 </div>
                 <div className="A7divlabip">
-                  <label className="custdetailslabel">Contact Number</label>
+                  <label className="custdetailslabel">Mobile Number</label>
                   :&nbsp;&nbsp;
                   <input
                     className="cd-input"

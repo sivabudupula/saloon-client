@@ -53,7 +53,7 @@ const AddService = () => {
 
 
     <div className="add-service-container-sk141s"> 
-    <h6 className='heading143sk'>services</h6>
+    <h6 className='heading143sk'>Services</h6>
       
       <form onSubmit={handleSubmit} autoComplete='off'>
         <div className="form-group-sk141s">
@@ -72,7 +72,7 @@ const AddService = () => {
         </div>
         <div className="form-group-sk141s"> 
         <div className='labelchange567'>
-          <label htmlFor="category" className="label-sk141s">category:</label>
+          <label htmlFor="category" className="label-sk141s">Category:</label>
           </div>
           <select
             id="text"

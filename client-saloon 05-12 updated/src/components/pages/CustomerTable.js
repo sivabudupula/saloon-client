@@ -116,7 +116,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
               <option value={15}>15</option>
               {/* Add more options as needed */}
             </select>
-            <label> entries </label>
+            <label> Entries </label>
           </div>
           <div className="A7serinp">
             <label> Search </label>
@@ -124,7 +124,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
             type="search"
             value={searchQuery}
             onChange={handleSearch}
-            placeholder=' ID / Phone Number'
+            placeholder=' ID / Mobile Number'
              />
           </div>
         </div>
@@ -138,7 +138,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                 <th className="A7th10">Customer Name</th>
                 <th className="A7th2">DOB</th>
                 <th className="A7th3">Email</th>
-                <th className="A7th4">Contact Number</th>
+                <th className="A7th4">Mobile Number</th>
                 <th className="A7th5">Address</th>
                  <th className="A7th6">AddedBy</th>
                 <th className="A7th7">Action</th>
@@ -156,7 +156,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                   <td className='customer-table-td1'>{customer.createdBy ? customer.createdBy.username : 'Unknown'}</td> 
 
                   <td  className='customer-table-td1'>
-                  <button className='details456' onClick={() => handleClick(customer)}>details</button>
+                  <button className='details456' onClick={() => handleClick(customer)}>Details</button>
                   </td>
                 </tr>
               ))}
@@ -166,7 +166,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
         </div>
         <div className="entries-div121">
           <div className='number-of-entries-div'>
-          Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, filteredCustomers.length)} of {filteredCustomers.length} entries
+          Showing {indexOfFirstItem + 1} to {Math.min(indexOfLastItem, filteredCustomers.length)} of {filteredCustomers.length} Entries
          
           </div>
         <div className='pagination-div'>

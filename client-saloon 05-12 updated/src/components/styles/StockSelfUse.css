@@ -131,7 +131,7 @@ width: 200px;
     font-size: 1rem;
     border: 1px solid #ccc;
 }
-.delete-btn260{
+/* .delete-btn260{
     border: none;
     color: white;
     background-color: #ff5555;
@@ -140,7 +140,11 @@ width: 200px;
     width: 60px;
     border-radius: 3px;
     margin-bottom: 6px;
-}
+} */
+
+/* DeleteButton.css */
+
+
 .selfuse-tr{
     
     display: flex;
@@ -159,3 +163,7 @@ outline: none;
 padding: 5px 0px;
 height: 30px;
 }
+
+
+
+  

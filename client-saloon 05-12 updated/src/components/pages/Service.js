@@ -115,19 +115,19 @@ const ServiceForm = ({ onNewServiceClick }) => {
   };
 
   return (
-    <div className="service-form-container-sk141">
+    <div className="service-form-container-sk141"> 
       {displayComponent === "Services" ? (
         <>
           <h6 className="heading6789">Services</h6>
           <div className="second-con678">
             <div className="sk1432s">
               <label className="service-label-sk141">Service Name</label>&nbsp;:
-              <select
+              <select   
                 className="service-select-sk141"
                 value={selectedServiceId}
                 onChange={(e) => setSelectedServiceId(e.target.value)}
               >
-                <option value="">select a serviceName</option>
+                <option value="">Select a Service Name</option>
                 {services.map((service) => (
                   <option key={service._id} value={service._id}>
                     {service.serviceName}&nbsp;&nbsp;({service.category})
@@ -135,7 +135,7 @@ const ServiceForm = ({ onNewServiceClick }) => {
                 ))}
               </select>
             </div>
-          </div>
+          </div>   
           <div className="add-edit-buttons-container">
             <button className="add-button-sk141" onClick={handleClick}>
               Add New
@@ -159,7 +159,7 @@ const ServiceForm = ({ onNewServiceClick }) => {
           </div>
         </>
       ) : displayComponent === "editService" ? (
-        // <div className='margin-left789'>
+        // <div className='margin-left789'>  
         <div className="changeedit248">
           {isEditing !== null && (
             <EditService
