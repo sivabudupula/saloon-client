@@ -478,7 +478,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> entries </label>
+                  <label> Entries </label>
                 </div>
                 <div className="A7serinp">
                   <label> Search &nbsp;</label>
@@ -487,7 +487,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     className="input2"
                     value={searchQuery}
                     onChange={handleSearch}
-                    placeholder=" Name/Phone Number"
+                    placeholder=" Name/Mobile Number"
                   ></input>
                 </div>
               </div>
@@ -534,7 +534,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                 <div className="number-of-entries-div">
                   Showing {indexOfFirstItem + 1} to{" "}
                   {Math.min(indexOfLastItem, filteredCustomers.length)} of{" "}
-                  {filteredCustomers.length} entries
+                  {filteredCustomers.length} Entries
                 </div>
                 <div>
                   <button className="badges" onClick={handleFirstPageClick}>
@@ -581,7 +581,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> entries </label>
+                  <label> Entries </label>
                 </div>
                 <div className="A7serinp">
                   <label> Search &nbsp;</label>
@@ -590,7 +590,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     type="search"
                     value={searchAppointmentQuery}
                     onChange={handleAppointmentSearch}
-                    placeholder="Name/Phone Number"
+                    placeholder="Name/Mobile Number"
                   ></input>
                 </div>
               </div>
@@ -684,7 +684,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                               Edit
                             </button>
                             <button
-                              className="app-delete-btn11"
+                              className="app-delete-btn21"
                               onClick={() =>
                                 handleDelete(customer._id, item._id)
                               }
@@ -702,7 +702,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                   <div className="number-of-entries-div">
                     Showing {indexOfAppFirstItem + 1} to{" "}
                     {Math.min(indexOfAppLastItem, filteredAppointments.length)}{" "}
-                    of {filteredAppointments.length} entries
+                    of {filteredAppointments.length} Entries
                   </div>
                   <div>
                     <button

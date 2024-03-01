@@ -632,7 +632,7 @@ const openPrintWindow = (printContent) => {
             type="number"
             value={searchQuery}
             onChange={handleSearch}
-            placeholder="Search By Phone Number"
+            placeholder="Search By Mobile Number"
           />
           </div>
           {/* <div className="lable-width567"> */}
@@ -928,7 +928,7 @@ const openPrintWindow = (printContent) => {
             value={paymentMethod}
             onChange={(e) => setPaymentMethod(e.target.value)}
           >
-            <option value="">Select paymentMethod</option>
+            <option value="">Select PaymentMethod</option>
             <option value="online">Online</option>
             <option value="credit_card">Credit Card</option>
             <option value="debit_card">Debit Card</option>

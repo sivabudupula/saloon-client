@@ -539,7 +539,7 @@ function Dashboard() {
                   {totalServiceAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
-              Services amount
+              Services Amount
             </div>
             <div className="small-cards23 all-small-cards2345">
               <div className="flextochange789">
@@ -548,7 +548,7 @@ function Dashboard() {
                   {totalInventoryAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
-              Inventory amount
+              Inventory Amount
             </div>
             <div className="small-cards234 all-small-cards2345">
               <div className="flextochange789">
