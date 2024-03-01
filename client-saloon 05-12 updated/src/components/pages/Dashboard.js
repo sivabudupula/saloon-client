@@ -72,16 +72,7 @@ function Dashboard() {
     navigate("/");
   }
 
-  // const handleButtonClick = (buttonName) => {
-  //   setSelectedButton(buttonName);
-
-  // };
-
-  // const handleButtonClick = (buttonName, customerData) => {
-  //   setSelectedButton(buttonName);
-  //   setCustomer(customerData);
-  //   setSelectedCustomer(customerData);
-  // };
+  
 
   useEffect(() => {
     // Check if there is a previously selected component in localStorage

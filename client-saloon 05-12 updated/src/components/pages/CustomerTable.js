@@ -140,7 +140,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                 <th className="A7th3">Email</th>
                 <th className="A7th4">Mobile Number</th>
                 <th className="A7th5">Address</th>
-                {/* <th className="A7th6">Discount</th> */}
+                 <th className="A7th6">AddedBy</th>
                 <th className="A7th7">Action</th>
               </tr>
             </thead>
@@ -153,7 +153,8 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                   <td  className='customer-table-td'>{customer.email}</td>
                   <td  className='customer-table-td1'>{customer.phone}</td>
                   <td  className='customer-table-td'>{customer.address}</td>
-                  {/* <td className='customer-table-td1'>{customer.discount}</td> */}
+                  <td className='customer-table-td1'>{customer.createdBy ? customer.createdBy.username : 'Unknown'}</td> 
+
                   <td  className='customer-table-td1'>
                   <button className='details456' onClick={() => handleClick(customer)}>Details</button>
                   </td>
