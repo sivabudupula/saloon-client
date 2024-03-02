@@ -15,7 +15,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
       product: "",
       quantity: "",
       cp: "",
-      expiryDate: '',
+      expiryDate: "",
     },
   ]);
 
@@ -62,12 +62,13 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
       formData.supplier.trim() === "" ||
       formData.purchaseType.trim() === "" ||
       formData.NoOfProducts.trim() === "" ||
+      formData.companyName.trim() === "" ||
       tableData.some(
         (entry) =>
           entry.product.trim() === "" ||
           entry.quantity.trim() === "" ||
           entry.cp.trim() === "" ||
-          entry. expiryDate.trim() ===""
+          entry.expiryDate.trim() === ""
       )
     ) {
       toast.error("Please fill all the required fields");
@@ -85,10 +86,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
       };
 
       // Save the data to the MongoDB database
-      await axios.post(
-        `${BASE_URL}/api/Stock`,
-        formDataWithTableData
-      );
+      await axios.post(`${BASE_URL}/api/Stock`, formDataWithTableData);
       toast.success("Saved Successfully");
       // Update the latestBillNumber in the state
       setLatestBillNumber(newBillNumber);
@@ -98,7 +96,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
           product: "",
           quantity: "",
           cp: "",
-          expiryDate: '',
+          expiryDate: "",
         },
       ]);
       setFormData({
@@ -107,12 +105,13 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
         supplier: "",
         purchaseType: "",
         NoOfProducts: "",
+        companyName: "",
       });
       setNewEntry({
         product: "",
         quantity: "",
         cp: "",
-        expiryDate: '',
+        expiryDate: "",
       });
     } catch (error) {
       toast.error("Error while saving the data");
@@ -143,55 +142,16 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
     supplier: "",
     purchaseType: "",
     NoOfProducts: "",
+    companyName: "",
   });
 
   const [, setNewEntry] = useState({
     product: "",
     quantity: "",
     cp: "",
-    expiryDate: '',
+    expiryDate: "",
   });
-  // const productInputRef = useRef(null);
-  // const quantityInputRef = useRef(null);
-  // const cpInputRef = useRef(null);
-
-  // const handleKeyDown = (event, fieldName) => {
-  //   if (event.key === 'ArrowRight' || event.key === 'Enter') {
-
-  //     if (fieldName === 'product' && quantityInputRef.current) {
-  //       quantityInputRef.current.focus();
-  //     }
-  //     else if (fieldName === 'quantity' && quantityInputRef.current) {
-  //       cpInputRef.current.focus();
-  //     }
-
-  //     else if(fieldName=='cp'){
-  //       addNewEntry();
-  //     }
-
-  //   }
-  // };
-
-  // const addNewEntry = () => {
-  //   if ( newEntry.product.trim() !== '' &&
-  //   newEntry.quantity.trim() !== '' &&
-  //   newEntry.cp.trim() !== ''
-  //    ) {
-  //       setTableData(prevTableData => [...prevTableData, newEntry]);
-
-  //     setNewEntry({
-
-  //       product: '',
-  //       quantity: '',
-  //       cp: '',
-
-  //        });
-  //     if (productInputRef.current) {
-  //       productInputRef.current.focus();
-  //     }
-  //   }
-  // };
-
+  
   const deleteEntry = (index) => {
     const updatedTableData = [...tableData];
     updatedTableData.splice(index, 1);
@@ -247,7 +207,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
       product: "",
       quantity: "",
       cp: "",
-      expiryDate: '',
+      expiryDate: "",
     };
 
     // Add the new empty entry to the tableData state
@@ -332,6 +292,18 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
           ></input>
         </div>
 
+        <div className="pp-formgroup13">
+          <label className="pp-label13">Company Name</label>
+          <input
+            type="text"
+            className="pp-input13"
+            name="companyName"
+            value={formData.companyName}
+            onChange={handleChange}
+            required
+          />
+        </div>
+
         <table className="pp-entering13">
           <thead>
             <tr>
@@ -381,8 +353,10 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
                   <input
                     type="date"
                     className="pp-input13 pp-input1312"
-                    value={entry. expiryDate}
-                    onChange={(e) => handleTableDataChange(e, "expiryDate", index)}
+                    value={entry.expiryDate}
+                    onChange={(e) =>
+                      handleTableDataChange(e, "expiryDate", index)
+                    }
                   />
                 </td>
                 <td>

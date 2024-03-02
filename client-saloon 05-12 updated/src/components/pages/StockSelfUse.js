@@ -1,18 +1,14 @@
-import React, { useState,useEffect,useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/StockSelfUse.css';
 import axios from 'axios';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FaTrash } from "react-icons/fa";
 import { BASE_URL } from '../Helper/helper';
 
-
 const StockSelfUse = () => {
-  // const [selectedItem, setSelectedItem] = useState('');
-  // const [quantity, setQuantity] = useState('');
-  // const [itemList, setItemList] = useState([]);
-  //  const [itemsData, setItemsData] = useState([]);
   const [productList, setProductList] = useState([]);
-  
+  const [isDeleting, setIsDeleting] = useState(false);
   const [tableData, setTableData] = useState([
     {
       product: '',
@@ -20,42 +16,30 @@ const StockSelfUse = () => {
     },
   ]);
 
-  
-
   useEffect(() => {
-    // Fetch vitals data from the API
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/api/products`);
         const responseData = response.data;
-        console.log(responseData);
         setProductList(responseData);
       } catch (error) {
         console.error(error);
       }
     };
-  
+
     fetchProducts();
   }, []);
 
-
-
-  
- 
-
-
   const handleSave = async () => {
-    // Filter out empty entries
     const nonEmptyData = tableData.filter(
       (entry) => entry.product.trim() !== "" && entry.quantity.trim() !== ""
     );
-  
-    // If there are no non-empty entries, show an error message
+
     if (nonEmptyData.length === 0) {
       toast.error("Please enter product and quantity before saving.");
       return;
     }
-  
+
     try {
       const response = await axios.post(
         `${BASE_URL}/api/stock-selfuse`,
@@ -75,25 +59,20 @@ const StockSelfUse = () => {
     }
   };
 
-
-
-
-  
   const deleteEntry = (index) => {
     const updatedTableData = [...tableData];
     updatedTableData.splice(index, 1);
     setTableData(updatedTableData);
   };
-
-
+  // const handleButtonClick = () => {
+  //   setIsDeleting(true);
+  //   setTimeout(() => setIsDeleting(false), 3200);
+  // };
   const addRow = () => {
-    // Create a new empty entry
     const newEmptyEntry = {
       product: '',
       quantity: '',
     };
-
-    // Add the new empty entry to the tableData state
     setTableData((prevTableData) => [...prevTableData, newEmptyEntry]);
   };
 
@@ -111,16 +90,11 @@ const StockSelfUse = () => {
     }
   };
 
-
-
   return (
     <div className='A7Stockmaindiv'>
       <ToastContainer />
-        
-      {/* <div className='A7Stockform'> */}
+
       <h6 className='A7stock-heading'>Stock Sale</h6>
-
-
 
       <table className='pp-entering13'>
         <thead>
@@ -148,14 +122,12 @@ const StockSelfUse = () => {
                   onKeyDown={(e) => handleKeyDown(e, 'product', index)}
                   ref={index === tableData.length - 1 ? productInputRef : null}
                 >
-
-<option value="">Select an item</option>
-                    {productList.map((item, index) => (
-                      <option value={item.itemName} key={item.id}>
-                        {item.itemName}
-                      </option>
-                    ))}
-
+                  <option value="">Select an item</option>
+                  {productList.map((item, index) => (
+                    <option value={item.itemName} key={item.id}>
+                      {item.itemName}
+                    </option>
+                  ))}
                 </select>
               </td>
               <td>
@@ -175,30 +147,29 @@ const StockSelfUse = () => {
                 />
               </td>
               <td>
-                <button className='delete-btn260' onClick={() => deleteEntry(index)}>Delete</button>
+                <button className='delete-button' onClick={() => deleteEntry(index)}>
+                  <FaTrash className='delete-icon' />
+              
+                </button>
+        
               </td>
             </tr>
           ))}
 
-          <tr><button type="button" className='add-row-btn' onClick={addRow}>
-          Add Row
-        </button></tr>
+          <tr>
+            <button type="button" className='add-row-btn' onClick={addRow}>
+              Add Row
+            </button>
+          </tr>
         </tbody>
       </table>
-      
 
-
-      
-        <div className='A7Stock-sub-div3'>
-          <button className='A7Stock-sub-div2-button3' onClick={handleSave}>
-            Save
-          </button>
-          {/* <button className='A7Stock-sub-div2-button4' onClick={handleCancelClick}>
-            Cancel
-          </button> */}
-        </div>
+      <div className='A7Stock-sub-div3'>
+        <button className='A7Stock-sub-div2-button3' onClick={handleSave}>
+          Save
+        </button>
       </div>
-    
+    </div>
   );
 };
 

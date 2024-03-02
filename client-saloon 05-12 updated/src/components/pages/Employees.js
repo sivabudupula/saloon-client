@@ -44,7 +44,7 @@ const EmployeeDetailsPopup = ({ employee, onClose }) => {
             {employee.employeeName}
           </p>
           <p>
-            <label className="align100px">phoneNumber</label>:
+            <label className="align100px">MobileNumber</label>:
             &nbsp;&nbsp;&nbsp;{employee.phoneNumber}
           </p>
           <p>
@@ -311,7 +311,7 @@ const Employees = ({ onNewEmployeeClick }) => {
                     <option value={10}>10</option>
                     <option value={15}>15</option>
                   </select>
-                  <label> entries </label>
+                  <label> Entries </label>
                 </div>
                 <div className="A7serinp">
                   <label>Search </label>
@@ -329,7 +329,7 @@ const Employees = ({ onNewEmployeeClick }) => {
                   <tr className="tr-saloon2345">
                     <th className="th-saloon2345">Employee ID</th>
                     <th className="th-saloon2345">Employee Name</th>
-                    <th className="th-saloon2345">Phone Number</th>
+                    <th className="th-saloon2345">Mobile Number</th>
                     <th className="th-saloon2345">Email</th>
                     <th className="th-saloon2345">Address</th>
                     <th className="th-saloon2345">File</th>
@@ -391,7 +391,7 @@ const Employees = ({ onNewEmployeeClick }) => {
                 <div>
                   Showing {indexOfFirstItem + 1} to{" "}
                   {Math.min(indexOfLastItem, filteredEmployees.length)} of{" "}
-                  {filteredEmployees.length} entries
+                  {filteredEmployees.length} Entries
                 </div>
                 <div>
                   <button className="badges" onClick={handleFirstPageClick}>

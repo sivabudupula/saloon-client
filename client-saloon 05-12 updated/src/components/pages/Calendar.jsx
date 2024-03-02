@@ -282,7 +282,7 @@ const Calendar = ({onNewBillClick}) => {
         <div className="top-bar">
           <div className="filter-container">
             <span className="birthday-top-filter">
-              Total BIRTHDAYS in ({getMonthName(currentMonth)}): {filteredBirthdayCustomers.length}
+              Total Birthdays in ({getMonthName(currentMonth)}): {filteredBirthdayCustomers.length}
             </span>
           </div>
         </div>
@@ -293,7 +293,7 @@ const Calendar = ({onNewBillClick}) => {
               <th className="customer-table-th">Serial Number</th>
               <th className="customer-table-th">Customer ID</th>
               <th className="customer-table-th">Customer Name</th>
-              <th className="customer-table-th">Contact Number</th>
+              <th className="customer-table-th">Mobile Number</th>
               <th className="customer-table-th">Date of Birth</th>
               <th className="customer-table-th">Age</th>
               {/* Add more table headers for other customer details */}

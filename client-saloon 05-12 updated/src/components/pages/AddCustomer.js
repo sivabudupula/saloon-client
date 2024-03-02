@@ -4,7 +4,8 @@ import Axios from "axios";
 import { FaUserCircle } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify"; // Import toast from react-toastify
 import "react-toastify/dist/ReactToastify.css";
-import { BASE_URL } from "../Helper/helper"
+import { BASE_URL } from "../Helper/helper";
+
 
 const AddCustomer = () => {
   const [formData, setFormData] = useState({
@@ -23,6 +24,7 @@ const AddCustomer = () => {
     });
   };
 
+  const [token] = useState(localStorage.getItem('token'));
   const [previewImage, setPreviewImage] = useState(null);
   const [, setSubmitting] = useState(false);
   const fileInputRef = useRef(null);
@@ -66,7 +68,8 @@ const AddCustomer = () => {
         formDataToSubmit,
         {
           headers: {
-            "Content-Type": "multipart/form-data",
+            'x-token': token,
+            'Content-Type': 'multipart/form-data',
           },
         }
       );

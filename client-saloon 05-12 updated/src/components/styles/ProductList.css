@@ -66,12 +66,13 @@
   padding: 3px;
 }
 .pdedit-btn12 {
- margin: 2px;
-  width: 55px;
+
+  width: 5vw;
+  border: none;
+  height: 5vh;
   background-color: #007bff;
   font-size: 13px;
   color: white;
-  /* padding: 2px; */
   cursor: pointer;
   border: none;
 }

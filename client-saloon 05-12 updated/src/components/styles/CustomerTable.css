@@ -20,8 +20,11 @@ th{
 .details456{
    background-color: #1571d4;
    color: white;
-   padding: 2px;
-   font-size: x-small;
+   /* padding: 5px; */
+   height: 5vh;
+   width: 5vw;
+   font-size: 15px;
+   border: none;
    cursor: pointer;
 }
 .details456:hover{
@@ -220,11 +223,14 @@ margin-right: 10px;
       padding-left: 4px;
     }
    .details456{
-      background-color: #1571d4;
+      
+      background-color: #f9fdfb; 
       color: white;
       padding: 2px;
       font-size: x-small;
       cursor: pointer;
+      border: none;
+      font-size: 20px;
    }
    .details456:hover{
       background-color: #5ca1ec;

@@ -137,10 +137,12 @@
  }
  .app-delete-btn11{
      
-     padding: 2px;
+     /* padding: 2px; */
+     height: 5vh;
+     width: 5vw;
      font-size: 13px;
-     /* border: none; */
-     
+     font-weight: 500;
+     border: none;
      background-color: rgb(215, 37, 37);
      cursor: pointer;  
     margin: 2px;
@@ -156,10 +158,12 @@
  }
  .app-edit-btn11{
      
-     padding: 2px;
-     font-size: 13px;
+     /* padding: 2px; */
+     width: 5vw;
+     height: 5vh;
+     font-size:15px;
      background-color: dodgerblue;
-     /* border: none;    */
+     border: none;   
      cursor: pointer;
      margin: 2px;
     color: white;
@@ -173,11 +177,12 @@
      transition: 0.5s;
  }
  .book-text{
-     width: 50px;
+     width: 5vw;
+     height: 5vh;
      padding: 2px;
      font-size: 13px;
      background-color: dodgerblue;
-     /* border: none;    */
+     border: none;   
      cursor: pointer;
      border: none;
      border-radius: 5px;
@@ -395,17 +400,18 @@
          border: none;   
      
      }
-     .app-delete-btn11{
+     .app-delete-btn21{
          
-         padding: 2px;
-         font-size: x-small;
-         /* border: none; */
-         
-         background-color: rgb(215, 37, 37);
+      padding: 5px;
+         font-size: 50px;
+         border: none;
+         background-color: rgb(218, 7, 7);
          cursor: pointer;  
         margin: 2px;
         color: white;
-        width: 50px ;
+        width: 5vw;
+        height: 10vh;
+        width: 50px !important;
      }
      .app-delete-btn11:hover{
          background-color: rgb(233, 98, 98);
@@ -422,6 +428,7 @@
          margin: 2px;
         color: white;
         width: 50px !important;
+        font-weight: 300;
      }
      .app-edit-btn11:hover{
          background-color: rgb(104, 163, 221);
