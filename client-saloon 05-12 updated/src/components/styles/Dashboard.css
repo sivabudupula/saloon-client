@@ -89,8 +89,7 @@ transform: scale(1);
   width: 100px;
   height: 65px;
   background-color: #dde7f0;
-  color: #150b0b;
-  
+  color: #150b0b;  
   margin-left: 5px;
     margin-bottom: 7px;
   cursor: pointer;
@@ -203,7 +202,7 @@ font-size: 25px;
 
 
 
-/* .all-small-cards2345{
+ .all-small-cards2345{
 width: 25%;
 height: 70px;
 padding: 10px;
@@ -211,7 +210,7 @@ margin: 1%;
 color: white;
 display: flex;
 flex-direction: column;  
-} */
+} 
 
 .small-cards2{
 background-color: rgb(64, 153, 241);
