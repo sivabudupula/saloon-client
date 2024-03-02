@@ -459,7 +459,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
   }
 
   return (
-    <div>
+    <div className="main-appointments">
       {displayComponent === "Appointments" ? (
         <>
           <div className="customer-container11">

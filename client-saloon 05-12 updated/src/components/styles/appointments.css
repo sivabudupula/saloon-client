@@ -4,6 +4,10 @@
  
   
  }
+ .main-appointments{
+  font-family: 'Poppins';
+
+ }
  .customer-table11-th{
      background-color: #f0ecec;
      padding: 8px;
@@ -14,12 +18,12 @@
  .customer-table11-td{
      border: 1px solid #ccc;
      padding-left: 4px;
-     font-size: small;
+     font-size: 14px;
  }
  .customer-table11-td1{
      border: 1px solid #ccc;
      text-align: center !important;
-     font-size: small;
+     font-size: 14px;
  }
  .customer-table1122-td{
      border: 1px solid #ccc;
@@ -61,6 +65,7 @@
     font-size: 1rem;
     /* font-weight: bold; */
     border: 1px solid #ccc;
+    font-size: 20px;
 }
  
  .entries-div121{
@@ -103,7 +108,7 @@
       border: 1px solid #ccc;
    border-radius: 2px;
    margin: 2px;
-   padding: 4px;
+   padding: 2px;
    width: 60px;
      font-size: small;
      text-align: center;
@@ -133,7 +138,7 @@
  .app-delete-btn11{
      
      padding: 2px;
-     font-size: x-small;
+     font-size: 13px;
      /* border: none; */
      
      background-color: rgb(215, 37, 37);
@@ -141,6 +146,8 @@
     margin: 2px;
     color: white;
     width: 50px ;
+    border: none;
+    border-radius: 5px;
  }
  .app-delete-btn11:hover{
      background-color: rgb(233, 98, 98);
@@ -150,12 +157,14 @@
  .app-edit-btn11{
      
      padding: 2px;
-     font-size: x-small;
+     font-size: 13px;
      background-color: dodgerblue;
      /* border: none;    */
      cursor: pointer;
      margin: 2px;
     color: white;
+    border: none;
+    border-radius: 5px;
     width: 50px !important;
  }
  .app-edit-btn11:hover{
@@ -166,10 +175,12 @@
  .book-text{
      width: 50px;
      padding: 2px;
-     font-size: x-small;
+     font-size: 13px;
      background-color: dodgerblue;
      /* border: none;    */
      cursor: pointer;
+     border: none;
+     border-radius: 5px;
      margin: 2px;
     color: white;
  

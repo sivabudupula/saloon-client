@@ -3,7 +3,12 @@
   background-size: cover;  
   
 }
-
+.dropdown-item-salon23,.dropdown-item-salon23,.name234,.sub-button23,.heading234,.heading234,.small-cards2,.all-small-cards2345,.small-cards23,.small-cards234,.small-cards2345,.button-indicators23{
+  font-family: 'Poppins';
+}
+.heading234{
+  font-size: 25px !important;
+}
 .second-container23{
 margin-top: 50px;
 
@@ -28,6 +33,12 @@ margin-top: 50px;
   width: 99vw;
   background-color: rgb(8, 49, 119);
   z-index: 99;
+}
+.matrical-logo{
+  height: 65px;
+  width: 100px;
+  margin: 10px 0px 0px 10px;
+
 }
 .logo-button23{
 /* text-align: right; */
@@ -54,9 +65,9 @@ position: relative;
   margin-right: 2%;
   background-color: transparent; */
   color: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
     padding: 5px;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 .logo-sizing23:hover{
   color: rgb(247, 250, 247);
@@ -85,14 +96,13 @@ transform: scale(1);
 }
 .dashboard-button-salon23{
   padding: 10px ;
- margin-right: 1px;
-  width: 100px;
+ margin-right: 23px;
+  width: 120px;
   height: 65px;
   background-color: #dde7f0;
-  color: #150b0b;
-  
+  color: #150b0b;  
   margin-left: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   cursor: pointer;
   margin-top: 10px;
   display: flex;
@@ -101,8 +111,10 @@ transform: scale(1);
 }
 .dashboard-button-salon23:hover{
   /* background-color: #ebd398; */
-  color: black;
+  color: white;
   transform: scale(1.2);
+  border-color: #ffffff;
+  background-color: #40a5a0;
 }
 
 .icon-center23{
@@ -201,9 +213,34 @@ font-size: 25px;
 /* Add media query for smaller screens */
 /* Add media query for smaller screens */
 
+.all-small-cards2345 {
+  width: 25%;
+  height: 70px;
+  padding: 10px;
+  margin: 1%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(213, 8, 8);
+  transition: all 0.3s ease; /* Apply transition to all properties */
+}
 
+.all-small-cards2345:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ff0000; /* Change the background color on hover */
+  transform: scale(1.05); /* Add a scaling effect on hover */
+}
 
-.all-small-cards2345{
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* .all-small-cards2345{
 width: 25%;
 height: 70px;
 padding: 10px;
@@ -212,7 +249,7 @@ color: white;
 border: 2px solid #2b2222;
 display: flex;
 flex-direction: column;
-}
+} */
 .small-cards2{
 background-color: rgb(225, 110, 69);
 

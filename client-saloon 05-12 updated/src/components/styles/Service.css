@@ -7,7 +7,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin-left: 5%;
-  
+  font-family: 'Poppins';
 }
 .widthrange290{
   
@@ -32,7 +32,7 @@
   background-color: #f0ecec;
   box-shadow: 0px 0px 0px 1px bisque;
   color: black;
-  font-size: 0.9rem;
+  font-size: 20px;
   margin-top: 0px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
@@ -74,14 +74,16 @@
   background-color: #0ca807;
   color: #fff;
   font-size: small;
-  width: 70px;
+  width: 100px;
   text-align: center;
   text-decoration: none;
 }
 .add-button-sk141:hover{
   background-color: #0c5f0a;
 }
-
+.main-empee{
+  font-family: 'Poppins';
+}
 .save-button-sk141 {
  
   padding: 7px;

@@ -71,7 +71,7 @@ const AddProduct = () => {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <ToastContainer />
       <form className="addproduct12" autoComplete="off">
         <h5 className="product-heading12">Add Product</h5>

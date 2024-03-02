@@ -637,7 +637,7 @@ const openPrintWindow = (printContent) => {
           </div>
           {/* <div className="lable-width567"> */}
           <div className='flex1100'>
-          <label className="bill-no12345 width8901">Customer :</label>
+          <label className="bill-no12345 width8901">Customer:</label>
           {/* </div> */}
           <select
             className="bnsk142sinput89"

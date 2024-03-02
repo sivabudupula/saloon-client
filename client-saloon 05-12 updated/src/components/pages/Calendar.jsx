@@ -323,7 +323,7 @@ const Calendar = ({onNewBillClick}) => {
           onPageChange={paginate}
         />
       </div>
-
+<div className="main-empp">
       {selectedEvent && (
         <Modal show={true} onHide={closeModal}>
           <Modal.Header>
@@ -391,6 +391,7 @@ const Calendar = ({onNewBillClick}) => {
           </Modal.Footer>
         </Modal>
       )}
+      </div>
     </div>
   );
 }

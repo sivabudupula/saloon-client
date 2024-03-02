@@ -8,6 +8,9 @@
   border: 1px solid #efe9e9;
   box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
 }
+.main-empp{
+  font-family: 'Poppins';
+}
 .empinput456{
   width: 30%;
   border: 1px solid #ccc;
