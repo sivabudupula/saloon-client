@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Dashboard.css";
-
 import { PiOfficeChairBold } from "react-icons/pi";
 import { BiCalendar } from "react-icons/bi";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { AiFillDatabase } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
+import  billing from '../images/billing.jpeg';
+import appo from'../images/appo.jpeg';
+import customers from'../images/customers.jpeg';
+import add from'../images/add.jpeg';
+import message from'../images/message.jpeg';
+import inven from '../images/inven.jpeg'
+
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -16,7 +22,6 @@ import { BsCurrencyRupee } from "react-icons/bs";
 import { AiOutlineBarChart } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import axios from "axios";
-
 import Calendar from "./Calendar.jsx";
 import AddEmployee from "./AddEmployee.js";
 import NewAppointment from "./newappointment.js";
@@ -241,17 +246,17 @@ function Dashboard() {
             <div className="icon-center23 ">
               <BiCalendar />{" "}
             </div>
-            <div className="name234">CALENDAR</div>
+            <div className="name234">Calendar</div>
           </button>
-
           <button
             className="dashboard-button-salon23"
             onClick={() => setSelectedButton("Billing")}
           >
             <div className="icon-center23 ">
-              <FaMoneyBillWaveAlt />
+              {/* <FaMoneyBillWaveAlt /> */}
+              <img src={billing} alt=""></img>
             </div>
-            <div className="name234">BILLING</div>
+            <div className="name234">Billing</div>
           </button>
 
           <button
@@ -259,9 +264,10 @@ function Dashboard() {
             onClick={() => handleButtonClick("Appointments")}
           >
             <div className="icon-center23 ">
-              <FaUsers />
-            </div>
-            <div className="name234">APPOINTMENTS</div>
+              {/* <FaUsers /> */}
+              <img src={appo} alt=""></img>
+            </div> 
+            <div className="name234">Appoinments</div>
           </button>
 
           <button
@@ -270,9 +276,10 @@ function Dashboard() {
           >
             {" "}
             <div className="icon-center23 ">
-              <AiFillDatabase />
+              {/* <AiFillDatabase /> */}
+              <img src={customers}></img>
             </div>
-            <div className="name234">CUSTOMERS</div>
+            <div className="name234">Customers</div>
           </button>
 
           <button
@@ -280,9 +287,10 @@ function Dashboard() {
             onClick={() => handleButtonClick("Inventory")}
           >
             <div className="icon-center23 ">
-              <BsGraphUpArrow />
+              {/* <BsGraphUpArrow /> */}
+              <img src={inven}alt=""></img>
             </div>
-            <div className="name234">INVENTORY</div>
+            <div className="name234">Inventory</div>
           </button>
 
           <button
@@ -290,9 +298,10 @@ function Dashboard() {
             onClick={() => setSelectedButton("Services")}
           >
             <div className="icon-center23 ">
-              <MdOutlineHomeRepairService />
+              {/* <MdOutlineHomeRepairService /> */}
+              <img src={add} alt=""></img>
             </div>
-            <div className="name234">ADD/REMOVE SERVICES</div>{" "}
+            <div className="name234">Services</div>{" "}
           </button>
 
           <button
@@ -302,7 +311,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               <AiOutlineMenu />
             </div>
-            <div className="name234">EMPLOYEES</div>{" "}
+            <div className="name234">Employees</div>{" "}
           </button>
 
           <button
@@ -312,7 +321,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               <TbReportAnalytics />
             </div>
-            <div className="name234">REPORTS</div>
+            <div className="name234">Reports</div>
           </button>
 
           <button
@@ -320,9 +329,10 @@ function Dashboard() {
             onClick={() => setSelectedButton("Messages")}
           >
             <div className="icon-center23 ">
-              <AiOutlineMessage />
+              {/* <AiOutlineMessage /> */}
+              <img src={message} alt=""></img>
             </div>
-            <div className="name234">MESSAGES</div>{" "}
+            <div className="name234">Messages</div>{" "}
           </button>
         </div>
 
@@ -523,7 +533,7 @@ function Dashboard() {
         <div className="cards-container23">
           <h5 className="heading234">Financial Statistics</h5>
           <div className="cards-flex23">
-            <div className="small-cards2 all-small-cards2345">
+            <div className=" all-small-cards23456">
               <div className="flextochange789">
                 <BsFillCartCheckFill className="icon-center234 " />
                 <p className="amount-fetch23">
@@ -532,7 +542,7 @@ function Dashboard() {
               </div>
               Services Amount
             </div>
-            <div className="small-cards23 all-small-cards2345">
+            <div className=" all-small-cards23456">
               <div className="flextochange789">
                 <BsCurrencyRupee className="icon-center234 " />
                 <p className="amount-fetch23">
@@ -541,14 +551,14 @@ function Dashboard() {
               </div>
               Inventory Amount
             </div>
-            <div className="small-cards234 all-small-cards2345">
+            <div className=" all-small-cards23456">
               <div className="flextochange789">
                 <AiOutlineBarChart className="icon-center234 " />
                 <p className="amount-fetch23">{totalNumberOfBills || 0}</p>{" "}
               </div>
               Bills Generated
             </div>
-            <div className="small-cards2345 all-small-cards2345">
+            <div className=" all-small-cards23456">
               <div className="flextochange789">
                 <FiUsers className="icon-center234 " />
                 <p className="amount-fetch23">

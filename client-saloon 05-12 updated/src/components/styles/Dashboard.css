@@ -212,6 +212,39 @@ display: flex;
 flex-direction: column;  
 } 
 
+
+
+.all-small-cards19{
+  width: 25%;
+  height: 70px;
+  padding: 10px;
+  margin: 1%;
+  background-color: #0f0ca8;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;  
+  } 
+  .karthik{
+    height: 10px;
+    width: 10px;
+  }
+  .all-small-cards23456{
+    width: 25%;
+    height: 15vh;
+    padding: 10px;
+    margin: 1%;
+    background-color: #f0f0f7;
+    border-radius: 10px;
+   color: blue;
+    display: flex;
+    box-shadow: 0px 0px  2px rgb(0,0,0.4);
+    flex-direction: column;  
+    } 
+    .all-small-cards23456:hover{
+      background-color: #0f0ca8;
+      color: white;
+    }
 .small-cards2{
 background-color: rgb(64, 153, 241);
  
