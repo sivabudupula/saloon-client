@@ -35,7 +35,7 @@ const BillingForm = () => {
   // const [billingData, setBillingData] = useState([]);
   const [selectedCustomerId, setSelectedCustomerId] = useState("");
 
-  const [, setSelectedCustomerName] = useState("");
+  const [selectedCustomerName, setSelectedCustomerName] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
   // const [couponCode,] = useState('');
   const [couponDiscount] = useState(0);
@@ -190,6 +190,7 @@ const BillingForm = () => {
   useEffect(() => {
     fetchAvailableEmployees();
   }, []);
+  
   const fetchAvailableEmployees = async () => {
     try {
       const response = await axios.get(`${BASE_URL}/api/employees`); // Replace with your backend API endpoint
@@ -554,9 +555,9 @@ const BillingForm = () => {
       if (response.status === 200) {
         const customerData = response.data;
         if (customerData.length > 0) {
-          const selectedCustomer = customerData[0]; // Retrieve the first record (or the specific record you need)
-          setSelectedCustomerId(selectedCustomer.customerId); // Assuming customerId is a property in your API response
-          setSelectedCustomerName(selectedCustomer.name); // Assuming name is a property in your API response
+          // const selectedCustomer = customerData[0]; // Retrieve the first record (or the specific record you need)
+          // setSelectedCustomerId(selectedCustomer.customerId); // Assuming customerId is a property in your API response
+          // setSelectedCustomerName(selectedCustomer.name); // Assuming name is a property in your API response
         } else {
           // Handle case when no customer is found for the provided mobile number
           toast.warn("Customer not found for the provided mobile number.");
@@ -584,14 +585,13 @@ const BillingForm = () => {
       return;
     }
 
-    // Find the customer with the matching phone number
     const selectedCustomer = customerNames.find(
-      (customer) => customer.phone && customer.phone.includes(query)
+      (customer) => customer.phone && customer.phone.includes(query) && query.length === 10
     );
 
     if (selectedCustomer) {
       // If a customer with the entered phone number is found, set the selected customer and customer ID in the state
-      setSelectedCustomerId(selectedCustomer._id);
+      setSelectedCustomerId(selectedCustomer.customerId);
       setSelectedCustomerName(selectedCustomer.name);
       setSelectedMobileNumber(selectedCustomer.phone);
     } else {
@@ -653,19 +653,20 @@ const BillingForm = () => {
           <div className="flex1100">
             <label className="bill-no12345 width8901">Customer :</label>
             {/* </div> */}
-            <select
+            <input
               className="bnsk142sinput89"
-              value={selectedCustomerId}
-              onChange={(e) => setSelectedCustomerId(e.target.value)}
-              required
+              value={`${selectedCustomerName || ''}${selectedCustomerId ? ` (${selectedCustomerId})` : ''}`}
+              readOnly
+              // onChange={(e) => setSelectedCustomerName(e.target.value)}
+              // required
             >
-              <option value="">select a Customer</option>
+              {/* <option value="">select a Customer</option>
               {customerNames.map((customer, index) => (
                 <option key={customer._id} value={customer._id}>
                   {customer.name}&nbsp;({customer.customerId})
                 </option>
-              ))}
-            </select>
+              ))} */}
+            </input>
 
             <button className="addnewsk142s" onClick={handleCustomerFormOpen}>
               <span className="plusk142s">+</span>Add New
