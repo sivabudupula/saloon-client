@@ -19,7 +19,7 @@ const Bulk = () => {
     alert('Sending SMS:', message);
   };
   return (
-    <div>
+    <div className="main-empp">
      <div className='A7custmaindiv89'>
       
         

@@ -188,7 +188,7 @@ function AddEmployee({ data, onSave, onCancel }) {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <div className="add-employee-container-saloon2345">
         <h6 className="edit-customer-heading11"> Add Employee </h6>
         <form onSubmit={handleSubmit} autoComplete="off">

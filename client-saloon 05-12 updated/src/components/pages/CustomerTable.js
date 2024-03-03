@@ -103,7 +103,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <div className="customer-container11">
       <h6 className='edit-customer-heading1123'> Customers</h6>
       <div className='margin786'>
@@ -119,7 +119,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
             <label> Entries </label>
           </div>
           <div className="A7serinp">
-            <label> Search </label>
+            <label className='one-in'> Search </label>
             <input className="input2" 
             type="search"
             value={searchQuery}
@@ -147,8 +147,8 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
             <tbody>
               {currentItems.map((customer) => (
                 <tr key={customer.email}>
-                  <td className='customer-table-td1'>{customer.customerId}</td>
-                  <td  className='customer-table-td'>{customer.name}</td>
+                  <td style={{color: '#007bff', cursor: 'pointer'}} className='customer-table-td1'onClick={() => handleClick(customer)}>{customer.customerId}</td>
+                  <td style={{color: '#007bff', cursor: 'pointer'}} className='customer-table-td'onClick={() => handleClick(customer)}>{customer.name}</td>
                   <td  className='customer-table-td1'>{formatDate(customer.dob)}</td>
                   <td  className='customer-table-td'>{customer.email}</td>
                   <td  className='customer-table-td1'>{customer.phone}</td>

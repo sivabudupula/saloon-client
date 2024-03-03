@@ -57,7 +57,7 @@ const Individual = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main-empp">
       <div className='A7custmaindiv89'>
         
           <h4 className='A7custheader23'>Individual</h4>

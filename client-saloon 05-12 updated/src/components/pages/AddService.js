@@ -49,7 +49,7 @@ const AddService = () => {
   };
 
   return (
-    <div>
+    <div className="main-empp">
 
 
     <div className="add-service-container-sk141s"> 

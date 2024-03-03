@@ -297,7 +297,7 @@ const Employees = ({ onNewEmployeeClick }) => {
   };
 
   return (
-    <div>
+    <div className="main-empee">
       {displayComponent === "Employees" ? (
         <>
           <div className="customer-container11">

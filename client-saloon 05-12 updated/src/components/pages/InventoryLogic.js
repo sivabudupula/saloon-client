@@ -54,7 +54,7 @@ const Inventory = () => {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <h1>Inventory</h1>
       <ul>
         {inventory.map((item) => (

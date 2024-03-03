@@ -296,7 +296,7 @@ function BillingTable() {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <div className="billing-table-container-sk654s">
         <div className="headingreport6789">Billing Report</div>
 
