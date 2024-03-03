@@ -3,6 +3,10 @@
   color: white;
   height: 20px;
 }
+.both-calendar-container2pcc{
+  font-family: 'Poppins';
+
+}
 
 
 .roaylcalendermain2p-cal {
@@ -67,10 +71,12 @@
   font-weight: 600;
   margin-bottom: -5px;
   margin-left: 2%;
+  font-family: 'Poppins';
 }
 .box-container{
   width: 100px;
   text-align: left;
+  font-family: 'Poppins';
   
 }
 .pad576{
@@ -89,6 +95,7 @@
   width: 120px;
   text-align: left;
   padding-left: 2%;
+  font-family: 'Poppins';
 }
 .box-container12{
   width: 100px;

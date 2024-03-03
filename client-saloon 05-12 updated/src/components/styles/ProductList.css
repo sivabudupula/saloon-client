@@ -9,7 +9,7 @@
   padding: 7px;
   margin-bottom: 0px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-size: 20px;
 }
 .space209 {
   padding: 10px;
@@ -22,6 +22,11 @@
   border: 1px solid #ccc;
   background-color: white;
   box-shadow: 6px 5px 6px #ccc;
+  font-family: 'Poppins';
+
+}
+.customer-table11-td1,.pd-td12,.pd-td123{
+  font-size: 14px;
 }
 .pd-table12 {
   width: 100%;
@@ -66,9 +71,13 @@
   border: none;
   height: 5vh;
   background-color: #007bff;
-  font-size: 15px;
+  font-size: 13px;
   color: white;
   cursor: pointer;
+  border: none;
+}
+.pdedit-btn12:hover{
+  background-color: #19c013;
 }
 
 .pagination-btns470 {

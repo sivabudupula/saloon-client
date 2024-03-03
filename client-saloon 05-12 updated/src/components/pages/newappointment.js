@@ -135,7 +135,7 @@ const NewAppointment = ({ customer }) => {
   };
   
   return (
-    <div >
+    <div className="main-empp" >
 
 
       <div className='appnt-form11'>
