@@ -79,6 +79,21 @@
 .delete-button-sk142sk:hover{
   background-color: #cc0000;
 }
+.delete-buttonss{
+  padding: 6px ;
+  margin: 2px;
+  width: 60px;
+  /* margin-bottom: 10px; */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #ff5555;
+  color: #fff;
+  font-size: small;
+}
+.delete-buttonss:hover{
+  background-color: #cc0000;
+}
 
 @media screen and (max-width:480px) {
   .edit-service-container-sk142sk {

@@ -17,18 +17,18 @@ margin-top: 50px;
   margin-left: 30%;
 }
 .Inventory{
-  height: 9vh;
-  width: 15vw;
-  margin-left: 15%;
+  height: 7vh;
+  width: 6vw;
+  margin-left: 20%;
   background-color: none;
-  margin-top: 7%;
+  margin-top: 3%;
 
 }
 .Inventoryd{
   height: 6vh;
   width: 5vw;
-  margin-left: 5%;
-  margin-top: 1.4rem;
+  margin-left: 25%;
+ margin-top: 6px;
   background-color: none;
   /* margin-top: -10%; */
 
@@ -39,15 +39,16 @@ margin-top: 50px;
 
 }
 .amounts{
-  font-size: 10px;
-
-font-weight: 500;
+  font-size: 13px;
+font-family: 'poppins';
+font-weight: 600;
 
 }
 .dashboard-salon23{
   display: flex;
-  margin-left: 1%;
-  background-color: rgb(228, 232, 240);
+
+  margin-left: 4%;
+  background-color: white;
   flex-wrap: wrap;
 }
 
@@ -64,7 +65,7 @@ font-weight: 500;
 .fixed-container678{
  
   width: 99vw;
-  background-color: rgb(230, 233, 237);
+  background-color: white;
   z-index: 99;
 }
 .matrical-logo{
@@ -91,13 +92,15 @@ cursor: pointer;
 position: relative;
   display: inline-block; */
 }
-
+.profile{
+  height: 50px;
+  width: 50px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
 .logo-sizing23{
-  /* margin-bottom: 7px;
-  margin-top: -20px;
-  margin-right: 2%;
-  background-color: transparent; */
-  color: white;
+  font-size: 25px;
+  color: black;
   /* border: 2px solid white; */
     padding: 5px;
     font-size: xxx-large;
@@ -132,23 +135,25 @@ transform: scale(1);
  margin-right: 23px;
   width: 120px;
   height: 65px;
-  background-color: #dde7f0;
+  background-color: white;
   color: #150b0b;  
   margin-left: 5px;
     margin-bottom: 10px;
-  margin-left: 30px  !important;
-    margin-bottom: 7px;
+  /* margin-left: 1px  !important; */
+    margin-bottom: 10px;
   cursor: pointer;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  border-color: #0f0ca8 !important;
 }
 .dashboard-button-salon23:hover{
-  /* background-color: #ebd398; */
-  color: black;
+  background: rgb(12, 3, 190);
+background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, rgba(0,212,255,1) 100%);
   transform: scale(1.2);
+  color: white;
 }
 
 .icon-center23{
@@ -169,15 +174,17 @@ transform: scale(1);
   background-color: #3390f3;
   color: white;
   padding: 4px;
+  
   /* height: 36px; */
   text-align: left;
-  padding-left: 12px;
+  padding-left: 250px;
   font-size: 20px;
   box-shadow: #150b0b;
   border-bottom: 2px solid rgb(69, 67, 67);
   /* position: fixed; */
 
 }
+
 .dashboard-button:hover {
   background-color: #0056b3;
 }
@@ -196,7 +203,7 @@ transform: scale(1);
 }
 
 .welcome23{
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-family: system-ui;
   padding: 8px;
@@ -218,14 +225,14 @@ margin-left: 50%;
 
 
 .cards-container23{
-width: 90%;
+width: 92%;
 margin-left: 5%;
-
 text-align: left;
 margin-bottom: 1%;
 background-color: white;
 border: 1px solid #ccc;
 box-shadow: 6px 5px 6px #ccc;
+
 }
 
 .white-bg23{
@@ -233,19 +240,21 @@ background-color: aliceblue;
 padding-top: 10px;
 padding-bottom: 98px;
 height: 100%;
+
 }
 
 .amount-fetch23{
 text-align: right;
 /* padding-top: -10%; */
-margin-top: -2rem;
+margin-top: -1.5rem;
 font-size: large;
+margin-right: 90%;
 }
 
 .amount-fetch234{
-  text-align: right;
+  padding-left: 7px;
   /* padding-top: -10%; */
-  margin-top: -1rem;
+  margin-top: -0.95rem;
   font-size: large;
   }
 .icon-center234{
@@ -262,7 +271,7 @@ font-size: 25px;
   margin: 1%;
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   background-color: rgb(213, 8, 8);
   transition: all 0.3s ease; /* Apply transition to all properties */
 }
@@ -282,14 +291,14 @@ font-size: 25px;
   }
 }
 
-/* .all-small-cards2345{
+.all-small-cards2345{
 width: 25%;
 height: 70px;
 padding: 10px;
 margin: 1%;
 color: white;
 display: flex;
-flex-direction: column;  
+flex-direction:row;  
 } 
 
 
@@ -303,37 +312,43 @@ flex-direction: column;
   border-radius: 10px;
   color: white;
   display: flex;
-  flex-direction: column;  
+  flex-direction: row;  
   } 
   .karthik{
     height: 10px;
     width: 10px;
   }
   .all-small-cards23456{
-    width: 25%;
-    height: 15vh;
+    width: 22.5%;
+    height: 13vh;
     padding: 10px;
     margin: 1%;
     background-color: #f0f0f7;
     border-radius: 10px;
    color: blue;
-    display: flex;
+    /* display: flex; */
     box-shadow: 0px 0px  2px rgb(0,0,0.4);
-    flex-direction: column;  
+    flex-direction: row;  
     } 
     .all-small-cards23456:hover{
-      background-color: #0f0ca8;
-      color: white;
+       background: rgb(12, 3, 190);
+        background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, rgba(0,212,255,1) 100%);
+        transform: scale(1.1);
+        color: white;
     }
 .small-cards2{
 background-color: rgb(64, 153, 241);
  
 }
+.mii{
+  display: flex;
+  flex-direction: row;
+}
 .small-cards23{
 /* background-color:#daa520;
 background-color:rgb(131, 118, 87); */
 /* background-color:#4406ef;
-} */
+}
 .small-cards234{
 background-color: rgb(7, 202, 236);
 
@@ -366,6 +381,10 @@ position: fixed;
 .logostyle23:hover .dropdown-menu-salon23 {
   display: block;
 }
+.cards-flex23{
+  display: flex;
+  flex-direction:row ;
+  }
 
 
 
