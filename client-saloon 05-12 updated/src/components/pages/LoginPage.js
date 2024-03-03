@@ -38,13 +38,13 @@ const handleSubmit = async (e) => {
       toast.success('Login Successful');
       setToken(response.data.token);
       localStorage.setItem('token', response.data.token);
-      localStorage.setItem('username' , username)
+      
       localStorage.setItem('userRole' ,response.data.userRole )
       
-      const decodedToken = jwtDecode(token);
+      // const decodedToken = jwtDecode(token);
 
-      // const userRole = decodedToken.user.role;
-      const userRole = response.data.userRole; 
+       // const userRole = decodedToken.user.role;
+      // const userRole = response.data.userRole; 
       
       
       // Display a success message

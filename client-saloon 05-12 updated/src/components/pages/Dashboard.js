@@ -580,7 +580,7 @@ function Dashboard() {
       </div>
 
       <div className="white-bg23">
-        <div className="cards-container23">
+        {/* <div className="cards-container23">
           <h5 className="heading234">Financial Statistics</h5>
           <div className="cards-flex23">
             <div className=" all-small-cards23456">
@@ -619,7 +619,7 @@ function Dashboard() {
               Appoinments
             </div>
           </div>
-        </div>
+        </div> */}
         {selectedButton === "Edit profile" && <EditProfile />}
 
         {selectedButton === "Register" && <Register />}
