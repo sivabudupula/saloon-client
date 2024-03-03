@@ -654,7 +654,7 @@ const BillingForm = () => {
           </div>
           {/* <div className="lable-width567"> */}
           <div className="flex1100">
-            <label className="bill-no12345 width8901">Customer :</label>
+            <label className="bill-no12345 width8901">Customer:</label>
             {/* </div> */}
             <input
               className="bnsk142sinput89"
@@ -895,7 +895,7 @@ const BillingForm = () => {
             value={paymentMethod}
             onChange={(e) => setPaymentMethod(e.target.value)}
           >
-            <option value="">Select Payment Method</option>
+            <option value="">Payment Method</option>
             <option value="online">Online</option>
             <option value="credit_card">Credit Card</option>
             <option value="debit_card">Debit Card</option>

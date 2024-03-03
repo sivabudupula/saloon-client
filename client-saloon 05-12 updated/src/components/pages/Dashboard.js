@@ -5,18 +5,19 @@ import { BiCalendar } from "react-icons/bi";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { AiFillDatabase } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
-import  billing from '../images/billing.jpeg';
-import  calendar from '../images/calendar.jpeg';
-import appo from'../images/appo.jpeg';
-import customers from'../images/customers.jpeg';
-import add from'../images/add.jpeg';
-import message from'../images/message.jpeg';
-import inven from '../images/inven.jpeg'
-import Inventory from  '../images/Inventory.jpeg';
-import good from'../images/good.jpeg';
-import wave from '../images/wave.jpeg';
-import phoo from'../images/phoo.jpeg';
-import setting from '../images/setting.jpeg';
+import billing from "../images/billing.jpeg";
+import calendar from "../images/calendar.jpeg";
+import appo from "../images/appo.jpeg";
+import customers from "../images/customers.jpeg";
+import profile from "../images/profile.jpeg";
+import add from "../images/add.jpeg";
+import message from "../images/message.jpeg";
+import inven from "../images/inven.jpeg";
+import Inventory from "../images/Inventory.jpeg";
+import good from "../images/good.jpeg";
+import wave from "../images/wave.jpeg";
+import phoo from "../images/phoo.jpeg";
+import setting from "../images/setting.jpeg";
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -34,7 +35,7 @@ import EditProfile from "./EditProfile.js";
 import Register from "./Register.js";
 import Appointments from "./appointments.js";
 import InventoryList from "./InventoryList.js";
-import total from'../images/total.jpeg';
+import total from "../images/total.jpeg";
 import ProductList from "./ProductList.js";
 import Suppliers from "./Suppliers.js";
 import ServiceForm from "./Service.js";
@@ -67,7 +68,7 @@ function Dashboard() {
   // const [appointments, setAppointments] = useState(false);
   // const [bills, setBills] = useState([]);
   const [customerData, setCustomerData] = useState([]);
-
+  const [alertShown, setAlertShown] = useState(false);
   // const [token,setToken] = useContext(store);
 
   const [totalInventoryAmount, setTotalInventoryAmount] = useState(0); // Declare totalInventoryAmount
@@ -81,8 +82,6 @@ function Dashboard() {
   if (!token) {
     navigate("/");
   }
-
-  
 
   useEffect(() => {
     // Check if there is a previously selected component in localStorage
@@ -224,8 +223,10 @@ function Dashboard() {
         <div className="dashboard-salon2390">
           <h4 className="welcome23">Saloon</h4>
           <div className="logostyle23">
-            <PiOfficeChairBold className="logo-sizing23" />
+            <p className="logo-sizing23" />
+            <img src={profile} alt="" className="profile"></img>{" "}
             <div className="tooltip-dropdown">
+           
               <div className="dropdown-item-salon23" onClick={handleLogout}>
                 Log out
               </div>
@@ -249,7 +250,7 @@ function Dashboard() {
             onClick={() => setSelectedButton("Calendar")}
           >
             <div className="icon-center23 ">
-            <img src={calendar} alt="" className="calenadr"></img>{" "}
+              <img src={calendar} alt="" className="calenadr"></img>{" "}
             </div>
             <div className="name234">Calendar</div>
           </button>
@@ -270,7 +271,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               {/* <FaUsers /> */}
               <img src={appo} alt=""></img>
-            </div> 
+            </div>
             <div className="name234">Appoinments</div>
           </button>
 
@@ -279,10 +280,7 @@ function Dashboard() {
             onClick={() => handleButtonClick("Customers")}
           >
             {" "}
-            <div className="icon-center23 ">
-              {/* <AiFillDatabase /> */}
-             
-            </div>
+            <div className="icon-center23 ">{/* <AiFillDatabase /> */}</div>
             <img src={phoo} alt="" className="setting"></img>
             <div className="name234">Customers</div>
           </button>
@@ -293,7 +291,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <BsGraphUpArrow /> */}
-              <img src={inven}alt=""></img>
+              <img src={inven} alt=""></img>
             </div>
             <div className="name234">Inventory</div>
           </button>
@@ -304,10 +302,9 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <MdOutlineHomeRepairService /> */}
-            
             </div>
             <img src={setting} alt="" className="setting"></img>
-            <div className="name234">Services/settings</div>{" "}
+            <div className="name234">Services</div>{" "}
           </button>
 
           <button
@@ -325,23 +322,20 @@ function Dashboard() {
             className="dashboard-button-salon23"
             onClick={() => setSelectedButton("Reports")}
           >
-            <div className="icon-center23 ">
-              {/* <TbReportAnalytics /> */}
-            </div>
+            <div className="icon-center23 ">{/* <TbReportAnalytics /> */}</div>
             <img src={customers} className="setting"></img>
             <div className="name234">Reports</div>
           </button>
 
-          <button
+          {/* <button
             className="dashboard-button-salon23"
             onClick={() => setSelectedButton("Messages")}
           >
             <div className="icon-center23 ">
-              {/* <AiOutlineMessage /> */}
               <img src={message} alt=""></img>
             </div>
             <div className="name234">Messages</div>{" "}
-          </button>
+          </button> */}
         </div>
 
         <div className="button-indicators23">
@@ -543,54 +537,45 @@ function Dashboard() {
           <div className="cards-flex23">
             <div className=" all-small-cards23456">
               <div className="">
-
+                <div className="mii">
+                  <p className="amounts">Services Amount</p>
+                  <img src={wave} alt="" className="Inventoryd"></img>
+                </div>
+                <div className="flextochange789">
+                  {/* <BsFillCartCheckFill className="icon-center234 " /> */}
+                  <p className="amount-fetch234">
+                  ₹  {totalServiceAmount.toFixed(0) || 0}
+                  </p>{" "}
+                </div>
+              </div>
+            </div>
+            <div className=" all-small-cards23456">
               <div className="mii">
-              <p className="amount"> ServicesAmount</p>
-              <img src={wave} alt="" className="Inventoryd"></img>
+                <p className="amounts">Inventory Amount</p>
+                <img src={Inventory} alt="" className=" Inventory"></img>
               </div>
               <div className="flextochange789">
-                {/* <BsFillCartCheckFill className="icon-center234 " /> */}
-                <p className="amount-fetch234">
-                  {totalServiceAmount.toFixed(0) || 0}
+                {/* <BsCurrencyRupee className="icon-center234 " /> */}
+                <p className="amount-fetch23">
+                 ₹{totalInventoryAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
+            </div>
+            <div className=" all-small-cards23456">
+              <div className="mii">
+                <p className="amounts">Bills Generated</p>
+                <img src={good} alt="" className=" Inventory"></img>
               </div>
-            </div>
-            <div className=" all-small-cards23456">
-         
-             
-              <div className="mii">
-      
-              <p className="amount"> InventoryAmount</p>
-              <img src={ Inventory} alt="" className=" Inventory"></img>
-            </div>
-            <div className="flextochange789">
-            
-           
-            {/* <BsCurrencyRupee className="icon-center234 " /> */}
-          
-            <p className="amount-fetch23">
-              {totalInventoryAmount.toFixed(0) || 0}
-            </p>{" "}
-          </div>
-            </div>
-            <div className=" all-small-cards23456">
-             
-              <div className="mii">
-              <p className="amounts">Bills Generated</p>
-              <img src={ good} alt="" className=" Inventory"></img>
-            </div>
 
-
-            <div className="flextochange789">
+              <div className="flextochange789">
                 {/* <AiOutlineBarChart className="icon-center234 " /> */}
                 <p className="amount-fetch23">{totalNumberOfBills || 0}</p>{" "}
               </div>
             </div>
             <div className=" all-small-cards23456">
               <div className="mii">
-              <p className="amount"> Appoinments </p>
-              <img src={ total} alt="" className=" Inventory"></img>
+                <p className="amounts"> Appoinments </p>
+                <img src={total} alt="" className=" Inventory"></img>
               </div>
 
               <div className="flextochange789">

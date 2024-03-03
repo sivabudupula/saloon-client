@@ -147,9 +147,9 @@ const StockSelfUse = () => {
                 />
               </td>
               <td>
-                <button className='delete-button' onClick={() => deleteEntry(index)}>
-                  <FaTrash className='delete-icon' />
-              
+                <button className='delete-buttonss' onClick={() => deleteEntry(index)}>
+                  <div className='delete-icon' />
+              Delete
                 </button>
         
               </td>

@@ -91,7 +91,7 @@
      /* margin-bottom: 10px!important; */
  }
  .appnt-form11{
-    width: 90%;
+    width: 92%;
     margin-left: 5%;
     border: 1px solid #ccc;
  }
@@ -159,7 +159,7 @@
  .app-edit-btn11{
      
      /* padding: 2px; */
-     width: 5vw;
+     width: 10vw !important;
      height: 5vh;
      font-size:15px;
      background-color: dodgerblue;
@@ -169,7 +169,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    width: 50px !important;
+    width: 90px !important;
  }
  .app-edit-btn11:hover{
      background-color: rgb(104, 163, 221);

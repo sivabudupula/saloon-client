@@ -1,7 +1,7 @@
 .billing-form-sk142s {
-  width: 90%;
+  width: 92%;
   margin-left: 5%;
-   margin: 0 auto;
+   /* margin: 0 auto; */
    background-color: #fdfcfc;
    border: 1px solid #ccc;
    border-radius: 5px;
@@ -323,7 +323,7 @@ margin-top: 6%;
  border-radius: 3px;
 }
 .totalbillsk142s{
- width: 65px ;
+ width: 200px ;
  margin: 10px;
  padding: 5px;
  border: 1px solid #ccc;

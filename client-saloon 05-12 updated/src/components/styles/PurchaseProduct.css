@@ -1,7 +1,7 @@
 .pp-form13{
     /* margin-top: 10%; */
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
     /* padding-bottom: 2%; */
 border: 1px solid #ccc;
 background-color: white;
@@ -92,7 +92,7 @@ box-shadow: 0px 0px 9px #ccc;
 }
 .pp-entering13{
     
-    margin-left: 11%;
+    margin-left: 7% !important;
 
 }
 .ppe-th{

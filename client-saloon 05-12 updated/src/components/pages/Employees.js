@@ -340,7 +340,7 @@ const Employees = ({ onNewEmployeeClick }) => {
                     <th className="th-saloon2345">Mobile Number</th>
                     <th className="th-saloon2345">Email</th>
                     <th className="th-saloon2345">Address</th>
-                    <th className="th-saloon2345">File</th>
+                    <th className="th-saloon2345">User Name</th>
                     <th className="th-saloon2345">Actions</th>
                   </tr>
                 </thead>
@@ -363,18 +363,7 @@ const Employees = ({ onNewEmployeeClick }) => {
                       <td className="td-saloon2345">{employee.email}</td>
                       <td className="td-saloon2345">{employee.address}</td>
                       <td className="td-saloon2345">
-                        {employee.filePath && (
-                          <a
-                            href={`http://localhost:5000/uploads/${employee.filePath
-                              .split("\\")
-                              .pop()}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            download
-                          >
-                            View File
-                          </a>
-                        )}
+                        {employee.username}
                       </td>
 
                       <td className="td-saloon23456">

@@ -37,7 +37,7 @@
 .pd-container14{
     margin-top: 1%;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
     border: 1px solid #ccc;
     background-color: white;
     box-shadow: 6px 5px 7px #ccc;
@@ -72,7 +72,7 @@
   
   .ConfirmToast .button-container {
     display: flex;
-    gap: 10px; /* Adjust the gap between buttons */
+    gap: 25px; /* Adjust the gap between buttons */
   }
   
   .ConfirmToast button {
@@ -85,11 +85,15 @@
   .ConfirmToast button.yes {
     background-color: #28a745; 
     color: #fff; 
+    padding: 8px 16px;
+
   }
   
   .ConfirmToast button.no {
     background-color: #dc3545;
     color: #fff; 
+    padding: 8px 16px;
+
   }
 
 
