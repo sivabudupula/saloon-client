@@ -34,7 +34,7 @@ const BillingForm = () => {
 
   // const [billingData, setBillingData] = useState([]);
   const [selectedCustomerId, setSelectedCustomerId] = useState("");
-
+  const [selectedCustomerSaloonId, setSelectedCustomerSaloonId] = useState("");
   const [selectedCustomerName, setSelectedCustomerName] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
   // const [couponCode,] = useState('');
@@ -342,6 +342,8 @@ const BillingForm = () => {
 
         setBillNumber(billNumber + 1);
         // setDate('');
+        setSearchQuery('');
+        setSelectedCustomerName('');
         setSelectedCustomerId(""); // Reset the selected customer
         setServices([]);
         setItems([]);
@@ -538,38 +540,38 @@ const BillingForm = () => {
     calculateTotalAmount,
   ]);
 
-  useEffect(() => {
-    if (selectedMobileNumber) {
-      // Make an API call to fetch customer data based on mobile number
-      // Update the state with the fetched customer's ID and name
-      fetchCustomerData(selectedMobileNumber);
-    }
-  }, [selectedMobileNumber]);
+  // useEffect(() => {
+  //   if (selectedMobileNumber) {
+  //     // Make an API call to fetch customer data based on mobile number
+  //     // Update the state with the fetched customer's ID and name
+  //     fetchCustomerData(selectedMobileNumber);
+  //   }
+  // }, [selectedMobileNumber]);
 
   // Modify the fetchCustomerData function to update selectedCustomerId and selectedCustomerName
-  const fetchCustomerData = async (mobileNumber) => {
-    try {
-      const response = await axios.get(
-        `${BASE_URL}/api/customers?mobileNumber=${mobileNumber}`
-      );
-      if (response.status === 200) {
-        const customerData = response.data;
-        if (customerData.length > 0) {
-          // const selectedCustomer = customerData[0]; // Retrieve the first record (or the specific record you need)
-          // setSelectedCustomerId(selectedCustomer.customerId); // Assuming customerId is a property in your API response
-          // setSelectedCustomerName(selectedCustomer.name); // Assuming name is a property in your API response
-        } else {
-          // Handle case when no customer is found for the provided mobile number
-          toast.warn("Customer not found for the provided mobile number.");
-        }
-      } else {
-        // Handle error here
-        console.error("Error fetching customer data");
-      }
-    } catch (error) {
-      console.error("Error fetching customer data:", error);
-    }
-  };
+  // const fetchCustomerData = async (mobileNumber) => {
+  //   try {
+  //     const response = await axios.get(
+  //       `${BASE_URL}/api/customers?mobileNumber=${mobileNumber}`
+  //     );
+  //     if (response.status === 200) {
+  //       const customerData = response.data;
+  //       if (customerData.length > 0) {
+  //         // const selectedCustomer = customerData[0]; // Retrieve the first record (or the specific record you need)
+  //          //setSelectedCustomerId(selectedCustomer.customerId); // Assuming customerId is a property in your API response
+  //          //setSelectedCustomerName(selectedCustomer.name); // Assuming name is a property in your API response
+  //       } else {
+  //         // Handle case when no customer is found for the provided mobile number
+  //         toast.warn("Customer not found for the provided mobile number.");
+  //       }
+  //     } else {
+  //       // Handle error here
+  //       console.error("Error fetching customer data");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching customer data:", error);
+  //   }
+  // };
 
   const handleSearch = (e) => {
     const query = e.target.value;
@@ -580,7 +582,7 @@ const BillingForm = () => {
       setSelectedCustomerId("");
       setSelectedCustomerName("");
       setSelectedMobileNumber("");
-      setCustomerNames(customers);
+      
       // setCustomerNames(billingData); // Assuming billingData contains the original customer names data
       return;
     }
@@ -591,7 +593,8 @@ const BillingForm = () => {
 
     if (selectedCustomer) {
       // If a customer with the entered phone number is found, set the selected customer and customer ID in the state
-      setSelectedCustomerId(selectedCustomer.customerId);
+      setSelectedCustomerId(selectedCustomer._id);
+      setSelectedCustomerSaloonId(selectedCustomer.customerId);
       setSelectedCustomerName(selectedCustomer.name);
       setSelectedMobileNumber(selectedCustomer.phone);
     } else {
@@ -655,7 +658,7 @@ const BillingForm = () => {
             {/* </div> */}
             <input
               className="bnsk142sinput89"
-              value={`${selectedCustomerName || ''}${selectedCustomerId ? ` (${selectedCustomerId})` : ''}`}
+              value={`${selectedCustomerName || ''}${selectedCustomerId ? ` (${selectedCustomerSaloonId})` : ''}`}
               readOnly
               // onChange={(e) => setSelectedCustomerName(e.target.value)}
               // required

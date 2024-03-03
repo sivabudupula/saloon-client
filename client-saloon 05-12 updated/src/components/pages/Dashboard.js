@@ -51,6 +51,8 @@ function Dashboard() {
 
   // const [selectedButton, setSelectedButton] = useState('');
   const [selectedButton, setSelectedButton] = useState("");
+  const [alertShown, setAlertShown] = useState(false);
+
 
   // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -66,7 +68,7 @@ function Dashboard() {
   const [totalNumberOfAppointments, setTotalNumberOfAppointments] = useState(0);
 
   const token = localStorage.getItem("token");
-  const username = localStorage.getItem("username");
+  const userRole = localStorage.getItem("userRole");
 
   if (!token) {
     navigate("/");
@@ -191,7 +193,7 @@ function Dashboard() {
   };
 
   const renderRegisterButton = () => {
-    if (!token || username === "admin") {
+    if (userRole === "admin") {
       return (
         <div
           className="dropdown-item-salon23"
@@ -568,11 +570,20 @@ function Dashboard() {
           <Calendar onNewBillClick={() => handleButtonClick("Billing")} />
         )}
 
-        {selectedButton === "Employees" && (
+        {selectedButton === "Employees" &&  userRole === "admin" && (
           <Employees
             onNewEmployeeClick={() => handleButtonClick("Add Employee")}
           />
         )}
+
+{selectedButton === "Employees" && userRole !== "admin" && !alertShown && (
+    // Display an alert if userRole is not admin and the alert has not been shown
+    (() => {
+        setAlertShown(true); // Set alertShown to true to prevent repeated alerts
+        window.alert("You must be logged in as an admin to access this page.");
+    })()
+)}
+
 
         {/* {selectedButton === 'Appointments' && (
             <Appointments  onNewAppointmentClick={() => handleButtonClick('NewAppointment')}/>

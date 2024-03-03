@@ -83,8 +83,8 @@ const AddService = () => {
             required
           >
              <option value="">Select category</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
             {/* <option value="others">Others</option> */}
             
           </select>
