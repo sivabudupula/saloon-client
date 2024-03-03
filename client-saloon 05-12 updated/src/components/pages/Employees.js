@@ -129,61 +129,69 @@ const Employees = ({ onNewEmployeeClick }) => {
       });
   }, []);
 
-  const handleDelete = (employeeId) => {
-    // Show a confirmation toast before deleting
-    const toastClassName = classnames({
-      autoClose: 800,
-      "Toastify__toast--success234": true, // Apply this class for success toast
-      "Toastify__toast--error234": false,
-      "Toastify__toast--info234": false,
-      "Toastify__toast--warning234": false,
-    });
-
-    toast.info(
-      <ConfirmToast
-        message="Are you sure you want to delete this employee?"
-        onConfirm={() => {
-          axios
-            .delete(`${BASE_URL}/api/employees/${employeeId}`)
-            .then(() => {
-              const updatedEmployees = employees.filter(
-                (employee) => employee._id !== employeeId
-              );
-              setEmployees(updatedEmployees);
-              toast.success("Employee deleted successfully!", {
-                className: toastClassName, // Apply the dynamic class name
-              });
-            })
-            .catch((error) => {
-              setError("Error deleting employee.");
-              toast.error("Error deleting employee!", {
-                className: toastClassName, // Apply the dynamic class name
-              });
-            });
-        }}
-        onCancel={() => {
-          // Do nothing if canceled
-        }}
-      />,
-      {
-        position: "top-right",
-        autoClose: false,
-        hideProgressBar: false,
-        closeOnClick: false,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        className: toastClassName, // Apply the dynamic class name
-      }
-    );
+  const handleActivate = (employeeId) => {
+    const confirmed = window.confirm("Are you sure you want to activate the employee?");
+    if (confirmed) {
+      axios
+        .put(`${BASE_URL}/api/employees/activate/${employeeId}`)
+        .then((response) => {
+          // Handle success response
+          console.log("Employee activated successfully:", response.data);
+  
+          // Update the state to reflect the changes
+          const updatedEmployees = employees.map((employee) => {
+            if (employee._id === response.data._id) {
+              return { ...employee, isActive: true };
+            }
+            return employee;
+          });
+          setEmployees(updatedEmployees);
+  
+          // Show success toast
+          toast.success("Employee successfully activated!");
+        })
+        .catch((error) => {
+          // Handle error
+          console.error("Error activating employee:", error);
+          // You can show an error message or perform any other actions here
+        });
+    }
   };
+  
+  const handleDeactivate = (employeeId) => {
+    const confirmed = window.confirm("Are you sure you want to deactivate the employee?");
+    if (confirmed) {
+      axios
+        .put(`${BASE_URL}/api/employees/deactivate/${employeeId}`)
+        .then((response) => {
+          // Handle success response
+          console.log("Employee deactivated successfully:", response.data);
+  
+          // Update the state to reflect the changes
+          const updatedEmployees = employees.map((employee) => {
+            if (employee._id === response.data._id) {
+              return { ...employee, isActive: false };
+            }
+            return employee;
+          });
+          setEmployees(updatedEmployees);
+  
+          // Show success toast
+          toast.success("Employee successfully deactivated!");
+        })
+        .catch((error) => {
+          // Handle error
+          console.error("Error deactivating employee:", error);
+          // You can show an error message or perform any other actions here
+        });
+    }
+  };
+  
+  
 
   const handleEditSave = (EmployeeData) => {
     axios
-      .put(
-        `${BASE_URL}/api/employees/${EmployeeData._id}`,
-        EmployeeData
-      )
+      .put(`${BASE_URL}/api/employees/${EmployeeData._id}`, EmployeeData)
       .then((response) => {
         const updatedEmployees = employees.map((employee) => {
           if (employee._id === response.data._id) {
@@ -376,12 +384,24 @@ const Employees = ({ onNewEmployeeClick }) => {
                         >
                           Edit
                         </button>
-                        <button
-                          className="app-delete-btn11"
-                          onClick={() => handleDelete(employee._id)}
-                        >
-                          Delete
-                        </button>
+                        {/* Replace Delete button with Activate and Deactivate buttons */}
+                        {employee.isActive ? (
+                          <button
+                            className="app-edit-btn11"
+                            onClick={() => handleDeactivate(employee._id)}
+                          >
+                            Deactivate
+                          </button>
+                        ) : (
+                          <button
+                            className="app-edit-btn11"
+                            onClick={() => handleActivate(employee._id)}
+                          >
+                            Activate
+                          </button>
+                        )}
+                       
+                        
                       </td>
                     </tr>
                   ))}
