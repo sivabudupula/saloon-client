@@ -3,9 +3,11 @@
   background-size: cover;  
   
 }
-.mii{
-  display: flex;
-  flex-direction: row;
+.dropdown-item-salon23,.dropdown-item-salon23,.name234,.sub-button23,.heading234,.heading234,.small-cards2,.all-small-cards2345,.small-cards23,.small-cards234,.small-cards2345,.button-indicators23{
+  font-family: 'Poppins';
+}
+.heading234{
+  font-size: 25px !important;
 }
 .second-container23{
 margin-top: 50px;
@@ -65,6 +67,12 @@ font-weight: 500;
   background-color: rgb(230, 233, 237);
   z-index: 99;
 }
+.matrical-logo{
+  height: 65px;
+  width: 100px;
+  margin: 10px 0px 0px 10px;
+
+}
 .logo-button23{
 /* text-align: right; */
 font-size: 16px;
@@ -90,9 +98,9 @@ position: relative;
   margin-right: 2%;
   background-color: transparent; */
   color: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
     padding: 5px;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 .logo-sizing23:hover{
   color: rgb(247, 250, 247);
@@ -121,11 +129,13 @@ transform: scale(1);
 }
 .dashboard-button-salon23{
   padding: 10px ;
- margin-right: 1px;
-  width: 100px;
+ margin-right: 23px;
+  width: 120px;
   height: 65px;
   background-color: #dde7f0;
   color: #150b0b;  
+  margin-left: 5px;
+    margin-bottom: 10px;
   margin-left: 30px  !important;
     margin-bottom: 7px;
   cursor: pointer;
@@ -136,13 +146,9 @@ transform: scale(1);
   border-radius: 10px;
 }
 .dashboard-button-salon23:hover{
-  background-color: blue;
-  color: white;
+  /* background-color: #ebd398; */
+  color: black;
   transform: scale(1.2);
-}
-.amount{
-  font-size: 13px;
-  font-weight: 500;
 }
 
 .icon-center23{
@@ -249,9 +255,34 @@ font-size: 25px;
 /* Add media query for smaller screens */
 /* Add media query for smaller screens */
 
+.all-small-cards2345 {
+  width: 25%;
+  height: 70px;
+  padding: 10px;
+  margin: 1%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(213, 8, 8);
+  transition: all 0.3s ease; /* Apply transition to all properties */
+}
 
+.all-small-cards2345:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ff0000; /* Change the background color on hover */
+  transform: scale(1.05); /* Add a scaling effect on hover */
+}
 
- .all-small-cards2345{
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/* .all-small-cards2345{
 width: 25%;
 height: 70px;
 padding: 10px;
@@ -301,8 +332,8 @@ background-color: rgb(64, 153, 241);
 .small-cards23{
 /* background-color:#daa520;
 background-color:rgb(131, 118, 87); */
-background-color:#4406ef;
-}
+/* background-color:#4406ef;
+} */
 .small-cards234{
 background-color: rgb(7, 202, 236);
 

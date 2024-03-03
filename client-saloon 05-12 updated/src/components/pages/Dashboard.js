@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Dashboard.css";
 import { PiOfficeChairBold } from "react-icons/pi";
+import { CgProfile } from "react-icons/cg";
 import { BiCalendar } from "react-icons/bi";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { AiFillDatabase } from "react-icons/ai";
@@ -61,6 +62,8 @@ function Dashboard() {
 
   // const [selectedButton, setSelectedButton] = useState('');
   const [selectedButton, setSelectedButton] = useState("");
+  const [alertShown, setAlertShown] = useState(false);
+
 
   // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -76,7 +79,7 @@ function Dashboard() {
   const [totalNumberOfAppointments, setTotalNumberOfAppointments] = useState(0);
 
   const token = localStorage.getItem("token");
-  const username = localStorage.getItem("username");
+  const userRole = localStorage.getItem("userRole");
 
   if (!token) {
     navigate("/");
@@ -201,7 +204,7 @@ function Dashboard() {
   };
 
   const renderRegisterButton = () => {
-    if (!token || username === "admin") {
+    if (userRole === "admin") {
       return (
         <div
           className="dropdown-item-salon23"
@@ -222,9 +225,12 @@ function Dashboard() {
       {/* <div className='second-container23'> */}
       <div className="fixed-container678">
         <div className="dashboard-salon2390">
-          <h4 className="welcome23">Saloon</h4>
+         
+          {/* <h4 className="welcome23">Saloon</h4> */}
+          <div><img src="https://tse4.mm.bing.net/th?id=OIP.894njvBoCKbBgo32zsTvJQHaFM&pid=Api&P=0&h=180" className="matrical-logo"/></div>
+         
           <div className="logostyle23">
-            <PiOfficeChairBold className="logo-sizing23" />
+            <CgProfile className="logo-sizing23" />
             <div className="tooltip-dropdown">
               <div className="dropdown-item-salon23" onClick={handleLogout}>
                 Log out
@@ -344,6 +350,50 @@ function Dashboard() {
           </button>
         </div>
 
+        
+      </div>
+
+      <div className="white-bg23">
+        <div className="cards-container23">
+          <h5 className="heading234">Financial Statistics</h5>
+          <div className="cards-flex23">
+            <div className="small-cards2 all-small-cards2345">
+              <div className="flextochange789">
+                <BsFillCartCheckFill className="icon-center234 " />
+                <p className="amount-fetch23">
+                  {totalServiceAmount.toFixed(0) || 0}
+                </p>{" "}
+              </div>
+              Services amount
+            </div>
+            <div className="small-cards23 all-small-cards2345">
+              <div className="flextochange789">
+                <BsCurrencyRupee className="icon-center234 " />
+                <p className="amount-fetch23">
+                  {totalInventoryAmount.toFixed(0) || 0}
+                </p>{" "}
+              </div>
+              Inventory amount
+            </div>
+            <div className="small-cards234 all-small-cards2345">
+              <div className="flextochange789">
+                <AiOutlineBarChart className="icon-center234 " />
+                <p className="amount-fetch23">{totalNumberOfBills || 0}</p>{" "}
+              </div>
+              Bills Generated
+            </div>
+            <div className="small-cards2345 all-small-cards2345">
+              <div className="flextochange789">
+                <FiUsers className="icon-center234 " />
+                <p className="amount-fetch23">
+                  {" "}
+                  {totalNumberOfAppointments || 0}
+                </p>{" "}
+              </div>
+              Appoinments
+            </div>
+          </div>
+        </div>
         <div className="button-indicators23">
           {selectedButton}
           {/* {selectedButton === 'Appointments' && (
@@ -538,7 +588,7 @@ function Dashboard() {
       </div>
 
       <div className="white-bg23">
-        <div className="cards-container23">
+        {/* <div className="cards-container23">
           <h5 className="heading234">Financial Statistics</h5>
           <div className="cards-flex23">
             <div className=" all-small-cards23456">
@@ -602,7 +652,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {selectedButton === "Edit profile" && <EditProfile />}
 
         {selectedButton === "Register" && <Register />}
@@ -611,11 +661,20 @@ function Dashboard() {
           <Calendar onNewBillClick={() => handleButtonClick("Billing")} />
         )}
 
-        {selectedButton === "Employees" && (
+        {selectedButton === "Employees" &&  userRole === "admin" && (
           <Employees
             onNewEmployeeClick={() => handleButtonClick("Add Employee")}
           />
         )}
+
+{selectedButton === "Employees" && userRole !== "admin" && !alertShown && (
+    // Display an alert if userRole is not admin and the alert has not been shown
+    (() => {
+        setAlertShown(true); // Set alertShown to true to prevent repeated alerts
+        window.alert("You must be logged in as an admin to access this page.");
+    })()
+)}
+
 
         {/* {selectedButton === 'Appointments' && (
             <Appointments  onNewAppointmentClick={() => handleButtonClick('NewAppointment')}/>

@@ -281,7 +281,7 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <div className="customer-container11">
         <h6 className="edit-customer-heading1123">Age-wise report</h6>
         <div className="margin786">

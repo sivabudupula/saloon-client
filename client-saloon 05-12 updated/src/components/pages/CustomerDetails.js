@@ -494,7 +494,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
   };
   // className="A7custmaindiv"
   return (
-    <div>
+    <div className="main-empp">
       {displayComponent === "customerDetails" ? (
         <>
           <div className="customer-container11">

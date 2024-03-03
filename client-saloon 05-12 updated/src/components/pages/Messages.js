@@ -24,7 +24,7 @@ const Messages = () => {
   };
 
   return (
-    <div>
+    <div className="main-empp">
       <div className="A7custmaindiv89">
         <div className="A7custform-msg89">
           <h4 className="A7custheader23">Multiple</h4>

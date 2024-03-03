@@ -135,7 +135,7 @@ const NewAppointment = ({ customer }) => {
   };
   
   return (
-    <div >
+    <div className="main-empp" >
 
 
       <div className='appnt-form11'>
@@ -272,7 +272,7 @@ const NewAppointment = ({ customer }) => {
             <h5>Men Category</h5>
             <div className='men-category'>
   {services
-    .filter(service => service.category === 'male')
+    .filter(service => service.category === 'Male')
     .map(service => (
       <div className='service-item' key={service._id}>
         
@@ -296,7 +296,7 @@ const NewAppointment = ({ customer }) => {
 <div className='women-category'>
   
 {services
-    .filter(service => service.category === 'female')
+    .filter(service => service.category === 'Female')
     .map(service => (
       <div className='service-item' key={service._id}>
         

@@ -6,6 +6,7 @@ import axios from 'axios';
 import { toast , ToastContainer  } from 'react-toastify'; 
 import 'react-toastify/dist/ReactToastify.css';
 import { BASE_URL } from '../Helper/helper';
+import { jwtDecode } from "jwt-decode";
 
 const LoginPage = () => {
   
@@ -31,13 +32,21 @@ const handleSubmit = async (e) => {
     const username = data.username;
     
     console.log('Response:', response); //
+    console.log("User role:", response.data.userRole);
     if (response.status === 200) {
       // Set the token when login is successful
       toast.success('Login Successful');
       setToken(response.data.token);
       localStorage.setItem('token', response.data.token);
-      localStorage.setItem('username' , username)
+      
+      localStorage.setItem('userRole' ,response.data.userRole )
+      
+      // const decodedToken = jwtDecode(token);
 
+       // const userRole = decodedToken.user.role;
+      // const userRole = response.data.userRole; 
+      
+      
       // Display a success message
      
 
