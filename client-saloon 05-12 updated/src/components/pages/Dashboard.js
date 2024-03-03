@@ -6,12 +6,17 @@ import { MdOutlineHomeRepairService } from "react-icons/md";
 import { AiFillDatabase } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
 import  billing from '../images/billing.jpeg';
+import  calendar from '../images/calendar.jpeg';
 import appo from'../images/appo.jpeg';
 import customers from'../images/customers.jpeg';
 import add from'../images/add.jpeg';
 import message from'../images/message.jpeg';
 import inven from '../images/inven.jpeg'
-
+import Inventory from  '../images/Inventory.jpeg';
+import good from'../images/good.jpeg';
+import wave from '../images/wave.jpeg';
+import phoo from'../images/phoo.jpeg';
+import setting from '../images/setting.jpeg';
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -29,7 +34,7 @@ import EditProfile from "./EditProfile.js";
 import Register from "./Register.js";
 import Appointments from "./appointments.js";
 import InventoryList from "./InventoryList.js";
-
+import total from'../images/total.jpeg';
 import ProductList from "./ProductList.js";
 import Suppliers from "./Suppliers.js";
 import ServiceForm from "./Service.js";
@@ -244,7 +249,7 @@ function Dashboard() {
             onClick={() => setSelectedButton("Calendar")}
           >
             <div className="icon-center23 ">
-              <BiCalendar />{" "}
+            <img src={calendar} alt="" className="calenadr"></img>{" "}
             </div>
             <div className="name234">Calendar</div>
           </button>
@@ -258,7 +263,6 @@ function Dashboard() {
             </div>
             <div className="name234">Billing</div>
           </button>
-
           <button
             className="dashboard-button-salon23"
             onClick={() => handleButtonClick("Appointments")}
@@ -277,8 +281,9 @@ function Dashboard() {
             {" "}
             <div className="icon-center23 ">
               {/* <AiFillDatabase /> */}
-              <img src={customers}></img>
+             
             </div>
+            <img src={phoo} alt="" className="setting"></img>
             <div className="name234">Customers</div>
           </button>
 
@@ -299,9 +304,10 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <MdOutlineHomeRepairService /> */}
-              <img src={add} alt=""></img>
+            
             </div>
-            <div className="name234">Services</div>{" "}
+            <img src={setting} alt="" className="setting"></img>
+            <div className="name234">Services/settings</div>{" "}
           </button>
 
           <button
@@ -309,7 +315,8 @@ function Dashboard() {
             onClick={() => setSelectedButton("Employees")}
           >
             <div className="icon-center23 ">
-              <AiOutlineMenu />
+              {/* <AiOutlineMenu /> */}
+              <img src={add} alt=""></img>
             </div>
             <div className="name234">Employees</div>{" "}
           </button>
@@ -319,8 +326,9 @@ function Dashboard() {
             onClick={() => setSelectedButton("Reports")}
           >
             <div className="icon-center23 ">
-              <TbReportAnalytics />
+              {/* <TbReportAnalytics /> */}
             </div>
+            <img src={customers} className="setting"></img>
             <div className="name234">Reports</div>
           </button>
 
@@ -534,39 +542,64 @@ function Dashboard() {
           <h5 className="heading234">Financial Statistics</h5>
           <div className="cards-flex23">
             <div className=" all-small-cards23456">
+              <div className="">
+
+              <div className="mii">
+              <p className="amount"> ServicesAmount</p>
+              <img src={wave} alt="" className="Inventoryd"></img>
+              </div>
               <div className="flextochange789">
-                <BsFillCartCheckFill className="icon-center234 " />
-                <p className="amount-fetch23">
+                {/* <BsFillCartCheckFill className="icon-center234 " /> */}
+                <p className="amount-fetch234">
                   {totalServiceAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
-              Services Amount
-            </div>
-            <div className=" all-small-cards23456">
-              <div className="flextochange789">
-                <BsCurrencyRupee className="icon-center234 " />
-                <p className="amount-fetch23">
-                  {totalInventoryAmount.toFixed(0) || 0}
-                </p>{" "}
               </div>
-              Inventory Amount
             </div>
             <div className=" all-small-cards23456">
-              <div className="flextochange789">
-                <AiOutlineBarChart className="icon-center234 " />
+         
+             
+              <div className="mii">
+      
+              <p className="amount"> InventoryAmount</p>
+              <img src={ Inventory} alt="" className=" Inventory"></img>
+            </div>
+            <div className="flextochange789">
+            
+           
+            {/* <BsCurrencyRupee className="icon-center234 " /> */}
+          
+            <p className="amount-fetch23">
+              {totalInventoryAmount.toFixed(0) || 0}
+            </p>{" "}
+          </div>
+            </div>
+            <div className=" all-small-cards23456">
+             
+              <div className="mii">
+              <p className="amounts">Bills Generated</p>
+              <img src={ good} alt="" className=" Inventory"></img>
+            </div>
+
+
+            <div className="flextochange789">
+                {/* <AiOutlineBarChart className="icon-center234 " /> */}
                 <p className="amount-fetch23">{totalNumberOfBills || 0}</p>{" "}
               </div>
-              Bills Generated
             </div>
             <div className=" all-small-cards23456">
+              <div className="mii">
+              <p className="amount"> Appoinments </p>
+              <img src={ total} alt="" className=" Inventory"></img>
+              </div>
+
               <div className="flextochange789">
-                <FiUsers className="icon-center234 " />
+                {/* <FiUsers className="icon-center234 " /> */}
                 <p className="amount-fetch23">
                   {" "}
                   {totalNumberOfAppointments || 0}
                 </p>{" "}
               </div>
-              Appoinments
             </div>
           </div>
         </div>

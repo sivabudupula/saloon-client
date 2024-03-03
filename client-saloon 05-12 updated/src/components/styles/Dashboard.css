@@ -3,15 +3,49 @@
   background-size: cover;  
   
 }
-
+.mii{
+  display: flex;
+  flex-direction: row;
+}
 .second-container23{
 margin-top: 50px;
+
+}
+.setting{
+  margin-left: 30%;
+}
+.Inventory{
+  height: 9vh;
+  width: 15vw;
+  margin-left: 15%;
+  background-color: none;
+  margin-top: 7%;
+
+}
+.Inventoryd{
+  height: 6vh;
+  width: 5vw;
+  margin-left: 5%;
+  margin-top: 1.4rem;
+  background-color: none;
+  /* margin-top: -10%; */
+
+}.calenadr{
+
+  height: 4vh;
+  width: 3vw;
+
+}
+.amounts{
+  font-size: 10px;
+
+font-weight: 500;
 
 }
 .dashboard-salon23{
   display: flex;
   margin-left: 1%;
-  background-color: rgb(8, 49, 119);
+  background-color: rgb(228, 232, 240);
   flex-wrap: wrap;
 }
 
@@ -21,12 +55,14 @@ margin-top: 50px;
   
 }
 
-
+.settings{
+  margin-left: 55%;
+}
 
 .fixed-container678{
  
   width: 99vw;
-  background-color: rgb(8, 49, 119);
+  background-color: rgb(230, 233, 237);
   z-index: 99;
 }
 .logo-button23{
@@ -90,18 +126,23 @@ transform: scale(1);
   height: 65px;
   background-color: #dde7f0;
   color: #150b0b;  
-  margin-left: 5px;
+  margin-left: 30px  !important;
     margin-bottom: 7px;
   cursor: pointer;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 10px;
 }
 .dashboard-button-salon23:hover{
-  /* background-color: #ebd398; */
-  color: black;
+  background-color: blue;
+  color: white;
   transform: scale(1.2);
+}
+.amount{
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .icon-center23{
@@ -139,23 +180,23 @@ transform: scale(1);
   color: white;
   background-color: rgb(222, 90, 90);
   font-size: medium;
-  margin-left: 10px;
+  margin-left: 10%;
   border: 1px solid black;
   padding: 4px;
 }
 .sub-button23:hover{
-  background-color: red;
+  background-color: blue;
   cursor: pointer;
 }
 
 .welcome23{
-  /* font-size: 17px; */
+  font-size: 50px;
   text-align: center;
-  /* font-weight: 800; */
   font-family: system-ui;
   padding: 8px;
   font-family:  sans-serif;
-  color: white;
+  color:blue;
+margin-left: 50%;
 }
 .heading234{
   padding: 8px;
@@ -190,9 +231,17 @@ height: 100%;
 
 .amount-fetch23{
 text-align: right;
-/* padding-top: 52px; */
+/* padding-top: -10%; */
+margin-top: -2rem;
 font-size: large;
 }
+
+.amount-fetch234{
+  text-align: right;
+  /* padding-top: -10%; */
+  margin-top: -1rem;
+  font-size: large;
+  }
 .icon-center234{
 font-size: 25px;
 /* margin-bottom: -78px; */
@@ -892,9 +941,10 @@ color: rgb(255, 255, 255);
   width: 72px;
   font-size: small !important;
   height: 50px;
+  margin-left: 50px;
   background-color: #dde7f0;
   color: #150b0b;
-  margin-left: 5px;
+ 
   margin-bottom: 1px;
   cursor: pointer;
   margin-top: 5px !important;
