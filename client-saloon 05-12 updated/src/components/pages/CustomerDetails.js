@@ -798,7 +798,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                               className="app-edit-btn11"
                               onClick={() => handleEditBill(index)}
                             >
-                              EditBill
+                              Edit Bill
                             </button>
                           </td>
                         </tr>

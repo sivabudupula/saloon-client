@@ -311,7 +311,7 @@ function ItemTable() {
               </button>
               &nbsp;
               <button onClick={togglePieChart} className="show-chart-button">
-                {showPieChart ? "Close Pie Chart" : "Show Pie Chart"}
+                {showPieChart ? "Close Chart" : "Show Chart"}
               </button>
             </div>
           </div>

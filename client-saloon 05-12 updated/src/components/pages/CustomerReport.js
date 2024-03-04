@@ -344,7 +344,7 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
               onClick={() => setShowChart(!showChart)}
               className="show-chart-button"
             >
-              {showChart ? 'Close Pie Chart' : 'Show Pie Chart'}
+              {showChart ? 'Close Chart' : 'Show Chart'}
             </button>
             </div>
               </div>

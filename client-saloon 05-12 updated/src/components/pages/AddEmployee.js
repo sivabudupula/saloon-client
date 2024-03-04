@@ -33,7 +33,7 @@ function AddEmployee({ data, onSave, onCancel }) {
   );
 
   const [setError] = useState(null);
-  const [isEditing] = useState(false);
+  // const [isEditing] = useState(false);
 
   const [file, setFile] = useState(null);
 
@@ -124,7 +124,7 @@ function AddEmployee({ data, onSave, onCancel }) {
         }
       );
 
-      const fileUrl = `${BASE_URL}/uploads/${response.data.filePath}`;
+      // const fileUrl = `${BASE_URL}/uploads/${response.data.filePath}`;
       // window.open(fileUrl);
 
       toast.success("Employee added successfully!", {

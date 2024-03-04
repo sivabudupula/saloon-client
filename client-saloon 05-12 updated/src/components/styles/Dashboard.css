@@ -39,15 +39,16 @@ margin-top: 50px;
 
 }
 .amounts{
-  font-size: 13px;
+  font-size: 12px;
 font-family: 'poppins';
 font-weight: 600;
 
 }
 .dashboard-salon23{
   display: flex;
-
-  margin-left: 4%;
+  top:0;
+  margin-top: -20px;
+  margin-left: 4.75%;
   background-color: white;
   flex-wrap: wrap;
 }
@@ -63,10 +64,12 @@ font-weight: 600;
 }
 
 .fixed-container678{
- 
+  position: sticky;
+  top: 0;
   width: 99vw;
   background-color: white;
   z-index: 99;
+  margin-bottom: 20px;
 }
 .matrical-logo{
   height: 65px;
@@ -95,7 +98,7 @@ position: relative;
 .profile{
   height: 50px;
   width: 50px;
-  margin-top: -10px;
+  margin-top: -65px;
   margin-left: 10px;
 }
 .logo-sizing23{
@@ -139,6 +142,7 @@ transform: scale(1);
   color: #150b0b;  
   margin-left: 5px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 4px 0 blue;
   /* margin-left: 1px  !important; */
     margin-bottom: 10px;
   cursor: pointer;
@@ -151,7 +155,7 @@ transform: scale(1);
 }
 .dashboard-button-salon23:hover{
   background: rgb(12, 3, 190);
-background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, rgba(0,212,255,1) 100%);
+background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgba(0,212,255,1) 30%);
   transform: scale(1.2);
   color: white;
 }
@@ -164,7 +168,7 @@ background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, r
 }
 .name234{
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -177,7 +181,7 @@ background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, r
   
   /* height: 36px; */
   text-align: left;
-  padding-left: 250px;
+  padding-left: 64px;
   font-size: 20px;
   box-shadow: #150b0b;
   border-bottom: 2px solid rgb(69, 67, 67);
@@ -191,10 +195,12 @@ background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, r
 
 .sub-button23{
   color: white;
-  background-color: rgb(222, 90, 90);
-  font-size: medium;
+  background-color: rgb(0, 123, 255);
+  font-size: 20px;
   margin-left: 10%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 5px;
   padding: 4px;
 }
 .sub-button23:hover{
@@ -206,7 +212,7 @@ background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, r
   font-size: 30px;
   text-align: center;
   font-family: system-ui;
-  padding: 8px;
+  /* padding: 8px; */
   font-family:  sans-serif;
   color:blue;
 margin-left: 50%;
@@ -237,7 +243,7 @@ box-shadow: 6px 5px 6px #ccc;
 
 .white-bg23{
 background-color: aliceblue;
-padding-top: 10px;
+padding-top: 0px;
 padding-bottom: 98px;
 height: 100%;
 
@@ -323,19 +329,19 @@ flex-direction:row;
     height: 13vh;
     padding: 10px;
     margin: 1%;
-    background-color: #f0f0f7;
+    background:linear-gradient(rgba(81, 108, 250, 1),rgba(11, 28, 171, 1));
     border-radius: 10px;
-   color: blue;
+   color:white;
     /* display: flex; */
     box-shadow: 0px 0px  2px rgb(0,0,0.4);
     flex-direction: row;  
     } 
-    .all-small-cards23456:hover{
+    /* .all-small-cards23456:hover{
        background: rgb(12, 3, 190);
-        background: linear-gradient(270deg, rgb(16, 5, 229) 10%, rgb(17, 17, 235) 36%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgba(0,212,255,1) 70%);
         transform: scale(1.1);
         color: white;
-    }
+    } */
 .small-cards2{
 background-color: rgb(64, 153, 241);
  
@@ -384,6 +390,7 @@ position: fixed;
 .cards-flex23{
   display: flex;
   flex-direction:row ;
+  margin-left: 10px;
   }
 
 
@@ -422,8 +429,8 @@ color: rgb(255, 255, 255);
   width: 90px;
   display: none;
   position: absolute;
-  top: 100%;
-  /* left: 50%; */
+  top: 60%;
+  left: 50%;
   transform: translateX(-60%);
   background-color:white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -952,6 +959,7 @@ color: rgb(255, 255, 255);
   font-size: xx-large;
 }
 .button-indicators23 {
+  width: 92%;
   background-color: #3390f3;
   color: white;
   padding: 4px;
@@ -959,6 +967,7 @@ color: rgb(255, 255, 255);
   text-align: left;
   padding-left: 12px;
   font-size: 16px;
+  
   box-shadow: #150b0b;
   border-bottom: 2px solid rgb(69, 67, 67);
   /* position: fixed; */

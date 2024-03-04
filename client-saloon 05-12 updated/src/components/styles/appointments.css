@@ -104,15 +104,46 @@
      /* display: flex; */
      /* justify-content: space-between; */
  }
- .fst ,.filter ,.showall ,.today{
-      border: 1px solid #ccc;
-   border-radius: 2px;
+ .today{
+      border: none;
+   border-radius: 4px;
    margin: 2px;
    padding: 2px;
    width: 60px;
-     font-size: small;
+     font-size: 15px;
+     font-weight: 300;
      text-align: center;
  }
+ .showall{
+    border: none;
+ border-radius: 4px;
+ margin: 2px;
+ padding: 2px;
+ width: 60px;
+   font-size: 10px;
+   font-weight: 300;
+   text-align: center;
+}
+.filter{
+    border: none;
+ border-radius: 4px;
+ margin: 2px;
+ padding: 2px;
+ width: 60px;
+   font-size: 15px;
+   font-weight: 300;
+   text-align: center;
+}
+ .fst{
+    border: none;
+ border-radius: 4px;
+ margin: 2px;
+ padding: 2px;
+ width: 60px;
+   font-size: 15px;
+   font-weight: 300;
+   text-align: center;
+}
  .fst:hover{
      background-color: rgb(18 138 231);
      transition: 0.5s;
@@ -120,6 +151,7 @@
  .filter{
      background-color: rgb(49, 130, 206);
      color: white;
+     width: 6vw;
  }
  .showall{
      background-color: rgb(49, 130, 206);
@@ -159,7 +191,7 @@
  .app-edit-btn11{
      
      /* padding: 2px; */
-     width: 10vw !important;
+     
      height: 5vh;
      font-size:15px;
      background-color: dodgerblue;
@@ -169,7 +201,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    width: 90px !important;
+    width: 65px !important;
  }
  .app-edit-btn11:hover{
      background-color: rgb(104, 163, 221);

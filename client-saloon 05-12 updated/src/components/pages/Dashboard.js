@@ -5,19 +5,20 @@ import { BiCalendar } from "react-icons/bi";
 import { MdOutlineHomeRepairService } from "react-icons/md";
 import { AiFillDatabase } from "react-icons/ai";
 import { FaUsers } from "react-icons/fa";
-import billing from "../images/billing.jpeg";
+import Vector5 from "../images/Vector5.png";
 import calendar from "../images/calendar.jpeg";
-import appo from "../images/appo.jpeg";
-import customers from "../images/customers.jpeg";
+import Group from "../images/Group.png";
+import Vector4 from "../images/Vector4.png";
+import Vector from "../images/Vector.png";
 import profile from "../images/profile.jpeg";
-import add from "../images/add.jpeg";
-import message from "../images/message.jpeg";
-import inven from "../images/inven.jpeg";
+import Vector1 from "../images/Vector1.png";
+
+import Vector3 from "../images/Vector3.png";
 import Inventory from "../images/Inventory.jpeg";
 import good from "../images/good.jpeg";
-import wave from "../images/wave.jpeg";
-import phoo from "../images/phoo.jpeg";
-import setting from "../images/setting.jpeg";
+import Chart1 from "../images/Chart1.png";
+
+import settings1 from "../images/settings1.png";
 import { FaMoneyBillWaveAlt } from "react-icons/fa";
 import { BsGraphUpArrow } from "react-icons/bs";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -77,7 +78,7 @@ function Dashboard() {
   const [totalNumberOfAppointments, setTotalNumberOfAppointments] = useState(0);
 
   const token = localStorage.getItem("token");
-  const username = localStorage.getItem("username");
+  const userRole = localStorage.getItem("userRole");
 
   if (!token) {
     navigate("/");
@@ -200,7 +201,7 @@ function Dashboard() {
   };
 
   const renderRegisterButton = () => {
-    if (!token || username === "admin") {
+    if (userRole === "admin") {
       return (
         <div
           className="dropdown-item-salon23"
@@ -226,7 +227,6 @@ function Dashboard() {
             <p className="logo-sizing23" />
             <img src={profile} alt="" className="profile"></img>{" "}
             <div className="tooltip-dropdown">
-           
               <div className="dropdown-item-salon23" onClick={handleLogout}>
                 Log out
               </div>
@@ -260,7 +260,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <FaMoneyBillWaveAlt /> */}
-              <img src={billing} alt=""></img>
+              <img src={Vector5} alt=""></img>
             </div>
             <div className="name234">Billing</div>
           </button>
@@ -270,7 +270,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <FaUsers /> */}
-              <img src={appo} alt=""></img>
+              <img src={Group} alt=""></img>
             </div>
             <div className="name234">Appoinments</div>
           </button>
@@ -281,7 +281,7 @@ function Dashboard() {
           >
             {" "}
             <div className="icon-center23 ">{/* <AiFillDatabase /> */}</div>
-            <img src={phoo} alt="" className="setting"></img>
+            <img src={Vector4} alt="" className="setting"></img>
             <div className="name234">Customers</div>
           </button>
 
@@ -291,7 +291,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <BsGraphUpArrow /> */}
-              <img src={inven} alt=""></img>
+              <img src={Vector3} alt=""></img>
             </div>
             <div className="name234">Inventory</div>
           </button>
@@ -303,7 +303,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               {/* <MdOutlineHomeRepairService /> */}
             </div>
-            <img src={setting} alt="" className="setting"></img>
+            <img src={settings1} alt="" className="setting"></img>
             <div className="name234">Services</div>{" "}
           </button>
 
@@ -313,7 +313,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <AiOutlineMenu /> */}
-              <img src={add} alt=""></img>
+              <img src={Vector1} alt=""></img>
             </div>
             <div className="name234">Employees</div>{" "}
           </button>
@@ -323,7 +323,7 @@ function Dashboard() {
             onClick={() => setSelectedButton("Reports")}
           >
             <div className="icon-center23 ">{/* <TbReportAnalytics /> */}</div>
-            <img src={customers} className="setting"></img>
+            <img src={Vector} className="setting"></img>
             <div className="name234">Reports</div>
           </button>
 
@@ -337,6 +337,10 @@ function Dashboard() {
             <div className="name234">Messages</div>{" "}
           </button> */}
         </div>
+
+
+
+        
 
         <div className="button-indicators23">
           {selectedButton}
@@ -539,12 +543,12 @@ function Dashboard() {
               <div className="">
                 <div className="mii">
                   <p className="amounts">Services Amount</p>
-                  <img src={wave} alt="" className="Inventoryd"></img>
+                  <img src={Chart1} alt="" className="Inventoryd"></img>
                 </div>
                 <div className="flextochange789">
                   {/* <BsFillCartCheckFill className="icon-center234 " /> */}
                   <p className="amount-fetch234">
-                  ₹  {totalServiceAmount.toFixed(0) || 0}
+                    ₹ {totalServiceAmount.toFixed(0) || 0}
                   </p>{" "}
                 </div>
               </div>
@@ -557,7 +561,7 @@ function Dashboard() {
               <div className="flextochange789">
                 {/* <BsCurrencyRupee className="icon-center234 " /> */}
                 <p className="amount-fetch23">
-                 ₹{totalInventoryAmount.toFixed(0) || 0}
+                  ₹{totalInventoryAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
             </div>
@@ -596,11 +600,22 @@ function Dashboard() {
           <Calendar onNewBillClick={() => handleButtonClick("Billing")} />
         )}
 
-        {selectedButton === "Employees" && (
+        {selectedButton === "Employees" && userRole === "admin" && (
           <Employees
             onNewEmployeeClick={() => handleButtonClick("Add Employee")}
           />
         )}
+
+        {selectedButton === "Employees" &&
+          userRole !== "admin" &&
+          !alertShown &&
+          // Display an alert if userRole is not admin and the alert has not been shown
+          (() => {
+            setAlertShown(true); // Set alertShown to true to prevent repeated alerts
+            window.alert(
+              "You must be logged in as an admin to access this page."
+            );
+          })()}
 
         {/* {selectedButton === 'Appointments' && (
             <Appointments  onNewAppointmentClick={() => handleButtonClick('NewAppointment')}/>

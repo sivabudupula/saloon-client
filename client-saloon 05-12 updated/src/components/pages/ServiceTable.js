@@ -350,7 +350,7 @@ function ServiceTable() {
                       className="show-chart-button"
                       onClick={() => setShowPie(!showPie)}
                     >
-                      {showPie ? "Hide Pie Chart" : "Show Pie Chart"}
+                      {showPie ? "Hide Chart" : "Show Chart"}
                     </button>
                   </div>
                 </div>

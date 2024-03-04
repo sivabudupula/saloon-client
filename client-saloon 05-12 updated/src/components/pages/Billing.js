@@ -43,7 +43,7 @@ const BillingForm = () => {
   const [selectedMobileNumber, setSelectedMobileNumber] = useState("");
 
   const [searchQuery, setSearchQuery] = useState("");
-  const [isSaved, setIsSaved] = useState(false);
+  // const [isSaved, setIsSaved] = useState(false);
   const [gstPercent, setGstPercent] = useState(0);
   // const [isFirstBillSaved, setIsFirstBillSaved] = useState(false);
 
@@ -649,7 +649,7 @@ const BillingForm = () => {
               type="number"
               value={searchQuery}
               onChange={handleSearch}
-              placeholder="Search By Phone Number"
+              placeholder="Enter Phone Number"
             />
           </div>
           {/* <div className="lable-width567"> */}
@@ -767,7 +767,7 @@ const BillingForm = () => {
                 </button>
               </div>
             ))}
-            <button className="addnewsk142s" onClick={handleAddService}>
+            <button className="addnewsk142sd" onClick={handleAddService}>
               <span className="plusk142s">+</span>Add Service
             </button>
           </div>

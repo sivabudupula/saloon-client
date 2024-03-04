@@ -25,6 +25,7 @@ th{
    width: 5vw;
    font-size: 15px;
    border: none;
+   border-radius: 5px;
    cursor: pointer;
 }
 .details456:hover{
@@ -36,6 +37,7 @@ th{
     padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
+    font-size: .8rem;
 }
 
 .customer-table11a7{

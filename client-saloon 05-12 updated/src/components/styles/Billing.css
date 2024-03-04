@@ -63,6 +63,25 @@
    transition: background-color 0.3s ease;
  }
 
+ .addnewsk142sd:hover{
+  background-color: #126711;
+ }
+ 
+ .addnewsk142sd{
+   background-color: #28b932;
+   color: #fff;
+   padding: 5px ;
+   margin: 10px;
+   font-size: 15px;
+   font-family: 'poppins';
+   font-weight: 300;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   width: 10vw;
+   transition: background-color 0.3s ease;
+ }
+
  .addnewsk1445{
   background-color: #1183e1;
   color: #fff;

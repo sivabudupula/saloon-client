@@ -25,12 +25,13 @@ const AddCustomer = () => {
   };
 
   const [token] = useState(localStorage.getItem('token'));
+  const userRole = localStorage.getItem('userRole');
   const [previewImage, setPreviewImage] = useState(null);
   const [, setSubmitting] = useState(false);
   const fileInputRef = useRef(null);
   const handleProfileLogoChange = (e) => {
     const file = e.target.files[0];
-
+    
     const reader = new FileReader();
     reader.onload = (event) => {
       setPreviewImage(event.target.result);
@@ -61,7 +62,8 @@ const AddCustomer = () => {
       formDataToSubmit.append("address", formData.address);
       formDataToSubmit.append("phone", formData.phone);
       formDataToSubmit.append("profilePhoto", formData.profilePhoto);
-
+      const createdByModel = userRole === 'admin' ? 'Register' : 'Employee';
+      formDataToSubmit.append("createdByModel", createdByModel);
       // Send the form data to the backend
       const response = await Axios.post(
         `${BASE_URL}/api/customers`,
