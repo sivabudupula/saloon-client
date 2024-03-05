@@ -68,6 +68,40 @@ font-size: 16px;
   margin-left: 5%;
   /* background-color: yellow; */
 }
+.empinput456 {
+  width: auto; /* Set width to auto */
+  padding-right: 30px; /* Adjust padding to accommodate the toggle icon */
+}
+
+.password-input-container {
+  position: relative;
+}
+.input-with-icon {
+  position: relative;
+}
+
+.empinput456 {
+  padding-right: 30px; /* Adjust padding to accommodate the toggle icon */
+}
+.toggle-password-button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.password-toggle {
+  position:absolute;
+  top: 50%;
+  align-items: right;
+  right: -170px; /* Adjust as needed */
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
 
 .form-group-saloon2345 {
   margin-bottom: 15px;
@@ -234,7 +268,7 @@ cursor: pointer;
   border: 1px solid #ccc;
   padding: 8px;
   text-align: center;
-
+  padding-right: 20px;
   }
 
 /* Table Row (tr) */
@@ -710,18 +744,24 @@ margin-right: 10px;
   align-items: center;
   z-index: 1000;
 }
+.h28{
+  font-size: 1.5rem;
+  margin-bottom: 7% !important;
+}
+
 
 .popup-container-sk9879 {
   background: #fff;
-  padding: 20px;
-  border-radius: 3px;
-  /* max-width: 35%; */
-  width: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;  /* Change position to absolute */
-  top: 50%;            /* Center vertically */
-  left: 50%;            /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    padding: 30px;
+    border-radius: 3px;
+    /* max-width: 35%; */
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
 }
 .abc1234{
   margin-top: 5%;

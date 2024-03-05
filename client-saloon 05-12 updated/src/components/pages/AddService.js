@@ -94,7 +94,7 @@ const AddService = () => {
           <label htmlFor="price" className="label-sk141s">Price:</label>
           </div>
           <input
-            type="text"
+            type="number"
             id="price"
             name="price"
             value={service.price}

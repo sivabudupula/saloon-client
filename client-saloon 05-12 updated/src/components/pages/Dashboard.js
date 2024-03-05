@@ -12,7 +12,7 @@ import Vector4 from "../images/Vector4.png";
 import Vector from "../images/Vector.png";
 import profile from "../images/profile.jpeg";
 import Vector1 from "../images/Vector1.png";
-
+import { toast , ToastContainer  } from 'react-toastify'; 
 import Vector3 from "../images/Vector3.png";
 import Inventory from "../images/Inventory.jpeg";
 import good from "../images/good.jpeg";
@@ -217,6 +217,9 @@ function Dashboard() {
     // Use token here or fetch data
   }, [token]);
 
+
+
+  
   return (
     <div className="master-container-salon">
       {/* <div className='second-container23'> */}
@@ -612,7 +615,7 @@ function Dashboard() {
           // Display an alert if userRole is not admin and the alert has not been shown
           (() => {
             setAlertShown(true); // Set alertShown to true to prevent repeated alerts
-            window.alert(
+            toast.error(
               "You must be logged in as an admin to access this page."
             );
           })()}
@@ -692,6 +695,7 @@ function Dashboard() {
           <Calendar onNewBillClick={() => handleButtonClick("Billing")} />
         )}
       </div>
+      <ToastContainer />
 
       {/* </div> */}
     </div>

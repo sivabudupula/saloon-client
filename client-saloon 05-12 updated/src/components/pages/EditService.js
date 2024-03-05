@@ -81,7 +81,7 @@ const EditService = ({ selectedService, onSave,  onCancelEdit }) => {
         <label className="label-sk142sk">Price :</label>
         </div>
         <input
-          type="text"
+          type="number"
           name="price"
           value={editedService.price}
           onChange={handleInputChange}

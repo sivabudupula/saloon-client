@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../styles/Reports.css";
 import axios from "axios";
+import * as XLSX from "xlsx";
 import Chart from "react-apexcharts";
 import { BASE_URL } from "../Helper/helper";
 
@@ -213,6 +214,21 @@ const handleRevenueChartClick = () => {
   };
   
 
+  const handleExport = () => {
+    const wb = XLSX.utils.book_new();
+    const ws1 = XLSX.utils.table_to_sheet(
+      document.getElementById("customer-age-table")
+    );
+    XLSX.utils.book_append_sheet(wb, ws1, "Age Reports");
+    const ws3 = XLSX.utils.aoa_to_sheet([
+      ["Selected Age Range:", `${fromAge} to ${toAge}`],
+    ]);
+    XLSX.utils.book_append_sheet(wb, ws3, "Selected Ages");
+    XLSX.writeFile(wb, "Age_report.xlsx");
+  };
+
+
+
   const filteredCustomers = customers.filter((customer) => {
     const customerAge = calculateAge(customer.dob);
 
@@ -332,6 +348,9 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
               </button>&nbsp;&nbsp;
               <button className="filter-button-sk654s" onClick={resetFilters}>
                 Reset
+              </button>&nbsp;&nbsp;
+              <button onClick={handleExport} className="filter-button-sk654s">
+                Export
               </button>
               </div>
               </div>

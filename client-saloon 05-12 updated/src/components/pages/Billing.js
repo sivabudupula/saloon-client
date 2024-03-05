@@ -646,10 +646,11 @@ const BillingForm = () => {
             </div>
             <input
               className="bnsk142sinput89"
-              type="number"
+              type="tel"
               value={searchQuery}
               onChange={handleSearch}
               placeholder="Enter Phone Number"
+              maxLength={10}
             />
           </div>
           {/* <div className="lable-width567"> */}

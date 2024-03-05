@@ -51,7 +51,8 @@ box-shadow: 0px 0px 9px #ccc;
 .pp-input131{
     outline: none;
     width: 200px;
-    
+    font-family: 'poppins';
+    font-weight: 300;
     margin-right: 3px;
     border: 1px solid #ccc;
     font-size: small;
@@ -97,6 +98,8 @@ box-shadow: 0px 0px 9px #ccc;
 }
 .ppe-th{
     text-align: left;
+     font-family: 'poppins';
+     font-weight: 300;
 }
 .add-row-btn{
 /* margin-top: 10px; */
@@ -107,6 +110,8 @@ width: 80px;
     border: none;
     padding: 6px;
     font-size: small;
+    font-family: pippins;
+    font-weight: 300;
 }
 
 @media only screen and (max-width: 480px) {

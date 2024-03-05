@@ -118,8 +118,8 @@ border: 1px solid #ccc;
 }
 .bill-details-btn{
 
-color:black;
-background-color: rgb(241, 223, 14);
+color:white;
+background-color:dodgerblue;
 padding: 2px;
     font-size: 13px;
     font-weight: 300;
@@ -129,8 +129,9 @@ padding: 2px;
    width: 50px !important;
 }
 .bill-details-btn:hover{
-  background-color: rgb(152, 140, 8);
-  color: white;
+  background-color: rgb(104, 163, 221);
+  color: black;
+  transition: 0.5s;
 }
 
 .pagination46 {

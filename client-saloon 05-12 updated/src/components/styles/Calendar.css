@@ -147,7 +147,7 @@ color: black;
 }
 
 .customer-table-th {
-  background-color: gold;
+  background-color:#f0ecec;
   color: black;
   padding: 7px;
   text-align: center;
@@ -200,6 +200,13 @@ color: black;
 }
 .btn-close342{
   background-color: #e0dd14;
+  border: none;
+  border-radius: 3px;
+  color: black;
+}
+
+.btn-374{
+  background-color:red;
   border: none;
   border-radius: 3px;
   color: black;

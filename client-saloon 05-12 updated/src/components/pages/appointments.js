@@ -487,7 +487,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     className="input2"
                     value={searchQuery}
                     onChange={handleSearch}
-                    placeholder=" Name/Mobile Number"
+                    placeholder=" Name/Mobile No"
                   ></input>
                 </div>
               </div>
@@ -590,7 +590,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     type="search"
                     value={searchAppointmentQuery}
                     onChange={handleAppointmentSearch}
-                    placeholder="Name/Mobile Number"
+                    placeholder="Name/Mobile No"
                   ></input>
                 </div>
               </div>
@@ -678,13 +678,13 @@ const Appointments = ({ onNewAppointmentClick }) => {
 
                           <td className="customer-table11-td1">
                             <button
-                              className="app-edit-btn11"
+                              className="app-edit-btn11 btnblue"
                               onClick={() => handleEdit(customer, item)}
                             >
                               Edit
                             </button>
                             <button
-                              className="app-delete-btn21"
+                              className="app-edit-btn11 btnred"
                               onClick={() =>
                                 handleDelete(customer._id, item._id)
                               }

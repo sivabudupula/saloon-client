@@ -45,7 +45,7 @@ width: 30%;
     border: 1px solid #ccc;
     border-radius: 3px;
     outline: none;
-    cursor: pointer;
+    
   }
   .small-input1122{
     width: 15%;
@@ -127,7 +127,7 @@ width: 30%;
     width: 30%;
     resize: none;
     margin-bottom: 0px ;
-    cursor: pointer;
+   
     outline: none;
     border: 1px solid #ccc;
     border-radius: 3px;

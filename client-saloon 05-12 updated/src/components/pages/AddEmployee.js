@@ -5,6 +5,7 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../Helper/helper";
+import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import eye icons from react-icons library
 
 function AddEmployee({ data, onSave, onCancel }) {
   // console.log(data);
@@ -31,6 +32,8 @@ function AddEmployee({ data, onSave, onCancel }) {
           panNumber: "",
         }
   );
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const [setError] = useState(null);
   // const [isEditing] = useState(false);
@@ -159,6 +162,10 @@ function AddEmployee({ data, onSave, onCancel }) {
     }
   };
 
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   useEffect(() => {
     axios
       .get(`${BASE_URL}/api/employees`)
@@ -249,17 +256,25 @@ function AddEmployee({ data, onSave, onCancel }) {
             <div className="lable-name-saloon2345">
               <label htmlFor="password">Password</label>
             </div>
-            <input
-              className="empinput456"
-              type="password"
-              id="password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-              required
-            />
+            <div className="password-input-container">
+              <input
+                className="empinput456"
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                required
+              />
+              {/* Toggle button to show/hide password */}
+              <div
+                className="password-toggle"
+                onClick={togglePasswordVisibility}
+              >
+                {showPassword ? <FaEyeSlash /> : <FaEye />}
+              </div>
+            </div>
           </div>
-
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
               <label htmlFor="phoneNumber">Phone Number</label>

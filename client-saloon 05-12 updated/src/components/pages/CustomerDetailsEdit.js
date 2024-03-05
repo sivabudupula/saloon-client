@@ -56,8 +56,9 @@ const CustomerDetailsPopup = ({ customer, onSave, onClose }) => {
       <div className='margin184'>
       <label className='label203'>Phone No.</label>
       <input className='A7-cust-popup-input'
-        type="text"
+        type="tel"
         name="phone"
+        maxLength={10}
         value={editedCustomer.phone}
         onChange={handleInputChange}
       />

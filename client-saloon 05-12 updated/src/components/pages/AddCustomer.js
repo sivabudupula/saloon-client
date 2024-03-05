@@ -6,7 +6,6 @@ import { toast, ToastContainer } from "react-toastify"; // Import toast from rea
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../Helper/helper";
 
-
 const AddCustomer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,14 +23,14 @@ const AddCustomer = () => {
     });
   };
 
-  const [token] = useState(localStorage.getItem('token'));
-  const userRole = localStorage.getItem('userRole');
+  const [token] = useState(localStorage.getItem("token"));
+  const userRole = localStorage.getItem("userRole");
   const [previewImage, setPreviewImage] = useState(null);
   const [, setSubmitting] = useState(false);
   const fileInputRef = useRef(null);
   const handleProfileLogoChange = (e) => {
     const file = e.target.files[0];
-    
+
     const reader = new FileReader();
     reader.onload = (event) => {
       setPreviewImage(event.target.result);
@@ -62,7 +61,7 @@ const AddCustomer = () => {
       formDataToSubmit.append("address", formData.address);
       formDataToSubmit.append("phone", formData.phone);
       formDataToSubmit.append("profilePhoto", formData.profilePhoto);
-      const createdByModel = userRole === 'admin' ? 'Register' : 'Employee';
+      const createdByModel = userRole === "admin" ? "Register" : "Employee";
       formDataToSubmit.append("createdByModel", createdByModel);
       // Send the form data to the backend
       const response = await Axios.post(
@@ -70,8 +69,8 @@ const AddCustomer = () => {
         formDataToSubmit,
         {
           headers: {
-            'x-token': token,
-            'Content-Type': 'multipart/form-data',
+            "x-token": token,
+            "Content-Type": "multipart/form-data",
           },
         }
       );
@@ -165,11 +164,12 @@ const AddCustomer = () => {
                 <label className="custlabel">Phone</label>
                 <input
                   className="customer-inputa7"
-                  type="number"
+                  type="tel" // Use type="tel" for phone numbers
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
                   placeholder="Phone"
+                  maxLength={10} // Maximum length of 10 digits
                   required
                 />
               </div>

@@ -33,7 +33,7 @@ const EmployeeDetailsPopup = ({ employee, onClose }) => {
         <button className="close-btn-sk9879" onClick={onClose}>
           &times;
         </button>
-        <h2>Employee Details</h2>
+        <h2 className="h28">Employee Details</h2>
         <div className="abc1234">
           <p>
             <label className="align100px">ID</label>:&nbsp;&nbsp;&nbsp;{" "}
@@ -376,14 +376,14 @@ const Employees = ({ onNewEmployeeClick }) => {
                         {/* Replace Delete button with Activate and Deactivate buttons */}
                         {employee.isActive ? (
                           <button
-                            className="app-edit-btn11"
+                            className="app-edit-btn112"
                             onClick={() => handleDeactivate(employee._id)}
                           >
                             Deactivate
                           </button>
                         ) : (
                           <button
-                            className="app-edit-btn11"
+                            className="app-edit-btn112"
                             onClick={() => handleActivate(employee._id)}
                           >
                             Activate

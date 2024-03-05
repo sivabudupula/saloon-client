@@ -75,6 +75,8 @@
   background-color: #ff5555;
   color: #fff;
   font-size: small;
+  font-family: 'poppins';
+  font-weight: 300;
 }
 .delete-button-sk142sk:hover{
   background-color: #cc0000;
@@ -92,6 +94,7 @@
   /* font-family: 'poppins'; */
   font-size: 15px;
   font-weight: 300;
+  font-family: 'poppins';
 }
 .delete-buttonss:hover{
   background-color: #cc0000;
