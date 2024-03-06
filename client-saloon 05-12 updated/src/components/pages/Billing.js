@@ -31,8 +31,7 @@ const BillingForm = () => {
   const [totalAmount, setTotalAmount] = useState(0);
   const [/*customers*/, setCustomers] = useState([]);
   const [gstNumber, setGstNumber] = useState("");
-
-  
+  // const [billingData, setBillingData] = useState([]);
   const [selectedCustomerId, setSelectedCustomerId] = useState("");
   const [selectedCustomerSaloonId, setSelectedCustomerSaloonId] = useState("");
   const [selectedCustomerName, setSelectedCustomerName] = useState("");
@@ -40,9 +39,9 @@ const BillingForm = () => {
   const [couponDiscount] = useState(0);
   const [serviceIdCounter, setServiceIdCounter] = useState(1);
   const [/*selectedMobileNumber*/, setSelectedMobileNumber] = useState("");
-
   const [searchQuery, setSearchQuery] = useState("");
   const [gstPercent, setGstPercent] = useState(0);
+  // const [isFirstBillSaved, setIsFirstBillSaved] = useState(false);
 
   const [newCustomer, setNewCustomer] = useState({
     name: "",
@@ -317,11 +316,18 @@ const BillingForm = () => {
         gstNumber,
         paymentMethod: paymentMethod,
         totalAmount,
+        createdByModel: userRole === 'admin' ? 'Register' : 'Employee',
       };
 
       const response = await axios.post(
         `${BASE_URL}/api/customers/${selectedCustomerId}/billing`,
-        formData
+        formData,
+        {
+          headers: {
+            'x-token': token,
+            'Content-Type': 'application/json',
+          },
+        }
       );
 
       if (response.status === 201) {
