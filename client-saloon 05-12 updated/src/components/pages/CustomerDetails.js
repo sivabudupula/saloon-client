@@ -11,6 +11,8 @@ import { FaUserCircle } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../Helper/helper";
+import Salonlogo from "../images/Salonlogo.png";
+
 
 const CustomerDetails = ({ selectedCustomer }) => {
   console.log(selectedCustomer);
@@ -338,9 +340,12 @@ const CustomerDetails = ({ selectedCustomer }) => {
       const printContent = `
           <html>
             <head>
-              <title>Bill Details</title>
+            <img src={Salonlogo}  alt="Salonlogo" className="logo-salon-cd"/>
+            <title>Bill Details</title>
               <style>
-                
+              logo-salon-cd{
+                color: black !important;
+              }
                 table {
                   width: 100%;
                   border-collapse: collapse;
@@ -857,6 +862,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
             <div className="popup-overlay">
               <div className="popup-content">
                 <div className="flexchange445577">
+                <img src={Salonlogo}  alt="Salonlogo" className="logo-salon-cd"/>
                   <h2 className="popup-title">Bill Details</h2>
                   <button
                     className="popup-close-button89"

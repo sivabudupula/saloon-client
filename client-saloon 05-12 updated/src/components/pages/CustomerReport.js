@@ -7,7 +7,7 @@ import { BASE_URL } from "../Helper/helper";
 
 const CustomerReport = ({ onCustomerDetailsClick }) => {
   const [customers, setCustomers] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchQuery, /*setSearchQuery*/] = useState("");
   const [fromAge, setFromAge] = useState("");
   const [toAge, setToAge] = useState("");
   const [showChart, setShowChart] = useState(true);
@@ -16,9 +16,9 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [filterClicked, setFilterClicked] = useState(false);
   const [chartData, setChartData] = useState(null);
-  const [ageChartVisible, setAgeChartVisible] = useState(false);
+  const [/*ageChartVisible*/, setAgeChartVisible] = useState(false);
   const [selectedAge, setSelectedAge] = useState(null);
-  const [ageChartData, setAgeChartData] = useState(null);
+  const [/*ageChartData*/, setAgeChartData] = useState(null);
   const [selectedAgeChartVisible, setSelectedAgeChartVisible] = useState(false);
   const [selectedAgePieChartData, setSelectedAgePieChartData] = useState(null);
 
@@ -103,9 +103,6 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
     }
   };
 
-  const handleSearch = (e) => {
-    setSearchQuery(e.target.value);
-  };
 
   const handleFromAgeChange = (e) => {
     setFromAge(e.target.value);

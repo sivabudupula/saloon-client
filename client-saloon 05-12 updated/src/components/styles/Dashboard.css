@@ -7,7 +7,7 @@
   font-family: 'Poppins';
 }
 .heading234{
-  font-size: 25px !important;
+  font-size: 18px !important;
 }
 .second-container23{
 margin-top: 50px;
@@ -47,9 +47,9 @@ font-weight: 600;
 .dashboard-salon23{
   display: flex;
   top:0;
-  margin-top: -20px;
+  margin-top: 7px;
   margin-left: 4.75%;
-  background-color: white;
+  background-color: navy;
   flex-wrap: wrap;
 }
 
@@ -67,7 +67,7 @@ font-weight: 600;
   position: sticky;
   top: 0;
   width: 99vw;
-  background-color: white;
+  background-color: navy;
   z-index: 99;
   /* margin-bottom: 20px; */
 }
@@ -103,10 +103,19 @@ position: relative;
 }
 .logo-sizing23{
   font-size: 25px;
-  color: black;
+  color: white;
   /* border: 2px solid white; */
-    padding: 5px;
-    font-size: xxx-large;
+    padding: 9px;
+    height: 40px;
+  width: 40px;
+    margin-top: -40px;
+    margin-right: -1px;
+
+}
+
+.logo-salon{
+  height: 50px;
+  width: 40;
 }
 .logo-sizing23:hover{
   color: rgb(247, 250, 247);
@@ -178,11 +187,11 @@ background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgb
   background-color: #3390f3;
   color: white;
   padding: 4px;
-  
+  font-family: 'poppins';
   /* height: 36px; */
   text-align: left;
   padding-left: 64px;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: #150b0b;
   border-bottom: 2px solid rgb(69, 67, 67);
   /* position: fixed; */
@@ -195,9 +204,9 @@ background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgb
 
 .sub-button23{
   color: white;
-  background-color: rgb(0, 123, 255);
-  font-size: 20px;
-  margin-left: 10%;
+  background-color:blue;
+  font-size: 14px;
+  margin-left: 1.5%;
   /* border: 1px solid black; */
   border: none;
   border-radius: 5px;
@@ -214,7 +223,7 @@ background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgb
   font-family: system-ui;
   /* padding: 8px; */
   font-family:  sans-serif;
-  color:blue;
+  color:white;
 margin-left: 50%;
 }
 .heading234{
@@ -430,7 +439,7 @@ color: rgb(255, 255, 255);
   display: none;
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 25%;
   transform: translateX(-60%);
   background-color:white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);

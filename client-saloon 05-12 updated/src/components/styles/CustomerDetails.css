@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
 }
+.logo-salon-cd{
+  height: 50px;
+  color: #333 !important;
+  width: 40;
+}
 .custdetailslabel {
   text-align: start;
 width: 225px;

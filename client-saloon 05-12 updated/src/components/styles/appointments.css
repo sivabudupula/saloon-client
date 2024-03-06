@@ -10,7 +10,7 @@
   padding: 8px;
   border: 1px solid #ccc;
   text-align: center;
-  /* font-size: 0.9rem; */
+  font-size: 0.8rem;
 }
 .customer-table11-td {
   border: 1px solid #ccc;
@@ -57,10 +57,11 @@
 .edit-customer-heading1123 {
   background-color: #f0ecec;
   padding: 10px 10px;
-  font-size: 1rem;
+  font-family: 'poppins';
   /* font-weight: bold; */
   border: 1px solid #ccc;
-  font-size: 20px;
+  font-size: 18px;
+
 }
 
 .entries-div121 {
@@ -200,12 +201,32 @@
 .btnred {
   background-color: rgb(205, 16, 16);
 }
+
+
+/* Styles for Activate button */
+.activate-btn {
+  background-color: green; /* Set the background color to green */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove border */
+
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styles for Deactivate button */
+.deactivate-btn {
+  background-color: red; /* Set the background color to red */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove border */
+  /* padding: 8px 16px;  */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
 .app-edit-btn112 {
   /* padding: 2px; */
 
   height: 5vh;
   font-size: 15px;
-  background-color: dodgerblue;
+  /* background-color: dodgerblue; */
   border: none;
   cursor: pointer;
   margin: 2px;

@@ -130,61 +130,108 @@ const Employees = ({ onNewEmployeeClick }) => {
   }, []);
 
   const handleActivate = (employeeId) => {
-    const confirmed = window.confirm("Are you sure you want to activate the employee?");
-    if (confirmed) {
-      axios
-        .put(`${BASE_URL}/api/employees/activate/${employeeId}`)
-        .then((response) => {
-          // Handle success response
-          console.log("Employee activated successfully:", response.data);
-  
-          // Update the state to reflect the changes
-          const updatedEmployees = employees.map((employee) => {
-            if (employee._id === response.data._id) {
-              return { ...employee, isActive: true };
-            }
-            return employee;
-          });
-          setEmployees(updatedEmployees);
-  
-          // Show success toast
-          toast.success("Employee successfully activated!");
-        })
-        .catch((error) => {
-          // Handle error
-          console.error("Error activating employee:", error);
-          // You can show an error message or perform any other actions here
-        });
-    }
+    // Show an info toast to confirm activation
+    toast.info(
+      <>
+        Are you sure you want to activate this employee?
+        <button onClick={() => confirmActivation(employeeId)}>Yes</button>
+        <button onClick={handleCancel}>No</button>
+      </>,
+      {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    );
   };
   
   const handleDeactivate = (employeeId) => {
-    const confirmed = window.confirm("Are you sure you want to deactivate the employee?");
-    if (confirmed) {
-      axios
-        .put(`${BASE_URL}/api/employees/deactivate/${employeeId}`)
-        .then((response) => {
-          // Handle success response
-          console.log("Employee deactivated successfully:", response.data);
+    // Show an info toast to confirm deactivation
+    toast.info(
+      <>
+        Are you sure you want to deactivate this employee?
+        <button onClick={() => confirmDeactivation(employeeId)}>Yes</button>
+        <button onClick={handleCancel}>No</button>
+      </>,
+      {
+        position: "top-right",
+        autoClose: false,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    );
+  };
   
-          // Update the state to reflect the changes
-          const updatedEmployees = employees.map((employee) => {
-            if (employee._id === response.data._id) {
-              return { ...employee, isActive: false };
-            }
-            return employee;
-          });
-          setEmployees(updatedEmployees);
+  const confirmActivation = (employeeId) => {
+    // Close the toast
+    toast.dismiss();
   
-          // Show success toast
-          toast.success("Employee successfully deactivated!");
-        })
-        .catch((error) => {
-          // Handle error
-          console.error("Error deactivating employee:", error);
-          // You can show an error message or perform any other actions here
+    // Make the API call to activate the employee
+    axios
+      .put(`${BASE_URL}/api/employees/activate/${employeeId}`)
+      .then((response) => {
+        // Handle success response
+        console.log("Employee activated successfully:", response.data);
+  
+        // Update the state to reflect the changes
+        const updatedEmployees = employees.map((employee) => {
+          if (employee._id === response.data._id) {
+            return { ...employee, isActive: true };
+          }
+          return employee;
         });
-    }
+        setEmployees(updatedEmployees);
+  
+        // Show success toast
+        toast.success("Employee successfully activated!");
+      })
+      .catch((error) => {
+        // Handle error
+        console.error("Error activating employee:", error);
+        // You can show an error message or perform any other actions here
+      });
+  };
+  
+  const confirmDeactivation = (employeeId) => {
+    // Close the toast
+    toast.dismiss();
+  
+    // Make the API call to deactivate the employee
+    axios
+      .put(`${BASE_URL}/api/employees/deactivate/${employeeId}`)
+      .then((response) => {
+        // Handle success response
+        console.log("Employee deactivated successfully:", response.data);
+  
+        // Update the state to reflect the changes
+        const updatedEmployees = employees.map((employee) => {
+          if (employee._id === response.data._id) {
+            return { ...employee, isActive: false };
+          }
+          return employee;
+        });
+        setEmployees(updatedEmployees);
+  
+        // Show success toast
+        toast.success("Employee successfully deactivated!");
+      })
+      .catch((error) => {
+        // Handle error
+        console.error("Error deactivating employee:", error);
+        // You can show an error message or perform any other actions here
+      });
+  };
+  
+  const handleCancel = () => {
+    // Close the toast
+    toast.dismiss();
   };
   
   
@@ -376,14 +423,14 @@ const Employees = ({ onNewEmployeeClick }) => {
                         {/* Replace Delete button with Activate and Deactivate buttons */}
                         {employee.isActive ? (
                           <button
-                            className="app-edit-btn112"
+                            className="app-edit-btn112 deactivate-btn"
                             onClick={() => handleDeactivate(employee._id)}
                           >
                             Deactivate
                           </button>
                         ) : (
                           <button
-                            className="app-edit-btn112"
+                            className="app-edit-btn112 activate-btn"
                             onClick={() => handleActivate(employee._id)}
                           >
                             Activate

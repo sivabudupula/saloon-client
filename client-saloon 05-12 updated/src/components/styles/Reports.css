@@ -43,8 +43,10 @@
 
 
 .date-label-sk654s {
-  font-weight: bold;
+
+  /* font-weight: bold; */
   margin-right: 5px;
+  font-size: small;
 }
 
 .date-label-sk65432s {
@@ -164,12 +166,14 @@
 .headingreport6789{
   background-color: #f0ecec;
   text-align: left;
-  font-size: 17px;
+  font-size: 18px;
   padding: 7px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 0px;
   border: 1px solid #ccc;
   box-shadow: 0px 0px 9px #ccc;
+  font-family: 'poppins';
+  
   }
   
 .pagination-sk654s  {
@@ -224,7 +228,7 @@
   background-color: #f0ecec;
   margin: 10px;
   /* margin-bottom: -10px; */
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   text-align: left;
 }

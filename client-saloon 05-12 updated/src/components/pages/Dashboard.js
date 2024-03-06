@@ -1,33 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Dashboard.css";
-import { PiOfficeChairBold } from "react-icons/pi";
-import { BiCalendar } from "react-icons/bi";
-import { MdOutlineHomeRepairService } from "react-icons/md";
-import { AiFillDatabase } from "react-icons/ai";
-import { FaUsers } from "react-icons/fa";
 import Vector5 from "../images/Vector5.png";
 import calendar from "../images/calendar.jpeg";
 import Group from "../images/Group.png";
 import Vector4 from "../images/Vector4.png";
 import Vector from "../images/Vector.png";
-import profile from "../images/profile.jpeg";
 import Vector1 from "../images/Vector1.png";
-import { toast , ToastContainer  } from 'react-toastify'; 
+import { toast, ToastContainer } from "react-toastify";
 import Vector3 from "../images/Vector3.png";
 import Inventory from "../images/Inventory.jpeg";
 import good from "../images/good.jpeg";
 import Chart1 from "../images/Chart1.png";
-
 import settings1 from "../images/settings1.png";
-import { FaMoneyBillWaveAlt } from "react-icons/fa";
-import { BsGraphUpArrow } from "react-icons/bs";
-import { AiOutlineMenu } from "react-icons/ai";
-import { TbReportAnalytics } from "react-icons/tb";
-import { AiOutlineMessage } from "react-icons/ai";
-import { BsFillCartCheckFill } from "react-icons/bs";
-import { BsCurrencyRupee } from "react-icons/bs";
-import { AiOutlineBarChart } from "react-icons/ai";
-import { FiUsers } from "react-icons/fi";
 import axios from "axios";
 import Calendar from "./Calendar.jsx";
 import AddEmployee from "./AddEmployee.js";
@@ -54,6 +38,8 @@ import BillingTable from "./Reports.js";
 import CustomerDetails from "./CustomerDetails.js";
 import Employees from "./Employees.js";
 import { BASE_URL } from "../Helper/helper.js";
+import Salonlogo from "../images/Salonlogo.png";
+
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -217,18 +203,44 @@ function Dashboard() {
     // Use token here or fetch data
   }, [token]);
 
-
-
-  
   return (
     <div className="master-container-salon">
       {/* <div className='second-container23'> */}
       <div className="fixed-container678">
         <div className="dashboard-salon2390">
-          <h4 className="welcome23">Saloon</h4>
+          <img src={Salonlogo}  alt="Salonlogo" className="logo-salon"/>
           <div className="logostyle23">
             <p className="logo-sizing23" />
-            <img src={profile} alt="" className="profile"></img>{" "}
+            <div class="logostyle23">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                class="logo-sizing23"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="tooltip-dropdown">
+                <div class="dropdown-item-salon23">Log out</div>
+                <div class="dropdown-item-salon23">Register</div>
+                <div class="dropdown-item-salon23">Edit profile</div>
+              </div>
+            </div>
             <div className="tooltip-dropdown">
               <div className="dropdown-item-salon23" onClick={handleLogout}>
                 Log out
@@ -340,10 +352,6 @@ function Dashboard() {
             <div className="name234">Messages</div>{" "}
           </button> */}
         </div>
-
-
-
-        
 
         <div className="button-indicators23">
           {selectedButton}

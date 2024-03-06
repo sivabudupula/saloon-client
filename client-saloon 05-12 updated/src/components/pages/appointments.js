@@ -314,51 +314,6 @@ const Appointments = ({ onNewAppointmentClick }) => {
     toast.info("Appointment deletion cancelled.");
   };
 
-  // const deleteAppointment = async (
-  //   confirmToastId,
-  //   customerId,
-  //   appointmentId,
-  //   closeToast,
-  //   confirmed
-  // ) => {
-  //   try {
-  //     // Close the confirmation toast
-  //     closeToast();
-
-  //     // If the user confirmed, send a DELETE request to the server
-  //     if (confirmed) {
-  //       await axios.delete(
-  //         `${BASE_URL}/api/customers/${customerId}/appointments/${appointmentId}`
-  //       );
-
-  //       // Update the state to reflect the deleted appointment
-  //       const updatedCustomers = [...customers];
-  //       const customerIndex = updatedCustomers.findIndex(
-  //         (customer) => customer._id === customerId
-  //       );
-
-  //       if (customerIndex !== -1) {
-  //         const updatedAppointments = updatedCustomers[
-  //           customerIndex
-  //         ].appointments.filter(
-  //           (appointment) => appointment._id !== appointmentId
-  //         );
-  //         updatedCustomers[customerIndex].appointments = updatedAppointments;
-  //         setCustomers(updatedCustomers);
-  //       }
-
-  //       // Display a success toast
-  //       toast.success("Appointment deleted successfully!", {
-  //         autoClose: 800,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error("Error deleting appointment:", error);
-  //     // Display an error toast with the specific error message
-  //     toast.error(`Error deleting appointment: ${error.message}`);
-  //   }
-  // };
-
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredCustomers.slice(

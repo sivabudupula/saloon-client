@@ -240,6 +240,7 @@ font-weight: bold;
 border: 1px solid #ccc;
 padding: 8px;
 text-align: center;
+font-size: 0.8rem;
 }
 .width30{
   width: 20%;

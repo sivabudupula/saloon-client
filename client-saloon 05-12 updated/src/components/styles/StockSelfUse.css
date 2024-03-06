@@ -105,7 +105,8 @@ width: 200px;
     height: 29px;
     width: 60px;
     color: white;
-    
+    font-family: 'poppins';
+    font-weight: 300;
     font-size: small;
 }
 .A7Stock-sub-div2-button4{
@@ -131,6 +132,8 @@ width: 200px;
     padding: 7px;
     font-size: 1rem;
     border: 1px solid #ccc;
+    font-family: 'poppins';
+    font-weight: 300;
 }
 /* .delete-btn260{
     border: none;
