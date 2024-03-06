@@ -20,10 +20,9 @@ th{
 .details456{
    background-color: #1571d4;
    color: white;
-   /* padding: 5px; */
-   height: 5vh;
-   width: 5vw;
-   font-size: 15px;
+    padding:  5px 10px; 
+   
+   font-size: 13px;
    border: none;
    border-radius: 5px;
    cursor: pointer;

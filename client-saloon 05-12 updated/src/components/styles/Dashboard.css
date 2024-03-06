@@ -39,7 +39,7 @@ margin-top: 50px;
 
 }
 .amounts{
-  font-size: 12px;
+  font-size: 15px;
 font-family: 'poppins';
 font-weight: 600;
 
@@ -106,8 +106,8 @@ position: relative;
   color: white;
   /* border: 2px solid white; */
     padding: 9px;
-    height: 40px;
-  width: 40px;
+    height: 50px;
+  width: 50px;
     margin-top: -40px;
     margin-right: -1px;
 
@@ -190,7 +190,8 @@ background: linear-gradient(300deg, rgb(16, 5, 229) 0%, rgb(17, 17, 235) 0%, rgb
   font-family: 'poppins';
   /* height: 36px; */
   text-align: left;
-  padding-left: 64px;
+
+   padding-left: 78px; 
   font-size: 18px;
   box-shadow: #150b0b;
   border-bottom: 2px solid rgb(69, 67, 67);

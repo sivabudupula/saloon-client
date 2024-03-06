@@ -148,7 +148,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                   <th className="A7th4">Mobile Number</th>
                   <th className="A7th5">Address</th>
                   <th className="A7th6">Added By</th>
-                  {/* <th className="A7th7">Action</th> */}
+                   <th className="A7th7">Action</th> 
                 </tr>
               </thead>
               <tbody>
@@ -162,9 +162,9 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                       {customer.customerId}
                     </td>
                     <td
-                      style={{ color: "#007bff", cursor: "pointer" }}
+                      
                       className="customer-table-td"
-                      onClick={() => handleClick(customer)}
+                      
                     >
                       {customer.name}
                     </td>
@@ -180,14 +180,14 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                         ? customer.createdBy
                         : customer.createdBy}
                     </td>
-                    {/* <td className="customer-table-td1">
+                     <td className="customer-table-td1">
                       <button
                         className="details456"
                         onClick={() => handleClick(customer)}
                       >
                         Details
                       </button>
-                    </td> */}
+                    </td> 
                   </tr>
                 ))}
               </tbody>
