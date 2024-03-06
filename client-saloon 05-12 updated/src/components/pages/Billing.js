@@ -36,12 +36,15 @@ const BillingForm = () => {
   const [selectedCustomerSaloonId, setSelectedCustomerSaloonId] = useState("");
   const [selectedCustomerName, setSelectedCustomerName] = useState("");
   const [paymentMethod, setPaymentMethod] = useState("");
+  // const [couponCode,] = useState('');
   const [couponDiscount] = useState(0);
   const [serviceIdCounter, setServiceIdCounter] = useState(1);
   const [/*selectedMobileNumber*/, setSelectedMobileNumber] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  // const [isSaved, setIsSaved] = useState(false);
   const [gstPercent, setGstPercent] = useState(0);
-  // const [isFirstBillSaved, setIsFirstBillSaved] = useState(false);
+  const [token] = useState(localStorage.getItem('token'));
+  const userRole = localStorage.getItem("userRole");
 
   const [newCustomer, setNewCustomer] = useState({
     name: "",
@@ -112,7 +115,7 @@ const BillingForm = () => {
     }
   };
 
-  
+  // };
   useEffect(() => {
     fetchServices();
   }, []);
@@ -543,7 +546,39 @@ const BillingForm = () => {
     calculateTotalAmount,
   ]);
 
- 
+  // useEffect(() => {
+  //   if (selectedMobileNumber) {
+  //     // Make an API call to fetch customer data based on mobile number
+  //     // Update the state with the fetched customer's ID and name
+  //     fetchCustomerData(selectedMobileNumber);
+  //   }
+  // }, [selectedMobileNumber]);
+
+  // Modify the fetchCustomerData function to update selectedCustomerId and selectedCustomerName
+  // const fetchCustomerData = async (mobileNumber) => {
+  //   try {
+  //     const response = await axios.get(
+  //       `${BASE_URL}/api/customers?mobileNumber=${mobileNumber}`
+  //     );
+  //     if (response.status === 200) {
+  //       const customerData = response.data;
+  //       if (customerData.length > 0) {
+  //         // const selectedCustomer = customerData[0]; // Retrieve the first record (or the specific record you need)
+  //          //setSelectedCustomerId(selectedCustomer.customerId); // Assuming customerId is a property in your API response
+  //          //setSelectedCustomerName(selectedCustomer.name); // Assuming name is a property in your API response
+  //       } else {
+  //         // Handle case when no customer is found for the provided mobile number
+  //         toast.warn("Customer not found for the provided mobile number.");
+  //       }
+  //     } else {
+  //       // Handle error here
+  //       console.error("Error fetching customer data");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error fetching customer data:", error);
+  //   }
+  // };
+
   const handleSearch = (e) => {
     const query = e.target.value;
     setSearchQuery(query);
@@ -635,7 +670,12 @@ const BillingForm = () => {
               // onChange={(e) => setSelectedCustomerName(e.target.value)}
               // required
             >
-              
+              {/* <option value="">select a Customer</option>
+              {customerNames.map((customer, index) => (
+                <option key={customer._id} value={customer._id}>
+                  {customer.name}&nbsp;({customer.customerId})
+                </option>
+              ))} */}
             </input>
 
             <button className="addnewsk142s" onClick={handleCustomerFormOpen}>
