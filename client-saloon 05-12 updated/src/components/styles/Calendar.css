@@ -320,11 +320,95 @@ color: black;
 }
 
 
+
+
+/* Media query for screens with a width of 375px */
+@media only screen and (max-width: 375px) {
+  .birthday-container {
+    width: 100%;
+    margin-left: -20px;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .birthday-top-filter {
+    font-size: 15px;
+    margin-left: 5px;
+  }
+
+  .customer-table {
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+
+  .customer-table-th,
+  .customer-table-th12,
+  .customer-table-th1 {
+    font-size: 8px; /* Adjust the font size for headers on screens with a width of 375px */
+  }
+
+  .customer-table-th12,
+  .pop-up-change470 {
+    display: none;
+  }
+
+  .customer-table-rowdata {
+    align-items: center;
+  }
+
+  .roaylcalendermain2p-cal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between; /* Adjust space between buttons for smaller screens */
+    margin-top: 5px; /* Adjust the margin for smaller screens */
+  }
+
+  .roaylcalendermain2p-cal,
+  .fc-toolbar-chunk,
+  .fc-toolbar-title {
+    font-size: 6px; /* Adjust the font size for fc-toolbar-title on screens with a width of 375px */
+    padding: 3px;
+  }
+
+  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
+  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
+    margin-right: 2px; /* Adjust the margin for smaller screens */
+    font-size: 10px; /* Adjust the font size for buttons on screens with a width of 375px */
+    padding: 3px; /* Adjust the padding for buttons on screens with a width of 375px */
+  }
+
+  .fc-view-harness,
+  .fc-view-harness-active {
+    width: 100%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pagination button {
+    margin: 2px;
+    font-size: 8px; 
+    padding: 3px 6px; 
+  }
+}
 @media only screen and (max-width: 420px) {
   .birthday-container {
     width: 100%;
     margin-left: -20px;
     overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: auto;
   }
   .birthday-top-filter{
     font-size: 15px;
@@ -440,91 +524,13 @@ color: black;
 
 }
 
-/* Media query for screens with a width of 375px */
-@media only screen and (max-width: 375px) {
-  .birthday-container {
-    width: 100%;
-    margin-left: -20px;
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
-  }
 
-  .birthday-top-filter {
-    font-size: 15px;
-    margin-left: 5px;
-  }
-
-  .customer-table {
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
-  }
-
-  .customer-table-th,
-  .customer-table-th12,
-  .customer-table-th1 {
-    font-size: 8px; /* Adjust the font size for headers on screens with a width of 375px */
-  }
-
-  .customer-table-th12,
-  .pop-up-change470 {
-    display: none;
-  }
-
-  .customer-table-rowdata {
-    align-items: center;
-  }
-
-  .roaylcalendermain2p-cal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .roaylcalendermain2p-cal .fc-toolbar-chunk {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between; /* Adjust space between buttons for smaller screens */
-    margin-top: 5px; /* Adjust the margin for smaller screens */
-  }
-
-  .roaylcalendermain2p-cal,
-  .fc-toolbar-chunk,
-  .fc-toolbar-title {
-    font-size: 6px; /* Adjust the font size for fc-toolbar-title on screens with a width of 375px */
-    padding: 3px;
-  }
-
-  .roaylcalendermain2p-cal .fc-toolbar-chunk button,
-  .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
-    margin-right: 2px; /* Adjust the margin for smaller screens */
-    font-size: 10px; /* Adjust the font size for buttons on screens with a width of 375px */
-    padding: 3px; /* Adjust the padding for buttons on screens with a width of 375px */
-  }
-
-  .fc-view-harness,
-  .fc-view-harness-active {
-    width: 100%;
-  }
-
-  .pagination {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .pagination button {
-    margin: 2px;
-    font-size: 8px; 
-    padding: 3px 6px; 
-  }
-}
-
-
-/* Media query for screens with a width of 425px */
 @media only screen and (max-width: 425px) {
   .birthday-container {
     width: 100%;
     margin-left: 0px;
     padding: 0px;
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    overflow-x: auto; 
   }
 
   .birthday-top-filter {
@@ -533,13 +539,13 @@ color: black;
   }
 
   .customer-table {
-    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    overflow-x: auto; 
   }
 
   .customer-table-th,
   .customer-table-th12,
   .customer-table-th1 {
-    font-size: 8px; /* Adjust the font size for headers on screens with a width of 425px */
+    font-size: 8px; 
   }
 
   .customer-table-th12,

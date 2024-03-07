@@ -229,7 +229,7 @@ const Calendar = ({onNewBillClick}) => {
           }}
           customButtons={{
             bookButton: {
-              text: '+ Create New',
+              text: '+ New',
               click: handleCreateNewClick,
             },
           }}

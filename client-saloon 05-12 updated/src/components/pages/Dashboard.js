@@ -209,8 +209,8 @@ function Dashboard() {
       <div className="fixed-container678">
         <div className="dashboard-salon2390">
           <img src={Salonlogo}  alt="Salonlogo" className="logo-salon"/>
-          <div className="logostyle23">
-            <p className="logo-sizing23" />
+          {/*<div className="logostyle23">*/}
+            
             <div class="logostyle23">
               <svg
                 stroke="currentColor"
@@ -257,7 +257,7 @@ function Dashboard() {
               </div>
             </div>
           </div>
-        </div>
+       
 
         <div className="dashboard-salon23">
           <button
