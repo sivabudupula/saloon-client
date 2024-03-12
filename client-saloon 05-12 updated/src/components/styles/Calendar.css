@@ -525,20 +525,29 @@ color: black;
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .birthday-container {
     width: 100%;
     margin-left: 0px;
     padding: 0px;
     overflow-x: auto; 
   }
-
+  .roaylcalendermain2p-cal {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    
+    border: 1px solid #ccc;
+   
+    box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);
+  }
   .birthday-top-filter {
     font-size: 15px;
     margin-left: 5px;
   }
 
   .customer-table {
+    margin: 3px;
     overflow-x: auto; 
   }
 

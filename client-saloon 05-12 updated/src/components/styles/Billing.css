@@ -405,12 +405,26 @@ border-radius: 3px;
 }
 
 /* Media query for mobile devices */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 430px) {
   .billing-form-sk142s {
     width: 100% !important;
     margin-left: 0 !important;
   }
-  
+  .addnewsk142sd {
+    background-color: #28b932;
+    color: #fff;
+    padding: 5px;
+    margin: 10px;
+    font-size: x-small;
+    font-family: 'poppins';
+    font-weight: 300;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 0px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
   .lable90 {
     width: 100%;
     margin-right: 0;
@@ -507,6 +521,7 @@ border-radius: 3px;
      color: #fff;
      padding: 5px ;
      margin: 10px;
+     margin-left: 0px;
      font-size: x-small;
      border: none;
      border-radius: 3px;
