@@ -106,8 +106,8 @@ position: relative;
   color: white;
   /* border: 2px solid white; */
     padding: 9px;
-    height: 40px;
-  width: 40px;
+    height: 50px;
+  width: 50px;
     margin-top: -40px;
     margin-right: -1px;
 
@@ -433,6 +433,17 @@ color: rgb(255, 255, 255);
   display: block;
 }
 
+.watermark {
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3); /* Adjust color and opacity as needed */
+  font-size: 12px;
+  transform: rotate(360deg);
+  z-index: 9999; /* Ensure the watermark is on top of other content */
+  white-space: pre-line; /* Allow line breaks */
+}
 
 .tooltip-dropdown {
   width: 90px;

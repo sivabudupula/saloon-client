@@ -136,11 +136,14 @@ const CustomerDetails = ({ selectedCustomer }) => {
   //     customer.name.toLowerCase().includes(searchQuery.toLowerCase())
   //   );
 
-  const filteredAppointments = customer.appointments.filter((appointment) =>
-    formatDate(appointment.date)
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase())
-  );
+  const filteredAppointments = customer.appointments
+  ? customer.appointments.filter((appointment) =>
+      formatDate(appointment.date)
+        .toLowerCase()
+        .includes(searchQuery.toLowerCase())
+    )
+  : [];
+
 
   const filteredBills = customer.billing.filter(
     (bill) => bill.billNumber && bill.billNumber.includes(searchBillQuery)
@@ -340,11 +343,11 @@ const CustomerDetails = ({ selectedCustomer }) => {
       const printContent = `
           <html>
             <head>
-            <img src={Salonlogo}  alt="Salonlogo" className="logo-salon-cd"/>
-            <title>Bill Details</title>
               <style>
-              logo-salon-cd{
-                color: black !important;
+              .logo-salon-cd {
+                width: 100px; /* Adjust the width as needed */
+                height: auto; /* Maintain aspect ratio */
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(100%) contrast(100%);
               }
                 table {
                   width: 100%;
@@ -389,23 +392,31 @@ const CustomerDetails = ({ selectedCustomer }) => {
                   background-color: rgb(218, 213, 213);
                   border: 1px solid #ccc;
                   padding: 5px;
-                  text-align: center;
+                  text-align: center !important;
+                }
+                .td88{
+                  background-color: white;
+                  border: 1px solid #ccc;
+                  padding: 5px;
+                  font-weight: normal;
+                  text-align: center!important;
                 }
                 .td89{
                   background-color: white;
                   border: 1px solid #ccc;
                   padding: 5px;
                   font-weight: normal;
-                  text-align: center;
+                  text-align: center!important;
                 }
-                .td88{
-                  text-align: left !important;
+                .td89 td88{
+                  text-align: center !important;
                 }
               </style>
             </head>
             <body>
             <div style=" display: flex; justify-content: center;">
               <div class="popup-content">
+              <img src="${Salonlogo}" alt="Salonlogo" class="logo-salon-cd" />
                 <h2 class="popup-title">Bill Details</h2>
                 <div style="display: flex; flex-direction: row; margin-bottom: -10px;"><p class="popup-details">Bill Number</p> :&nbsp;&nbsp;&nbsp;&nbsp; ${
                   selectedBillDetails.billNumber
@@ -425,9 +436,9 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 <div style="display: flex; flex-direction: row; margin-bottom: -10px;"><p class="popup-details">GST</p> :&nbsp;&nbsp;&nbsp;&nbsp; ${
                   selectedBillDetails.gstPercent
                 }%</div>
-                <div style="display: flex; flex-direction: row; margin-bottom: -10px;"><p class="popup-details">Amount Paid</p> :&nbsp;&nbsp;&nbsp;&nbsp; ${
+                <div style="display: flex; flex-direction: row; margin-bottom: -10px;"><p class="popup-details">Amount Paid</p> :&nbsp;&nbsp;&nbsp;&nbsp;₹ ${
                   selectedBillDetails.totalAmount
-                }</div>
+                }/-</div>
                 <!-- Display Services Table -->
                 <h4 class="popup-subtitle">Services:</h4>
                 <table class="popup-table">
@@ -444,7 +455,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                         (service) => `
                         <tr>
                           <td className="td89 td88">${service.serviceName}</td>
-                          <td className="td89">₹${service.price}</td>
+                          <td className="td89">₹ ${service.price}</td>
                           <td className="td89 td88">${service.employee}</td>
                         </tr>
                       `
@@ -794,7 +805,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                             {bill.discountPercent}
                           </td>
                           <td className="customer-table11-td1">
-                            {bill.totalAmount}
+                            ₹ {bill.totalAmount}
                           </td>
                           <td className="customer-table11-td1">
                             {bill.createdBy}
@@ -904,7 +915,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 </div>
                 <div className="flexchange4455">
                   <p className="popup-details">Amount Paid</p> : &nbsp;&nbsp;
-                  &nbsp;&nbsp;{selectedBillDetails.totalAmount}
+                  &nbsp;&nbsp;{selectedBillDetails.totalAmount}/-
                 </div>
                 <h4 className="popup-subtitle">Services :</h4>
                 <table className="popup-table67">
@@ -919,7 +930,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     {selectedBillDetails.services.map((service) => (
                       <tr className="td89" key={service.id}>
                         <td className="td89 td88">{service.serviceName}</td>
-                        <td className="td89">₹{service.price}</td>
+                        <td className="td89">₹&nbsp;{service.price}</td>
                         <td className="td89 td88">{service.employee}</td>
                       </tr>
                     ))}
@@ -938,7 +949,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     {selectedBillDetails.items.map((item) => (
                       <tr className="td89" key={item.id}>
                         <td className="td89 td88">{item.itemName}</td>
-                        <td className="td89">₹{item.price}</td>
+                        <td className="td89">₹&nbsp;{item.price}</td>
                         <td className="td89 ">{item.quantity}</td>
                       </tr>
                     ))}

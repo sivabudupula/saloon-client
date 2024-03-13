@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../styles/ProductList.css";
 import axios from "axios";
+import Salonlogo from "../images/Salonlogo.png";
 import { BASE_URL } from "../Helper/helper";
 
 const InventoryList = ({ onNewPurchaseClick }) => {
@@ -118,10 +119,15 @@ const InventoryList = ({ onNewPurchaseClick }) => {
       const printContent = `
         <html>
           <head>
-            <title>Inventory Details</title>
+          <img src="${Salonlogo}" alt="Salonlogo" class="logo-salon-cd" />
+            <title>Purchase Order Details</title>
             <style>
-              /* Add your styles here */
-              table {
+            .logo-salon-cd {
+              width: 100px; /* Adjust the width as needed */
+              height: auto; /* Maintain aspect ratio */
+              filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(100%) contrast(100%);
+            }  
+               table {
                 width: 100%;
                 border-collapse: collapse;
               }
@@ -213,7 +219,9 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                         <td className="td89 td88">${product.product}</td>
                         <td className="td89">${product.quantity}</td>
                         <td className="td89">₹ ${product.cp}</td>
-                        <td className="td89"> ${formatDate(product.expiryDate)}</td>
+                        <td className="td89"> ${formatDate(
+                          product.expiryDate
+                        )}</td>
                       </tr>
                     `
                     )
@@ -321,23 +329,21 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                     {item.tableData.map((product, index) => (
                       <React.Fragment key={index}>
                         {product.product}
-                      
+
                         {index < item.tableData.length - 1 && ", "}
                       </React.Fragment>
-                      
                     ))}
                   </td>
                   <td className="pd-td12">
                     {item.tableData.map((product, index) => (
                       <React.Fragment key={index}>
                         {formatDate(product.expiryDate)}
-                      
+
                         {index < item.tableData.length - 1 && ", "}
                       </React.Fragment>
-                      
                     ))}
                   </td>
-                  
+
                   <td className="pd-td123">{item.supplier}</td>
                   <td className="pd-td12">₹ {totalPurchaseAmount}</td>
                   <td className="pd-td123">{item.purchaseType}</td>
@@ -358,6 +364,11 @@ const InventoryList = ({ onNewPurchaseClick }) => {
           <div className="popup-overlay">
             <div className="popup-content">
               <div className="flexchange445577">
+                <img
+                  src={Salonlogo}
+                  alt="Salonlogo"
+                  className="logo-salon-cd"
+                />
                 <h5 className="popup-title">Purchase Order Details</h5>
                 <button
                   className="popup-close-button"

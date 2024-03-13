@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "../styles/Billing.css";
 import axios from "axios";
+import Salonlogo from "../images/Salonlogo.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../Helper/helper";
@@ -370,8 +371,14 @@ const BillingForm = () => {
     const printContent = `
     <html>
       <head>
+      <img src="${Salonlogo}" alt="Salonlogo" class="logo-salon-cd" />
         <title>Invoice</title>
         <style>
+        .logo-salon-cd {
+          width: 100px; /* Adjust the width as needed */
+          height: auto; /* Maintain aspect ratio */
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(216deg) brightness(100%) contrast(100%);
+        } 
           body {
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -621,7 +628,11 @@ const BillingForm = () => {
 
   return (
     <div className="billing-form-sk142s">
-      <p className="heading678">Generate Bill</p>
+      <p className="heading678"><img
+                  src={Salonlogo}
+                  alt="Salonlogo"
+                  className="logo-salon-cd"
+                />&nbsp;Generate Bill </p>
       <div className="small-container678">
         <div className="bnsk142s">
           <div className="form-groupsk142s">

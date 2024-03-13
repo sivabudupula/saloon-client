@@ -235,11 +235,11 @@ function Dashboard() {
                   fill="currentColor"
                 ></path>
               </svg>
-              <div class="tooltip-dropdown">
+              {/* <div class="tooltip-dropdown">
                 <div class="dropdown-item-salon23">Log out</div>
                 <div class="dropdown-item-salon23">Register</div>
                 <div class="dropdown-item-salon23">Edit profile</div>
-              </div>
+              </div> */}
             </div>
             <div className="tooltip-dropdown">
               <div className="dropdown-item-salon23" onClick={handleLogout}>
@@ -571,8 +571,8 @@ function Dashboard() {
               </div>
               <div className="flextochange789">
                 {/* <BsCurrencyRupee className="icon-center234 " /> */}
-                <p className="amount-fetch23">
-                  ₹{totalInventoryAmount.toFixed(0) || 0}
+                <p className="amount-fetch234">
+                  ₹ {totalInventoryAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
             </div>
@@ -706,6 +706,8 @@ function Dashboard() {
       <ToastContainer />
 
       {/* </div> */}
+      <div className="watermark">Powered by{"\n"}Matrical Technologies Pvt Ltd</div>
+
     </div>
   );
 }

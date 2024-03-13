@@ -384,8 +384,8 @@ const Calendar = ({onNewBillClick}) => {
           </Modal.Body>
           <Modal.Footer>
             <div className="btn-374">
-              <Button variant="warning" onClick={closeModal}>
-                Close
+              <Button variant="warning" className='close' onClick={closeModal}>
+               <p className=' Closes'> Close</p>
               </Button>
             </div>
           </Modal.Footer>

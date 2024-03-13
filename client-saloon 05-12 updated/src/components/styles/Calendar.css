@@ -7,8 +7,21 @@
   font-family: 'Poppins';
 
 }
-
-
+.logo-salon-cd
+.close{
+  border: none;
+  height: 6vh;
+  width: 7vw;
+  text-align: center;
+  background-color: red;
+  border-radius: 5px;
+  bottom: none;
+  color: white;
+}
+.Closes{
+  text-align: center;
+  padding-bottom:2%;
+}
 .roaylcalendermain2p-cal {
   background-color: white;
   padding: 20px;
