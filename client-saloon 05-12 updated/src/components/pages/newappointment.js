@@ -4,7 +4,8 @@ import axios from 'axios';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify'; 
 import { BASE_URL } from '../Helper/helper';
-
+import { LuIndianRupee } from "react-icons/lu";
+import { MdAccessTime } from "react-icons/md";
 
 // const getCurrentDate = () => {
 //   const currentDate = new Date();
@@ -269,7 +270,7 @@ const NewAppointment = ({ customer }) => {
             
           <div className='men-women'>
               <div className='flex0033'>
-            <h5>Men Category</h5>
+            <h5 className='h58'>Men Category</h5>
             <div className='men-category'>
   {services
     .filter(service => service.category === 'Male')
@@ -285,14 +286,14 @@ const NewAppointment = ({ customer }) => {
         />
        <label className='lableup123'>{`Men - ${service.serviceName}`}  </label>
         
-        <span className='size293'>Rs - {service.price}</span>
-        <span className='size2935'>Time: {service.durationTime}</span>
+        <span className='size293'><LuIndianRupee />{service.price}</span>
+        <span className='size2935'><MdAccessTime /> {service.durationTime}</span>
       </div>
     ))}
 </div>
 </div>
 <div className='flex0033'>
-<h5>Women Category</h5>
+<h5 className='h58'>Women Category</h5>
 <div className='women-category'>
   
 {services
@@ -310,8 +311,8 @@ const NewAppointment = ({ customer }) => {
         />
        <label className='lableup123'>{`Women - ${service.serviceName}`}  </label>
         
-        <span className='size293'>Rs - {service.price}</span>
-        <span className='size2935'>Time: {service.durationTime}</span>
+        <span className='size293'><LuIndianRupee />{service.price}</span>
+        <span className='size2935'><MdAccessTime />{service.durationTime}</span>
       </div>
     ))}
 </div>

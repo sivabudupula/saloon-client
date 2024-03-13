@@ -197,7 +197,9 @@ width: 30%;
   width: 75px;
 }
 .size2935{
-  font-size: 0.9rem;
+  display: flex;
+    align-items: center;
+    font-size: 0.9rem;
   /* width: 75px; */
 }
   .popup-contentsk14 {
@@ -273,6 +275,9 @@ margin-bottom: 15px;
   flex-direction: column;
   /* width: 350px; */
 }
+.h58{
+
+}
 .custom-checkbox {
   width: 17px;
   height: 17px; 
@@ -280,6 +285,7 @@ margin-bottom: 15px;
 }
 .service-item{
   display: flex;
+  align-items: center ;
 }
 
 .custom-checkbox::-webkit-input-placeholder {
@@ -291,8 +297,7 @@ margin-bottom: 15px;
   background-color: #007bff; 
   border: 1px solid #007bff;
 }
-
-@media screen and (max-width: 425px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   /* Container for the appointment form */
 .appnt-form11 {
   
@@ -307,6 +312,9 @@ margin-bottom: 15px;
     font-family: sans-serif;
     
 
+  }
+  .h58{
+    font-size: 1rem;
   }
   .popup-contentsk14 {
     background-color: #fff;
@@ -528,15 +536,17 @@ height: 30px;
   width: 75px;
 }
 .size2935{
-  font-size: 0.9rem;
-  /* width: 75px; */
+  display: flex;
+    font-size: small;
+    
+    align-items: center;
 }
   .popup-contentsk14 {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 90% !important;
+    width: 96% !important;
     text-align: left;
     font-size: 20px;
     margin-bottom: 10px;
@@ -555,8 +565,8 @@ margin-bottom: 15px;
 font-size: small;
 }
 .lableup123{
-  width: 220px;
- /* font-size: 0.9rem; */
+  width: 190px;
+ font-size: small;
 }
   
 .btn567{
@@ -612,6 +622,7 @@ font-size: small;
 }
 .service-item{
   display: flex;
+  align-items: center;
 }
 
 .custom-checkbox::-webkit-input-placeholder {
@@ -625,25 +636,44 @@ font-size: small;
 }
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (max-width:1023px) {
 
   .popup-contentsk14{
     width: 60%;
-    max-height: 465px;
+    height: 85%;
     overflow: auto;
 
   }
-
+  .servbtn11 {
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 7px;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    font-size: small;
+}
+  .appnt-heading11 {
+    background-color: #f0ecec;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+.h58{
+  margin-top: 1%;
+  font-size: 1rem;
+}
   .men-women{
     display: flex;
     flex-direction: column;
 /* justify-content: space-around; */
 
   }
-
+  
   .appnt-label11 {
     
-    text-align: center;
+    text-align: right;
     display: block;
     
     /* font-weight: bold; */

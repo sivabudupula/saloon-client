@@ -57,11 +57,10 @@
 .edit-customer-heading1123 {
   background-color: #f0ecec;
   padding: 10px 10px;
-  font-family: 'poppins';
+  font-family: "poppins";
   /* font-weight: bold; */
   border: 1px solid #ccc;
   font-size: 18px;
-
 }
 
 .entries-div121 {
@@ -125,17 +124,17 @@
   border-radius: 4px;
   margin: 2px;
   padding: 2px;
-  width: 60px;
+
   font-size: 15px;
   font-weight: 300;
   text-align: center;
 }
 .fst {
   border: none;
-  border-radius: 4px;
+  border-radius: 3px;
   margin: 2px;
-  padding: 2px;
-  width: 60px;
+  padding: 4px;
+
   font-size: 15px;
   font-weight: 300;
   text-align: center;
@@ -145,9 +144,9 @@
   transition: 0.5s;
 }
 .filter {
+  width: 55px;
   background-color: rgb(49, 130, 206);
   color: white;
-  width: 6vw;
 }
 .showall {
   background-color: rgb(49, 130, 206);
@@ -182,7 +181,7 @@
   color: black;
   transition: 0.5s;
 }
-.app-edit-btn11{
+.app-edit-btn11 {
   height: 5vh;
   font-size: 15px;
 
@@ -190,18 +189,19 @@
   cursor: pointer;
   margin: 2px;
   color: white;
-  background-color:  dodgerblue;
+  background-color: dodgerblue;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 65px !important;
+}
+.flexbtn76 {
 }
 .btnblue {
   background-color: dodgerblue;
 }
 .btnred {
-  background-color: rgb(205, 16, 16);
+  background-color: rgb(205, 16, 16) !important;
 }
-
 
 /* Styles for Activate button */
 .activate-btn {
@@ -325,15 +325,25 @@
   z-index: 1001;
   margin-top: 4%;
 }
+.from-div {
+}
+.thead87 {
+  text-wrap: nowrap;
+}
 .editApp {
   width: 100%;
   /* margin-left: 5%; */
 }
-
-@media screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .customer-table11 {
-    width: 170%;
-    border: collapse;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+  }
+  .tr32 {
+  }
+  .thead87 {
+    text-wrap: nowrap;
   }
   .customer-table11-th {
     background-color: #f0ecec;
@@ -341,6 +351,12 @@
     border: 1px solid #ccc;
     text-align: center;
     /* font-size: 0.9rem; */
+  }
+  .from-div {
+    font-size: small;
+  }
+  .to-div {
+    font-size: small;
   }
   .customer-table11-td {
     border: 1px solid #ccc;
@@ -355,7 +371,9 @@
   .customer-table1122-td {
     border: 1px solid #ccc;
   }
-
+  .flexbtn76 {
+    display: flex;
+  }
   .margin786 {
     /* margin: 10px; */
   }
@@ -385,10 +403,21 @@
     /* font-weight: bold; */
     border: 1px solid #ccc;
   }
+  .tble-overflow12 {
+    height: auto;
+    overflow: auto;
+  }
+  .A7serinp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: max-content;
+    font-size: smaller;
+  }
   .edit-customer-heading1123 {
     background-color: #f0ecec;
-    padding: 4px;
-    width: 128%;
+    padding: 6px;
+    width: 100%;
     font-size: small;
     /* font-weight: bold; */
     border: 1px solid #ccc;
@@ -412,7 +441,7 @@
   }
   .app-filter-div11 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 10px;
     margin-bottom: 5px;
     justify-content: space-between;
@@ -426,15 +455,17 @@
 
   .flex-change234 {
     display: flex;
+    align-items: flex-end;
     /* margin: 7px; */
   }
   .app-filter-buttons11 {
     display: flex !important;
+    margin-top: 5px;
     /* justify-content: space-between; */
   }
+
   .fst,
   .filter,
-  .showall,
   .today {
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -451,10 +482,17 @@
   .filter {
     background-color: rgb(49, 130, 206);
     color: white;
+    margin: 0px !important;
+  }
+  .select-number-of-entries {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
   }
   .showall {
     background-color: rgb(49, 130, 206);
     color: white;
+    width: 70px;
   }
   .today {
     background-color: #19c013;
@@ -495,12 +533,17 @@
     color: black;
     transition: 0.5s;
   }
+  .h5,
+  h5 {
+    font-size: 1rem !important;
+  }
   .book-text {
     width: 50px;
     padding: 2px;
     font-size: x-small;
     background-color: dodgerblue;
     /* border: none;    */
+    border-radius: 3px;
     cursor: pointer;
     margin: 2px;
     color: white;
@@ -571,7 +614,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .app-filter-div11 {
     display: flex;
     flex-direction: row;
@@ -579,13 +622,50 @@
     /*            
            width: max-content; */
   }
-
+  .showall {
+    
+    padding: 5px;
+    background-color: rgb(49, 130, 206);
+   
+    width: 80px;
+  }
+  .edit-customer-heading1123 {
+    background-color: #f0ecec;
+    padding: 8px 10px;
+    font-family: "poppins";
+    /* font-weight: bold; */
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+  }
+  .from-div {
+  }
+  .tr32 {
+  }
+  .thead87 {
+    text-wrap: nowrap;
+  }
+  .to-div {
+  }
+  .flexbtn76 {
+  }
   .flex-change234 {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-
+  .book-text {
+    width: 7vw;
+    /* height: 5vh; */
+    padding: 4px;
+    font-size: 13px;
+    background-color: dodgerblue;
+    border: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    margin: 2px;
+    color: white;
+  }
   .customer-table11-td,
   .customer-table11-td1,
   .customer-table1122-td,
@@ -596,17 +676,16 @@
   .from-div,
   .to-div {
     display: flex;
-    flex-direction: row;
-    width: min-content;
+
     font-size: smaller;
-    justify-content: center;
+
     align-items: center;
     height: 28px;
   }
 
   .appnt-form11 {
-    width: 90%;
-    margin-left: 5%;
+    width: 94%;
+    margin-left: 3%;
     border: 1px solid #ccc;
   }
 }

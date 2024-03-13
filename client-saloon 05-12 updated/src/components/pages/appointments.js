@@ -422,7 +422,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
             <div className="margin786">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
-                  <label>Show </label>
+                  <label className="show11">Show </label>
                   <select
                     className="input1"
                     value={itemsPerPage}
@@ -433,7 +433,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> Entries </label>
+                  {/* <label> Entries </label> */}
                 </div>
                 <div className="A7serinp">
                   <label> Search &nbsp;</label>
@@ -446,45 +446,48 @@ const Appointments = ({ onNewAppointmentClick }) => {
                   ></input>
                 </div>
               </div>
-
-              <table className="customer-table11">
-                <thead>
-                  <tr>
-                    <th className="customer-table11-th">Customer ID</th>
-                    <th className="customer-table11-th">Customer Name</th>
-                    <th className="customer-table11-th">Mobile Number</th>
-                    <th className="customer-table11-th">Address</th>
-                    {/* <th className='customer-table11-th'>Discount</th> */}
-                    <th className="customer-table11-th">Action</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  {currentItems.map((customer) => (
-                    <tr key={customer.email}>
-                      <td className="customer-table11-td1">
-                        {customer.customerId}
-                      </td>
-                      <td className="customer-table11-td">{customer.name}</td>
-                      <td className="customer-table11-td1">{customer.phone}</td>
-                      <td className="customer-table11-td">
-                        {customer.address}
-                      </td>
-                      {/* <td className='customer-table11-td1'>{customer.discount}</td> */}
-
-                      <td className="customer-table11-td1">
-                        {/* <p className='book-text' onClick={handleClick}>Book</p> */}
-                        <button
-                          className="book-text"
-                          onClick={() => handleClick(customer)}
-                        >
-                          Book
-                        </button>
-                      </td>
+              <div className="tble-overflow12">
+                <table className="customer-table11">
+                  <thead className="thead87">
+                    <tr>
+                      <th className="customer-table11-th">Customer ID</th>
+                      <th className="customer-table11-th">Customer Name</th>
+                      <th className="customer-table11-th">Mobile Number</th>
+                      <th className="customer-table11-th">Address</th>
+                      {/* <th className='customer-table11-th'>Discount</th> */}
+                      <th className="customer-table11-th">Action</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
+                  </thead>
+
+                  <tbody className="thead87">
+                    {currentItems.map((customer) => (
+                      <tr key={customer.email}>
+                        <td className="customer-table11-td1">
+                          {customer.customerId}
+                        </td>
+                        <td className="customer-table11-td">{customer.name}</td>
+                        <td className="customer-table11-td1">
+                          {customer.phone}
+                        </td>
+                        <td className="customer-table11-td">
+                          {customer.address}
+                        </td>
+                        {/* <td className='customer-table11-td1'>{customer.discount}</td> */}
+
+                        <td className="customer-table11-td1">
+                          {/* <p className='book-text' onClick={handleClick}>Book</p> */}
+                          <button
+                            className="book-text"
+                            onClick={() => handleClick(customer)}
+                          >
+                            Book
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               <div className="entries-div121">
                 <div className="number-of-entries-div">
                   Showing {indexOfFirstItem + 1} to{" "}
@@ -525,7 +528,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
             <div className="margin786">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
-                  <label>Show </label>
+                  <label className="show11">Show </label>
                   <select
                     className="input1"
                     value={appsPerPage}
@@ -536,7 +539,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> Entries </label>
+                  {/* <label> Entries </label> */}
                 </div>
                 <div className="A7serinp">
                   <label> Search &nbsp;</label>
@@ -563,7 +566,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                   </div>
                   <div className="to-div">
                     {" "}
-                    &nbsp;&nbsp;&nbsp;&nbsp;To &nbsp;
+                    To &nbsp;
                     <input
                       type="date"
                       id="toDate"
@@ -577,8 +580,9 @@ const Appointments = ({ onNewAppointmentClick }) => {
                     Filter
                   </button>
                 </div>
+
                 <div className="app-filter-buttons11">
-                  <button className="fst filter" onClick={handleShowAll}>
+                  <button className="fst showall" onClick={handleShowAll}>
                     Show all
                   </button>
                   <button className="fst today" onClick={handleShowToday}>
@@ -588,71 +592,75 @@ const Appointments = ({ onNewAppointmentClick }) => {
               </div>
 
               <div>
-                <table className="customer-table11">
-                  <thead>
-                    <tr>
-                      <th className="customer-table11-th">Customer ID</th>
-                      <th className="customer-table11-th">Customer Name</th>
-                      <th className="customer-table11-th">Mobile Number</th>
-                      <th className="customer-table11-th">Date</th>
-                      <th className="customer-table11-th">From</th>
-                      <th className="customer-table11-th">To</th>
-                      <th className="customer-table11-th">Services</th>
-                      <th className="customer-table11-th">Action</th>
-                    </tr>
-                  </thead>
+                <div className="tble-overflow12">
+                  <table className="customer-table11">
+                    <thead className="thead87">
+                      <tr>
+                        <th className="customer-table11-th">Customer ID</th>
+                        <th className="customer-table11-th">Customer Name</th>
+                        <th className="customer-table11-th">Mobile Number</th>
+                        <th className="customer-table11-th">Date</th>
+                        <th className="customer-table11-th">From</th>
+                        <th className="customer-table11-th">To</th>
+                        <th className="customer-table11-th">Services</th>
+                        <th className="customer-table11-th">Action</th>
+                      </tr>
+                    </thead>
 
-                  <tbody>
-                    {currentAppItems.map((customer, customerIndex) =>
-                      customer.appointments.map((item, index) => (
-                        <tr key={item.id}>
-                          <td className="customer-table11-td1">
-                            {customer.customerId}
-                          </td>
-                          <td className="customer-table11-td">{item.name}</td>
-                          <td className="customer-table11-td1">{item.phone}</td>
-                          <td className="customer-table11-td1">
-                            {formatDate(item.date)}
-                          </td>
-                          <td className="customer-table11-td1">
-                            {item.fromTiming}
-                          </td>
-                          <td className="customer-table11-td1">
-                            {item.toTiming}
-                          </td>
+                    <tbody className="thead87">
+                      {currentAppItems.map((customer, customerIndex) =>
+                        customer.appointments.map((item, index) => (
+                          <tr key={item.id} className="tr32">
+                            <td className="customer-table11-td1">
+                              {customer.customerId}
+                            </td>
+                            <td className="customer-table11-td">{item.name}</td>
+                            <td className="customer-table11-td1">
+                              {item.phone}
+                            </td>
+                            <td className="customer-table11-td1">
+                              {formatDate(item.date)}
+                            </td>
+                            <td className="customer-table11-td1">
+                              {item.fromTiming}
+                            </td>
+                            <td className="customer-table11-td1">
+                              {item.toTiming}
+                            </td>
 
-                          <td className="customer-table11-td">
-                            <ol>
-                              {item.selectedServices.map(
-                                (service, serviceIndex) => (
-                                  <li key={serviceIndex}>{service}</li>
-                                )
-                              )}
-                            </ol>
-                          </td>
+                            <td className="customer-table11-td">
+                              <ol>
+                                {item.selectedServices.map(
+                                  (service, serviceIndex) => (
+                                    <li key={serviceIndex}>{service}</li>
+                                  )
+                                )}
+                              </ol>
+                            </td>
 
-                          <td className="customer-table11-td1">
-                            <button
-                              className="app-edit-btn11 btnblue"
-                              onClick={() => handleEdit(customer, item)}
-                            >
-                              Edit
-                            </button>
-                            <button
-                              className="app-edit-btn11 btnred"
-                              onClick={() =>
-                                handleDelete(customer._id, item._id)
-                              }
-                            >
-                              Delete
-                            </button>
-                            {/* <button className='app-delete-btn11' onClick={() => handleDelete(null, customer._id, item._id)}>Delete</button> */}
-                          </td>
-                        </tr>
-                      ))
-                    )}
-                  </tbody>
-                </table>
+                            <td className="customer-table11-td1 flexbtn76">
+                              <button
+                                className="app-edit-btn11 btnblue"
+                                onClick={() => handleEdit(customer, item)}
+                              >
+                                Edit
+                              </button>
+                              <button
+                                className="app-edit-btn11 btnred"
+                                onClick={() =>
+                                  handleDelete(customer._id, item._id)
+                                }
+                              >
+                                Delete
+                              </button>
+                              {/* <button className='app-delete-btn11' onClick={() => handleDelete(null, customer._id, item._id)}>Delete</button> */}
+                            </td>
+                          </tr>
+                        ))
+                      )}
+                    </tbody>
+                  </table>
+                </div>
                 <div className="entries-div121">
                   <div className="number-of-entries-div">
                     Showing {indexOfAppFirstItem + 1} to{" "}

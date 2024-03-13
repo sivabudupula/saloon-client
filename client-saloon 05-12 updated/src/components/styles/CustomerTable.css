@@ -197,10 +197,12 @@ margin-right: 10px;
 .edit-customer-heading1123{
    font-family: 'Poppins';
 }
-
+.show11{
+      
+}
 
  
- @media screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 426px){
    .A7custheadertab{
       margin-top: -11px;
       background-color: rgb(201, 192, 192);
@@ -209,6 +211,9 @@ margin-right: 10px;
       height: 35px; 
       border: 1px solid grey;
       padding: 10px 0px 0px 10px;
+   }
+   .show11{
+font-size: small;
    }
    .customer-table11a7{
       width: 100%;
@@ -296,13 +301,18 @@ margin-right: 10px;
        display: flex;
        justify-content: space-between;
    }
+   .number-of-entries-div {
+      font-family: 'Poppins';
+      font-size: small;
+  }
    .input1{
       width: 80px;
+      font-size: small;
       text-align: center;
       border: 1px solid #ccc;
       border-radius: 3px;
-      margin-left: 3px;
-      margin-right: 3px;
+      margin-left: 0px;
+      margin-right: 0px;
       padding: 4px;
    }
    .input2{
@@ -311,8 +321,8 @@ margin-right: 10px;
       width: 200px;
       border: 1px solid #ccc;
       border-radius: 3px;
-      margin-left: 5px;
-      text-align: center;
+      margin-left: 0px;
+      text-align: left;
    }
    .flex410{
      display: flex;
@@ -387,13 +397,35 @@ margin-right: 10px;
     }
  }
 
- @media only screen and (max-width: 768px) {
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
    .customer-container11 {
-     width: 90%;
-     margin-left: 5%;
+     width: 94%;
+     margin-left: 3%;
      overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
    }
- 
+   .tble-overflow12 {
+      height: auto;
+      overflow: auto;
+  }
+  .app-edit-btn11 {
+   height: 5vh;
+   font-size: 13px;
+   border: none;
+   cursor: pointer;
+   margin: 2px;
+   color: white;
+   background-color: dodgerblue;
+   border: none;
+   border-radius: 3px;
+   width: 50px !important;
+}
+   .show11{
+      font-size: small;
+   }
+   .number-of-entries-div {
+      font-family: 'Poppins';
+      font-size: small;
+  }
    .customer-table11a7 {
       width: 100%;
       margin-top: 2%;
@@ -490,6 +522,7 @@ margin-right: 10px;
 
     .customer-search11{
       display: flex;
+      flex-direction: row;
       margin-top: 5px;
       margin-bottom: 6px;
   justify-content: space-between;
@@ -498,6 +531,7 @@ margin-right: 10px;
   .select-number-of-entries{
    display: flex;
    flex-direction: row;
+   align-items: center;
    width: max-content;
    font-size: smaller;
    margin-right: 15px;
@@ -509,11 +543,7 @@ margin-right: 10px;
   flex-direction: row;
   width: max-content;
   font-size: smaller;
-
+align-items: center;
+margin-top: 7px;
  }
-
- 
-
-
-
  }

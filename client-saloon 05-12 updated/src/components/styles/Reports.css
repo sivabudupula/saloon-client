@@ -431,8 +431,399 @@ color: black !important;
   background-color: #d32f2f; /* Darker red background color on hover */
 }
 
-
-@media only screen and (max-width: 769px) {
+@media screen and (max-width:427px) {
+  
+  .billing-table-container-sk654s {
+  
+    border: 1px solid #ccc;
+    
+    width: 100%;
+    box-shadow: 6px 5px 6px #ccc;
+    margin-bottom: 2%;
+    margin-left: 0%;
+    background-color: white;
+  }
+  .apexcharts-canvas {
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+   overflow-x: auto;
+  }
+  .apexcharts-svg{
+    margin-left: 0%;
+  }
+  .apexcharts-slices{
+  
+  }
+  .widthrange290 {
+    /* width: 100%;  */
+    display: flex;
+    justify-content: center;
+  }
+  .flex-109586 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .widthrange290 {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+  }
+  .bar-graph-container-cvvroyalrpt{
+    /* width: 60% !important;
+    height: 100% !important;
+    margin: 7px; */
+  
+  }
+  .date-filter-section-sk654s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    margin: 10px;
+  }
+  .btns-783{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .date-filter-section-sk65432s {
+    display: flex;
+   
+    flex-direction: column;
+    margin: 10px;
+   
+   
+  }
+  .flex-change6743{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .date-filter-section-sk8765432s {
+    display: flex;
+    justify-content: space-between;
+   flex-direction: column;
+   
+    margin: 10px;
+   
+   
+  }
+  .customer-search1197 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    justify-content: space-between;
+  }
+  .flex14334{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  }
+  .end865{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .flex1433456{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    }
+  .flex-1095{
+  display: flex;
+  flex-direction: column;
+  }
+  .flex-109589{
+    display: flex;
+   
+    }
+  .flex143{
+    display: flex;
+    
+  }
+  .flex14345{
+    display: flex;
+    flex-direction: column;
+  }
+  .button456{
+  margin-top: 2%;
+  }
+  .date-label-sk654s {
+    font-size: small;
+    font-weight: normal !important;
+    margin-right: 2px !important;
+  }
+  
+  .date-label-sk65432s {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 25px;
+  }
+  .date-label-sk6574s {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 25px;
+  }
+  .flex14390{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .date-label-sk65467s {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 20px;
+  }
+  
+  .chartrange574{
+    width: 310px !important;
+    height: 185px !important;
+  }
+  .date-input-sk654s {
+    padding: 6px;
+    font-size: x-small;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 8px;
+    /* margin-top: -15px !important; */
+  }
+  
+  
+  .filter-button-sk654s {
+    padding: 3px 13px;
+    background-color: #2579c7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: small;
+    padding: 4px;
+    width: 50px;
+    cursor: pointer;
+   
+  }
+  .show-all-button-sk654s{
+    padding: 5px 5px;
+    background-color: rgb(18 138 231);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: small;
+    cursor: pointer;
+    margin: 2px;
+  }
+  .show-today-button-sk654s{
+    padding: 5px 10px;
+    background-color: #19c013;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: small;
+    
+    margin: 2px;
+  }
+  .table-container-sk654s{
+    display: flex;
+  }
+  .billing-table-sk654s {
+    width: 99%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 2px !important;
+    font-size: small;
+    padding: 4px;
+  }
+  .billing-table-sk65490s {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 16px;
+    padding: 4px;
+  }
+  .billing-table-sk65478s {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 16px;
+    padding: 4px;
+  }
+  
+  
+  .billing-table-header-sk654s {
+    background-color: #f0ecec;
+    font-weight: 500;
+    font-size: small !important;
+  }
+  
+  .billing-table-cell-sk654s {
+    padding: 6px;
+   font-size: x-small;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ccc;
+  }
+  .billing-table-cell-sk6543s {
+    padding: 6px;
+   font-size: small;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ccc;
+  }
+  .billing-table-cell-sk6545s {
+    padding: 6px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ccc;
+  }
+  
+  .headingreport6789{
+    background-color: #f0ecec;
+    text-align: left;
+    font-size: 17px;
+    padding: 7px;
+    font-weight: 700;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 9px #ccc;
+    }
+    
+  .pagination-sk654s  {
+    display: flex;
+   justify-content: flex-end;
+   margin-right: 10px;
+    cursor: pointer;
+   
+  }
+  .box123{
+    margin: 2px;
+    border: none;
+  }
+  .button4567{
+    margin: 2px;
+    width: 27px;
+    height: 28px;
+   border: none;
+    cursor: pointer;
+   text-align: center;
+    background-color: #f2f2f2;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .colour200{
+    display: flex;
+    list-style: none;
+  }
+  .active{
+    border: none;
+    margin: 2px;
+    cursor: default;
+    background-color: #007bff;
+    color: white;
+    width: 27px;
+    height: 28px;
+  }
+  .button4567:hover {
+    cursor: default;
+    color: black;
+    
+  }
+   .flex642{
+        
+      }
+  .btn-789{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+  }
+  .pagination-sk654s.active:hover {
+    cursor: default;
+   
+  }
+  .para7890{
+    padding: 10px;
+    background-color: #f0ecec;
+    margin: 10px;
+    /* margin-bottom: -10px; */
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .total567sk{
+    
+  }
+  
+  .pie-btns9021{
+    color: black;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 3px;
+    padding: 6px;
+    /* width: 90px; */
+  }
+  .btn-3456{
+    border: none;
+    margin: 3px;
+    width: 28px;
+    height: 30px;
+    text-align: center;
+  }
+  .search-input-sk654s{
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  /* .bar-graph-container-cvvroyalrpt{
+  width: 60%;
+  
+  margin: 7px;
+  
+  } */
+  
+  .flex163{
+    display: flex;
+  }
+  .column409{
+    display: flex;
+    flex-direction: column;
+  }
+  .show-chart-button{
+    border: none;
+    border-radius: 3px;
+    width: 110px;
+    padding: 5px;
+    font-size: small;
+    background-color: #6c5750;
+    color: white;
+  }
+  .margintop345{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .chart-container{
+    text-align: right;
+  }
+  .apexcharts-legend.apx-legend-position-right{
+    text-align: left;
+  }
+  .apexcharts-legend-marker{
+    background-color: #934611 !important;
+    color: white !important;
+  }
+  .piechartchange {
+  
+  }
+  .pie-chart-container{
+    display: flex;
+    overflow-x: auto;
+    justify-content: flex-start !important;
+    background-color: #f0ecec;
+  }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
   .date-filter-section-sk654s {
     display: flex;
     justify-content: space-between;
@@ -447,8 +838,8 @@ color: black !important;
   
   }
   .date-input-sk654s {
-    padding: 4px;
-    font-size: small;
+    padding: 5px;
+    font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-right: 8px;
@@ -506,395 +897,4 @@ color: black !important;
 }
 }
 
-@media screen and (max-width:430px) {
-  
-.billing-table-container-sk654s {
 
-  border: 1px solid #ccc;
-  
-  width: 100%;
-  box-shadow: 6px 5px 6px #ccc;
-  margin-bottom: 2%;
-  margin-left: 0%;
-  background-color: white;
-}
-.apexcharts-canvas {
-  position: relative;
-  -webkit-user-select: none;
-  user-select: none;
- overflow-x: auto;
-}
-.apexcharts-svg{
-  margin-left: 0%;
-}
-.apexcharts-slices{
-
-}
-.widthrange290 {
-  /* width: 100%;  */
-  display: flex;
-  justify-content: center;
-}
-.flex-109586 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.widthrange290 {
-  width: 100%;
-  display: flex;
-  overflow-x: auto;
-  justify-content: center;
-}
-.bar-graph-container-cvvroyalrpt{
-  /* width: 60% !important;
-  height: 100% !important;
-  margin: 7px; */
-
-}
-.date-filter-section-sk654s {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-  margin: 10px;
-}
-.btns-783{
-  display: flex;
-  justify-content: flex-end;
-}
-.date-filter-section-sk65432s {
-  display: flex;
- 
-  flex-direction: column;
-  margin: 10px;
- 
- 
-}
-.flex-change6743{
-  display: flex;
-  justify-content: flex-end;
-}
-.date-filter-section-sk8765432s {
-  display: flex;
-  justify-content: space-between;
- flex-direction: column;
- 
-  margin: 10px;
- 
- 
-}
-.customer-search1197 {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-  margin-bottom: 6px;
-  justify-content: space-between;
-}
-.flex14334{
-display: flex;
-justify-content: space-between;
-flex-direction: column;
-}
-.end865{
-  display: flex;
-  justify-content: flex-end;
-}
-.flex1433456{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3%;
-  }
-.flex-1095{
-display: flex;
-flex-direction: column;
-}
-.flex-109589{
-  display: flex;
- 
-  }
-.flex143{
-  display: flex;
-  
-}
-.flex14345{
-  display: flex;
-  flex-direction: column;
-}
-.button456{
-margin-top: 2%;
-}
-.date-label-sk654s {
-  font-size: small;
-  font-weight: normal !important;
-  margin-right: 2px !important;
-}
-
-.date-label-sk65432s {
-  font-weight: bold;
-  margin-right: 5px;
-  margin-left: 25px;
-}
-.date-label-sk6574s {
-  font-weight: bold;
-  margin-right: 5px;
-  margin-left: 25px;
-}
-.flex14390{
-  display: flex;
-  flex-direction: column;
-}
-
-.date-label-sk65467s {
-  font-weight: bold;
-  margin-right: 5px;
-  margin-left: 20px;
-}
-
-.chartrange574{
-  width: 310px !important;
-  height: 185px !important;
-}
-.date-input-sk654s {
-  padding: 4px;
-  font-size: x-small;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  margin-right: 8px;
-  /* margin-top: -15px !important; */
-}
-
-
-.filter-button-sk654s {
-  padding: 3px 13px;
-  background-color: #2579c7;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: small;
-  padding: 4px;
-  width: 50px;
-  cursor: pointer;
- 
-}
-.show-all-button-sk654s{
-  padding: 5px 5px;
-  background-color: rgb(18 138 231);
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: small;
-  cursor: pointer;
-  margin: 2px;
-}
-.show-today-button-sk654s{
-  padding: 5px 10px;
-  background-color: #19c013;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: small;
-  
-  margin: 2px;
-}
-.table-container-sk654s{
-  display: flex;
-}
-.billing-table-sk654s {
-  width: 99%;
-  overflow-x: auto;
-  border-collapse: collapse;
-  margin: 2px !important;
-  font-size: small;
-  padding: 4px;
-}
-.billing-table-sk65490s {
-  width: 98%;
-  border-collapse: collapse;
-  margin: 10px;
-  font-size: 16px;
-  padding: 4px;
-}
-.billing-table-sk65478s {
-  width: 98%;
-  border-collapse: collapse;
-  margin: 10px;
-  font-size: 16px;
-  padding: 4px;
-}
-
-
-.billing-table-header-sk654s {
-  background-color: #f0ecec;
-  font-weight: 500;
-  font-size: small !important;
-}
-
-.billing-table-cell-sk654s {
-  padding: 6px;
- font-size: x-small;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  border: 1px solid #ccc;
-}
-.billing-table-cell-sk6543s {
-  padding: 6px;
- font-size: small;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  border: 1px solid #ccc;
-}
-.billing-table-cell-sk6545s {
-  padding: 6px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  border: 1px solid #ccc;
-}
-
-.headingreport6789{
-  background-color: #f0ecec;
-  text-align: left;
-  font-size: 17px;
-  padding: 7px;
-  font-weight: 700;
-  margin-top: 0px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 0px 9px #ccc;
-  }
-  
-.pagination-sk654s  {
-  display: flex;
- justify-content: flex-end;
- margin-right: 10px;
-  cursor: pointer;
- 
-}
-.box123{
-  margin: 2px;
-  border: none;
-}
-.button4567{
-  margin: 2px;
-  width: 27px;
-  height: 28px;
- border: none;
-  cursor: pointer;
- text-align: center;
-  background-color: #f2f2f2;
-  
-  transition: background-color 0.3s ease;
-}
-
-.colour200{
-  display: flex;
-  list-style: none;
-}
-.active{
-  border: none;
-  margin: 2px;
-  cursor: default;
-  background-color: #007bff;
-  color: white;
-  width: 27px;
-  height: 28px;
-}
-.button4567:hover {
-  cursor: default;
-  color: black;
-  
-}
- .flex642{
-      
-    }
-.btn-789{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
-}
-.pagination-sk654s.active:hover {
-  cursor: default;
- 
-}
-.para7890{
-  padding: 10px;
-  background-color: #f0ecec;
-  margin: 10px;
-  /* margin-bottom: -10px; */
-  font-size: 17px;
-  font-weight: bold;
-  text-align: left;
-}
-.total567sk{
-  
-}
-
-.pie-btns9021{
-  color: black;
-  background-color: goldenrod;
-  border: none;
-  border-radius: 3px;
-  padding: 6px;
-  /* width: 90px; */
-}
-.btn-3456{
-  border: none;
-  margin: 3px;
-  width: 28px;
-  height: 30px;
-  text-align: center;
-}
-.search-input-sk654s{
-  padding: 3px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-/* .bar-graph-container-cvvroyalrpt{
-width: 60%;
-
-margin: 7px;
-
-} */
-
-.flex163{
-  display: flex;
-}
-.column409{
-  display: flex;
-  flex-direction: column;
-}
-.show-chart-button{
-  border: none;
-  border-radius: 3px;
-  width: 110px;
-  padding: 5px;
-  font-size: small;
-  background-color: #6c5750;
-  color: white;
-}
-.margintop345{
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.chart-container{
-  text-align: right;
-}
-.apexcharts-legend.apx-legend-position-right{
-  text-align: left;
-}
-.apexcharts-legend-marker{
-  background-color: #934611 !important;
-  color: white !important;
-}
-.piechartchange {
-
-}
-.pie-chart-container{
-  display: flex;
-  overflow-x: auto;
-  justify-content: flex-start !important;
-  background-color: #f0ecec;
-}
-}

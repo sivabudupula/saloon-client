@@ -263,7 +263,7 @@ function Dashboard() {
             onClick={() => setSelectedButton("Calendar")}
           >
             <div className="icon-center23 ">
-              <img src={calendar} alt="" className="calenadr"></img>{" "}
+              <img src={calendar} alt="" className="calenadr icon997"></img>{" "}
             </div>
             <div className="name234">CALENDER</div>
           </button>
@@ -273,7 +273,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <FaMoneyBillWaveAlt /> */}
-              <img src={Vector5} alt=""></img>
+              <img src={Vector5} alt="" className="icon997"></img>
             </div>
             <div className="name234">BILLING</div>
           </button>
@@ -283,7 +283,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <FaUsers /> */}
-              <img src={Group} alt=""></img>
+              <img src={Group} alt="" className="icon997"></img>
             </div>
             <div className="name234">APPOINTMENTS</div>
           </button>
@@ -294,7 +294,7 @@ function Dashboard() {
           >
             {" "}
             <div className="icon-center23 ">{/* <AiFillDatabase /> */}</div>
-            <img src={Vector4} alt="" className="setting"></img>
+            <img src={Vector4} alt="" className="setting icon997"></img>
             <div className="name234">CUSTOMERS</div>
           </button>
 
@@ -304,7 +304,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <BsGraphUpArrow /> */}
-              <img src={Vector3} alt=""></img>
+              <img src={Vector3} alt="" className="icon997"></img>
             </div>
             <div className="name234">INVENTORY</div>
           </button>
@@ -316,7 +316,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               {/* <MdOutlineHomeRepairService /> */}
             </div>
-            <img src={settings1} alt="" className="setting"></img>
+            <img src={settings1} alt="" className="setting icon997"></img>
             <div className="name234">SERVICES</div>{" "}
           </button>
 
@@ -326,7 +326,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">
               {/* <AiOutlineMenu /> */}
-              <img src={Vector1} alt=""></img>
+              <img src={Vector1} alt="" className="icon997"></img>
             </div>
             <div className="name234">EMPLOYEES</div>{" "}
           </button>
@@ -336,7 +336,7 @@ function Dashboard() {
             onClick={() => setSelectedButton("Reports")}
           >
             <div className="icon-center23 ">{/* <TbReportAnalytics /> */}</div>
-            <img src={Vector} className="setting"></img>
+            <img src={Vector} className="setting icon997"></img>
             <div className="name234">REPORTS</div>
           </button>
 

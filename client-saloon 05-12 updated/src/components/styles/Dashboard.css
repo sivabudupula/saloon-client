@@ -22,7 +22,7 @@
   font-family: "Poppins";
 }
 .heading234 {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 .second-container23 {
   margin-top: 50px;
@@ -50,7 +50,7 @@
   width: 3vw;
 }
 .amounts {
-  width: 137px;
+  /* width: 137px; */
   font-size: 15px;
   font-family: "poppins";
   font-weight: 600;
@@ -185,7 +185,7 @@ cursor: pointer; */
 }
 .name234 {
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -217,7 +217,7 @@ cursor: pointer; */
   margin-left: 1.5%;
   /* border: 1px solid black; */
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 4px;
 }
 .sub-button23:hover {
@@ -270,7 +270,8 @@ cursor: pointer; */
   font-size: large;
   margin-right: 90%;
 }
-
+.icon997 {
+}
 .amount-fetch234 {
   /* padding-left: 7px;
   
@@ -341,7 +342,7 @@ cursor: pointer; */
   /* width: 22.5%;
   height: 13vh; */
   padding: 10px;
-
+  width: 100%;
   background: linear-gradient(rgba(81, 108, 250, 1), rgba(11, 28, 171, 1));
   border-radius: 10px;
   color: white;
@@ -364,8 +365,9 @@ cursor: pointer; */
   gap: 15px;
 }
 .two-container90 {
+  width: 50%;
   display: flex;
-  gap: 10px;
+  gap: 13px;
 }
 .divideimage {
   display: flex;
@@ -456,8 +458,7 @@ position:absolute;
   z-index: 99;
 }
 
-/* Media query for screens with a width of 320px */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 376px) {
   .logostyle23 {
     font-size: 10px;
 
@@ -499,8 +500,6 @@ position:absolute;
     font-size: 18px;
   }
 
-  
-
   .button-indicators23 {
     padding-left: 8px;
     padding-right: 8px;
@@ -516,7 +515,7 @@ position:absolute;
 
   .cards-container23 {
     width: 100%;
-    margin-left: 0;
+    margin-left: 0%;
   }
 
   .white-bg23 {
@@ -536,14 +535,14 @@ position:absolute;
     width: 48%;
     font-size: 8px;
   }
-.name234 {
+  .name234 {
     width: 100%;
-    
+
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+  }
   .all-small-cards23456 {
     /* width: 152px !important;
     height: 15vh; */
@@ -574,8 +573,20 @@ position:absolute;
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 376px) {
-
+@media only screen and (min-width: 377px) and (max-width: 426px) {
+  .cards-container23 {
+    width: 95%;
+    margin-left: 2%;
+  }
+  .cards-container23 {
+    width: 100%;
+    margin-left: 0%;
+    text-align: left;
+    margin-bottom: 1%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 6px 5px 6px #ccc;
+  }
 }
 
 /* Media query for screens with a width of 375px */
@@ -595,10 +606,10 @@ position:absolute;
     margin-left: 30%;
   }
   .cards-container23 {
-    width: 100%;
-    margin-left: 0%;
+    /* width: 100%;
+    margin-left: 0%; */
     text-align: left;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 6px 5px 6px #ccc;
@@ -657,9 +668,9 @@ position:absolute;
     background-color: white;
     padding: 20px;
     width: 100%;
-    
+
     border: 1px solid #ccc;
-   
+
     box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);
   }
   .welcome23 {
@@ -695,8 +706,7 @@ position:absolute;
   }
 
   .name234 {
-    font-size: clamp(9px, 2.5vw,13px);
-    
+    font-size: clamp(9px, 2.5vw, 13px);
   }
 
   .button-indicators23 {
@@ -712,10 +722,10 @@ position:absolute;
     font-size: 8px;
   }
 
-  .cards-container23 {
+  /* .cards-container23 {
     width: 100%;
     margin-left: 0;
-  }
+  } */
 
   .white-bg23 {
     padding-top: 10px;
@@ -781,7 +791,6 @@ position:absolute;
     padding: 1px;
     font-family: sans-serif;
   }
-  
 
   .info-about-salon {
     background-color: rgb(8, 49, 119);
@@ -804,6 +813,8 @@ position:absolute;
     height: 30px !important;
     margin-left: 0;
     margin-right: 0;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 
@@ -815,8 +826,6 @@ position:absolute;
     font-size: 13px;
     display: none;
   }
-
-  
 
   .button-indicators23 {
     padding-left: 8px;
@@ -831,11 +840,6 @@ position:absolute;
 
   .heading234 {
     font-size: small;
-  }
-
-  .cards-container23 {
-    width: 100%;
-    margin-left: 0;
   }
 
   .white-bg23 {
@@ -865,6 +869,7 @@ position:absolute;
   .two-container90 {
     display: flex;
     gap: 5px;
+    width: 100%;
   }
   .amount-fetch23 {
     text-align: left;
@@ -930,13 +935,14 @@ position:absolute;
   }
   .divideimage {
     display: flex;
+    justify-content: space-between;
     gap: 5px;
   }
   .dropdown-menu-salon23 {
     margin-left: 0;
   }
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .logo-sizing23 {
     margin-right: 2%;
     background-color: transparent;
@@ -948,20 +954,26 @@ position:absolute;
     padding-top: 5px;
     height: 35px;
   }
-
+  .cards-container23 {
+    width: 94%;
+    margin-left: 3%;
+    text-align: left;
+    margin-bottom: 1%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 6px 5px 6px #ccc;
+}
   .button-indicators23 {
-   
     background-color: #3390f3;
     color: white;
     padding: 4px;
-    
+
     text-align: left;
     padding-left: 12px;
     font-size: 16px;
 
     box-shadow: #150b0b;
     border-bottom: 2px solid rgb(69, 67, 67);
-    
   }
   .sub-button23 {
     color: white;
@@ -971,26 +983,83 @@ position:absolute;
     border: 1px solid black;
     padding: 4px;
   }
-  
+
   .icon-center23 {
     text-align: center;
     width: 100%;
     font-size: 14px;
     /* display: none; */
   }
+  .icon997 {
+    height: 15px;
+  }
+  .two-container90 {
+    width: 50%;
+    display: flex;
+    gap: 6px;
+}
+.mii {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.heading678 {
+  background-color: #f0ecec;
+  padding: 7px;
+  font-weight: 500;
+  margin-top: 0px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 6px #ccc;
+  font-size: 0.9rem !important;
+  font-family: "poppins";
+}
+.heading234 {
+  padding: 8px;
+  background-color: #f0ecec;
+  box-shadow: 0px 0px 0px 1px bisque;
+  color: black;
+  font-size: 0.9rem;
+  margin-top: 0px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+.divideimage {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+}
+.cards-flex23 {
+  padding: 15px;
+  display: flex;
+  gap: 6px;
+}
+  .amounts {
+    /* width: 137px; */
+    font-size: 12px;
+    font-family: "poppins";
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+  .name234 {
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .dashboard-button-salon23 {
-    padding: 10px;
+    padding: 11px;
     /* margin-right: 1px; */
-    width: 72px;
-    font-size: small !important;
+    width: 92px;
+    font-size: 10px;
     height: 50px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     background-color: #dde7f0;
     color: #150b0b;
-
-    margin-bottom: 1px;
+    /* margin-bottom: 1px; */
     cursor: pointer;
-    margin-top: 5px !important;
+    /* margin-top: 5px !important; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1000,19 +1069,15 @@ position:absolute;
     display: none;
     position: absolute;
     top: 100%;
-    
+
     transform: translateX(-60%);
-    
+
     background-color: white;
     color: black;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    
+
     border: solid 1px white;
     border-radius: 4px;
     z-index: 99;
   }
-}
-
-@media only screen and (max-width: 429px) {
-  
 }
