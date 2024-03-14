@@ -785,9 +785,11 @@ const BillingForm = () => {
                 </button>
               </div>
             ))}
+            <div>
             <button className="addnewsk142sd" onClick={handleAddService}>
               <span className="plusk142s">+</span>Add Service
             </button>
+            </div>
           </div>
         </div>
 
