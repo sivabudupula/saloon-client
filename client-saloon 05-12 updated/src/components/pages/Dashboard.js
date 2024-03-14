@@ -40,7 +40,6 @@ import Employees from "./Employees.js";
 import { BASE_URL } from "../Helper/helper.js";
 import Salonlogo from "../images/Salonlogo.png";
 
-
 function Dashboard() {
   const navigate = useNavigate();
 
@@ -249,12 +248,11 @@ function Dashboard() {
               {/* <div className='dropdown-item-salon23' onClick={() => setSelectedButton('Register')}>
       Register
     </div> */}
-              <div
-                className="dropdown-item-salon23"
-                onClick={() => setSelectedButton("Edit profile")}
-              >
-                Edit profile
-              </div>
+            <div
+              className="dropdown-item-salon23"
+              onClick={() => setSelectedButton("Edit profile")}
+            >
+              Edit profile
             </div>
           </div>
         </div>
@@ -267,7 +265,7 @@ function Dashboard() {
             <div className="icon-center23 ">
               <img src={calendar} alt="" className="calenadr"></img>{" "}
             </div>
-            <div className="name234">Calendar</div>
+            <div className="name234">CALENDER</div>
           </button>
           <button
             className="dashboard-button-salon23"
@@ -277,7 +275,7 @@ function Dashboard() {
               {/* <FaMoneyBillWaveAlt /> */}
               <img src={Vector5} alt=""></img>
             </div>
-            <div className="name234">Billing</div>
+            <div className="name234">BILLING</div>
           </button>
           <button
             className="dashboard-button-salon23"
@@ -287,7 +285,7 @@ function Dashboard() {
               {/* <FaUsers /> */}
               <img src={Group} alt=""></img>
             </div>
-            <div className="name234">Appoinments</div>
+            <div className="name234">APPOINTMENTS</div>
           </button>
 
           <button
@@ -297,7 +295,7 @@ function Dashboard() {
             {" "}
             <div className="icon-center23 ">{/* <AiFillDatabase /> */}</div>
             <img src={Vector4} alt="" className="setting"></img>
-            <div className="name234">Customers</div>
+            <div className="name234">CUSTOMERS</div>
           </button>
 
           <button
@@ -308,7 +306,7 @@ function Dashboard() {
               {/* <BsGraphUpArrow /> */}
               <img src={Vector3} alt=""></img>
             </div>
-            <div className="name234">Inventory</div>
+            <div className="name234">INVENTORY</div>
           </button>
 
           <button
@@ -319,7 +317,7 @@ function Dashboard() {
               {/* <MdOutlineHomeRepairService /> */}
             </div>
             <img src={settings1} alt="" className="setting"></img>
-            <div className="name234">Services</div>{" "}
+            <div className="name234">SERVICES</div>{" "}
           </button>
 
           <button
@@ -330,7 +328,7 @@ function Dashboard() {
               {/* <AiOutlineMenu /> */}
               <img src={Vector1} alt=""></img>
             </div>
-            <div className="name234">Employees</div>{" "}
+            <div className="name234">EMPLOYEES</div>{" "}
           </button>
 
           <button
@@ -339,7 +337,7 @@ function Dashboard() {
           >
             <div className="icon-center23 ">{/* <TbReportAnalytics /> */}</div>
             <img src={Vector} className="setting"></img>
-            <div className="name234">Reports</div>
+            <div className="name234">REPORTS</div>
           </button>
 
           {/* <button
@@ -576,29 +574,40 @@ function Dashboard() {
                 </p>{" "}
               </div>
             </div>
-            <div className=" all-small-cards23456">
-              <div className="mii">
-                <p className="amounts">Bills Generated</p>
-                <img src={good} alt="" className=" Inventory"></img>
-              </div>
 
-              <div className="flextochange789">
-                {/* <AiOutlineBarChart className="icon-center234 " /> */}
-                <p className="amount-fetch23">{totalNumberOfBills || 0}</p>{" "}
-              </div>
-            </div>
-            <div className=" all-small-cards23456">
-              <div className="mii">
-                <p className="amounts"> Appoinments </p>
-                <img src={total} alt="" className=" Inventory"></img>
-              </div>
+            <div className="two-container90">
+              <div className=" all-small-cards23456">
+                <div className="divideimage">
+                  <div className="mii">
+                    <p className="amounts">Bills Generated</p>
+                    <p className="amount-fetch234">
+                      {totalNumberOfBills || 0}
+                    </p>{" "}
+                  </div>
 
-              <div className="flextochange789">
-                {/* <FiUsers className="icon-center234 " /> */}
-                <p className="amount-fetch23">
-                  {" "}
-                  {totalNumberOfAppointments || 0}
-                </p>{" "}
+                  <div className="flextochange789">
+                    {/* <AiOutlineBarChart className="icon-center234 " /> */}
+
+                    <img src={good} alt="" className=" Inventory"></img>
+                  </div>
+                </div>
+              </div>
+              <div className=" all-small-cards23456">
+                <div className="divideimage">
+                  <div className="mii">
+                    <p className="amounts"> Appoinments </p>
+                    <p className="amount-fetch234">
+                      {" "}
+                      {totalNumberOfAppointments || 0}
+                    </p>{" "}
+                  </div>
+
+                  <div className="flextochange789">
+                    {/* <FiUsers className="icon-center234 " /> */}
+
+                    <img src={total} alt="" className=" Inventory"></img>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
