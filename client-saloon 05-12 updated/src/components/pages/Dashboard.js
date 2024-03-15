@@ -714,9 +714,9 @@ function Dashboard() {
       </div>
       <ToastContainer />
 
-      {/* </div> */}
-      <div className="watermark">Powered by{"\n"}Matrical Technologies Pvt Ltd</div>
+     
 
+    </div>
     </div>
   );
 }
