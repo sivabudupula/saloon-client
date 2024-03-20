@@ -118,7 +118,7 @@ const ServiceForm = ({ onNewServiceClick }) => {
     <div className="service-form-container-sk141"> 
       {displayComponent === "Services" ? (
         <>
-          <h6 className="heading6789">Services</h6>
+          <h5 className="heading234">Services</h5>
           <div className="second-con678">
             <div className="sk1432s">
               <label className="service-label-sk141">Service Name</label>&nbsp;:

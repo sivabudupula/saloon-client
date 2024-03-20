@@ -362,10 +362,10 @@ function EmployeeTable() {
 
   return (
     <div className="billing-table-container-sk654s">
-      <div className="headingreport6789">Employee Report</div>
+      <h5 className="heading234">Employee Report</h5>
       <div className="date-filter-section-sk654s">
         <div className="flex-109586">
-          <div className="flex14390">
+          {/* <div className="flex14390"> */}
             <div className="flex143">
               <div className="container490">
                 <label htmlFor="fromDate" className="date-label-sk654s">
@@ -391,9 +391,7 @@ function EmployeeTable() {
                   onChange={(e) => setToDate(e.target.value)}
                 />
               </div>
-            </div>
-            {/* </div> */}
-            <div className="button456">
+              <div className="button456">
               <button onClick={handleFilter} className="filter-button-sk654s">
                 Filter
               </button>
@@ -402,8 +400,11 @@ function EmployeeTable() {
                 Export
               </button>
             </div>
-          </div>
-          <div className="flex-change6743">
+            </div>
+            {/* </div> */}
+            
+          {/* </div> */}
+          <div className="btns-783">
             <button onClick={handleShowAll} className="show-all-button-sk654s">
               Show All
             </button>
@@ -436,13 +437,13 @@ function EmployeeTable() {
       </div>
       {selectedEmployee && generateSelectedEmployeeData() && (
         <div className="selected-employee-chart">
-          <h3>{`Selected Employee: ${selectedEmployee}`}</h3>
+          <h3>{`Selected Employee : ${selectedEmployee}`}</h3>
           <Chart
             className="widthrange290"
             options={generateSelectedEmployeeData().options}
             series={generateSelectedEmployeeData().series}
             type="pie"
-            width={350}
+            width={380}
           />
           <div className="pie-chart-container">
             <button
@@ -454,9 +455,9 @@ function EmployeeTable() {
           </div>
         </div>
       )}
-
+<div className="tble-overflow12">
       <table className="billing-table-sk654s" id="employee-table">
-        <thead>
+        <thead className="thead87">
           <tr className="billing-table-header-sk654s">
             <th className="billing-table-cell-sk654s">S.No</th>
             <th className="billing-table-cell-sk654s">Employee Name</th>
@@ -465,7 +466,7 @@ function EmployeeTable() {
             <th className="billing-table-cell-sk654s">Total Revenue</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="thead87">
           {getCurrentItems().map(({ name, data }, index) => {
             if (data.services.length > 0) {
               return (
@@ -497,6 +498,7 @@ function EmployeeTable() {
           })}
         </tbody>
       </table>
+      </div>
       <PaginationEmp
         currentPage={currentPage}
         totalPages={totalPages}

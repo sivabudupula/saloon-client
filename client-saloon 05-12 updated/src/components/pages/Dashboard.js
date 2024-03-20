@@ -207,9 +207,11 @@ function Dashboard() {
       {/* <div className='second-container23'> */}
       <div className="fixed-container678">
         <div className="dashboard-salon2390">
+          
           <img src={Salonlogo}  alt="Salonlogo" className="logo-salon"/>
+          {/* <div className="logostyle23"> */}
           <div className="logostyle23">
-            <p className="logo-sizing23" />
+            {/* <p className="logo-sizing23" /> */}
             <div class="logostyle23">
               <svg
                 stroke="currentColor"
@@ -248,11 +250,12 @@ function Dashboard() {
               {/* <div className='dropdown-item-salon23' onClick={() => setSelectedButton('Register')}>
       Register
     </div> */}
-            <div
-              className="dropdown-item-salon23"
-              onClick={() => setSelectedButton("Edit profile")}
-            >
-              Edit profile
+              <div
+                className="dropdown-item-salon23"
+                onClick={() => setSelectedButton("Edit profile")}
+              >
+                Edit profile
+              </div>
             </div>
           </div>
         </div>
@@ -548,31 +551,37 @@ function Dashboard() {
         <div className="cards-container23">
           <h5 className="heading234">Financial Statistics</h5>
           <div className="cards-flex23">
+          <div className="two-container90">
             <div className=" all-small-cards23456">
-              <div className="">
+              <div className="divideimage">
                 <div className="mii">
                   <p className="amounts">Services Amount</p>
-                  <img src={Chart1} alt="" className="Inventoryd"></img>
-                </div>
-                <div className="flextochange789">
-                  {/* <BsFillCartCheckFill className="icon-center234 " /> */}
                   <p className="amount-fetch234">
                     ₹ {totalServiceAmount.toFixed(0) || 0}
                   </p>{" "}
                 </div>
+                <div className="flextochange789">
+                  {/* <BsFillCartCheckFill className="icon-center234 " /> */}
+                 
+                  <img src={Chart1} alt="" className="Inventoryd"></img>
+                </div>
               </div>
             </div>
             <div className=" all-small-cards23456">
+            <div className="divideimage">
               <div className="mii">
                 <p className="amounts">Inventory Amount</p>
-                <img src={Inventory} alt="" className=" Inventory"></img>
-              </div>
-              <div className="flextochange789">
-                {/* <BsCurrencyRupee className="icon-center234 " /> */}
                 <p className="amount-fetch234">
                   ₹ {totalInventoryAmount.toFixed(0) || 0}
                 </p>{" "}
               </div>
+              <div className="flextochange789">
+                {/* <BsCurrencyRupee className="icon-center234 " /> */}
+                
+                <img src={Inventory} alt="" className=" Inventory"></img>
+              </div>
+              </div>
+            </div>
             </div>
 
             <div className="two-container90">
@@ -714,10 +723,10 @@ function Dashboard() {
       </div>
       <ToastContainer />
 
-      {/* </div> */}
-      <div className="watermark">Powered by{"\n"}Matrical Technologies Pvt Ltd</div>
+     
 
     </div>
+  
   );
 }
 

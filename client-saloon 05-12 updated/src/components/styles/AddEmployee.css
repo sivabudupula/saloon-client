@@ -15,7 +15,8 @@
   width: 30%;
   border: 1px solid #ccc;
   border-radius: 3px;
-  padding: 4px;
+  padding: 5px;
+  font-size: 0.9rem;
 }
 .table-continer54545{
   width: 90%;
@@ -27,12 +28,12 @@
   box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
 }
 .lable-name-saloon2345{
-  width: 120px;
+  width: 160px;
   border: 0px ;
   border-width: 0px;
   border-width: 2px;
-  text-align: right;
-  margin-right: 15px;
+  text-align: left;
+  
   margin-left: 5%;
   /* background-color: yellow; */
 }
@@ -58,20 +59,8 @@ font-size: 16px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
 }
-.lable-name-saloon2345{
-  width: 120px;
-  border: 0px ;
-  border-width: 0px;
-  border-width: 2px;
-  text-align: right;
-  margin-right: 15px;
-  margin-left: 5%;
-  /* background-color: yellow; */
-}
-.empinput456 {
-  width: auto; /* Set width to auto */
-  padding-right: 30px; /* Adjust padding to accommodate the toggle icon */
-}
+
+
 
 .password-input-container {
   position: relative;
@@ -80,9 +69,7 @@ font-size: 16px;
   position: relative;
 }
 
-.empinput456 {
-  padding-right: 30px; /* Adjust padding to accommodate the toggle icon */
-}
+
 .toggle-password-button {
   position: absolute;
   top: 50%;
@@ -94,17 +81,20 @@ font-size: 16px;
 }
 .password-toggle {
   position:absolute;
-  top: 50%;
+  
   align-items: right;
-  right: -170px; /* Adjust as needed */
+  
   transform: translateY(-50%);
   cursor: pointer;
 }
 
-
+.password-input-container90{
+width: 30%;
+display: flex;
+}
 
 .form-group-saloon2345 {
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   display: flex;
 }
 
@@ -126,9 +116,10 @@ font-size: 16px;
   padding: 5px;
   margin: 3px;
   width: 70px;
-  background-color: crimson;
+  background-color: rgb(180, 35, 64);
   color: #fff;
   border: none;
+  font-size: 0.9rem;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -136,11 +127,12 @@ font-size: 16px;
   padding: 5px;
   margin: 3px;
   width: 70px;
-  background-color: #19c013;
+  background-color: dodgerblue;
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 .add-employee-button-saloon23456789 {
   padding: 5px;
@@ -165,7 +157,7 @@ font-size: 16px;
 }
 
 .add-employee-button-saloon234567:hover {
-  background-color: #0bb005;
+  background-color: #4972fb;
 }
 .add-employee-button-saloon2345:hover {
   background-color: rgb(176, 62, 5);
@@ -240,7 +232,7 @@ font-weight: bold;
 border: 1px solid #ccc;
 padding: 8px;
 text-align: center;
-font-size: 0.8rem;
+font-size: 14px;
 }
 .width30{
   width: 20%;
@@ -254,22 +246,24 @@ cursor: pointer;
 /* Table Data (td) */
 .td-saloon2345 {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 5px;
+  font-size: small;
   text-align: left;
   
   }
 .td-saloon2345900 {
 border: 1px solid #ccc;
-padding: 8px;
+padding: 5px;
 text-align: left;
 color: #007bff;
 cursor: pointer;
+font-size: small;
 }
 .td-saloon23456 {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 2px;
   text-align: center;
-  padding-right: 20px;
+  font-size: 0.9rem;
   }
 
 /* Table Row (tr) */
@@ -327,25 +321,79 @@ margin-right: 10px;
 .label8930{
   text-decoration: none;
 }
-.password-toggle{
-  display: flex;
-  width: 195px;
+.file34{
+  font-size: 0.9rem;
 }
 /* AddEmployee.css */
-
-
+.empinput45665{
+  width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: small;
+}
+.eye32{
+  margin-left: -7%;
+}
 /* Default styles for larger screens */
 .add-employee-container-saloon2345 {
   width: 92%;
-  margin-left: 5%;
+  margin-left: 4%;
   text-align: left;
   background-color: white;
   border: 1px solid #efe9e9;
   box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
 }
+.label664{
+  font-size: 16px;
+}
+.popup-overlay-sk9879 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.h28{
+  font-size: 1.4rem;
+  margin-bottom: 0% !important;
+}
 
 
-@media screen and (max-width: 425px) {
+.popup-container-sk9879 {
+  background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    /* max-width: 35%; */
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+.abc1234{
+  margin-top: 5%;
+}
+.close-btn-sk9879 {
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.popup-content-sk9879 {
+  /* Add styles for the content inside the popup */
+}
+@media only screen and (min-width: 320px) and (max-width: 426px) {
   .add-employee-container-saloon2345 {
     width: 90%;
     margin-left: 5%;
@@ -356,7 +404,35 @@ margin-right: 10px;
     border: 1px solid #efe9e9;
     box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
   }
-
+  .password-input-container90{
+width: 65%;
+  }
+.label664{
+  font-size: 13px;
+  width: 110px;
+  text-align: left;
+}
+.empinput45665{
+  width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: small;
+}
+.password-toggle {
+  position: absolute;
+  
+  align-items: right;
+  
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.file34{
+font-size: small;
+}
+.eye32{
+  margin-left: -10%;
+}
   .popup-container-sk9879 {
     background: #fff;
     padding: 20px;
@@ -476,7 +552,7 @@ margin-right: 10px;
     margin: 3px;
     width: 70px;
     font-size: small;
-    background-color: #19c013;
+    background-color: dodgerblue;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -663,17 +739,20 @@ margin-right: 10px;
   .label8930{
     text-decoration: none;
   }
+  p{
+    margin-bottom: 8px !important;
+  }
   .popup-container-sk9879 {
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90% !important;
+    padding: 9px;
+    border-radius: 3px;
+    width: 96% !important;
     /* width: 50%; */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;  /* Change position to absolute */
-    top: 50%;            /* Center vertically */
-    left: 50%;            /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .abc1234{
     margin-top: 10% !important;
@@ -685,9 +764,9 @@ margin-right: 10px;
 }
   .close-btn-sk9879 {
     position: absolute;
-    top: 10px;
+    top: 6px;
     right: 10px;
-    font-size: 30px;
+    font-size: 21px;
     cursor: pointer;
     background: none;
     border: none;
@@ -703,13 +782,42 @@ margin-right: 10px;
 
 
 /* Mobile responsiveness using media queries */
-@media only screen and (max-width: 768px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .label664{
+  
+  }
+  .empinput45665 {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    font-size: small;
+}
+  .file34{
+    font-size: small;
+    }
+    .eye32{
+      margin-left: -10%;
+    }
   .empinput456 {
     width: 40%;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 4px;
+}
+.password-input-container90{
+width: 40%;
+}
+.lable-name-saloon2345{
+  font-size: 14px;
+}
+.add-employee-container-saloon2345 {
+  width: 94%;
+  margin-left: 3%;
+  text-align: left;
+  background-color: white;
+  border: 1px solid #efe9e9;
+  box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
 }
 }
 /* @media only screen and (max-width: 600px) {
@@ -733,51 +841,3 @@ margin-right: 10px;
 
 /* AddEmployee.css */
 
-.popup-overlay-sk9879 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-.h28{
-  font-size: 1.5rem;
-  margin-bottom: 7% !important;
-}
-
-
-.popup-container-sk9879 {
-  background: #fff;
-    padding: 30px;
-    border-radius: 3px;
-    /* max-width: 35%; */
-    
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 49%;
-    left: 50%;
-    z-index: 999;
-    transform: translate(-50%, -50%);
-}
-.abc1234{
-  margin-top: 5%;
-}
-.close-btn-sk9879 {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 5px;
-}
-
-.popup-content-sk9879 {
-  /* Add styles for the content inside the popup */
-}

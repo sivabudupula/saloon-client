@@ -48,7 +48,7 @@ const EditService = ({ selectedService, onSave,  onCancelEdit }) => {
 
   return (
     <div className="edit-service-container-sk142sk">
-      <h5 className='heading6789'>Edit Service</h5>
+      <h5 className='heading234'>Edit Service</h5>
      
       <div className='flextochange90'>
         <div className='labelchange567'>

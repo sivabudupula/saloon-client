@@ -10,7 +10,7 @@ import { BASE_URL } from '../Helper/helper';
 
 
 const EditBill = ({ data, index,onSave, onCancel }) => {
-
+  const userRole = localStorage.getItem("userRole");
   // const [editedData, setEditedData] = useState(data.billing && data.billing.length > 0
   //   ? { ...data.billing[index] }
   //   : { /* Provide a default value if necessary */ });
@@ -24,6 +24,7 @@ const EditBill = ({ data, index,onSave, onCancel }) => {
     discountAmount: data.billing && data.billing.length > 0 ? data.billing[index].discountAmount : 0,
     gstPercent: data.billing && data.billing.length > 0 ? data.billing[index].gstPercent : 0,
     totalAmount: data.billing && data.billing.length > 0 ? data.billing[index].totalAmount : 0,
+    createdByModel: userRole === 'admin' ? 'Register' : 'Employee',
     // Other properties of editedData
   });
   
@@ -223,7 +224,7 @@ const handleSave = () => {
     billing: updatedBills,
   });
 
-  onSave(customerData); // Optionally, you can pass the updated customerData to onSave
+  onSave(editedData); // Optionally, you can pass the updated customerData to onSave
 };
 
 
@@ -243,7 +244,7 @@ const handleSave = () => {
 
   return (
     <div className="billing-form-sk142s">
-      <p className='heading678'>Edit Bill</p>
+      <h5 className='heading234'>Edit Bill</h5>
       <div className='small-container678'>
       <div className='bnsk142s'>
         <div className="form-groupsk142s">
@@ -254,7 +255,7 @@ const handleSave = () => {
       </div>
       <div className="form-groupsk142s">
         <label className='bill-no123'>Date:</label>
-        <input  className='date1234'
+        <input  className='bnsk142datesinput89'
          type="date" 
          value={date} 
          onChange={(e) => {
@@ -537,7 +538,7 @@ const handleSave = () => {
         <label  className='bill-no123'>Discount (RS)</label>
         </div>
         <input
-        className='dis-sk142s'
+        className='totalbillsk142s'
           type="number" 
           value={discountAmount}
           // onChange={(e) => setDiscountAmount(e.target.value)}

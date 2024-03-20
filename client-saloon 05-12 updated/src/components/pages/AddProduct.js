@@ -74,7 +74,7 @@ const AddProduct = () => {
     <div className="main-empp">
       <ToastContainer />
       <form className="addproduct12" autoComplete="off">
-        <h5 className="product-heading12">Add Product</h5>
+        <h5 className="heading234">Add Product</h5>
         <div className="product-formgroup12">
           <label className="plabel12">Product Name</label>
           <input

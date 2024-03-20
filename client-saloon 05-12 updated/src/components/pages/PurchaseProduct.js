@@ -151,7 +151,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
     cp: "",
     expiryDate: "",
   });
-  
+
   const deleteEntry = (index) => {
     const updatedTableData = [...tableData];
     updatedTableData.splice(index, 1);
@@ -218,7 +218,7 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
     <div>
       <ToastContainer />
       <form className="pp-form13" autoComplete="off">
-        <h5 className="pp-heading13">Purchase Form</h5>
+        <h5 className="heading234">Purchase Form</h5>
         <div className="pp-formgroup13">
           <label className="pp-label13">Purchase Date</label>
           <input
@@ -244,24 +244,26 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
         </div>
         <div className="pp-formgroup13">
           <label className="pp-label13">Supplier</label>
-          <select
-            className="pp-input13"
-            name="supplier"
-            value={formData.supplier}
-            onChange={handleChange}
-            required
-          >
-            <option value="">select</option>
-            {supplierList.map((item, index) => (
-              <option value={item.supplier} key={item.id}>
-                {item.supplier}
-              </option>
-            ))}
-          </select>
-          <button className="pbtn1234m" onClick={handleClick}>
-            {" "}
-            +Add
-          </button>
+          <div className="ch564">
+            <select
+              className="pp-input13 width434"
+              name="supplier"
+              value={formData.supplier}
+              onChange={handleChange}
+              required
+            >
+              <option value="">select</option>
+              {supplierList.map((item, index) => (
+                <option value={item.supplier} key={item.id}>
+                  {item.supplier}
+                </option>
+              ))}
+            </select>
+            <button className="pbtn1234m" onClick={handleClick}>
+              {" "}
+              +Add
+            </button>
+          </div>
         </div>
         <div className="pp-formgroup13">
           <label className="pp-label13">Payment Mode</label>
@@ -303,81 +305,83 @@ const PurchaseProduct = ({ onNewSupplierClick }) => {
             required
           />
         </div>
-
-        <table className="pp-entering13">
-          <thead>
-            <tr>
-              <td className="ppe-th">Product:</td>
-              <td className="ppe-th">Quantity:</td>
-              <td className="ppe-th">C.P:</td>
-              <td className="ppe-th"> ExpiryDate:</td>
-              {/* Add an empty header for the "Add Row" button */}
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.map((entry, index) => (
-              <tr key={index} className="space185">
-                <td>
-                  <select
-                    className="pp-input131 pp-input1312"
-                    value={entry.product}
-                    onChange={(e) => handleTableDataChange(e, "product", index)}
-                  >
-                    <option value="">Select a Product</option>
-                    {productList.map((item, index) => (
-                      <option value={item.itemName} key={item.id}>
-                        {item.itemName}
-                      </option>
-                    ))}
-                  </select>
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    className="pp-input13 pp-input1312"
-                    value={entry.quantity}
-                    onChange={(e) =>
-                      handleTableDataChange(e, "quantity", index)
-                    }
-                  />
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    className="pp-input13 pp-input1312"
-                    value={entry.cp}
-                    onChange={(e) => handleTableDataChange(e, "cp", index)}
-                  />
-                </td>
-                <td>
-                  <input
-                    type="date"
-                    className="pp-input13 pp-input1312"
-                    value={entry.expiryDate}
-                    onChange={(e) =>
-                      handleTableDataChange(e, "expiryDate", index)
-                    }
-                  />
-                </td>
-                <td>
-                  <button
-                    className="delete-btn156"
-                    onClick={() => deleteEntry(index)}
-                  >
-                    Delete
-                  </button>
-                </td>
+        <div className="tble-overflow12">
+          <table className="pp-entering13">
+            <thead>
+              <tr>
+                <td className="ppe-th">Product</td>
+                <td className="ppe-th">Quantity</td>
+                <td className="ppe-th">C.P</td>
+                <td className="ppe-th"> ExpiryDate</td>
+                {/* Add an empty header for the "Add Row" button */}
               </tr>
-            ))}
+            </thead>
+            <tbody >
+              {tableData.map((entry, index) => (
+                <tr key={index} className="space185">
+                  <td>
+                    <select
+                      className="pp-input1310 "
+                      value={entry.product}
+                      onChange={(e) =>
+                        handleTableDataChange(e, "product", index)
+                      }
+                    >
+                      <option value="">Select a Product</option>
+                      {productList.map((item, index) => (
+                        <option value={item.itemName} key={item.id}>
+                          {item.itemName}
+                        </option>
+                      ))}
+                    </select>
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      className="pp-input131010"
+                      value={entry.quantity}
+                      onChange={(e) =>
+                        handleTableDataChange(e, "quantity", index)
+                      }
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      className="pp-input131010"
+                      value={entry.cp}
+                      onChange={(e) => handleTableDataChange(e, "cp", index)}
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="date"
+                      className="pp-input1310"
+                      value={entry.expiryDate}
+                      onChange={(e) =>
+                        handleTableDataChange(e, "expiryDate", index)
+                      }
+                    />
+                  </td>
+                  <td >
+                    <button
+                      className="delete-btn156"
+                      onClick={() => deleteEntry(index)}
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
 
-            <tr>
-              <button type="button" className="add-row-btn" onClick={addRow}>
-                Add Row
-              </button>
-            </tr>
-          </tbody>
-        </table>
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
 
+        <button type="button" className="add-row-btn" onClick={addRow}>
+          Add Row
+        </button>
         <div className="pp-btn-div13">
           <button className="pp-btns13" onClick={handleSave}>
             Save

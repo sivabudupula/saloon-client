@@ -24,6 +24,8 @@ const Appointments = ({ onNewAppointmentClick }) => {
   const [currentAppPage, setCurrentAppPage] = useState(1);
 
   const [appsPerPage, setAppsPerPage] = useState(5);
+  const [customer, setCustomer] = useState('');
+
 
   // Event handler to update search query state
   const handleSearch = (e) => {
@@ -127,7 +129,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
     setCustomers(updatedCustomers);
   };
 
-  useEffect(() => {
+  
     const fetchCustomers = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/api/customers`);
@@ -148,8 +150,10 @@ const Appointments = ({ onNewAppointmentClick }) => {
       }
     };
 
-    fetchCustomers();
-  }, []);
+useEffect(() => {
+        fetchCustomers();
+    }, []);
+    
   // const handleClick = () => {
   //   // Call the callback to update selectedButton
   //   onNewAppointmentClick();
@@ -165,6 +169,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
 
   const handleEdit = (customer, item) => {
     setEditIndex({ customer, item });
+    setCustomer(customer)
     setDisplayComponent("editAppointment"); /// Pass the customer data instead of the index
   };
 
@@ -173,60 +178,98 @@ const Appointments = ({ onNewAppointmentClick }) => {
     // setEditIndex(null);
   };
 
-  const handleEditSave = async (customerData) => {
-    try {
-      const response = await fetch(
-        `${BASE_URL}/api/appointments/${customerData._id}`,
-        {
-          method: "PUT",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(customerData),
-        }
-      );
+  // const handleEditSave = async (editedData) => {
+  //   try {
+  //     const response = await fetch(
+  //       ${BASE_URL}/api/appointments/${customer._id}/${editedData._id},
+  //       {
+  //         method: "PUT",
+  //         headers: {
+            
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(editedData),
+  //       }
+  //     );
 
-      // Check if the request was successful (status code 200)
-      if (response.ok) {
-        toast.success("Appointment Updated Successfully!", {
-          position: "top-right",
-          autoClose: 3000, // Close the toast after 3000 milliseconds (3 seconds)
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
+  //     // Check if the request was successful (status code 200)
+  //     if (response.ok) {
+  //       toast.success("Appointment Updated Successfully!", {
+  //         position: "top-right",
+  //         autoClose: 3000, // Close the toast after 3000 milliseconds (3 seconds)
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //       });
+
+  //       // const updatedCustomers = [...customers];
+  //       // const customerIndex = updatedCustomers.findIndex(
+  //       //   (customer) => customer._id === customerData._id
+  //       // );
+
+  //       // if (customerIndex !== -1) {
+  //       //   const appointmentIndex = updatedCustomers[
+  //       //     customerIndex
+  //       //   ].appointments.findIndex(
+  //       //     (appointment) =>
+  //       //       appointment._id === customerData.appointments[0]._id
+  //       //   );
+
+  //       //   if (appointmentIndex !== -1) {
+  //       //     updatedCustomers[customerIndex].appointments[appointmentIndex] =
+  //       //       customerData.appointments[0];
+  //       //     setCustomers(updatedCustomers);
+  //       //   }
+  //       // }
+  //       fetchCustomers();
+  //       setDisplayComponent("Appointments");
+  //     } else {
+  //       console.error("Error updating data:", response.statusText);
+  //       toast.error("Error Updating Appointment");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error updating data:", error);
+  //     toast.error("Error Updating Appointment");
+  //   }
+  // };
+
+  const handleEditSave = async (editedData) => {
+    try {
+        const response = await fetch(`${BASE_URL}/api/appointments/${customer._id}/${editedData._id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(editedData),
         });
 
-        const updatedCustomers = [...customers];
-        const customerIndex = updatedCustomers.findIndex(
-          (customer) => customer._id === customerData._id
-        );
+        if (response.ok) {
+            toast.success("Appointment Updated Successfully!", {
+                position: "top-right",
+                autoClose: 3000,
+                // other options...
+            });
 
-        if (customerIndex !== -1) {
-          const appointmentIndex = updatedCustomers[
-            customerIndex
-          ].appointments.findIndex(
-            (appointment) =>
-              appointment._id === customerData.appointments[0]._id
-          );
+            // Fetch updated data
+            await fetchCustomers();
 
-          if (appointmentIndex !== -1) {
-            updatedCustomers[customerIndex].appointments[appointmentIndex] =
-              customerData.appointments[0];
-            setCustomers(updatedCustomers);
-          }
+            // Set display component after data is updated
+            setDisplayComponent("Appointments");
+        } else {
+            console.error("Error updating data:", response.statusText);
+            toast.error("Error Updating Appointment");
         }
-
-        setDisplayComponent("Appointments");
-      } else {
-        console.error("Error updating data:", response.statusText);
-        toast.error("Error Updating Appointment");
-      }
     } catch (error) {
-      console.error("Error updating data:", error);
-      toast.error("Error Updating Appointment");
+        console.error("Error updating data:", error);
+        toast.error("Error Updating Appointment");
     }
-  };
+};
+
+
+
+
+
 
   const handleDelete = async (customerId, appointmentId) => {
     try {
@@ -418,7 +461,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
       {displayComponent === "Appointments" ? (
         <>
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Existing Customers</h6>
+            <h5 className="heading234">Existing Customers</h5>
             <div className="margin786">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
@@ -436,7 +479,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                   {/* <label> Entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <label> Search &nbsp;</label>
+                  <label className="show11"> Search &nbsp;</label>
                   <input
                     type="search"
                     className="input2"
@@ -524,7 +567,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
           </div>
 
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Edit Appointments</h6>
+            <h5 className="heading234">Edit Appointments</h5>
             <div className="margin786">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
@@ -542,7 +585,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                   {/* <label> Entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <label> Search &nbsp;</label>
+                  <label className="show11"> Search &nbsp;</label>
                   <input
                     className="input2"
                     type="search"
@@ -575,10 +618,11 @@ const Appointments = ({ onNewAppointmentClick }) => {
                       onChange={(e) => setToDate(e.target.value)}
                     ></input>
                   </div>
-
+<div>
                   <button className="fst filter" onClick={handleFilter}>
                     Filter
                   </button>
+                  </div>
                 </div>
 
                 <div className="app-filter-buttons11">
@@ -629,7 +673,7 @@ const Appointments = ({ onNewAppointmentClick }) => {
                             </td>
 
                             <td className="customer-table11-td">
-                              <ol>
+                              <ol className="ol897">
                                 {item.selectedServices.map(
                                   (service, serviceIndex) => (
                                     <li key={serviceIndex}>{service}</li>

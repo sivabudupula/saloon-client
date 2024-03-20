@@ -298,11 +298,11 @@ function BillingTable() {
   return (
     <div className="main-empp">
       <div className="billing-table-container-sk654s">
-        <div className="headingreport6789">Billing Report</div>
+        <h5 className="heading234">Billing Report</h5>
 
         <div className="date-filter-section-sk654s">
           <div className="flex-109586">
-            <div className="flex-1095">
+            {/* <div className="flex-1095"> */}
               <div className="flex143">
                 <div className="container490">
                   <label htmlFor="fromDate" className="date-label-sk654s">
@@ -329,8 +329,7 @@ function BillingTable() {
                     onChange={(e) => setToDate(e.target.value)}
                   />
                 </div>
-              </div>
-              <div className="button456">
+                <div className="button456">
                 <button onClick={handleFilter} className="filter-button-sk654s">
                   Filter
                 </button>
@@ -339,7 +338,9 @@ function BillingTable() {
                   Export
                 </button>
               </div>
-            </div>
+              </div>
+              
+            {/* </div> */}
             <div className="btns-783">
               <button
                 onClick={handleClickShowAll}
@@ -378,8 +379,9 @@ function BillingTable() {
           </div>
         </div>
         {/* <div className='table-container-sk654s'> */}
+        <div className="tble-overflow12">
         <table className="billing-table-sk654s">
-          <thead>
+          <thead className="thead87">
             <tr className="billing-table-header-sk654s">
               <th className="billing-table-cell-sk654s">Bill Number</th>
               <th className="billing-table-cell-sk654s">Customer Name</th>
@@ -388,11 +390,11 @@ function BillingTable() {
               <th className="billing-table-cell-sk654s">Amount</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="thead87">
             {currentItems.map((billing) => (
               <tr className="customer-table11-td1" key={billing._id}>
                 <td className="customer-table11-td1">{billing.billNumber}</td>
-                <td className="billing-table-cell-sk654s">
+                <td className="customer-table11-td1 text-left443">
                   {billing.customer}
                 </td>
                 <td className="customer-table11-td1">
@@ -401,7 +403,7 @@ function BillingTable() {
                 <td className="customer-table11-td1">
                   {billing.discountPercent}%
                 </td>
-                <td className="billing-table-cell-sk654s">
+                <td className="customer-table11-td1">
                   {typeof billing.totalAmount === "number"
                     ? billing.totalAmount.toFixed(2)
                     : "N/A"}
@@ -410,6 +412,7 @@ function BillingTable() {
             ))}
           </tbody>
         </table>
+        </div>
         <PaginationBillReport
           currentPage={currentPage}
           totalPages={totalPages}

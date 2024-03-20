@@ -137,7 +137,7 @@ const handleUpdate = async (e) => {
   
     return (
       <div className="edit-profile-saloon234">
-        <h2 className='edit-profile-h2--saloon234'>Edit Profile</h2>
+        <h5 className='heading234'>Edit Profile</h5>
         <form onSubmit={handleUpdate}>
           <div className="form-group-saloon234">
 
@@ -170,7 +170,7 @@ const handleUpdate = async (e) => {
             </div>
            <div className="password-input-container">
             <input
-            className='form-group-saloon234-input'
+            className='form-group-saloon234-input12'
               // type="password"
               type={showPassword ? 'text' : 'password'}
               placeholder='Enter Old Password'

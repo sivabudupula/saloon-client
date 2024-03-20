@@ -26,7 +26,7 @@
   background-color: white;
   padding: 20px;
   width: 92%;
-  margin-left: 5%;
+  margin-left: 4%;
   border: 1px solid #ccc;
  
   box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);
@@ -67,15 +67,18 @@
   justify-content: center !important;
 }
 
+.bd908{
 
+}
 .roaylcalendermain2p-p {
   color: #666;
   display: flex;
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 8px;
+  margin-bottom: 7px;
+  /* margin-top: 8px;
   margin-bottom: -12px;
-  margin-left: 2%;
+  margin-left: 2%; */
 }
 .roaylcalendermain2p-p1 {
   color: #666;
@@ -90,7 +93,7 @@
   width: 100px;
   text-align: left;
   font-family: 'Poppins';
-  
+  margin-bottom: 0px;
 }
 .pad576{
   margin-left: 4px;
@@ -179,13 +182,13 @@ color: black;
 }
 
 .customer-table-th1 {
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #ccc;
   text-align: center;
 }
 
 .customer-table-rowdata {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   transition: background-color 0.2s;
 }
 
@@ -221,9 +224,12 @@ color: black;
   border-radius: 3px;
   color: black;
 }
-
+.address34{
+margin-bottom: 0px;
+width: 73%;
+}
 .btn-374{
-  background-color:red;
+  
   border: none;
   border-radius: 3px;
   color: black;
@@ -286,7 +292,9 @@ color: black;
   height: 100vh;
   background-color: var(--bs-backdrop-bg);
 }
-
+.customer-table-head{
+text-wrap: nowrap;
+}
 .book-button {
   background-color: #1f9048;
   color: #fff; 
@@ -316,11 +324,11 @@ color: black;
 /* ... (previous styles) ... */
 
 .birthday-container {
-  margin-top: 2%;
+  margin-top: 1%;
   background-color: #fff;
   padding: 20px;
   width: 92%;
-  margin-left: 5%;
+  margin-left: 4%;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -347,7 +355,7 @@ color: black;
     font-size: 15px;
     margin-left: 5px;
   }
-
+ 
   .customer-table {
     overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
   }
@@ -398,7 +406,16 @@ color: black;
   .fc-view-harness-active {
     width: 100%;
   }
-
+  .fc .fc-col-header-cell-cushion {
+    text-decoration: none;
+    color: black;
+    font-size: x-small;
+}
+.fc .fc-daygrid-day-number {
+  text-decoration: none;
+  color: black;
+  font-size: x-small;
+}
   .pagination {
     display: flex;
     flex-wrap: wrap;
@@ -567,7 +584,7 @@ color: black;
   .customer-table-th,
   .customer-table-th12,
   .customer-table-th1 {
-    font-size: 8px; 
+    font-size: 12px; 
   }
 
   .customer-table-th12,
@@ -608,7 +625,11 @@ color: black;
     font-size: 10px; /* Adjust the font size for buttons on screens with a width of 425px */
     padding: 3px; /* Adjust the padding for buttons on screens with a width of 425px */
   }
-
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.75em;
+    margin: 0px;
+}
   .fc-view-harness,
   .fc-view-harness-active {
     width: 100%;
@@ -622,13 +643,14 @@ color: black;
 
   .pagination button {
     margin: 2px;
-    font-size: 8px; 
-    padding: 3px 6px; 
+    font-size: 9px;
+    padding: 3px 5px;
+    color: black;
   }
 }
 
 /* Media query for screens with a width of 768px */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px){
   
   .modal-content {
     top: 245px;
@@ -645,13 +667,43 @@ color: black;
   .roaylcalendermain2p-cal .fc-toolbar-chunk .bookButton-button {
     margin-right: 2px; /* Adjust the margin for smaller screens */
     font-size: 10px; /* Adjust the font size for buttons on screens with a width of 768px */
-    padding: 3px; /* Adjust the padding for buttons on screens with a width of 768px */
+    padding: 6px; /* Adjust the padding for buttons on screens with a width of 768px */
   }
-
+  .customer-table-th1 {
+    font-size: small;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.birthday-container {
+  margin-top: 2%;
+  background-color: #fff;
+  padding: 20px;
+  width: 94%;
+  margin-left: 3%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+  .roaylcalendermain2p-cal {
+    background-color: white;
+    padding: 20px;
+    width: 94%;
+    margin-left: 3%;
+    border: 1px solid #ccc;
+    box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.fc .fc-col-header-cell-cushion {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
   .fc-view-harness,
   .fc-view-harness-active {
     width: 100%;
   }
-
+  .fc .fc-toolbar-title {
+    font-size: 1.4em;
+    margin: 0px;
+}
 
 }

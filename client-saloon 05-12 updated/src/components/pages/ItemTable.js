@@ -257,10 +257,10 @@ function ItemTable() {
 
   return (
     <div className="billing-table-container-sk654s">
-      <h1 className="headingreport6789">Product Sales Report</h1>
+      <h5 className="heading234">Product Sales Report</h5>
       <div className="date-filter-section-sk8765432s">
         <div className="flex-109586">
-          <div className="flex-1095">
+          {/* <div className="flex-1095"> */}
             <div className="flex143">
               <div className="container490">
                 <label htmlFor="fromDate" className="date-label-sk654s">
@@ -275,7 +275,7 @@ function ItemTable() {
                 />
               </div>
               <div className="container490">
-                <label htmlFor="toDate" className="date-label-sk65432s">
+                <label htmlFor="toDate" className="date-label-sk654s">
                   To Date:
                 </label>
                 <input
@@ -286,16 +286,17 @@ function ItemTable() {
                   onChange={(e) => setToDate(e.target.value)}
                 />
               </div>
-            </div>
-
-            <div className="btns-7832">
+              <div className="btns-7832">
               <button onClick={handleExport} className="filter-button-sk654s">
                 Export
               </button>
             </div>
-          </div>
-          <div>
-            <div className="flex-change6743">
+            </div>
+
+           
+          {/* </div> */}
+         
+            <div className="btns-783">
               <button
                 onClick={handleShowAll}
                 className="show-all-button-sk654s"
@@ -314,7 +315,7 @@ function ItemTable() {
                 {showPieChart ? "Close Chart" : "Show Chart"}
               </button>
             </div>
-          </div>
+          
         </div>
         {showPieChart && pieChartData && (
           <div className="pie-chart-container">
@@ -329,8 +330,9 @@ function ItemTable() {
           </div>
         )}
       </div>
+      <div className="tble-overflow12">
       <table className="billing-table-sk654s" id="item-table">
-        <thead>
+        <thead className="thead87">
           <tr className="billing-table-header-sk654s">
             <th className="billing-table-cell-sk654s">S.No</th>
             <th className="billing-table-cell-sk654s">Item Name</th>
@@ -340,7 +342,7 @@ function ItemTable() {
             <th className="billing-table-cell-sk654s">Date</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="thead87">
           {currentPageData.map((bill, index) => (
             <tr key={index} className="billing-table-row-sk654s">
               <td className="billing-table-cell-sk654s">
@@ -370,7 +372,7 @@ function ItemTable() {
           ))}
         </tbody>
       </table>
-
+</div>
       <PaginationItem
         currentPage={currentPage}
         totalPages={totalPages}

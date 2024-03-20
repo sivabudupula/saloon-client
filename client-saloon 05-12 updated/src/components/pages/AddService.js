@@ -53,7 +53,7 @@ const AddService = () => {
 
 
     <div className="add-service-container-sk141s"> 
-    <h6 className='heading143sk'>Services</h6>
+    <h5 className='heading234'>Services</h5>
       
       <form onSubmit={handleSubmit} autoComplete='off'>
         <div className="form-group-sk141s">

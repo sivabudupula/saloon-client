@@ -7,7 +7,7 @@ import { BASE_URL } from "../Helper/helper";
 
 const CustomerReport = ({ onCustomerDetailsClick }) => {
   const [customers, setCustomers] = useState([]);
-  const [searchQuery, /*setSearchQuery*/] = useState("");
+  const [searchQuery /*setSearchQuery*/] = useState("");
   const [fromAge, setFromAge] = useState("");
   const [toAge, setToAge] = useState("");
   const [showChart, setShowChart] = useState(true);
@@ -16,9 +16,9 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [filterClicked, setFilterClicked] = useState(false);
   const [chartData, setChartData] = useState(null);
-  const [/*ageChartVisible*/, setAgeChartVisible] = useState(false);
+  const [, /*ageChartVisible*/ setAgeChartVisible] = useState(false);
   const [selectedAge, setSelectedAge] = useState(null);
-  const [/*ageChartData*/, setAgeChartData] = useState(null);
+  const [, /*ageChartData*/ setAgeChartData] = useState(null);
   const [selectedAgeChartVisible, setSelectedAgeChartVisible] = useState(false);
   const [selectedAgePieChartData, setSelectedAgePieChartData] = useState(null);
 
@@ -103,7 +103,6 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
     }
   };
 
-
   const handleFromAgeChange = (e) => {
     setFromAge(e.target.value);
   };
@@ -156,8 +155,12 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
 
   useEffect(() => {
     const generateChartData = () => {
-      const labels = Array.from(new Set(customers.map((customer) => calculateAge(customer.dob))));
-      const series = labels.map((age) => calculateServicesCountAndRevenue(age).totalRevenue.toFixed(2));
+      const labels = Array.from(
+        new Set(customers.map((customer) => calculateAge(customer.dob)))
+      );
+      const series = labels.map((age) =>
+        calculateServicesCountAndRevenue(age).totalRevenue.toFixed(2)
+      );
 
       return {
         options: {
@@ -203,13 +206,12 @@ const CustomerReport = ({ onCustomerDetailsClick }) => {
     setSelectedAgeChartVisible(true);
   };
 
-const handleRevenueChartClick = () => {
+  const handleRevenueChartClick = () => {
     if (selectedAge !== null) {
       setAgeChartVisible(true);
       setAgeChartData(generateAgeChartData(selectedAge));
     }
   };
-  
 
   const handleExport = () => {
     const wb = XLSX.utils.book_new();
@@ -224,35 +226,39 @@ const handleRevenueChartClick = () => {
     XLSX.writeFile(wb, "Age_report.xlsx");
   };
 
-
-
   const filteredCustomers = customers.filter((customer) => {
     const customerAge = calculateAge(customer.dob);
 
     const fromAgeNum = fromAge === "" ? 0 : parseInt(fromAge, 10);
-    const toAgeNum = toAge === "" ? Number.MAX_SAFE_INTEGER : parseInt(toAge, 10);
+    const toAgeNum =
+      toAge === "" ? Number.MAX_SAFE_INTEGER : parseInt(toAge, 10);
 
     const ageFilter =
-      (!filterClicked || (fromAge === "" && toAge === "")) ||
+      !filterClicked ||
+      (fromAge === "" && toAge === "") ||
       (fromAge !== "" && toAge !== ""
         ? customerAge >= fromAgeNum && customerAge <= toAgeNum
         : fromAge !== "" && customerAge >= fromAgeNum
         ? customerAge >= fromAgeNum
         : toAge !== "" && customerAge <= toAgeNum);
 
-    const searchFilter = searchQuery === "" || customerAge.toString() === searchQuery;
+    const searchFilter =
+      searchQuery === "" || customerAge.toString() === searchQuery;
 
     return ageFilter && searchFilter;
   });
 
   const indexOfLastItem = currentPage * itemsPerPage;
-const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
 
-// Slice the array to get the current items for the current page
-const currentItems = filteredCustomers.slice(indexOfFirstItem, indexOfLastItem);
+  // Slice the array to get the current items for the current page
+  const currentItems = filteredCustomers.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
-// Calculate the total number of pages
-const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
+  // Calculate the total number of pages
+  const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -296,74 +302,75 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
   return (
     <div className="main-empp">
       <div className="customer-container11">
-        <h6 className="edit-customer-heading1123">Age-wise report</h6>
+        <h5 className="heading234">Age-wise report</h5>
         <div className="margin786">
-        <div className="select-number-of-entries">
-              <label>Show </label>
-              <select
-                className="input1"
-                value={itemsPerPage}
-                onChange={handleItemsPerPageChange}
-              >
-                <option value={5}>5</option>
-                <option value={10}>10</option>
-                <option value={15}>15</option>
-              </select>
-              <label> entries </label>
-            </div>
-          <div className="customer-search1197">
-            
-            <div className="flex14334 ">
-            <div className="flex14345">
-                <div className="flex143">
-            <div className="container4901">
-              <label className="date-label-sk654s"> From Age </label>
-              <input
-                className="date-input-sk654s"
-                type="number"
-                value={fromAge}
-                onChange={handleFromAgeChange}
-                placeholder=" From Age"
-              />&nbsp;
-              </div>
-
-              <div className="container4901">
-              <label className="date-label-sk654s"> To Age </label>
-              <input
-                className="date-input-sk654s"
-                type="number"
-                value={toAge}
-                onChange={handleToAgeChange}
-                placeholder=" To Age"
-              />
-              </div>
-              </div>
-              <div className="flex1433456">
-                <div>
-              <button className="filter-button-sk654s" onClick={handleFilterClick}>
-                Filter
-              </button>&nbsp;&nbsp;
-              <button className="filter-button-sk654s" onClick={resetFilters}>
-                Reset
-              </button>&nbsp;&nbsp;
-              <button onClick={handleExport} className="filter-button-sk654s">
-                Export
-              </button>
-              </div>
-              </div>
-              </div>
-
-              
-             
-              <div className="end865">
-              <button 
-              onClick={() => setShowChart(!showChart)}
-              className="show-chart-button"
+          <div className="select-number-of-entries">
+            <label className="show11">Show </label>
+            <select
+              className="input1"
+              value={itemsPerPage}
+              onChange={handleItemsPerPageChange}
             >
-              {showChart ? 'Close Chart' : 'Show Chart'}
-            </button>
-            </div>
+              <option value={5}>5</option>
+              <option value={10}>10</option>
+              <option value={15}>15</option>
+            </select>
+            {/* <label> entries </label> */}
+          </div>
+          <div className="customer-search1197">
+            <div className="flex14334 ">
+              <div className="flex143">
+                <div className="container4901">
+                  <label className="date-label-sk654s"> From Age </label>
+                  <input
+                    className="date-input-sk654s"
+                    type="number"
+                    value={fromAge}
+                    onChange={handleFromAgeChange}
+                    placeholder=" From Age"
+                  />
+                </div>
+
+                <div className="container4901">
+                  <label className="date-label-sk654s"> To Age </label>
+                  <input
+                    className="date-input-sk654s"
+                    type="number"
+                    value={toAge}
+                    onChange={handleToAgeChange}
+                    placeholder=" To Age"
+                  />
+                </div>
+                <div className="button456">
+                  <button
+                    className="filter-button-sk654s"
+                    onClick={handleFilterClick}
+                  >
+                    Filter
+                  </button>
+                  &nbsp;
+                  <button
+                    onClick={handleExport}
+                    className="filter-button-sk654s"
+                  >
+                    Export
+                  </button>
+                </div>
               </div>
+
+              <div className="btns-783">
+                <button className="filter-button-sk654s" onClick={resetFilters}>
+                  Reset
+                </button>
+                &nbsp;&nbsp;
+                <button
+                  onClick={() => setShowChart(!showChart)}
+                  className="show-chart-button"
+                >
+                  {showChart ? "Close Chart" : "Show Chart"}
+                </button>
+              </div>
+            </div>
             {/* </div> */}
             {/* <div className="A7serinp">
               <label> Search by Age </label>
@@ -375,39 +382,45 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
                 placeholder=" Age"
               />
             </div> */}
-            
           </div>
           {showChart && chartData && (
-            <div onClick={handleRevenueChartClick} className="pie-chart-container">
-              
+            <div
+              onClick={handleRevenueChartClick}
+              className="pie-chart-container"
+            >
               <Chart
                 options={chartData.options}
                 series={chartData.series}
                 type="pie"
-                width="380"
+                width={350}
               />
             </div>
           )}
           {selectedAgeChartVisible && selectedAgePieChartData && (
             <div className="pie-chart-container ">
-                <div className="flex878">
-              <h5>Services Chart for Age {selectedAge}</h5>
-              <Chart
-                options={selectedAgePieChartData.options}
-                series={selectedAgePieChartData.series}
-                type="pie"
-                width="400"
-              />
-              <div>
-              <button className="show-chart-button6677" onClick={() => setSelectedAgeChartVisible(false)}>Close Age Chart</button>
-            </div>
-            </div>
+              <div className="flex878">
+                <h5>Services Chart for Age {selectedAge}</h5>
+                <Chart
+                  options={selectedAgePieChartData.options}
+                  series={selectedAgePieChartData.series}
+                  type="pie"
+                  width="400"
+                />
+                <div>
+                  <button
+                    className="show-chart-button6677"
+                    onClick={() => setSelectedAgeChartVisible(false)}
+                  >
+                    Close Age Chart
+                  </button>
+                </div>
+              </div>
             </div>
           )}
 
-          <div>
+          <div className="tble-overflow12">
             <table className="customer-table11a7">
-              <thead>
+              <thead className="thead87">
                 {/* <p>click on age for detail pie chart </p> */}
                 <tr>
                   <th className="A7th2">Age</th>
@@ -417,8 +430,12 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
                   <th className="A7th7">Revenue</th>
                 </tr>
               </thead>
-              <tbody>
-                {Array.from(new Set(currentItems.map((customer) => calculateAge(customer.dob)))).map((age, index) => (
+              <tbody className="thead87">
+                {Array.from(
+                  new Set(
+                    currentItems.map((customer) => calculateAge(customer.dob))
+                  )
+                ).map((age, index) => (
                   <React.Fragment key={index}>
                     <tr>
                       <td
@@ -427,10 +444,22 @@ const totalPages = Math.ceil(filteredCustomers.length / itemsPerPage);
                       >
                         {age}
                       </td>
-                      <td className="customer-table-td">{getCustomersWithAge(age).map((customer) => customer.name).join(", ")}</td>
-                      <td className="customer-table-td">{getServicesWithAge(age)}</td>
-                      <td className="customer-table-td1">{calculateServicesCountAndRevenue(age).serviceCount}</td>
-                      <td className="customer-table-td1">{calculateServicesCountAndRevenue(age).totalRevenue.toFixed(2)}</td>
+                      <td className="customer-table-td wrapline34">
+                        {getCustomersWithAge(age)
+                          .map((customer) => customer.name)
+                          .join(", ")}
+                      </td>
+                      <td className="customer-table-td wrapline34">
+                        {getServicesWithAge(age)}
+                      </td>
+                      <td className="customer-table-td1 ">
+                        {calculateServicesCountAndRevenue(age).serviceCount}
+                      </td>
+                      <td className="customer-table-td1">
+                        {calculateServicesCountAndRevenue(
+                          age
+                        ).totalRevenue.toFixed(2)}
+                      </td>
                     </tr>
                   </React.Fragment>
                 ))}

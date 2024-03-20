@@ -1,6 +1,6 @@
 .edit-profile-saloon234 {
   width: 92%;
-margin-left: 5%;
+margin-left: 4%;
 margin-top: 0%;
 text-align: left;
 
@@ -39,7 +39,7 @@ text-align: left;
 }
 
 .form-group-saloon234-input {
-  /* width: 27%; */
+  width: 30%;
   padding: 4px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -50,7 +50,13 @@ text-align: left;
   font-style: italic; 
   font-size: 0.8rem;
 }
-
+.form-group-saloon234-input12 {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
 .update-btn-saloon234 {
   padding: 5px 15px;
   background-color: #007bff;
@@ -72,6 +78,7 @@ text-align: left;
 }
 .password-input-container {
   position: relative;
+  width: 30%;
 }
 @media only screen and (max-width: 430px){
 
@@ -83,7 +90,38 @@ text-align: left;
   cursor: pointer;
 }
 .form-group-saloon234-input {
-  /* width: 27%; */
+  width: 62%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.lable-name-saloon234 {
+  width: 110px !important;
+  border: 0px;
+  border-width: 0px;
+  border-width: 2px;
+  text-align: right;
+  margin-right: 0px;
+  margin-left: 1%;
+}
+.password-input-container {
+  position: relative;
+  width: 62%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .edit-profile-saloon234 {
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 0%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 6px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.form-group-saloon234-input {
+  width: 40%;
   padding: 4px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -91,5 +129,6 @@ text-align: left;
 }
 .password-input-container {
   position: relative;
+  width: 40%;
 }
 }

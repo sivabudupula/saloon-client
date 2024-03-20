@@ -197,11 +197,13 @@ function AddEmployee({ data, onSave, onCancel }) {
   return (
     <div className="main-empp">
       <div className="add-employee-container-saloon2345">
-        <h6 className="edit-customer-heading11"> Add Employee </h6>
+        <h5 className="heading234"> Add Employee </h5>
         <form onSubmit={handleSubmit} autoComplete="off">
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="employeeName">Employee Name</label>
+              <label htmlFor="employeeName" className="label664">
+                Employee Name
+              </label>
             </div>
             <input
               className="empinput456"
@@ -239,7 +241,9 @@ function AddEmployee({ data, onSave, onCancel }) {
 
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username" className="label664">
+                Username
+              </label>
             </div>
             <input
               className="empinput456"
@@ -254,11 +258,13 @@ function AddEmployee({ data, onSave, onCancel }) {
 
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password" className="label664">
+                Password
+              </label>
             </div>
-            <div className="password-input-container">
+            <div className="password-input-container90">
               <input
-                className="empinput456"
+                className="empinput45665"
                 type={showPassword ? "text" : "password"}
                 id="password"
                 name="password"
@@ -267,17 +273,16 @@ function AddEmployee({ data, onSave, onCancel }) {
                 required
               />
               {/* Toggle button to show/hide password */}
-              <div
-                className="password-toggle"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
-              </div>
+              
+               <span className="eye32"  onClick={togglePasswordVisibility}> {showPassword ? <FaEyeSlash /> : <FaEye />}</span>
+              
             </div>
           </div>
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="phoneNumber">Phone Number</label>
+              <label htmlFor="phoneNumber" className="label664">
+                Phone Number
+              </label>
             </div>
             <input
               className="empinput456"
@@ -297,7 +302,9 @@ function AddEmployee({ data, onSave, onCancel }) {
           </div>
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email" className="label664">
+                Email
+              </label>
             </div>
             <input
               className="empinput456"
@@ -312,7 +319,9 @@ function AddEmployee({ data, onSave, onCancel }) {
           </div>
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="address">Address</label>
+              <label htmlFor="address" className="label664">
+                Address
+              </label>
             </div>
             <textarea
               className="empinput456"
@@ -325,7 +334,9 @@ function AddEmployee({ data, onSave, onCancel }) {
           </div>
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="dob">Date of Birth</label>
+              <label htmlFor="dob" className="label664">
+                Date of Birth
+              </label>
             </div>
             <input
               className="empinput456"
@@ -340,7 +351,9 @@ function AddEmployee({ data, onSave, onCancel }) {
 
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="age">Age</label>
+              <label htmlFor="age" className="label664">
+                Age
+              </label>
             </div>
             <input
               className="empinput456"
@@ -355,7 +368,9 @@ function AddEmployee({ data, onSave, onCancel }) {
 
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="aadharNo">Aadhar Number</label>
+              <label htmlFor="aadharNo" className="label664">
+                Aadhar Number
+              </label>
             </div>
             <input
               className="empinput456"
@@ -377,7 +392,9 @@ function AddEmployee({ data, onSave, onCancel }) {
 
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="panNumber">PAN Number</label>
+              <label htmlFor="panNumber" className="label664">
+                PAN Number
+              </label>
             </div>
             <input
               className="empinput456"
@@ -397,9 +414,12 @@ function AddEmployee({ data, onSave, onCancel }) {
           </div>
           <div className="form-group-saloon2345">
             <div className="lable-name-saloon2345">
-              <label htmlFor="file">Upload File</label>
+              <label htmlFor="file" className="label664">
+                Upload File
+              </label>
             </div>
             <input
+            className="file34"
               type="file"
               id="file"
               name="file"

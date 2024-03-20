@@ -32,7 +32,7 @@ border: 1px solid rgb(158, 155, 155);
 }
 /* Style for input elements */
 .customer-inputa7{
-  width: 50%;
+  width: 30%;
   padding: 3px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -416,6 +416,7 @@ hr{
 .customer-inputa7{
   width: 60%;
   padding: 0px 3px;
+  font-size: small;
 }
 
 .customer-date-input{

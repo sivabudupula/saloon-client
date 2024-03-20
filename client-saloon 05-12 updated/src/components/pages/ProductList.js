@@ -203,7 +203,7 @@ const ProductList = ({ onNewProductClick }) => {
       <ToastContainer />
       {displayComponent === "ProductList" ? (
         <>
-          <h5 className="pd-heading12">Product Details</h5>
+          <h5 className="heading234">Product Details</h5>
           <div className="space209">
             <button className="pdadd-btn12" onClick={handleClick}>
               {" "}
@@ -211,8 +211,8 @@ const ProductList = ({ onNewProductClick }) => {
             </button>
 
             <div className="pd-search12">
-              <div>
-                <label>Show </label>
+              <div className="select-number-of-entries">
+                <label className="show11">Show </label>
                 <select
                   className="input1"
                   value={itemsPerPage}
@@ -222,12 +222,12 @@ const ProductList = ({ onNewProductClick }) => {
                   <option value={10}>10</option>
                   <option value={15}>15</option>
                 </select>
-                <label> entries </label>
+               
               </div>
               <div className="A7serinp">
-                <div>
+                
                   {" "}
-                  Search{" "}
+                  <label className="show11"> Search &nbsp;</label>
                   <input
                     type="search"
                     className="border-change890"
@@ -235,11 +235,12 @@ const ProductList = ({ onNewProductClick }) => {
                     value={searchQuery}
                     onChange={handleSearch}
                   ></input>{" "}
-                </div>
+                
               </div>
             </div>
+            <div className="tble-overflow12">
             <table className="pd-table12">
-              <thead>
+              <thead className="thead87">
                 <tr>
                   <th className="pd-th12">S.No</th>
                   <th className="pd-th12">Product Name</th>
@@ -250,7 +251,7 @@ const ProductList = ({ onNewProductClick }) => {
                   <th className="pd-th12">Action</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="thead87">
                 {currentItems.map((item, index) => (
                   <tr key={item.id}>
                     <td className="customer-table11-td1">{index + 1 + (currentPage - 1) * itemsPerPage}</td>
@@ -262,13 +263,13 @@ const ProductList = ({ onNewProductClick }) => {
 
                     <td className="pd-td12">
                       <button
-                        className="pdedit-btn12"
+                        className="app-edit-btn11 btnblue"
                         onClick={() => handleEdit(index)}
                       >
                         Edit
                       </button>
                       <button
-                        className="app-delete-btn11"
+                        className="app-edit-btn11 btnred"
                         onClick={() => handleDelete(item._id)}
                       >
                         Delete
@@ -278,6 +279,7 @@ const ProductList = ({ onNewProductClick }) => {
                 ))}
               </tbody>
             </table>
+            </div>
             <div className="entries-div121">
               <div>
                 {" "}

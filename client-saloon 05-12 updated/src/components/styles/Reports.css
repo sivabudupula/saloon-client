@@ -6,14 +6,18 @@
   width: 92%;
   box-shadow: 6px 5px 6px #ccc;
   margin-bottom: 2%;
-  margin-left: 5%;
+  margin-left: 4%;
   background-color: white;
 }
 .main-empp{
   font-family: 'Poppins';
 }
+.apexcharts-series, .apexcharts-pie-series{
 
+}
+.apexcharts-pie{
 
+}
 .date-filter-section-sk654s {
   display: flex;
   flex-direction: column;
@@ -69,44 +73,45 @@
 
 
 .date-input-sk654s {
-  padding: 4px;
+  padding: 5px;
   font-size: small;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 3px;
   margin-right: 8px;
 }
 
 
 .filter-button-sk654s {
   padding: 3px 13px;
-  background-color: #2579c7;
+  background-color: dodgerblue;
   color: #fff;
   border: none;
   border-radius: 3px;
-  font-size: small;
-  padding: 4px;
+  font-size: 0.9rem;
+  padding: 5px;
   width: 55px;
   cursor: pointer;
  
 }
 .show-all-button-sk654s{
   padding: 5px 10px;
-  background-color: rgb(18 138 231);
+  background-color: dodgerblue;
   color: #fff;
   border: none;
   border-radius: 3px;
-  font-size: small;
+  font-size: 0.9rem;
   cursor: pointer;
   /* margin: 2px; */
 }
 .show-today-button-sk654s{
-  padding: 5px 10px;
+  padding: 5px ;
   background-color: #19c013;
   color: #fff;
+  width: 60px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: small;
+  font-size: 0.9rem;
   
   /* margin: 2px; */
 }
@@ -144,14 +149,14 @@
 
 .billing-table-cell-sk654s {
   padding: 6px;
- font-size: small;
+ font-size: 15px;
   text-align: center;
   border-bottom: 1px solid #ddd;
   border: 1px solid #ccc;
 }
 .billing-table-cell-sk6543s {
   padding: 6px;
- font-size: small;
+ font-size: 0.9rem;
   text-align: left;
   border-bottom: 1px solid #ddd;
   border: 1px solid #ccc;
@@ -288,7 +293,7 @@ align-items: flex-end;
   border: none;
   border-radius: 3px;
   width: 100px;
-  padding: 5px;
+  padding: 6px;
   font-size: 13px;
 
   background-color: #6c5750;
@@ -327,7 +332,7 @@ color: black !important;
 }
 .flex-109586{
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   justify-content: space-between;
 }
 .chart-container{
@@ -375,6 +380,10 @@ color: black !important;
   margin-top: 4%;
   margin-bottom: 3%;
 }
+.flex143 {
+  display: flex;
+  align-items: flex-end;
+}
 .apexcharts-svg{
   
   
@@ -386,12 +395,11 @@ color: black !important;
   /* background-color: #f0ecec; */
 }
 .selected-employee-chart {
-  background-color: #fff; /* White background color */
-  border: 1px solid #ddd; /* Add a border */
-  padding: 20px; /* Add padding */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  max-width: 400px; /* Set a maximum width */
-  margin: 20px auto; /* Center the element horizontally */
+      background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 8px auto;
 }
 
 .selected-employee-chart h3 {
@@ -443,6 +451,9 @@ color: black !important;
     margin-left: 0%;
     background-color: white;
   }
+  .container490 {
+    width: 33%;
+  }
   .apexcharts-canvas {
     position: relative;
     -webkit-user-select: none;
@@ -463,6 +474,7 @@ color: black !important;
   .flex-109586 {
     display: flex;
     flex-direction: column;
+    /* align-items: flex-end; */
     justify-content: space-between;
   }
   .widthrange290 {
@@ -482,11 +494,14 @@ color: black !important;
     flex-direction: column;
     justify-content: space-between;
     
-    margin: 10px;
+    margin: 5px;
   }
   .btns-783{
     display: flex;
     justify-content: flex-end;
+    padding-top: 4px;
+    align-items: center;
+    padding-bottom: 4px;
   }
   .date-filter-section-sk65432s {
     display: flex;
@@ -499,6 +514,9 @@ color: black !important;
   .flex-change6743{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .date-filter-section-sk8765432s {
     display: flex;
@@ -512,8 +530,8 @@ color: black !important;
   .customer-search1197 {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     justify-content: space-between;
   }
   .flex14334{
@@ -524,6 +542,8 @@ color: black !important;
   .end865{
     display: flex;
     justify-content: flex-end;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .flex1433456{
     display: flex;
@@ -532,7 +552,7 @@ color: black !important;
     }
   .flex-1095{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   }
   .flex-109589{
     display: flex;
@@ -540,13 +560,15 @@ color: black !important;
     }
   .flex143{
     display: flex;
-    
+    align-items: flex-end;
   }
   .flex14345{
+    align-items: flex-end;
     display: flex;
-    flex-direction: column;
+    
   }
   .button456{
+    display: flex;
   margin-top: 2%;
   }
   .date-label-sk654s {
@@ -581,18 +603,19 @@ color: black !important;
     height: 185px !important;
   }
   .date-input-sk654s {
+    width: 96%;
     padding: 6px;
     font-size: x-small;
     border: 1px solid #ccc;
     border-radius: 3px;
-    margin-right: 8px;
+    margin-right: 0px;
     /* margin-top: -15px !important; */
   }
   
   
   .filter-button-sk654s {
     padding: 3px 13px;
-    background-color: #2579c7;
+    background-color: dodgerblue;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -604,7 +627,7 @@ color: black !important;
   }
   .show-all-button-sk654s{
     padding: 5px 5px;
-    background-color: rgb(18 138 231);
+    background-color: dodgerblue;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -658,7 +681,7 @@ color: black !important;
   
   .billing-table-cell-sk654s {
     padding: 6px;
-   font-size: x-small;
+   font-size: 13px;
     text-align: center;
     border-bottom: 1px solid #ddd;
     border: 1px solid #ccc;
@@ -742,11 +765,11 @@ color: black !important;
    
   }
   .para7890{
-    padding: 10px;
+    padding: 7px;
     background-color: #f0ecec;
-    margin: 10px;
+    margin: 6px;
     /* margin-bottom: -10px; */
-    font-size: 17px;
+    font-size: 14px;
     font-weight: bold;
     text-align: left;
   }
@@ -771,6 +794,7 @@ color: black !important;
   }
   .search-input-sk654s{
     padding: 3px;
+    font-size: small;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -791,9 +815,9 @@ color: black !important;
   .show-chart-button{
     border: none;
     border-radius: 3px;
-    width: 110px;
-    padding: 5px;
-    font-size: small;
+    width: 100px;
+    padding: 6px;
+    font-size: 12px;
     background-color: #6c5750;
     color: white;
   }
@@ -805,6 +829,8 @@ color: black !important;
   }
   .chart-container{
     text-align: right;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
   .apexcharts-legend.apx-legend-position-right{
     text-align: left;
@@ -831,6 +857,7 @@ color: black !important;
     margin: 10px;
     
   }
+  
   .bar-graph-container-cvvroyalrpt{
     /* width: 60% !important;
     height: 100% !important;
@@ -862,6 +889,15 @@ color: black !important;
   width: 130px;
   text-align: end;
 }
+.billing-table-container-sk654s {
+  margin-left: 4%;
+  border: 1px solid #ccc;
+  width: 94%;
+  box-shadow: 6px 5px 6px #ccc;
+  margin-left: 3%;
+  
+  background-color: white;
+}
 .A7txtar-bulk {
   margin-left: 20px;
   width: 54%;
@@ -883,11 +919,15 @@ color: black !important;
     margin-top: 2%;
   }
   .flex-change6743{
-    margin-top: 3%;
+    margin-top: 0%;
   }
   .chart-container {
     text-align: right;
-    margin-top: 3%;
+    margin-top: 0%;
+}
+.flex143 {
+  display: flex;
+  align-items: flex-end;
 }
   .margintop345 {
     width: 100%;

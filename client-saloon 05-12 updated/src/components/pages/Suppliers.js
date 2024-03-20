@@ -213,15 +213,15 @@ const Suppliers = ({ onNewSupplierClick }) => {
       {displayComponent === "SuppliersList" ? (
         <>
           <div className="pd-container14">
-            <h5 className="pd-heading14">Suppliers </h5>
+            <h5 className="heading234">Suppliers </h5>
             <div className="space209">
               <button className="pdadd-btn12" onClick={handleClick}>
                 {" "}
                 + Add Supplier
               </button>
               <div className="pd-search12">
-                <div>
-                  <label>Show </label>
+                <div className="select-number-of-entries">
+                  <label className="show11">Show </label>
                   <select
                     className="input1"
                     value={itemsPerPage}
@@ -231,12 +231,12 @@ const Suppliers = ({ onNewSupplierClick }) => {
                     <option value={10}>10</option>
                     <option value={15}>15</option>
                   </select>
-                  <label> entries </label>
+                  {/* <label> entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <div>
+                  
                     {" "}
-                    Search{" "}
+                    <label className="show11"> Search &nbsp;</label>
                     <input
                       type="search"
                       className="border-change890"
@@ -244,11 +244,12 @@ const Suppliers = ({ onNewSupplierClick }) => {
                       value={searchQuery}
                       onChange={handleSearch}
                     ></input>{" "}
-                  </div>
+                 
                 </div>
               </div>
+              <div className="tble-overflow12">
               <table className="pd-table12">
-                <thead>
+                <thead className="thead87">
                   <tr>
                     <th className="pd-th12">S.No</th>
                     <th className="pd-th12">Supplier</th>
@@ -258,25 +259,25 @@ const Suppliers = ({ onNewSupplierClick }) => {
                     <th className="pd-th12">Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="thead87">
                   {currentItems.map((item, index) => (
                     <tr key={item.id}>
                       <td className="customer-table11-td1">
                         {index + 1 + (currentPage - 1) * itemsPerPage}
                       </td>
-                      <td className="pd-td123">{item.supplier}</td>
+                      <td className="pd-td123 text-left443">{item.supplier}</td>
                       <td className="pd-td12">{item.contact}</td>
-                      <td className="pd-td123">{item.email}</td>
-                      <td className="pd-td123">{item.address}</td>
+                      <td className="pd-td123 text-left443">{item.email}</td>
+                      <td className="pd-td123 text-left443">{item.address}</td>
                       <td className="pd-td12">
                         <button
-                          className="pdedit-btn12"
+                          className="app-edit-btn11 btnblue"
                           onClick={() => handleEdit(index)}
                         >
                           Edit
                         </button>
                         <button
-                          className="app-delete-btn11" // Add a class for styling
+                          className="app-edit-btn11 btnred" // Add a class for styling
                           onClick={() => handleDelete(item._id)} // Pass the item's ID to handleDelete
                         >
                           Delete
@@ -286,8 +287,9 @@ const Suppliers = ({ onNewSupplierClick }) => {
                   ))}
                 </tbody>
               </table>
+              </div>
               <div className="entries-div121">
-                <div>
+                <div className="number-of-entries-div">
                   {" "}
                   Showing {indexOfFirstItem + 1} to{" "}
                   {Math.min(indexOfLastItem, filteredSupplierList.length)} of{" "}

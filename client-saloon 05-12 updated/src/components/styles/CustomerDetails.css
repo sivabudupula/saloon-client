@@ -9,28 +9,28 @@
 }
 .custdetailslabel {
   text-align: start;
-width: 225px;
-  font-size: medium;
+width: 150px;
+  font-size: 15px;
 }
 .padding908{
   padding: 10px;
 }
 .cd-input{
- width: 440px;
- margin-top: -4px;
- height: 34px;
- background-color: transparent;
- border: none!important;
- padding-left: 10px;
+  width: 250px;
+  margin-top: -4px;
+  height: 34px;
+  background-color: transparent;
+  border: none !important;
+  padding-left: 10px;
 }
 .A7divlabip{
   font-weight: bold;
-  margin-left: 15%;
+  margin-left: 10%;
   display: flex;
   justify-content: space-around;
 }
  .sdiv1img{
- height: 230px;
+ height: 150px;
  border-radius: 100%;
  width: 235px;
  margin-top: -10px;
@@ -66,7 +66,7 @@ width: 225px;
 }
 .A7editbtn-cust-det{
   font-family: 'poppins';
-  background-color: rgb(29, 155, 234);
+  background-color: dodgerblue;
   border: none;
   color: white;
   height: 30px;
@@ -163,8 +163,14 @@ background-size: cover;
 }
 
 /* Your existing CSS code */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 426px){
+  .logo-salon-cd {
+    height: 50px;
+    color: #333 !important;
+    width: 40px;
+}
+}
+@media only screen and (max-width: 768px) and (max-width:1023px) {
   .mmm {
     width: 100%;
     margin-left: 0;
@@ -202,7 +208,13 @@ background-size: cover;
   .sdiv2 {
     width: 100%;
     margin-top: 35px;
-   
+    border: none;
+    padding: 10px;
+    padding-top: 2%;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    height: 93%;
     
   }
 
@@ -222,14 +234,14 @@ background-size: cover;
 
 .A7editbtn-cust-det{
 
-  background-color: rgb(29, 155, 234);
+  background-color: dodgerblue;
   border: none;
   color: white;
   
   border-radius: 3px;
-  height: 32px;
+  height: 30px;
   font-size: 12px;
-  width: 100px;
+  width: 80px;
 margin-bottom: 15px;
  
   cursor: pointer;
@@ -248,12 +260,12 @@ width: 225px;
  .flexchange4455{
   display: flex;
   font-size: smaller;
-  
+  padding: 7px;
 }
 
 
   .popup-details{
-  width: 100px;
+  width: 125px;
   
 
 } 

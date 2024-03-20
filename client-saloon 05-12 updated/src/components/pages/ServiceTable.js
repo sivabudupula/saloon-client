@@ -269,7 +269,7 @@ function ServiceTable() {
   return (
     <div className="flex163">
       <div className="billing-table-container-sk654s">
-        <h1 className="headingreport6789">Service Report</h1>
+        <h5 className="heading234">Service Report</h5>
         <div className="date-filter-section-sk65432s">
           <div className="filter-item">
             <div>
@@ -287,7 +287,7 @@ function ServiceTable() {
             </div>
             <div className="flex14345">
               <div className="margintop345">
-                <div className="flex14345">
+                {/* <div className="flex14345"> */}
                   <div className="flex143">
                     <div className="container490">
                       <label htmlFor="fromDate" className="date-label-sk654s">
@@ -313,8 +313,7 @@ function ServiceTable() {
                         onChange={(e) => setToDate(e.target.value)}
                       />
                     </div>
-                  </div>
-                  <div className="button456">
+                    <div className="button456">
                     <button
                       onClick={handleFilter}
                       className="filter-button-sk654s"
@@ -329,9 +328,11 @@ function ServiceTable() {
                       Export
                     </button>
                   </div>
-                </div>
-                <div className="chart-container">
-                  <div>
+                  </div>
+                 
+                {/* </div> */}
+                <div className="btns-783">
+                 
                     <button
                       className="show-all-button-sk654s"
                       onClick={() => handleShowAll()}
@@ -352,7 +353,7 @@ function ServiceTable() {
                     >
                       {showPie ? "Hide Chart" : "Show Chart"}
                     </button>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -363,7 +364,7 @@ function ServiceTable() {
                   options={chartData.options}
                   series={chartData.series}
                   type="pie"
-                  width={450}
+                  width={380}
 
                   // height={380}
                 />
@@ -371,8 +372,9 @@ function ServiceTable() {
             )}
           </div>
         </div>
+        <div className="tble-overflow12">
         <table className="billing-table-sk654s" id="service-table">
-          <thead>
+          <thead className="thead87">
             <tr className="billing-table-header-sk654s">
               <th className="billing-table-cell-sk654s">S.No</th>
               <th className="billing-table-cell-sk654s">Customer Name</th>
@@ -383,7 +385,7 @@ function ServiceTable() {
               <th className="billing-table-cell-sk654s">Date</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="thead87">
             {currentRows.map((item, index) => {
               const employeeNames = item.services
                 .map((service) => service.employee)
@@ -421,6 +423,7 @@ function ServiceTable() {
             })}
           </tbody>
         </table>
+        </div>
         <PaginationService
           currentPage={currentPage}
           totalPages={totalPages}

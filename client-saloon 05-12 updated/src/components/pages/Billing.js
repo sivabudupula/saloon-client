@@ -628,11 +628,7 @@ const BillingForm = () => {
 
   return (
     <div className="billing-form-sk142s">
-      <p className="heading678"><img
-                  src={Salonlogo}
-                  alt="Salonlogo"
-                  className="logo-salon-cd"
-                />&nbsp;Generate Bill </p>
+      <h5 className="heading234">Generate Bill </h5>
       <div className="small-container678">
         <div className="bnsk142s">
           <div className="form-groupsk142s">
@@ -647,9 +643,9 @@ const BillingForm = () => {
             />
           </div>
           <div className="form-groupsk142s">
-            <label className="bill-no12345">Date:</label>
+            <label className="bill-no123">Date:</label>
             <input
-              className="bnsk142sinput89"
+              className="bnsk142datesinput89"
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
@@ -672,7 +668,7 @@ const BillingForm = () => {
           </div>
           {/* <div className="lable-width567"> */}
           <div className="flex1100">
-            <label className="bill-no12345 width8901">Customer:</label>
+            <label className="bill-no123 width8901">Customer:</label>
             {/* </div> */}
             <input
               className="bnsk142sinput89"

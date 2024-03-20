@@ -1,188 +1,172 @@
 /* Container for the appointment form */
 .appnt-form11 {
-  
-  
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   background-color: #fdfcfc;
-    /* margin-top: 20px; */
-    border-radius: 5px;
-    
-    font-family: sans-serif;
-    
+  /* margin-top: 20px; */
+  border-radius: 5px;
 
-  }
-  .appnt-heading11{
-    background-color: #f0ecec;
-    padding: 8px ;
-    border: 1px solid #ccc;
-    
-  }
-  /* Style for labels */
-  .appnt-label11 {
-    
-    text-align: end;
-    display: block;
-    margin-top: 3px;
-    /* font-weight: bold; */
-    width: 180px;
-    padding-right: 15px;
-    font-size: 0.9rem;
-  }
-  .text-address78{
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    width: 30% !important;
-  }
-  
-  /* Style for input elements */
-  .text-input11{
-width: 30%;
-/* margin-top: 6px; */
-     padding: 4px ; 
-    /* margin-bottom: 15px; */
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    outline: none;
-    
-  }
-  .small-input1122{
-    width: 15%;
-    font-size: small;
-         padding: 5px ; 
-        
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        outline: none;
-        cursor: pointer;
-  }
-  .selected-services{
-    margin-right: 10px;
-  }
-  .change-column90{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Style for the Add Services button */
-  .servbtn11 {
-    background-color: #19c013;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 7px 10px;
-    cursor: pointer;
-    /* margin-bottom: 10px; */
-    font-size: 0.9rem;
+  font-family: sans-serif;
+}
+.appnt-heading11 {
+  background-color: #f0ecec;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+/* Style for labels */
+.appnt-label11 {
+  text-align: end;
+  display: block;
+  margin-top: 3px;
+  /* font-weight: bold; */
+  width: 180px;
+  padding-right: 15px;
+  font-size: 16px;
+}
+.text-address78 {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 30% !important;
+}
 
-  }
+/* Style for input elements */
+.text-input11 {
+  width: 30%;
+  /* margin-top: 6px; */
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+.small-input1122 {
+  width: 15%;
+  font-size: small;
+  padding: 5px;
 
-  .bookbtn11{
-    padding: 3px ;
-    width: 60px;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: #0eb808;
-    color: #fff;
-    border: none;
-   font-size: small;
-   margin: 2px;
-  }
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+.selected-services {
+  margin-right: 10px;
+}
+.change-column90 {
+  display: flex;
+  flex-direction: column;
+}
 
-  .cancel-btn11{
-    padding: 3px ;
-    width: 60px;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: #ff5555;
-    color: #fff;
-    border: none;
-    font-size: small;
-    margin: 2px;
-    /* margin-left: 8px; */
-   
-  }
-  .bookbtn11:hover{
-    background-color: #399e35;
-    /* color: black; */
-  }
-  .cancel-btn11:hover{
-    background-color: #e41010;
-  }
+/* Style for the Add Services button */
+.servbtn11 {
+  background-color: #19c013;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 7px 10px;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+  font-size: 0.9rem;
+}
 
+.bookbtn11 {
+  padding: 6px;
+  width: 65px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  margin: 2px;
+}
 
-  
-   .bookbtn-div11{
-    padding: 4px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #ccc;
-    margin: 7px;
-    /* column-gap: 10px; */
-   }
-  
-  /* Style for the Notes textarea */
-  .textarea567 {
-    width: 30%;
-    resize: none;
-    margin-bottom: 0px ;
-   
-    outline: none;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-   
-    /* Add this line */
-    }
-  
-    .small-input11
-    {
-       padding: 3px 3px;
-      width: 30% !important;;
- /* margin-bottom: 15px;
+.cancel-btn11 {
+  padding: 3px;
+  width: 60px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: rgb(205, 16, 16);
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  margin: 2px;
+  /* margin-left: 8px; */
+}
+.bookbtn11:hover {
+  background-color: #399e35;
+  /* color: black; */
+}
+.cancel-btn11:hover {
+  background-color: #e41010;
+}
+
+.bookbtn-div11 {
+  padding: 4px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ccc;
+  margin: 7px;
+  /* column-gap: 10px; */
+}
+
+/* Style for the Notes textarea */
+.textarea567 {
+  width: 30%;
+  resize: none;
+  margin-bottom: 0px;
+
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+
+  /* Add this line */
+}
+
+.small-input11 {
+  padding: 3px 3px;
+  width: 30% !important;
+  /* margin-bottom: 15px;
  outline: none; */
- border: 1px solid #ccc;
- border-radius: 3px;
- 
-    }
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-    .small-input1133{
-      padding: 5px 3px;
-      width: 10% !important;
- font-size: small;
- border: 1px solid #ccc;
- border-radius: 3px;
-    }
+.small-input1133 {
+  padding: 5px 3px;
+  width: 10% !important;
+  font-size: small;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
 
-    .appntform-group11{
-      display: flex;
-      margin: 10px;
-      
-    }
-    .selected-services12{
-      display: flex;
-      flex-direction: column;
-      margin-left: -15px;
-      
-    }
-  /* Apply some spacing between elements */
-  br {
-    margin-bottom: 10px;
-  }
-  .popupsk14 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    z-index: 999; /* Ensure the popup is on top of everything */
-  }
+.appntform-group11 {
+  display: flex;
+  margin: 10px;
+}
+.selected-services12 {
+  display: flex;
+  flex-direction: column;
+  margin-left: -15px;
+}
+/* Apply some spacing between elements */
+br {
+  margin-bottom: 10px;
+}
+.popupsk14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 999; /* Ensure the popup is on top of everything */
+}
 
-.btnend234{
+.btnend234 {
   display: flex;
   justify-content: space-between;
   border: 1px solid #ccc;
@@ -192,59 +176,57 @@ width: 30%;
   border-right: none;
   margin-bottom: 10px;
 }
-.size293{
+.size293 {
   font-size: 0.9rem;
   width: 75px;
 }
-.size2935{
+.size2935 {
   display: flex;
-    align-items: center;
-    font-size: 0.9rem;
+  align-items: center;
+  font-size: 0.9rem;
   /* width: 75px; */
 }
-  .popup-contentsk14 {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 80%;
-    text-align: left;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: black;
-    border: none;
-    padding: 10px ;
-    border-radius: 5px;
-    cursor: pointer;
-  }
- 
- 
-.popup-services-heading{
+.popup-contentsk14 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-services-heading {
   margin: 5px 0px;
   text-align: center;
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-.lableup123{
+.lableup123 {
   width: 220px;
- font-size: 0.9rem;
+  font-size: 0.9rem;
 }
-  
-.btn567{
-  background-color:transparent;
+
+.btn567 {
+  background-color: transparent;
   color: black;
   cursor: pointer;
   border: none;
   margin-right: 1%;
-    font-size: medium;
+  font-size: medium;
 }
-  .men-women{
-    display: flex;
-    justify-content: space-between;
-    max-height: 430px;
-    overflow: auto;
-
-  }
-.appnt-main11{
+.men-women {
+  display: flex;
+  justify-content: space-between;
+  max-height: 430px;
+  overflow: auto;
+}
+.appnt-main11 {
   width: 90%;
   margin-left: 5%;
   background-color: white;
@@ -253,67 +235,61 @@ margin-bottom: 15px;
   border-radius: 3px;
   /* margin-bottom: 50px; */
 }
-
-.women-category{
-
-  display: flex;
-  flex-direction: column;
-} 
-.men-category{
+.li78{
+    
+}
+.women-category {
   display: flex;
   flex-direction: column;
 }
-.flex-category390{
+.men-category {
   display: flex;
   flex-direction: column;
 }
-.width371{
+.flex-category390 {
+  display: flex;
+  flex-direction: column;
+}
+.width371 {
   width: 170px;
 }
-.flex0033{
+.flex0033 {
   display: flex;
   flex-direction: column;
-  /* width: 350px; */
+  width: 50%;
 }
-.h58{
-
+.h58 {
 }
 .custom-checkbox {
   width: 17px;
-  height: 17px; 
+  height: 17px;
   margin: 5px;
 }
-.service-item{
+.service-item {
   display: flex;
-  align-items: center ;
+  align-items: center;
 }
 
 .custom-checkbox::-webkit-input-placeholder {
   display: none;
 }
 
-
 .custom-checkbox:checked {
-  background-color: #007bff; 
+  background-color: #007bff;
   border: 1px solid #007bff;
 }
 @media only screen and (min-width: 320px) and (max-width: 426px) {
   /* Container for the appointment form */
-.appnt-form11 {
-  
-  
+  .appnt-form11 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-  background-color: #fdfcfc;
+    background-color: #fdfcfc;
     /* margin-top: 20px; */
     border-radius: 5px;
-    
-    font-family: sans-serif;
-    
 
+    font-family: sans-serif;
   }
-  .h58{
+  .h58 {
     font-size: 1rem;
   }
   .popup-contentsk14 {
@@ -330,22 +306,22 @@ margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
-}
+  }
   .men-women {
     display: flex;
     /* justify-content: space-around; */
     max-height: 430px;
     overflow: auto;
-}
+  }
   .men-category {
     display: flex;
     flex-direction: column;
-    
+
     /* padding-top: 120%; */
-}
-  .appnt-heading11{
+  }
+  .appnt-heading11 {
     background-color: #f0ecec;
-    padding: 4px ;
+    padding: 4px;
     font-size: small;
     border: 1px solid #ccc;
   }
@@ -355,52 +331,51 @@ margin-bottom: 15px;
     text-align: left !important;
     /* display: block; */
     margin-top: 3px;
-  
+
     /* font-weight: bold; */
     width: 180px;
     padding-right: 15px;
     font-size: 0.9rem;
   }
-  .text-address78{
+  .text-address78 {
     border: 1px solid #ccc;
     border-radius: 3px;
     width: 30% !important;
   }
-  
+
   /* Style for input elements */
-  .text-input11{
-width: 70% !important;
-/* margin-top: 6px; */
-height: 30px;
-     padding: 4px ; 
-     font-size: small;
+  .text-input11 {
+    width: 70% !important;
+    /* margin-top: 6px; */
+    height: 30px;
+    padding: 4px;
+    font-size: small;
     /* margin-bottom: 15px; */
     border: 1px solid #ccc;
     border-radius: 3px;
     outline: none;
     cursor: pointer;
-    
   }
-  .small-input1122{
+  .small-input1122 {
     width: 15%;
     font-size: small;
-         padding: 5px ; 
-        /* margin-left: -25px; */
-        height: 30px;
-        font-size: small;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        outline: none;
-        cursor: pointer;
+    padding: 5px;
+    /* margin-left: -25px; */
+    height: 30px;
+    font-size: small;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
   }
-  .selected-services{
+  .selected-services {
     margin-right: 10px;
   }
-  .change-column90{
+  .change-column90 {
     display: flex;
     flex-direction: column;
   }
-  
+
   /* Style for the Add Services button */
   .servbtn11 {
     background-color: #19c013;
@@ -411,99 +386,92 @@ height: 30px;
     cursor: pointer;
     /* margin-bottom: 10px; */
     font-size: small;
-
   }
 
-  .bookbtn11{
-    padding: 3px ;
+  .bookbtn11 {
+    padding: 5px;
     width: 60px;
     border-radius: 3px;
     cursor: pointer;
-    background-color: #0eb808;
+    background-color: dodgerblue;
     color: #fff;
     border: none;
-   font-size: small;
-   margin: 2px;
+    font-size: small;
+    margin: 2px;
   }
 
-  .cancel-btn11{
-    padding: 3px ;
+  .cancel-btn11 {
+    padding: 5px;
     width: 60px;
     border-radius: 3px;
     cursor: pointer;
-    background-color: #ff5555;
+    background-color: #cf3737;
     color: #fff;
     border: none;
     font-size: small;
     margin: 2px;
     /* margin-left: 8px; */
-   
   }
-  .bookbtn11:hover{
+  .bookbtn11:hover {
     background-color: #399e35;
     /* color: black; */
   }
-  .cancel-btn11:hover{
+  .cancel-btn11:hover {
     background-color: #e41010;
   }
 
-
-  
-   .bookbtn-div11{
+  .bookbtn-div11 {
     padding: 4px;
     display: flex;
     justify-content: flex-end;
     background-color: #ccc;
     margin: 7px;
     /* column-gap: 10px; */
-   }
-  
+  }
+
   /* Style for the Notes textarea */
   .textarea567 {
+    font-size: small;
     width: 70% !important;
     resize: none;
-    margin-bottom: 0px ;
+    margin-bottom: 0px;
     cursor: pointer;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 3px;
-   /* margin-left: -25px; */
+    /* margin-left: -25px; */
     /* Add this line */
-    }
-  
-    .small-input11
-    {
-       padding: 3px 3px;
-      width: 30% !important;;
- /* margin-bottom: 15px;
+  }
+
+  .small-input11 {
+    padding: 3px 3px;
+    width: 30% !important;
+    /* margin-bottom: 15px;
  outline: none; */
- border: 1px solid #ccc;
- border-radius: 3px;
- 
-    }
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
 
-    .small-input1133{
-      padding: 5px 3px;
-      width: 10% !important;
- font-size: small;
- border: 1px solid #ccc;
- border-radius: 3px;
- /* margin-left: -25px; */
- font-size: small;
- height: 30px;
-    }
+  .small-input1133 {
+    padding: 5px 3px;
+    width: 10% !important;
+    font-size: small;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* margin-left: -25px; */
+    font-size: small;
+    height: 30px;
+  }
 
-    .appntform-group11{
-      display: flex;
-      margin: 10px;
-      
-    }
-    .selected-services12{
-      display: flex;
-      flex-direction: column;
-      margin-left: -15px;
-      
-    }
+  .appntform-group11 {
+    display: flex;
+    margin: 10px;
+  }
+  .selected-services12 {
+    display: flex;
+    flex-direction: column;
+    margin-left: -15px;
+  }
   /* Apply some spacing between elements */
   br {
     margin-bottom: 10px;
@@ -521,26 +489,26 @@ height: 30px;
     z-index: 999; /* Ensure the popup is on top of everything */
   }
 
-.btnend234{
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #ccc;
+  .btnend234 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
 
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 10px;
-}
-.size293{
-  font-size: 0.9rem;
-  width: 75px;
-}
-.size2935{
-  display: flex;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+  }
+  .size293 {
+    font-size: 0.9rem;
+    width: 50px;
+  }
+  .size2935 {
+    display: flex;
     font-size: small;
-    
+
     align-items: center;
-}
+  }
   .popup-contentsk14 {
     background-color: #fff;
     padding: 20px;
@@ -552,97 +520,94 @@ height: 30px;
     margin-bottom: 10px;
     color: black;
     border: none;
-    padding: 10px ;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
   }
- 
- 
-.popup-services-heading{
-  margin: 5px 0px;
-  text-align: center;
-margin-bottom: 15px;
-font-size: small;
-}
-.lableup123{
-  width: 190px;
- font-size: small;
-}
-  
-.btn567{
-  background-color:transparent;
-  color: black;
-  cursor: pointer;
-  border: none;
-  margin-right: 1%;
+
+  .popup-services-heading {
+    margin: 5px 0px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: large;
+  }
+  .lableup123 {
+    width: 150px;
+    font-size: small;
+    text-wrap: wrap;
+  }
+
+  .btn567 {
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    border: none;
+    margin-right: 1%;
     font-size: medium;
-}
-  .men-women{
+  }
+  .men-women {
     display: flex !important;
     flex-direction: column !important;
-/* justify-content: space-around; */
-
+    /* justify-content: space-around; */
   }
-.appnt-main11{
-  width: 90%;
-  margin-left: 5%;
-  background-color: white;
-  /* margin-top: 15vw; */
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  /* margin-bottom: 50px; */
-}
+  .appnt-main11 {
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+    /* margin-top: 15vw; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    /* margin-bottom: 50px; */
+  }
 
-.women-category{
+  .women-category {
+    display: flex;
+    flex-direction: column;
+  }
+  .men-category {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+  .flex-category390 {
+    display: flex;
+    flex-direction: column;
+  }
+  .width371 {
+    width: 170px;
+  }
+  .flex0033 {
+    display: flex;
+    flex-direction: column;
+    font-size: small !important;
+  }
+  .custom-checkbox {
+    width: 17px;
+    height: 17px;
+    margin: 5px;
+  }
+  .service-item {
+    display: flex;
+    align-items: center;
+  }
 
-  display: flex;
-  flex-direction: column;
-} 
-.men-category{
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-}
-.flex-category390{
-  display: flex;
-  flex-direction: column;
-}
-.width371{
-  width: 170px;
-}
-.flex0033{
-  display: flex;
-  flex-direction: column;
-  font-size: small !important;
-}
-.custom-checkbox {
-  width: 17px;
-  height: 17px; 
-  margin: 5px;
-}
-.service-item{
-  display: flex;
-  align-items: center;
-}
+  .custom-checkbox::-webkit-input-placeholder {
+    display: none;
+  }
 
-.custom-checkbox::-webkit-input-placeholder {
-  display: none;
+  .custom-checkbox:checked {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+  }
 }
-
-
-.custom-checkbox:checked {
-  background-color: #007bff; 
-  border: 1px solid #007bff;
-}
-
-}
-@media only screen and (max-width: 768px) and (max-width:1023px) {
-
-  .popup-contentsk14{
+@media only screen and (max-width: 768px) and (max-width: 1023px) {
+  .popup-contentsk14 {
     width: 60%;
     height: 85%;
     overflow: auto;
-
+  }
+  .li78{
+font-size: 0.9rem;
   }
   .servbtn11 {
     background-color: #19c013;
@@ -652,66 +617,61 @@ font-size: small;
     padding: 5px 7px;
     cursor: pointer;
     /* margin-bottom: 10px; */
-    font-size: small;
-}
+    font-size: 0.8rem;
+  }
   .appnt-heading11 {
     background-color: #f0ecec;
     padding: 8px;
     border: 1px solid #ccc;
     font-size: 0.9rem;
-}
-.h58{
-  margin-top: 1%;
-  font-size: 1rem;
-}
-  .men-women{
+  }
+  .h58 {
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+  .men-women {
     display: flex;
     flex-direction: column;
-/* justify-content: space-around; */
-
+    /* justify-content: space-around; */
   }
-  
+
   .appnt-label11 {
-    
     text-align: right;
     display: block;
-    
+
     /* font-weight: bold; */
     width: 85px;
-    
+
     font-size: smaller;
   }
-  .small-input1122{
+  .small-input1122 {
     width: 40%;
     font-size: smaller;
-         padding: 5px ; 
-        
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        outline: none;
-        cursor: pointer;
+    padding: 5px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
   }
 
-  .small-input1133{
+  .small-input1133 {
     padding: 5px 3px;
     width: 25% !important;
-font-size: smaller;
-border: 1px solid #ccc;
-border-radius: 3px;
-height: 20%;
+    font-size: smaller;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 20%;
   }
-  .text-input11{
+  .text-input11 {
     width: 55%;
-   
-      }
+  }
 
-      .textarea567{
-        width: 55%;
-       
-          }
+  .textarea567 {
+    width: 55%;
+  }
 
-.appnt-form11 {
-  width: 100%;
-}      
-
+  .appnt-form11 {
+    width: 100%;
+  }
 }

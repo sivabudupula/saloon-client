@@ -1,549 +1,513 @@
-.A7custheadertab{
-   margin-top: -11px;
-   background-color: rgb(201, 192, 192);
-   border-radius: 3px 3px 0px 0px;
-   text-align: start;
-   height: 35px; 
-   border: 1px solid grey;
-   padding: 10px 0px 0px 10px;
+.A7custheadertab {
+  margin-top: -11px;
+  background-color: rgb(201, 192, 192);
+  border-radius: 3px 3px 0px 0px;
+  text-align: start;
+  height: 35px;
+  border: 1px solid grey;
+  padding: 10px 0px 0px 10px;
 }
-.customer-table11a7{
-   width: 100%;
-   border: collapse;
+.customer-table11a7 {
+  width: 100%;
+  border: collapse;
 
-font-size: 1rem;
+  font-size: 1rem;
+}
+th {
+  font-family: "Poppins";
+}
+.details456 {
+  background-color: #1571d4;
+  color: white;
+  padding: 5px 10px;
 
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-th{
-  font-family: 'Poppins';
-}
-.details456{
-   background-color: #1571d4;
-   color: white;
-    padding:  5px 10px; 
-   
-   font-size: 13px;
-   border: none;
-   border-radius: 5px;
-   cursor: pointer;
-}
-.details456:hover{
-   background-color: #5ca1ec;
+.details456:hover {
+  background-color: #5ca1ec;
 }
 
-.customer-table11a7 th{
+.customer-table11a7 th {
+  background-color: #f0ecec;
+  padding: 7px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 15px;
+}
+
+.customer-table11a7 {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-top: 1%;
+}
+.customer-search11 {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+.customer-heading11 {
+  background-color: #ccc;
+  padding: 15px;
+}
+.customer-container11 {
+  width: 92%;
+  margin-left: 4%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: white;
+  box-shadow: 6px 5px 6px #ccc;
+}
+.customer-table-td1 {
+  text-align: center;
+  border: 1px solid #ccc;
+  font-family: "Poppins";
+}
+.customer-table-td {
+  text-align: left;
+  font-size: small;
+  border: 1px solid #ccc;
+  padding-left: 4px;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+.entries-div11 {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+
+.filter-div11 {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-buttons11 {
+  display: flex;
+  justify-content: space-between;
+}
+.input1 {
+  width: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 3px;
+}
+.input2 {
+  padding: 5px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.flex410 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.A7th1 {
+  width: 10%;
+}
+.A7th10 {
+  width: 14%;
+}
+.A7th2 {
+  width: 10%;
+}
+.A7th3 {
+  width: 20%;
+}
+.A7th4 {
+  width: 14%;
+}
+.A7th5 {
+  width: 20%;
+}
+.A7th6 {
+  width: 7%;
+}
+.A7th7 {
+  width: 9%;
+}
+.A7serinp,
+.pagination-div,
+.number-of-entries-div {
+  font-family: "Poppins";
+}
+
+.badges {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #333;
+  height: 25px;
+  font-size: small;
+  margin: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  font-family: "Poppins";
+}
+.wrapline34{
+  text-wrap: wrap !important;
+}
+.badges:hover {
+  background-color: #ddd;
+}
+.customer-table-td1,
+.customer-table-td {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.badges.active {
+  background-color: #007bff;
+  color: #fff;
+  width: 25px;
+  text-align: center;
+  border: 1px solid #04080b;
+}
+.active {
+  background-color: #007bff;
+  color: #fff;
+  width: 25px;
+  text-align: center;
+  border: 1px solid #0b0c0d;
+}
+.select-number-of-entries {
+  font-family: "Poppins";
+}
+.edit-customer-heading1123 {
+  font-family: "Poppins";
+}
+.show11 {
+}
+
+@media only screen and (min-width: 320px) and (max-width: 426px) {
+  .A7custheadertab {
+    margin-top: -11px;
+    background-color: rgb(201, 192, 192);
+    border-radius: 3px 3px 0px 0px;
+    text-align: start;
+    height: 35px;
+    border: 1px solid grey;
+    padding: 10px 0px 0px 10px;
+  }
+  .show11 {
+    font-size: small;
+  }
+  .customer-table11a7 {
+    width: 100%;
+    border: collapse;
+
+    font-size: 1rem;
+  }
+  .customer-table-td {
+    text-align: left;
+    font-size: small;
+    border: 1px solid #ccc;
+    padding-left: 4px;
+  }
+  .details456 {
+    background-color: #f9fdfb;
+    color: white;
+    padding: 2px;
+    font-size: x-small;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+  }
+  .details456:hover {
+    background-color: #5ca1ec;
+  }
+
+  .customer-table11a7 th {
     background-color: #f0ecec;
     padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    font-size: .8rem;
-}
+    font-size: 13px;
+  }
 
-.customer-table11a7{
+  .customer-table11a7 {
     padding: 5px;
     border: 1px solid #ccc;
     text-align: center;
-    margin-top: 1%;
-}
-.customer-search11{
+  }
+  .customer-search11 {
     display: flex;
+    
     margin-top: 5px;
     margin-bottom: 6px;
-justify-content: space-between;
-}
-.customer-heading11{
+    justify-content: space-between;
+  }
+  .customer-heading11 {
     background-color: #ccc;
     padding: 15px;
-}
-.customer-container11{
-    width: 92%;
-    margin-left: 5%;
+  }
+  .customer-container11 {
+    width: 100% !important;
+    margin-left: 0% !important;
     margin-top: 1%;
     margin-bottom: 1%;
     border: 1px solid #ccc;
     border-radius: 2px;
     background-color: white;
     box-shadow: 6px 5px 6px #ccc;
-    
-}
-.customer-table-td1{
-  text-align: center;
-  border: 1px solid #ccc;
-  font-family: 'Poppins';
-}
-.customer-table-td{
-  text-align: left;
-  font-size: small;
-  border: 1px solid #ccc;
-  padding-left: 4px;
-  font-family: 'Poppins';
-   font-size: 16px;
-}
-.entries-div11{
-    display: flex;
-    justify-content: flex-end;
-margin-right: 10px;
-    margin-top: 7px ;
-
-}
-
-.filter-div11{
-    display: flex;
-    justify-content: space-between;
-}
-.filter-buttons11{
-    display: flex;
-    justify-content: space-between;
-}
-.input1{
-   width: 80px;
-   text-align: center;
-   border: 1px solid #ccc;
-   border-radius: 3px;
-   margin-left: 3px;
-   margin-right: 3px;
-   padding: 4px;
-}
-.input2{
-   
-   padding: 4px;
-   width: 200px;
-   border: 1px solid #ccc;
-   border-radius: 3px;
-   margin-left: 5px;
-   text-align: center;
-}
-.flex410{
-  display: flex;
-  justify-content: space-between;
-}
-
-.A7th1{
-   width: 10%;
-   ;
-}
-.A7th10{
-   width: 14%;
-   
-   
-}
-.A7th2{
-   width: 10%;
-   
-}
-.A7th3{
-   width: 20%;
-   
-}
-.A7th4{
-   width: 14%;
-   
-}
-.A7th5{
-   width: 20%;
-  
-}
-.A7th6{
-   width:  7% ;
-   
-}
-.A7th7{
-   width:  9% ;
-   
-}
-.A7serinp,.pagination-div,.number-of-entries-div{
-   font-family: 'Poppins';
-}
-
-
-
-.badges {
-   background-color: #f5f5f5;
-   border: 1px solid #ddd;
-   color: #333;
-   height: 25px;
-   font-size: small;
-   margin: 2px;
-   cursor: pointer;
-   transition: background-color 0.3s, color 0.3s, border 0.3s;
-   font-family: 'Poppins';
- }
- 
- .badges:hover {
-   background-color: #ddd;
-   
- }
- .customer-table-td1,.customer-table-td{
-   font-size: 14px;
- }
- 
- .badges.active {
-   background-color: #007bff;
-   color: #fff;
-   width: 25px;
-   text-align: center;
-   border: 1px solid #04080b;
- }
- .active {
-   background-color: #007bff;
-   color: #fff;
-   width: 25px;
-   text-align: center;
-   border: 1px solid #0b0c0d;
- }
-.select-number-of-entries{
-   font-family: 'Poppins';
-}
-.edit-customer-heading1123{
-   font-family: 'Poppins';
-}
-.show11{
-      
-}
-
- 
-@media only screen and (min-width: 320px) and (max-width: 426px){
-   .A7custheadertab{
-      margin-top: -11px;
-      background-color: rgb(201, 192, 192);
-      border-radius: 3px 3px 0px 0px;
-      text-align: start;
-      height: 35px; 
-      border: 1px solid grey;
-      padding: 10px 0px 0px 10px;
-   }
-   .show11{
-font-size: small;
-   }
-   .customer-table11a7{
-      width: 100%;
-      border: collapse;
-   
-   font-size: 1rem;
-   
-   }
-   .customer-table-td{
-      text-align: left;
-      font-size: small;
-      border: 1px solid #ccc;
-      padding-left: 4px;
-    }
-   .details456{
-      
-      background-color: #f9fdfb; 
-      color: white;
-      padding: 2px;
-      font-size: x-small;
-      cursor: pointer;
-      border: none;
-      font-size: 20px;
-   }
-   .details456:hover{
-      background-color: #5ca1ec;
-   }
-   
-   .customer-table11a7 th{
-       background-color: #f0ecec;
-       padding: 5px;
-       border: 1px solid #ccc;
-       text-align: center;
-   }
-   
-   .customer-table11a7{
-       padding: 5px;
-       border: 1px solid #ccc;
-       text-align: center;
-       
-   }
-   .customer-search11{
-       display: flex;
-       margin-top: 5px;
-       margin-bottom: 6px;
-   justify-content: space-between;
-   }
-   .customer-heading11{
-       background-color: #ccc;
-       padding: 15px;
-   }
-   .customer-container11{
-       width: 100% !important;
-       margin-left: 0% !important;
-       margin-top: 1%;
-       margin-bottom: 1%;
-       border: 1px solid #ccc;
-       border-radius: 2px;
-       background-color: white;
-       box-shadow: 6px 5px 6px #ccc;
-       
-   }
-   .customer-table-td1{
-     text-align: center;
-     border: 1px solid #ccc;
-   }
-   .customer-table-td{
-     text-align: left;
-     border: 1px solid #ccc;
-     padding-left: 4px;
-   }
-   .entries-div11{
-       display: flex;
-       justify-content: flex-end;
-   margin-right: 10px;
-       margin-top: 7px ;
-   
-   }
-   
-   .filter-div11{
-       display: flex;
-       justify-content: space-between;
-   }
-   .filter-buttons11{
-       display: flex;
-       justify-content: space-between;
-   }
-   .number-of-entries-div {
-      font-family: 'Poppins';
-      font-size: small;
   }
-   .input1{
-      width: 80px;
-      font-size: small;
-      text-align: center;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      margin-left: 0px;
-      margin-right: 0px;
-      padding: 4px;
-   }
-   .input2{
-      
-      padding: 4px;
-      width: 200px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      margin-left: 0px;
-      text-align: left;
-   }
-   .flex410{
-     display: flex;
-     justify-content: space-between;
-   }
-   
-   .A7th1{
-      width: 10%;
-      ;
-   }
-   .A7th10{
-      width: 14%;
-      
-      
-   }
-   .A7th2{
-      width: 10%;
-      
-   }
-   .A7th3{
-      width: 20%;
-      
-   }
-   .A7th4{
-      width: 14%;
-      
-   }
-   .A7th5{
-      width: 20%;
-     
-   }
-   .A7th6{
-      width:  7% ;
-      
-   }
-   .A7th7{
-      width:  9% ;
-      
-   }
-   
-   
-   
-   .badges {
-      background-color: #f5f5f5;
-      border: 1px solid #ddd;
-      color: #333;
-      height: 25px;
-      font-size: small;
-      margin: 2px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s, border 0.3s;
-    }
-    
-    .badges:hover {
-      background-color: #ddd;
-      
-    }
-    
-    .badges.active {
-      background-color: #007bff;
-      color: #fff;
-      width: 25px;
-      text-align: center;
-      border: 1px solid #04080b;
-    }
-    .active {
-      background-color: #007bff;
-      color: #fff;
-      width: 25px;
-      text-align: center;
-      border: 1px solid #0b0c0d;
-    }
- }
+  .customer-table-td1 {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 2px !important;
+    border: 1px solid #ccc;
+  }
+  .customer-table-td {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding-left: 4px;
+  }
+  .entries-div11 {
+   display: flex;
+   justify-content: flex-start;
+   margin-right: 0px;
+   margin-top: 0px;
+  }
 
- @media only screen and (min-width: 768px) and (max-width: 1023px) {
-   .customer-container11 {
-     width: 94%;
-     margin-left: 3%;
-     overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
-   }
-   .tble-overflow12 {
-      height: auto;
-      overflow: auto;
+  .filter-div11 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter-buttons11 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .number-of-entries-div {
+    font-family: "Poppins";
+    font-size: small;
+  }
+  .input1 {
+    width: 80px;
+    font-size: small;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 4px;
+  }
+  .input2 {
+    padding: 4px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 0px;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  .flex410 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .A7th1 {
+    width: 10%;
+  }
+  .A7th10 {
+    width: 14%;
+  }
+  .A7th2 {
+    width: 10%;
+  }
+  .A7th3 {
+    width: 20%;
+  }
+  .A7th4 {
+    width: 14%;
+  }
+  .A7th5 {
+    width: 20%;
+  }
+  .A7th6 {
+    width: 7%;
+  }
+  .A7th7 {
+    width: 9%;
+  }
+
+  .badges {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+    height: 25px;
+    font-size: small;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+
+  .badges:hover {
+    background-color: #ddd;
+  }
+
+  .badges.active {
+    background-color: #007bff;
+    color: #fff;
+    width: 25px;
+    text-align: center;
+    border: 1px solid #04080b;
+  }
+  .active {
+    background-color: #007bff;
+    color: #fff;
+    width: 25px;
+    text-align: center;
+    border: 1px solid #0b0c0d;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .customer-container11 {
+    width: 94%;
+    margin-left: 3%;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+  .tble-overflow12 {
+    height: auto;
+    overflow: auto;
   }
   .app-edit-btn11 {
-   height: 5vh;
-   font-size: 13px;
-   border: none;
-   cursor: pointer;
-   margin: 2px;
-   color: white;
-   background-color: dodgerblue;
-   border: none;
-   border-radius: 3px;
-   width: 50px !important;
+    height: 5vh;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    width: 50px !important;
+  }
+  .show11 {
+    font-size: small;
+  }
+  .number-of-entries-div {
+    font-family: "Poppins";
+    font-size: small;
+  }
+  .customer-table11a7 {
+    width: 100%;
+    margin-top: 2%;
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  }
+  .A7th1 {
+    width: 10%;
+  }
+  .customer-table-td {
+    text-align: left;
+    font-size: small;
+    border: 1px solid #ccc;
+    padding-left: 4px;
+  }
+  .A7th10 {
+    width: 14%;
+  }
+  .A7th2 {
+    width: 10%;
+  }
+  .A7th3 {
+    width: 20%;
+  }
+  .A7th4 {
+    width: 14%;
+  }
+  .A7th5 {
+    width: 20%;
+  }
+  .A7th6 {
+    width: 7%;
+  }
+  .A7th7 {
+    width: 9%;
+  }
+
+  .customer-table11a7 th,
+  .customer-table-td,
+  .customer-table-td1 {
+    font-size: 12px;
+    width: 40px;
+    padding: 0px 5px;
+  }
+
+  .filter-buttons11 {
+    flex-direction: column; /* Stack filter buttons vertically on smaller screens */
+  }
+
+  .input1,
+  .input2 {
+    width: auto;
+    height: 28px; /* Make input fields full width on smaller screens */
+  }
+
+  .entries-div121 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: max-content; */
+  }
+
+  .filter-div11 {
+    display: flex;
+    flex-direction: row; /* Stack entries and filters vertically on smaller screens */
+    /* Align entries and filters to the right on smaller screens */
+  }
+
+  .number-of-entries-div {
+    font-size: smaller;
+    margin-right: 20px;
+  }
+
+  .badges {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #333;
+
+    font-size: smaller;
+    margin: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+
+  .customer-search11 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 6px;
+    justify-content: space-between;
+  }
+  .select-number-of-entries {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    font-size: smaller;
+    margin-right: 15px;
+    font-family: "Poppins";
+  }
+
+  .A7serinp {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    font-size: smaller;
+    align-items: center;
+    margin-top: 7px;
+  }
 }
-   .show11{
-      font-size: small;
-   }
-   .number-of-entries-div {
-      font-family: 'Poppins';
-      font-size: small;
-  }
-   .customer-table11a7 {
-      width: 100%;
-      margin-top: 2%;
-     overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
-   }
-   .A7th1{
-      width: 10%;
-      
-   }
-   .customer-table-td{
-      text-align: left;
-      font-size: small;
-      border: 1px solid #ccc;
-      padding-left: 4px;
-    }
-   .A7th10{
-      width: 14%;
-      
-      
-   }
-   .A7th2{
-      width: 10%;
-      
-   }
-   .A7th3{
-      width: 20%;
-      
-   }
-   .A7th4{
-      width: 14%;
-      
-   }
-   .A7th5{
-      width: 20%;
-     
-   }
-   .A7th6{
-      width:  7% ;
-      
-   }
-   .A7th7{
-      width:  9% ;
-      
-   }
-   
-   .customer-table11a7 th,
-   .customer-table-td,
-   .customer-table-td1 {
-     font-size: 12px;
-     width: 40px;
-     padding: 0px 5px;
-   }
- 
-   .filter-buttons11 {
-     flex-direction: column; /* Stack filter buttons vertically on smaller screens */
-   }
- 
-   .input1,
-   .input2 {
-   
-     width: auto; 
-     height: 28px;/* Make input fields full width on smaller screens */
-   }
- 
-   .entries-div121
-    {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     /* width: max-content; */
-   }
-
-   .filter-div11 {
-      display: flex; 
-      flex-direction: row;/* Stack entries and filters vertically on smaller screens */
-       /* Align entries and filters to the right on smaller screens */
-    }
-    
-    .number-of-entries-div{
-     font-size: smaller;
-    margin-right: 20px;  
-    }
-    
-    .badges {
-      background-color: #f5f5f5;
-      border: 1px solid #ddd;
-      color: #333;
-      
-      font-size: smaller;
-      margin: 2px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s, border 0.3s;
-    }
-
-    .customer-search11{
-      display: flex;
-      flex-direction: row;
-      margin-top: 5px;
-      margin-bottom: 6px;
-  justify-content: space-between;
-  
-  }
-  .select-number-of-entries{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   width: max-content;
-   font-size: smaller;
-   margin-right: 15px;
-   font-family: 'Poppins';
-  }
-
- .A7serinp{
-  display: flex; 
-  flex-direction: row;
-  width: max-content;
-  font-size: smaller;
-align-items: center;
-margin-top: 7px;
- }
- }

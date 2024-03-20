@@ -112,7 +112,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
         <div className="margin786">
           <div className="customer-search11">
             <div className="select-number-of-entries">
-              <label>Show </label>
+              <label className="show11">Show </label>
               <select
                 className="input1"
                 value={itemsPerPage}
@@ -123,10 +123,10 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                 <option value={15}>15</option>
                 {/* Add more options as needed */}
               </select>
-              <label> Entries </label>
+              {/* <label> Entries </label> */}
             </div>
             <div className="A7serinp">
-              <label className="one-in"> Search </label>
+              <label className="show11"> Search </label>
               <input
                 className="input2"
                 type="search"
@@ -137,9 +137,9 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
             </div>
           </div>
 
-          <div>
+          <div className="tble-overflow12">
             <table className="customer-table11a7">
-              <thead>
+              <thead className="thead87">
                 <tr>
                   <th className="A7th1">Customer ID</th>
                   <th className="A7th10">Customer Name</th>
@@ -151,7 +151,7 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                    <th className="A7th7">Action</th> 
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="thead87">
                 {currentItems.map((customer) => (
                   <tr key={customer.email}>
                     <td
@@ -176,13 +176,11 @@ const CustomerTable = ({ onCustomerDetailsClick }) => {
                     <td className="customer-table-td">{customer.address}</td>
                    
                     <td className="customer-table-td1">
-                      {customer.createdByModel === "Register"
-                        ? customer.createdBy
-                        : customer.createdBy}
+                      {customer.createdBy}
                     </td>
                      <td className="customer-table-td1">
                       <button
-                        className="details456"
+                        className="book-text"
                         onClick={() => handleClick(customer)}
                       >
                         Details

@@ -1,9 +1,12 @@
 .master-container-salon {
   width: 100%;
-  background-size: cover;
-  /* height: 100vh; */
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    padding-bottom: 1%;
+    background-color: white;
 }
-.white-bg23::-webkit-scrollbar {
+.master-container-salon::-webkit-scrollbar {
   width: 0px;
 }
 
@@ -66,6 +69,7 @@
 
 .dashboard-salon2390 {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
   padding-left: 5px;
@@ -114,12 +118,11 @@ cursor: pointer; */
   font-size: 25px;
   color: white;
   /* border: 2px solid white; */
-    padding: 9px;
-    height: 50px;
+  padding: 9px;
+  height: 50px;
   width: 50px;
-    margin-top: -40px;
-    margin-right: -1px;
 
+  margin-right: -1px;
 }
 
 .logo-salon {
@@ -243,7 +246,7 @@ cursor: pointer; */
   background-color: #f0ecec;
   box-shadow: 0px 0px 0px 1px bisque;
   color: black;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-top: 0px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
 
@@ -252,7 +255,7 @@ cursor: pointer; */
 
 .cards-container23 {
   width: 92%;
-  margin-left: 5%;
+  margin-left: 4%;
   text-align: left;
   margin-bottom: 1%;
   background-color: white;
@@ -261,10 +264,10 @@ cursor: pointer; */
 }
 
 .white-bg23 {
-  background-color: white;
+  
   padding-top: 1%;
 
-  height: 100%;
+ 
 }
 
 .amount-fetch23 {
@@ -375,6 +378,7 @@ cursor: pointer; */
 }
 .divideimage {
   display: flex;
+  justify-content: space-between;
   gap: 35px;
 }
 .small-cards23 {
@@ -631,7 +635,7 @@ position:absolute;
     box-shadow: 6px 5px 6px #ccc;
   }
   .fixed-container678 {
-    width: 99vw;
+    width: 100vw;
     background-color: rgb(8, 49, 119);
     z-index: 99;
   }
@@ -700,11 +704,11 @@ position:absolute;
     flex-direction: row;
     justify-content: space-between;
   }
-  .master-container-salon {
+  /* .master-container-salon {
     width: 100%;
     background-size: cover;
-    /* margin-top: -57px; */
-  }
+    
+  } */
 
   .dashboard-button-salon23 {
     width: 10% !important;
@@ -787,6 +791,7 @@ position:absolute;
     font-size: 25px;
     color: white;
     height: 28px;
+    padding: 0px;
     width: 28px;
   }
   .setting {
@@ -844,18 +849,19 @@ position:absolute;
   }
 
   .button-indicators23 {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 3px;
+    padding-right: 3px;
     font-size: small !important;
   }
 
   .sub-button23 {
-    margin-left: 5px;
+    margin-left: 2px;
     font-size: x-small !important;
   }
 
   .heading234 {
     font-size: small;
+    padding: 6px;
   }
 
   .white-bg23 {
@@ -978,7 +984,7 @@ position:absolute;
     background-color: white;
     border: 1px solid #ccc;
     box-shadow: 6px 5px 6px #ccc;
-}
+  }
   .button-indicators23 {
     background-color: #3390f3;
     color: white;
@@ -993,10 +999,10 @@ position:absolute;
   }
   .sub-button23 {
     color: white;
-    background-color: rgb(222, 90, 90);
+    background-color: blue;
     font-size: small;
     margin-left: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 4px;
   }
 
@@ -1013,49 +1019,49 @@ position:absolute;
     width: 50%;
     display: flex;
     gap: 6px;
-}
-.mii {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.heading678 {
-  background-color: #f0ecec;
-  padding: 7px;
-  font-weight: 500;
-  margin-top: 0px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 0px 6px #ccc;
-  font-size: 0.9rem !important;
-  font-family: "poppins";
-}
-.heading234 {
-  padding: 8px;
-  background-color: #f0ecec;
-  box-shadow: 0px 0px 0px 1px bisque;
-  color: black;
-  font-size: 0.9rem;
-  margin-top: 0px;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-}
-.divideimage {
-  display: flex;
-  justify-content: space-between;
-  gap: 17px;
-}
-.cards-flex23 {
-  padding: 15px;
-  display: flex;
-  gap: 6px;
-}
+  }
+  .mii {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .heading678 {
+    background-color: #f0ecec;
+    padding: 7px;
+    font-weight: 500;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 6px #ccc;
+    font-size: 0.9rem !important;
+    font-family: "poppins";
+  }
+  .heading234 {
+    padding: 8px;
+    background-color: #f0ecec;
+    box-shadow: 0px 0px 0px 1px bisque;
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  .divideimage {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+  }
+  .cards-flex23 {
+    padding: 15px;
+    display: flex;
+    gap: 6px;
+  }
   .amounts {
     /* width: 137px; */
     font-size: 12px;
     font-family: "poppins";
     font-weight: 600;
     margin-bottom: 0px;
-}
+  }
   .name234 {
     width: 100%;
     font-size: 11px;

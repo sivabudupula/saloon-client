@@ -3,6 +3,7 @@ import "../styles/ProductList.css";
 import axios from "axios";
 import Salonlogo from "../images/Salonlogo.png";
 import { BASE_URL } from "../Helper/helper";
+import { LuIndianRupee } from "react-icons/lu";
 
 const InventoryList = ({ onNewPurchaseClick }) => {
   const [purchaseList, setPurchaseList] = useState([]);
@@ -257,15 +258,15 @@ const InventoryList = ({ onNewPurchaseClick }) => {
   }
   return (
     <div className="pd-container12">
-      <h5 className="pd-heading12">Inventory Details</h5>
+      <h5 className="heading234">Inventory Details</h5>
       <div className="margin4567">
         <button className="pdadd-btn12" onClick={handleClick}>
           {" "}
           + New Purchase
         </button>
         <div className="pd-search12">
-          <div>
-            <label>Show </label>
+          <div className="select-number-of-entries">
+            <label className="show11">Show </label>
             <select
               className="input1"
               value={itemsPerPage}
@@ -275,12 +276,12 @@ const InventoryList = ({ onNewPurchaseClick }) => {
               <option value={10}>10</option>
               <option value={15}>15</option>
             </select>
-            <label> entries </label>
+            {/* <label> entries </label> */}
           </div>
-          <div className="A7serinp">
-            <div>
+         
+            <div className="A7serinp">
               {" "}
-              Search{" "}
+              <label className="show11"> Search</label>{" "}
               <input
                 type="search"
                 className="border-change890"
@@ -289,10 +290,11 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                 onChange={handleSearch}
               ></input>{" "}
             </div>
-          </div>
+         
         </div>
+        <div className="tble-overflow12">
         <table className="pd-table12">
-          <thead>
+          <thead className="thead87">
             <tr>
               <th className="pd-th12">S.NO</th>
               <th className="pd-th12">Bill Number</th>
@@ -306,7 +308,7 @@ const InventoryList = ({ onNewPurchaseClick }) => {
               <th className="pd-th12">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="thead87">
             {currentItems.map((item, index) => {
               // Calculate the total purchase amount for the current purchase entry
               const totalPurchaseAmount = item.tableData.reduce(
@@ -324,8 +326,8 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                   </td>
                   <td className="pd-td12">{item.billNumber}</td>
                   <td className="pd-td12">{formatDate(item.purchaseDate)}</td>
-                  <td className="pd-td12">{item.companyName}</td>
-                  <td className="pd-td12">
+                  <td className="pd-td12 text-left443">{item.companyName}</td>
+                  <td className="pd-td12 text-left443">
                     {item.tableData.map((product, index) => (
                       <React.Fragment key={index}>
                         {product.product}
@@ -344,12 +346,12 @@ const InventoryList = ({ onNewPurchaseClick }) => {
                     ))}
                   </td>
 
-                  <td className="pd-td123">{item.supplier}</td>
-                  <td className="pd-td12">₹ {totalPurchaseAmount}</td>
-                  <td className="pd-td123">{item.purchaseType}</td>
+                  <td className="pd-td123 text-left443">{item.supplier}</td>
+                  <td className="pd-td12"><LuIndianRupee /> {totalPurchaseAmount}</td>
+                  <td className="pd-td12">{item.purchaseType}</td>
                   <td className="pd-td12">
                     <button
-                      className="pdedit-btn12"
+                      className="app-edit-btn11 btnblue"
                       onClick={() => handleDetailsClick(item)} // Show details on click
                     >
                       Details
@@ -360,15 +362,16 @@ const InventoryList = ({ onNewPurchaseClick }) => {
             })}
           </tbody>
         </table>
+        </div>
         {selectedItem && (
           <div className="popup-overlay">
             <div className="popup-content">
               <div className="flexchange445577">
-                <img
+                {/* <img
                   src={Salonlogo}
                   alt="Salonlogo"
                   className="logo-salon-cd"
-                />
+                /> */}
                 <h5 className="popup-title">Purchase Order Details</h5>
                 <button
                   className="popup-close-button"
@@ -396,7 +399,7 @@ const InventoryList = ({ onNewPurchaseClick }) => {
               </div>
               <div className="flexchange4455">
                 <p className="popup-details">Purchase Amount</p> : &nbsp; &nbsp;
-                &nbsp;₹ {selectedItem.totalPurchaseAmount}
+                &nbsp;<LuIndianRupee /> {selectedItem.totalPurchaseAmount}
               </div>
               <div className="flexchange4455">
                 <p className="popup-details">No of Products</p> : &nbsp; &nbsp;

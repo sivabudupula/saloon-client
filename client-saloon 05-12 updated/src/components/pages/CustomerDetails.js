@@ -12,11 +12,11 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../Helper/helper";
 import Salonlogo from "../images/Salonlogo.png";
+import { LuIndianRupee } from "react-icons/lu";
 
 
 const CustomerDetails = ({ selectedCustomer }) => {
-  console.log(selectedCustomer);
-
+ 
   const [customer, setCustomer] = useState(selectedCustomer);
 
   const [isEditing, setIsEditing] = useState(false);
@@ -37,6 +37,8 @@ const CustomerDetails = ({ selectedCustomer }) => {
 
   const [showBillDetails, setShowBillDetails] = useState(false);
   const [selectedBillDetails, setSelectedBillDetails] = useState(null);
+  const [token] = useState(localStorage.getItem('token'));
+  const [editBillId,setEditBillId] = useState('');
 
   const handleShowBillDetails = (bill) => {
     setSelectedBillDetails(bill);
@@ -113,8 +115,9 @@ const CustomerDetails = ({ selectedCustomer }) => {
     setDisplayComponent("customerDetails");
   };
 
-  const handleEditBill = (index) => {
+  const handleEditBill = (index,BillId) => {
     setEditBillIndex(index);
+    setEditBillId(BillId);
     setDisplayComponent("editBill"); // Pass the customer data instead of the index
   };
 
@@ -136,14 +139,11 @@ const CustomerDetails = ({ selectedCustomer }) => {
   //     customer.name.toLowerCase().includes(searchQuery.toLowerCase())
   //   );
 
-  const filteredAppointments = customer.appointments
-  ? customer.appointments.filter((appointment) =>
-      formatDate(appointment.date)
-        .toLowerCase()
-        .includes(searchQuery.toLowerCase())
-    )
-  : [];
-
+  const filteredAppointments = customer.appointments.filter((appointment) =>
+    formatDate(appointment.date)
+      .toLowerCase()
+      .includes(searchQuery.toLowerCase())
+  );
 
   const filteredBills = customer.billing.filter(
     (bill) => bill.billNumber && bill.billNumber.includes(searchBillQuery)
@@ -181,16 +181,17 @@ const CustomerDetails = ({ selectedCustomer }) => {
     }
   };
 
-  const handleEditAppntSave = async (customerData) => {
+  const handleEditAppntSave = async (editedData) => {
+    console.log(editedData);
     try {
       const response = await fetch(
-        `${BASE_URL}/api/appointments/${customerData._id}`,
+        `${BASE_URL}/api/appointments/${customer._id}/${editedData._id}`,
         {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(customerData),
+          body: JSON.stringify(editedData),
         }
       );
       console.log("Response:", response.data);
@@ -211,16 +212,17 @@ const CustomerDetails = ({ selectedCustomer }) => {
     }
   };
 
-  const handleEditBillSave = async (customerData) => {
+  const handleEditBillSave = async (editedData) => {
     try {
       const response = await fetch(
-        `${BASE_URL}/api/customers/billing/${customerData._id}`,
+        `${BASE_URL}/api/customers/billing/${customer._id}/${editBillId}`,
         {
           method: "PUT",
           headers: {
-            "Content-Type": "application/json",
+            'x-token': token,
+            'Content-Type': 'application/json',
           },
-          body: JSON.stringify(customerData),
+          body: JSON.stringify(editedData),
         }
       );
       console.log("Response:", response.data);
@@ -517,7 +519,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
       {displayComponent === "customerDetails" ? (
         <>
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Customers</h6>
+            <h5 className="heading234">Customers</h5>
 
             <div className="mdiv">
               <div className="sdiv1">
@@ -616,11 +618,11 @@ const CustomerDetails = ({ selectedCustomer }) => {
           </div>
 
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Appointments</h6>
+            <h5 className="heading234">Appointments</h5>
             <div className="padding908">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
-                  <label>Show </label>
+                  <label className="show11">Show </label>
                   <select
                     className="input1"
                     value={itemsPerPage}
@@ -631,10 +633,10 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> entries </label>
+                  {/* <label> entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <label> Search </label>
+                  <label className="show11"> Search </label>
                   <input
                     className="input2"
                     type="search"
@@ -645,9 +647,9 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 </div>
               </div>
 
-              <div>
+              <div className="tble-overflow12">
                 <table className="customer-table11">
-                  <thead>
+                  <thead className="thead87">
                     <tr>
                       <th className="customer-table11-th">Sno.</th>
                       <th className="customer-table11-th">Service Name</th>
@@ -658,7 +660,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                       <th className="customer-table11-th">Action</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="thead87">
                     {currentItems
                       .filter((appointment) =>
                         formatDate(appointment.date)
@@ -669,10 +671,10 @@ const CustomerDetails = ({ selectedCustomer }) => {
                         <tr key={index}>
                           <td className="customer-table11-td1">{index + 1}</td>
                           <td className="customer-table11-td">
-                            <ol>
+                            <ol className="ol897">
                               {appointment.selectedServices.map(
                                 (service, serviceIndex) => (
-                                  <li key={serviceIndex}>{service}</li>
+                                  <li className="li78" key={serviceIndex}>{service}</li>
                                 )
                               )}
                             </ol>
@@ -691,13 +693,13 @@ const CustomerDetails = ({ selectedCustomer }) => {
                           </td>
                           <td className="customer-table11-td1">
                             <button
-                              className="app-edit-btn11"
+                              className="book-text"
                               onClick={() => handleEditAppnt(appointment)}
                             >
                               Edit
                             </button>
                             <button
-                              className="app-delete-btn11"
+                              className="app-edit-btn11 btnred"
                               onClick={() => handleDelete(appointment._id)}
                             >
                               Delete
@@ -709,7 +711,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 </table>
               </div>
               <div className="entries-div121">
-                <div>
+                <div className="number-of-entries-div">
                   Showing {indexOfFirstItem + 1} to{" "}
                   {Math.min(indexOfLastItem, appointments.length)} of{" "}
                   {appointments.length} entries
@@ -743,11 +745,11 @@ const CustomerDetails = ({ selectedCustomer }) => {
             </div>
           </div>
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Bills Generated</h6>
+            <h5 className="heading234">Bills Generated</h5>
             <div className="padding908">
               <div className="customer-search11">
                 <div className="select-number-of-entries">
-                  <label>Show </label>
+                  <label className="show11">Show </label>
                   <select
                     className="input1"
                     value={billsPerPage}
@@ -758,10 +760,10 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     <option value={15}>15</option>
                     {/* Add more options as needed */}
                   </select>
-                  <label> entries </label>
+                  {/* <label> entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <label> Search </label>
+                  <label className="show11"> Search </label>
                   <input
                     className="input2"
                     type="search"
@@ -772,9 +774,9 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 </div>
               </div>
 
-              <div>
+              <div className="tble-overflow12">
                 <table className="customer-table11">
-                  <thead>
+                  <thead className="thead87">
                     <tr>
                       <th className="customer-table11-th">Bill No</th>
                       <th className="customer-table11-th">Customer Name</th>
@@ -785,7 +787,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                       <th className="customer-table11-th">Action</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="thead87">
                     {currentBillingList
                       .filter((bill) =>
                         bill.billNumber.toLowerCase().includes(searchBillQuery)
@@ -805,21 +807,21 @@ const CustomerDetails = ({ selectedCustomer }) => {
                             {bill.discountPercent}
                           </td>
                           <td className="customer-table11-td1">
-                            ₹ {bill.totalAmount}
+                          <LuIndianRupee /> {bill.totalAmount}
                           </td>
                           <td className="customer-table11-td1">
                             {bill.createdBy}
                           </td>
                           <td className="customer-table11-td1">
                             <button
-                              className="bill-details-btn"
+                              className="book-text"
                               onClick={() => handleShowBillDetails(bill)}
                             >
                               Details
                             </button>
                             <button
-                              className="app-edit-btn11"
-                              onClick={() => handleEditBill(index)}
+                              className="book-text"
+                              onClick={() => handleEditBill(index,bill._id)}
                             >
                               Edit Bill
                             </button>
@@ -831,7 +833,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                 {/* )} */}
               </div>
               <div className="entries-div121">
-                <div>
+                <div className="number-of-entries-div">
                   Showing {indexOfFirstBilling + 1} to{" "}
                   {Math.min(indexOfLastBilling, billing.length)} of{" "}
                   {billing.length} entries
@@ -880,7 +882,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
             <div className="popup-overlay">
               <div className="popup-content">
                 <div className="flexchange445577">
-                <img src={Salonlogo}  alt="Salonlogo" className="logo-salon-cd"/>
+                {/* <img src={Salonlogo}  alt="Salonlogo" className="logo-salon-cd"/> */}
                   <h2 className="popup-title">Bill Details</h2>
                   <button
                     className="popup-close-button89"
@@ -930,7 +932,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     {selectedBillDetails.services.map((service) => (
                       <tr className="td89" key={service.id}>
                         <td className="td89 td88">{service.serviceName}</td>
-                        <td className="td89">₹&nbsp;{service.price}</td>
+                        <td className="td89"><LuIndianRupee />&nbsp;{service.price}</td>
                         <td className="td89 td88">{service.employee}</td>
                       </tr>
                     ))}
@@ -949,7 +951,7 @@ const CustomerDetails = ({ selectedCustomer }) => {
                     {selectedBillDetails.items.map((item) => (
                       <tr className="td89" key={item.id}>
                         <td className="td89 td88">{item.itemName}</td>
-                        <td className="td89">₹&nbsp;{item.price}</td>
+                        <td className="td89"><LuIndianRupee />&nbsp;{item.price}</td>
                         <td className="td89 ">{item.quantity}</td>
                       </tr>
                     ))}

@@ -7,15 +7,15 @@
 }
 .customer-table11-th {
   background-color: #f0ecec;
-  padding: 8px;
+  padding: 7px;
   border: 1px solid #ccc;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 15px;
 }
 .customer-table11-td {
   border: 1px solid #ccc;
-  padding-left: 4px;
-  font-size: 14px;
+  font-size: 0.9rem;
+  padding: 5px;
 }
 .customer-table11-td1 {
   border: 1px solid #ccc;
@@ -87,7 +87,7 @@
 }
 .appnt-form11 {
   width: 92%;
-  margin-left: 5%;
+  margin-left: 4%;
   border: 1px solid #ccc;
 }
 
@@ -144,12 +144,14 @@
   transition: 0.5s;
 }
 .filter {
+  margin: 0px;
   width: 55px;
-  background-color: rgb(49, 130, 206);
+  background-color: dodgerblue;
   color: white;
 }
 .showall {
-  background-color: rgb(49, 130, 206);
+  width: 80px;
+  background-color: dodgerblue;
   color: white;
 }
 .today {
@@ -183,7 +185,7 @@
 }
 .app-edit-btn11 {
   height: 5vh;
-  font-size: 15px;
+  font-size: 0.9rem;
 
   border: none;
   cursor: pointer;
@@ -203,22 +205,35 @@
   background-color: rgb(205, 16, 16) !important;
 }
 
-/* Styles for Activate button */
-.activate-btn {
-  background-color: green; /* Set the background color to green */
-  color: white; /* Set the text color to white */
-  border: none; /* Remove border */
 
-  cursor: pointer; /* Change cursor to pointer on hover */
+.activate-btn {
+  background-color: green; 
+  padding: 4px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  cursor: pointer; 
+  width: 90px;
+}
+.hh23{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d5d2d2;
+  padding: 5px;
 }
 
-/* Styles for Deactivate button */
 .deactivate-btn {
-  background-color: red; /* Set the background color to red */
-  color: white; /* Set the text color to white */
-  border: none; /* Remove border */
+  padding: 4px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  width: 90px;
+  font-size: 0.9rem;
   /* padding: 8px 16px;  */
-  cursor: pointer; /* Change cursor to pointer on hover */
+  cursor: pointer; 
 }
 
 .app-edit-btn112 {
@@ -243,14 +258,14 @@
 }
 .book-text {
   width: 5vw;
-  height: 5vh;
-  padding: 2px;
-  font-size: 13px;
+  
+  padding: 5px;
+  font-size: 0.9rem;
   background-color: dodgerblue;
   border: none;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 2px;
   color: white;
 }
@@ -340,6 +355,27 @@
     border-collapse: separate;
     border-spacing: 0px;
   }
+  .activate-btn {
+    background-color: green;
+    padding: 4px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 90px;
+}
+  .deactivate-btn {
+    padding: 4px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    font-size: 12px;
+    /* padding: 8px 16px; */
+    cursor: pointer;
+}
   .tr32 {
   }
   .thead87 {
@@ -347,7 +383,8 @@
   }
   .customer-table11-th {
     background-color: #f0ecec;
-    padding: 8px;
+    padding: 5px;
+    font-size: small;
     border: 1px solid #ccc;
     text-align: center;
     /* font-size: 0.9rem; */
@@ -361,12 +398,14 @@
   .customer-table11-td {
     border: 1px solid #ccc;
     padding-left: 4px;
+    padding: 2px;
     font-size: small !important;
   }
   .customer-table11-td1 {
     border: 1px solid #ccc;
     text-align: center !important;
-    font-size: small;
+    font-size: small !important;
+    padding: 2px !important;
   }
   .customer-table1122-td {
     border: 1px solid #ccc;
@@ -377,6 +416,10 @@
   .margin786 {
     /* margin: 10px; */
   }
+  .customer-table11-td1, .pd-td12, .pd-td123 {
+    font-size: 0.9rem;
+    padding: 2px;
+}
   .customer-search11 {
     display: flex;
     /* margin-bottom: 5px; */
@@ -480,7 +523,7 @@
     transition: 0.5s;
   }
   .filter {
-    background-color: rgb(49, 130, 206);
+    background-color: dodgerblue;
     color: white;
     margin: 0px !important;
   }
@@ -490,7 +533,7 @@
     flex-direction: column;
   }
   .showall {
-    background-color: rgb(49, 130, 206);
+    background-color: dodgerblue;
     color: white;
     width: 70px;
   }
@@ -507,7 +550,7 @@
     padding: 5px;
     font-size: 50px;
     border: none;
-    background-color: rgb(218, 7, 7) !important;
+    background-color: rgb(196, 35, 35) !important;
     cursor: pointer;
     margin: 2px;
     color: white;
@@ -533,13 +576,10 @@
     color: black;
     transition: 0.5s;
   }
-  .h5,
-  h5 {
-    font-size: 1rem !important;
-  }
+
   .book-text {
     width: 50px;
-    padding: 2px;
+    padding: 5px;
     font-size: x-small;
     background-color: dodgerblue;
     /* border: none;    */
@@ -623,10 +663,9 @@
            width: max-content; */
   }
   .showall {
-    
     padding: 5px;
     background-color: rgb(49, 130, 206);
-   
+
     width: 80px;
   }
   .edit-customer-heading1123 {

@@ -1,11 +1,11 @@
 /* Container */
 .add-service-container-sk141s {
-  margin:  20px;
+ 
   padding-top: 0%;
   border: 1px solid #ccc;
   background-color:white;
   width: 92%;
-  margin-left: 65px;
+  margin-left: 4%;
   /* margin-top: 10%; */
 }
 .heading143sk{
@@ -39,6 +39,7 @@
 /* Label */
 .label-sk141s {
   display: inline;
+  font-size: 16px;
   /* font-weight: bold; */
 }
 
@@ -57,14 +58,14 @@
   width: 30%;
   height: 33px;
   margin-top: 8px;
-  
+  font-size: 0.9rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 /* Submit button */
 .submit-button-sk141s {
-  background-color: #2688f9;
+  background-color: dodgerblue;
   color: #fff;
   padding: 5px 16px;
   border: none;

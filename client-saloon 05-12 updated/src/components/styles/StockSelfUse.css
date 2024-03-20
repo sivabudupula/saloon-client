@@ -1,6 +1,6 @@
 .A7Stockmaindiv{
     width: 92%;
-    margin-left: 5%;
+    margin-left: 4%;
     background-color: white;
     border: 1px solid #ccc; 
     box-shadow: 6px 5px 7px #ccc;
@@ -99,15 +99,15 @@ width: 200px;
     border: none;
 }
 .A7Stock-sub-div2-button3{
-    background-color: #19c013;
-    border-radius: 2px;
+    background-color: dodgerblue;
+    border-radius: 3px;
     border: none;
-    height: 29px;
+    height: 31px;
     width: 60px;
     color: white;
     font-family: 'poppins';
     font-weight: 300;
-    font-size: small;
+    font-size: 0.9rem;
 }
 .A7Stock-sub-div2-button4{
     background-color: rgb(240, 74, 62);
@@ -167,7 +167,17 @@ outline: none;
 padding: 5px 0px;
 height: 30px;
 }
+@media only screen and (min-width: 320px) and (max-width: 426px){
 
-
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .A7Stockmaindiv{
+        width: 94%;
+        margin-left: 3%;
+        background-color: white;
+        border: 1px solid #ccc; 
+        box-shadow: 6px 5px 7px #ccc;
+    }
+}
 
   

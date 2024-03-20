@@ -29,11 +29,11 @@ const ConfirmToast = ({ message, onConfirm, onCancel }) => {
 const EmployeeDetailsPopup = ({ employee, onClose }) => {
   return (
     <div className="popup-container-sk9879">
-      <div className="popup-content-sk9879">
-        <button className="close-btn-sk9879" onClick={onClose}>
-          &times;
-        </button>
+      <div className="hh23">
         <h2 className="h28">Employee Details</h2>
+        <button className="close-btn-sk9879" onClick={onClose}>X</button>
+      </div>
+      <div className="popup-content-sk9879">
         <div className="abc1234">
           <p>
             <label className="align100px">ID</label>:&nbsp;&nbsp;&nbsp;{" "}
@@ -148,7 +148,7 @@ const Employees = ({ onNewEmployeeClick }) => {
       }
     );
   };
-  
+
   const handleDeactivate = (employeeId) => {
     // Show an info toast to confirm deactivation
     toast.info(
@@ -168,18 +168,18 @@ const Employees = ({ onNewEmployeeClick }) => {
       }
     );
   };
-  
+
   const confirmActivation = (employeeId) => {
     // Close the toast
     toast.dismiss();
-  
+
     // Make the API call to activate the employee
     axios
       .put(`${BASE_URL}/api/employees/activate/${employeeId}`)
       .then((response) => {
         // Handle success response
         console.log("Employee activated successfully:", response.data);
-  
+
         // Update the state to reflect the changes
         const updatedEmployees = employees.map((employee) => {
           if (employee._id === response.data._id) {
@@ -188,7 +188,7 @@ const Employees = ({ onNewEmployeeClick }) => {
           return employee;
         });
         setEmployees(updatedEmployees);
-  
+
         // Show success toast
         toast.success("Employee successfully activated!");
       })
@@ -198,18 +198,18 @@ const Employees = ({ onNewEmployeeClick }) => {
         // You can show an error message or perform any other actions here
       });
   };
-  
+
   const confirmDeactivation = (employeeId) => {
     // Close the toast
     toast.dismiss();
-  
+
     // Make the API call to deactivate the employee
     axios
       .put(`${BASE_URL}/api/employees/deactivate/${employeeId}`)
       .then((response) => {
         // Handle success response
         console.log("Employee deactivated successfully:", response.data);
-  
+
         // Update the state to reflect the changes
         const updatedEmployees = employees.map((employee) => {
           if (employee._id === response.data._id) {
@@ -218,7 +218,7 @@ const Employees = ({ onNewEmployeeClick }) => {
           return employee;
         });
         setEmployees(updatedEmployees);
-  
+
         // Show success toast
         toast.success("Employee successfully deactivated!");
       })
@@ -228,13 +228,11 @@ const Employees = ({ onNewEmployeeClick }) => {
         // You can show an error message or perform any other actions here
       });
   };
-  
+
   const handleCancel = () => {
     // Close the toast
     toast.dismiss();
   };
-  
-  
 
   const handleEditSave = (EmployeeData) => {
     axios
@@ -348,7 +346,7 @@ const Employees = ({ onNewEmployeeClick }) => {
       {displayComponent === "Employees" ? (
         <>
           <div className="customer-container11">
-            <h6 className="edit-customer-heading1123">Employees</h6>
+            <h5 className="heading234">Employees</h5>
             <div className="margin786">
               <button className="pdadd-btn12" onClick={handleClick}>
                 {" "}
@@ -356,7 +354,7 @@ const Employees = ({ onNewEmployeeClick }) => {
               </button>
               <div className="customer-search11">
                 <div className="select-number-of-entries">
-                  <label>Show</label>
+                  <label className="show11">Show</label>
                   <select
                     className="input1"
                     value={itemsPerPage}
@@ -366,10 +364,10 @@ const Employees = ({ onNewEmployeeClick }) => {
                     <option value={10}>10</option>
                     <option value={15}>15</option>
                   </select>
-                  <label> Entries </label>
+                  {/* <label> Entries </label> */}
                 </div>
                 <div className="A7serinp">
-                  <label>Search </label>
+                  <label className="show11">Search </label>
                   <input
                     type="text"
                     placeholder="Name or phone number"
@@ -379,72 +377,72 @@ const Employees = ({ onNewEmployeeClick }) => {
                   />
                 </div>
               </div>
-              <table className="table-saloon2345">
-                <thead>
-                  <tr className="tr-saloon2345">
-                    <th className="th-saloon2345">Employee ID</th>
-                    <th className="th-saloon2345">Employee Name</th>
-                    <th className="th-saloon2345">Mobile Number</th>
-                    <th className="th-saloon2345">Email</th>
-                    <th className="th-saloon2345">Address</th>
-                    <th className="th-saloon2345">User Name</th>
-                    <th className="th-saloon2345">Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {currentItems.map((employee, index) => (
-                    <tr key={employee._id} className="tr-saloon2345">
-                      <td
-                        className="td-saloon23456 td-saloon2345900 width30"
-                        onClick={() => handleDetailsClick(employee)}
-                      >
-                        {employee.employeeId}
-                      </td>
-                      <td
-                        className="td-saloon2345900"
-                        onClick={() => handleDetailsClick(employee)}
-                      >
-                        {employee.employeeName}
-                      </td>
-                      <td className="td-saloon23456">{employee.phoneNumber}</td>
-                      <td className="td-saloon2345">{employee.email}</td>
-                      <td className="td-saloon2345">{employee.address}</td>
-                      <td className="td-saloon2345">
-                        {employee.username}
-                      </td>
-
-                      <td className="td-saloon23456">
-                        <button
-                          className="app-edit-btn11"
-                          onClick={() => handleEdit(employee)}
-                        >
-                          Edit
-                        </button>
-                        {/* Replace Delete button with Activate and Deactivate buttons */}
-                        {employee.isActive ? (
-                          <button
-                            className="app-edit-btn112 deactivate-btn"
-                            onClick={() => handleDeactivate(employee._id)}
-                          >
-                            Deactivate
-                          </button>
-                        ) : (
-                          <button
-                            className="app-edit-btn112 activate-btn"
-                            onClick={() => handleActivate(employee._id)}
-                          >
-                            Activate
-                          </button>
-                        )}
-                       
-                        
-                      </td>
+              <div className="tble-overflow12">
+                <table className="table-saloon2345">
+                  <thead className="thead87">
+                    <tr className="tr-saloon2345">
+                      <th className="th-saloon2345">Employee ID</th>
+                      <th className="th-saloon2345">Employee Name</th>
+                      <th className="th-saloon2345">Mobile Number</th>
+                      <th className="th-saloon2345">Email</th>
+                      <th className="th-saloon2345">Address</th>
+                      <th className="th-saloon2345">User Name</th>
+                      <th className="th-saloon2345">Actions</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-              <div className="customer-search11">
-                <div>
+                  </thead>
+                  <tbody className="thead87">
+                    {currentItems.map((employee, index) => (
+                      <tr key={employee._id} className="tr-saloon2345">
+                        <td
+                          className="td-saloon23456 td-saloon2345900 width30"
+                          onClick={() => handleDetailsClick(employee)}
+                        >
+                          {employee.employeeId}
+                        </td>
+                        <td
+                          className="td-saloon2345900"
+                          onClick={() => handleDetailsClick(employee)}
+                        >
+                          {employee.employeeName}
+                        </td>
+                        <td className="td-saloon23456">
+                          {employee.phoneNumber}
+                        </td>
+                        <td className="td-saloon2345">{employee.email}</td>
+                        <td className="td-saloon2345">{employee.address}</td>
+                        <td className="td-saloon2345">{employee.username}</td>
+
+                        <td className="td-saloon23456">
+                          <button
+                            className="app-edit-btn11 btnblue"
+                            onClick={() => handleEdit(employee)}
+                          >
+                            Edit
+                          </button>
+                          {/* Replace Delete button with Activate and Deactivate buttons */}
+                          {employee.isActive ? (
+                            <button
+                              className="deactivate-btn"
+                              onClick={() => handleDeactivate(employee._id)}
+                            >
+                              Deactivate
+                            </button>
+                          ) : (
+                            <button
+                              className=" activate-btn"
+                              onClick={() => handleActivate(employee._id)}
+                            >
+                              Activate
+                            </button>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="entries-div121">
+                <div className="number-of-entries-div">
                   Showing {indexOfFirstItem + 1} to{" "}
                   {Math.min(indexOfLastItem, filteredEmployees.length)} of{" "}
                   {filteredEmployees.length} Entries

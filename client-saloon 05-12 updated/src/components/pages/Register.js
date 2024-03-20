@@ -75,7 +75,7 @@ const Register = () => {
     <div>
       {/* <center> */}
         <form onSubmit={submitHandler} autoComplete="off" className="register-form-sk543">
-          <h3 className="register-h3-sk543">Register</h3>
+          <h5 className="heading234">Register</h5>
           <div className='padding0467'>
           <div className='registerlable-name-saloon234'>
             <label className='name56' htmlFor="username">Username</label>

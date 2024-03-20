@@ -94,20 +94,20 @@ const StockSelfUse = () => {
     <div className='A7Stockmaindiv'>
       <ToastContainer />
 
-      <h6 className='A7stock-heading'>Stock Sale</h6>
-
-      <table className='pp-entering13'>
+      <h5 className='heading234'>Stock Sale</h5>
+      {/* <div className="tble-overflow12"> */}
+      <table className='pp-entering1301'>
         <thead>
           <tr>
             <td className='ppe-th'>Product:</td>
             <td className='ppe-th'>Quantity:</td>
-            <td className='ppe-th'></td>
+            {/* <td className='ppe-th'></td> */}
           </tr>
         </thead>
         <tbody>
           {tableData.map((entry, index) => (
             <tr key={index}>
-              <td className='pp-input31'>
+              <td >
                 <select
                   type="text"
                   className='pp-input131 pp-input1312'
@@ -157,12 +157,13 @@ const StockSelfUse = () => {
           ))}
 
           <tr>
-            <button type="button" className='add-row-btn' onClick={addRow}>
+          <button type="button" className='add-row-btn add-row-btn90' onClick={addRow}>
               Add Row
             </button>
           </tr>
         </tbody>
       </table>
+{/* </div> */}
 
       <div className='A7Stock-sub-div3'>
         <button className='A7Stock-sub-div2-button3' onClick={handleSave}>

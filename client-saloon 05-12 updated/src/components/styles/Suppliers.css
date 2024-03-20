@@ -36,8 +36,8 @@
 }
 .pd-container14{
     margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 3%;
+    margin-left: 4%;
+    width: 92%;
     border: 1px solid #ccc;
     background-color: white;
     box-shadow: 6px 5px 7px #ccc;
@@ -97,7 +97,7 @@
   }
 
 
-  @media screen and (max-width:420px) {
+  @media only screen and (min-width: 320px) and (max-width: 426px) {
     .sp-btn14{
       background-color: #0ca807;
       color: #fff;
@@ -107,6 +107,15 @@
       padding: 7px;
       
   }
+  .pinput12 {
+    font-size: small;
+    outline: none;
+    width: 65%;
+    padding: 4px;
+    margin-right: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
   .spbtn-div14{
       display: flex;
       justify-content: flex-end;
@@ -126,8 +135,9 @@
   }
   
   .pinput14{
+    font-size: small;
       outline: none;
-      width: 300px;
+      width: 65%;
       margin-right: 3px;
       resize: none;
       border: 1px solid #ccc;
@@ -137,7 +147,7 @@
   .pd-container14{
       margin-top: 2%;
       margin-left: 0% !important;
-      margin-right: 0% !important;
+      width: 100%;
       border: 1px solid #ccc;
       background-color: white;
       box-shadow: 6px 5px 7px #ccc;
@@ -191,4 +201,25 @@
       background-color: #dc3545;
       color: #fff; 
     }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+  .pd-container14 {
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 94%;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 6px 5px 7px #ccc;
+}
+.pdadd-btn12 {
+  cursor: pointer;
+  background-color: #19c013;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-family: 'poppins';
+  font-weight: 300;
+  padding: 6px;
+  border-radius: 3px;
+}
   }
